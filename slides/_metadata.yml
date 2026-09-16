@@ -1,0 +1,23 @@
+format:
+  revealjs:
+    navigation-mode: vertical
+    logo: 
+      path: ../css/usu-sq.png
+      alt: "Utah State University Logo"
+    css: ../css/styles.scss
+    includes:
+      in_header: ../css/header.html
+    lib_dir: libs
+    highlight: "arrow"
+    chalkboard: true
+    code-annotations: hover
+    include-in-header:
+      - text: |
+          <style>
+            .code-copy-outer-scaffold:has(.code-annotated)>.code-copy-button {
+              right: 1.5em;
+              margin-right: 0;
+            }
+          </style>
+date-format: long
+from: markdown+emoji
