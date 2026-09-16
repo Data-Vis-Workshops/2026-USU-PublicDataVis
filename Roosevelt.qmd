@@ -15,7 +15,7 @@ Session #1 of Data Science Workshop, 2:00 - 5:00 pm
 | 3:20 - 3:30 | Break         |        |           |
 | 3:30 - 4:20 |               |        |           |
 | 4:20 - 4:30 | Break         |        |           |
-| 4:30 - 5:30 |               |        |           |
+| 4:30 - 5:00 |               |        |           |
 
 : Schedule for Workshop Session #1
 
