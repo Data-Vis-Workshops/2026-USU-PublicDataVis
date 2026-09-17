@@ -1,10 +1,9 @@
 format:
   revealjs:
-    navigation-mode: vertical
     logo:
       path: ../css/usu-sq.png
       alt: "Utah State University Logo"
-    css: ../css/styles.scss
+    css: ../css/slide-theme.scss
     includes:
       in_header: ../css/header.html
     lib_dir: libs
@@ -12,7 +11,7 @@ format:
     chalkboard: true
     progress: true
     lightbox: true
-    footer: "[Data Visualization & Public Data Workshops](https://data-vis-workshops.github.io/2026-USU-PublicDataVis/)"
+    footer: "[Workshop Homepage](https://data-vis-workshops.github.io/2026-USU-PublicDataVis/)"
     code-annotations: hover
     include-in-header:
       - text: |

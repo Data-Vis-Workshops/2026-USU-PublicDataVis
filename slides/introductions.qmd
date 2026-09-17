@@ -1,0 +1,74 @@
+---
+title: Introductions
+format: revealjs
+---
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE, 
+  collapse = TRUE,
+  comment = "",
+  fig.height = 5,
+  fig.width = 8,
+  fig.align = "center",
+  cache = FALSE,
+  echo=FALSE
+)
+```
+```{r}
+#| echo: false
+#| eval: false
+pak::pak("hadley/emo")
+pak::pak("mitchelloharawild/icons")
+```
+
+## {background-image="images/Hello-Heike.png" background-size="contain" background-image-alt="A 'Hello, my name is' sticker with the name Heike"}
+
+## {background-image="images/Hello-Susan.png" background-size="contain"  background-image-alt="A 'Hello, my name is' sticker with the name Susan"}
+
+## Your Turn {.inverse .large}
+
+Introduce yourself!
+
+1. Your Name
+2. What grade(s) and/or subject(s) you teach
+3. What you hope to learn from this workshop
+4. What type of data you geek out over
+
+
+## Logistics
+
+- All course materials are available at <https://data-vis-workshops.github.io/2026-USU-PublicDataVis/>
+
+
+
+
+## Check your R setup
+
+> ["If R were an airplane, RStudio would be the airport"]{.emph .orange-dk}\
+> [Julie Lowndes, Openscapes](http://jules32.github.io/resources/RStudio_intro/)
+
+![](images/setup.png){width="100%" fig-alt="A screenshot of the RStudio program window"}
+
+
+## Resources
+
+-   Reference Sheets
+  - [RStudio](https://opensource.posit.co/resources/cheatsheets/rstudio-ide/)
+  - [Creating plots with ggplot2](https://opensource.posit.co/resources/cheatsheets/data-visualization/)
+  - [Importing Data](https://opensource.posit.co/resources/cheatsheets/data-import/)
+  - Wrangling Data: [dplyr](https://opensource.posit.co/resources/cheatsheets/data-transformation/), [tidyr](https://opensource.posit.co/resources/cheatsheets/tidyr/), [stringr](https://opensource.posit.co/resources/cheatsheets/strings/), [lubridate](https://opensource.posit.co/resources/cheatsheets/lubridate/)
+- Q/A site: <http://stackoverflow.com>
+- Free reference books:
+  - [Statistical Computing with R and Python](https://srvanderplas.github.io/stat-computing-r-python/), by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)
+  - [Big Book of R](https://www.bigbookofr.com) - A Book of (free) R books
+
+::: bottom
+[<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.]{style="display:inline-block;"}
+:::

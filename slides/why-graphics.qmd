@@ -1,0 +1,325 @@
+---
+title: Why Graphics?
+format: revealjs
+---
+```{r}
+#| eval: false
+pak::pak("heike/ggpcp")
+pak::pak("haleyjeppson/ggmosaic")
+pak::pak("ricardo-bion/ggradar")
+```
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| include: false
+#| label: setup
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+library(purrr)
+library(gridExtra)
+library(magrittr)
+library(stringr)
+library(readr)
+library(ragg)
+library(ggpcp)
+library(ggmosaic)
+library(ggradar)
+library(vipor) # us counties data
+library(tigris)
+library(scales)
+theme_set(theme_bw())
+```
+
+
+## {.inverse}
+
+```{r}
+#| label: HR-diagram
+#| fig-width: 1200
+#| fig-height: 800
+#| out-width: "100%"
+#| message: false
+#| warning: false
+#| echo: false
+#| fig-cap: "The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star's life cycle: a hypothesis that only came to be because of this chart."
+#| fig-alt: "A scatter plot showing the color index of a star on the x-axis and the absolute magnitude (brightness) of the star on the y-axis. Points are colored by spectral class, which varies from blue to white to yellow to red as the color index increases and the star's temperature decreases. Points are primarily located along a downward-sloping line from the top left to the bottom right, which is labeled the 'main sequence'. There is another set of points which diverges from the main sequence and extends out horizontally in the middle of the graph; these are labeled 'giants', and a few outliers that are above the giant cluster are labeled 'supergiants'. Below the main sequence stars, there are outliers which are labeled 'dwarfs'."
+#| dev: agg_png
+#| fig-ext: png
+
+
+if (!file.exists("data/stars.csv")) download.file("https://github.com/astronexus/HYG-Database/raw/refs/heads/main/hyg/CURRENT/hygdata_v41.csv", destfile = "data/stars.csv")
+
+stars <- read_csv("data/stars.csv")
+
+stars <- stars %>%
+  mutate(
+    Spectral.Class = str_extract(spect, "^.") %>%
+      str_to_upper() %>%
+      factor(levels = c("O", "B", "A", "F", "G", "K", "M"), ordered = T),
+    EarlyLate = str_extract(spect, ".(\\d)") %>%
+      str_replace_all("[^\\d]", "") %>% as.numeric(),
+    Temp = 4600 * (1 / (.92 * ci + 1.7) + 1 / (.92 * ci) + 0.62)
+  ) %>%
+  filter(!is.na(Spectral.Class) & !is.na(EarlyLate) & !is.na(hip)) %>%
+  arrange(Spectral.Class, EarlyLate) %>%
+  mutate(SpectralClass2 = paste0(Spectral.Class, EarlyLate) %>% factor(., levels = unique(.)))
+
+ggplot(data = filter(stars, dist < 500)) +
+  # annotate(x = -.25, xend = .75, y = -2, yend = -6.5, arrow = arrow(ends = "both", length = unit(.1, "cm")), geom = "segment", color = "grey") +
+  annotate(x = 0.125, xend = 2, y = 4.25, yend = 4.25, arrow = arrow(ends = "both", length = unit(.1, "cm")), geom = "segment", color = "grey") +
+  geom_point(aes(x = ci, y = -absmag, color = Spectral.Class), alpha = .3) +
+  scale_x_continuous("B-V Color Index", breaks = c(0, .5, 1, 1.5, 2), labels = c("Hot  0.0       ", "0.5", "1.0", "1.5", "           2.0  Cool")) +
+  scale_y_continuous("Absolute Magnitude (Brightness)", breaks = c(-8, -4, 0, 4), labels = c(8, 4, 0, -4)) +
+  scale_color_manual("Spectral\nClass", values = c("#2E478C", "#426DB9", "#B5D7E3", "white", "#FAF685", "#E79027", "#DA281F")) +
+  annotate(x = .25, y = -5.5, label = "Dwarfs", geom = "text", angle = -25, color = "white") +
+  annotate(x = .5, y = -3.75, label = "Main Sequence", geom = "text", angle = -28) +
+  annotate(x = 1.125, y = 0, label = "Giants", geom = "text") +
+  annotate(x = 1, y = 4.5, label = "Supergiants", geom = "text", color = "white") +
+  theme(
+    panel.background = element_rect(fill = "#0F2439"),
+    legend.key = element_blank(),
+    panel.grid = element_line(colour = "grey40"),
+    axis.text = element_text(color = "white", size = 20),
+    text = element_text(size = 18, color = "white"),
+    legend.background = element_rect(fill = "#0F2439"),
+    legend.text = element_text(color = "white", size = 20),
+    plot.background = element_rect(fill = "#0F2439")
+  ) +
+  ggtitle("Hertzsprung-Russell Diagram") +
+  coord_cartesian(xlim = c(-.25, 2.25), ylim = c(-12, 7)) +
+  guides(color = guide_legend(override.aes = list(alpha = 1, size = 3)))
+```
+
+Data source: the [HYG Database](https://github.com/astronexus/HYG-Database). Only stars within 500 AU are shown.
+
+## Why Graphics?
+
+::: columns
+::: column
+::: incremental
+
+- Communication
+- Ability to see the data can lead to new insights
+
+:::
+:::
+::: column
+```{r}
+#| label: HR-diagram
+```
+:::
+:::
+
+::: notes
+
+When drawn well, statistical graphics help us understand our data and see things that we didn't know were there. The relationship between star magnitude, star color, and spectral class wasn't well understood until someone created a chart like this that showed the color index (or spectral class) against the absolute brightness. Then, it was much easier to see that the chart described a life-cycle - stars start out in the main sequence, and then become giants, dwarfs, or slowly change spectral class over time as they cool down in temperature.
+
+Well designed graphs can help us understand the natural phenomenon behind the raw numerical data we've collected.
+:::
+
+
+# Overview: Types of Graphs
+
+
+## Basic
+
+::: columns
+::: column
+**One Variable**
+
+- Discrete
+  - Bar Chart
+  - Pie Chart
+  
+- Continuous
+  - Stem and Leaf Plots
+  - Histograms
+
+:::
+::: column
+
+**Two variables**
+
+- Continuous X, Continuous Y
+  - Scatterplots    
+  (w/ and w/o trend lines)
+  
+- Maps
+
+:::
+:::
+
+
+```{r}
+#| label: beg
+#| fig-height: 4
+#| fig-width: 4
+#| fig-pos: center
+#| echo: false
+#| message: false
+#| warning: false
+#| layout-ncol: 5
+data(mtcars)
+
+ggplot(mtcars, aes(factor(cyl), fill = factor(cyl))) +
+  geom_bar() +
+  labs(x = "Cyl", title = "Bar Chart") +
+  scale_fill_grey(start = 0.2, end = 0.8, name = "cyl") +
+  theme(legend.position = "none")
+ggplot(mtcars, aes(factor(1), fill = factor(cyl))) +
+  geom_bar(width = 1) +
+  coord_polar(theta = "y") +
+  labs(x = "", title = "Pie Chart") +
+  scale_fill_grey(start = 0.2, end = 0.8, name = "cyl") +
+  theme(legend.position = "none")
+ggplot(iris, aes(Sepal.Length)) +
+  geom_histogram(bins = 20) +
+  labs(x = "", title = "Histogram")
+ggplot(iris, aes(Sepal.Length, Sepal.Width)) +
+  geom_point() +
+  labs(x = "", y = "", title = "Scatterplot")
+
+data("counties", package = "vipor")
+utah_counties <- counties("UT")
+utah_counties_data <- counties |>
+  filter(state == "Utah") |>
+  mutate(population = as.numeric(population))
+utah_counties <- left_join(utah_counties, utah_counties_data, by = c("NAMELSAD" = "county"))
+utah_counties |>
+  ggplot() +
+  geom_sf(aes(fill = population)) +
+  labs(title = "Map") +
+  scale_fill_distiller(palette = "Greys", transform = "log10")
+```
+
+## More "Fancy"
+
+::: columns
+::: {.column width="40%"}
+- Parallel Coordinate Plots
+- Mosaic Plots
+- Radar Charts
+- Heat Maps
+- Density Plots
+- Violin Plots
+- Social Network Plots
+
+:::
+::: {.column width="60%"}
+
+```{r}
+#| label: int
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-height: 4
+#| fig-pos: center
+#| fig-width: 4
+#| layout-ncol: 3
+
+data(flea, package = "GGally")
+iris2 <- iris %>%
+  mutate(obs = 1:150) %>%
+  pivot_longer(names_to = "variable", values_to = "value", -c(obs, Species))
+# i1 <- ggplot()+ labs(x="", y="", title="Cartogram")
+flea_pcp <- flea %>%
+  pcp_select(species, 2:3, 5:7, species) %>%
+  pcp_scale(method = "uniminmax") %>%
+  pcp_arrange()
+
+flea_pcp %>%
+  ggplot(aes_pcp()) +
+  geom_pcp_axes() +
+  geom_pcp(aes(colour = species)) +
+  labs(x = "", y = "", title = "Parallel Coordinates") +
+  scale_color_manual(values = c("grey30", "grey50", "grey70")) + 
+  theme(legend.position = "none", text=element_text(size = 18)) 
+
+ggplot(diamonds) +
+  ggmosaic::geom_mosaic(aes(x = ggmosaic::product(color), fill = cut)) +
+  scale_fill_grey(start = 0.2, end = 0.7) +
+  labs(x = "", y = "", title = "Mosaic Plot") + 
+  theme(legend.position = "none", text=element_text(size = 18))
+
+penguins_radar <- penguins %>%
+  drop_na() %>%
+  group_by(species) %>%
+  summarise(
+    avg_bill_length = mean(bill_len),
+    avg_bill_dept = mean(bill_dep),
+    avg_flipper_length = mean(flipper_len),
+    avg_body_mass = mean(body_mass)
+  ) %>%
+  ungroup() %>%
+  mutate_at(vars(-species), rescale)
+
+ggradar::ggradar(penguins_radar,
+  group.line.width = .7,
+  group.point.size = 2, axis.label.size = 3.5, grid.label.size = 2.5, background.circle.transparency = 0.1, plot.legend = FALSE
+) + 
+  scale_colour_grey(start = 0.3, end = 0.7) +
+  labs(x = "", y = "", title = "Radar Chart") + 
+  theme(legend.position = "none", text=element_text(size = 18))  
+
+df.team_data <- expand.grid(
+  teams = c("Team A", "Team B", "Team C", "Team D"), 
+  metrics = c("Metric 1", "Metric 2", "Metric 3", "Metric 4", "Metric 5"))
+
+# add variable: performance
+set.seed(41)
+df.team_data$performance <- rnorm(nrow(df.team_data))
+ggplot(data = df.team_data, aes(x = metrics, y = teams)) +
+  geom_tile(aes(fill = performance)) +
+  scale_fill_distiller(palette = "Greys") +
+  labs(x = "", y = "", title = "Heat Map") +
+  theme(legend.position = "none", text=element_text(size = 18)) 
+
+penguins |>
+  filter(!is.na(sex)) |>
+ggplot(aes(x = species, y = body_mass, fill = sex)) + 
+  geom_violin() + 
+  scale_fill_manual(values = c("grey30", "grey70")) + 
+  labs(x = "", y = "", title = "Violin Plot") + 
+  theme(legend.position = "none", text=element_text(size = 18)) 
+
+penguins |>
+  filter(!is.na(sex)) |>
+ggplot(aes(x = body_mass, fill = species, color = species)) + 
+  geom_density(alpha = .5) + 
+  scale_color_manual(values = c("grey20", "grey50", "grey80")) + 
+  scale_fill_manual(values = c("grey20", "grey50", "grey80")) + 
+  labs(x = "body mass (g)", y = "", title = "Density Plot") + 
+  theme(legend.position = "none", text=element_text(size = 18), axis.text.y = element_blank()) 
+
+```
+:::
+:::
+
+
+## Quantitative Literacy
+
+
+
+
+
+## Connections to Art, Science, Civics, Media Literacy
+
+
+
+
+
+## Exploratory Data Analysis: Demo
+
+<!-- Heike's weather exploration stuff here? -->
+
+## Your Turn {.inverse}
+
+- How could data visualization connect to learning objectives for your grade(s) and subject(s)?
+
+- What types of charts are most important for your students?
+
+- What data would you like to show students?
