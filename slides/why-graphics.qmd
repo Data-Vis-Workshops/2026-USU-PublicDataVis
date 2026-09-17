@@ -1,6 +1,7 @@
 ---
 title: Why Graphics?
 format: revealjs
+css: ../css/slide-theme.scss
 ---
 ```{r}
 #| eval: false
