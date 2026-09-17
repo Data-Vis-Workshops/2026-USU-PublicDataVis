@@ -1,0 +1,5 @@
+---
+title: Personal Data Visualization
+format: revealjs
+css: ../css/slide-theme.scss
+---

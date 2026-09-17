@@ -1,0 +1,5 @@
+---
+title: Graphics and Perception
+format: revealjs
+css: ../css/slide-theme.scss
+---

@@ -1,0 +1,5 @@
+---
+title: How to Make Graphics
+format: revealjs
+css: ../css/slide-theme.scss
+---
