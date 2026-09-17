@@ -1,0 +1,9 @@
+
+### Software Installation Instructions
+
+
+1. Download and install the [latest R version](https://cran.r-project.org) first, and then download and install [RStudio](https://www.rstudio.com/products/rstudio/download/).
+
+2. Open RStudio from your applications menu. In the Console (bottom left) pane, type `install.packages("tidyverse")` and hit enter.
+
+You should be good to go! If you encounter any issues, please contact [Susan Vanderplas](mailto://susan.vanderplas@usu.edu) and she can help you resolve any errors or set you up with an alternate means to use R and RStudio through the browser. 
