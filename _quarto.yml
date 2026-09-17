@@ -16,7 +16,7 @@ website:
   description: "Homepage for Data Science Workshops 2026 on Visualization and Public Data"
   site-url: "https://data-vis-workshops.github.io/2026-USU-PublicDataVis/"
 
-  repo-url: https://github.com/data-vis-workshops/2026-USU-PublicDataVis/
+  repo-url: https://github.com/data-Vis-Workshops/2026-USU-PublicDataVis/
   repo-actions: [issue]
 
   open-graph: true

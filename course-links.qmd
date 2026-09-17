@@ -3,8 +3,28 @@
 ## Books and Inspiration
 
 - Observe, Collect, Draw! A Visual Journal, by Giorgia Lupi & Stefanie Posavec [Amazon](https://www.amazon.com/Observe-Collect-Draw-Visual-Journal/dp/1616897147), [Author's site](https://giorgialupi.com/observe-collect-draw/)
-
+  - Dear Data, by Giorgia Lupi & Stefanie Posavec [Amazon](https://www.amazon.com/Dear-Data-Giorgia-Lupi/dp/1616895322/), [Author's site](https://giorgialupi.com/dear-data)
+  
 - Drawing Data with Kids, Cultivating Data-Literacy: A screen-free journey through the art of visualization for kids, by Gulrez Khan [Amazon](https://www.amazon.com/dp/1088205798/), [Author's site](https://drawingdatawithkids.com) -- includes free activities for classes
 
 - Math with Bad Drawings, by Ben Orlin [Amazon](https://www.amazon.com/Math-Bad-Drawings-Illuminating-Reality/dp/0316509043), [Author's site](https://mathwithbaddrawings.com)
     - Math Games with Bad Drawings, by Ben Orlin [Amazon](https://www.amazon.com/Math-Games-Bad-Drawings-Challenging/dp/0762499869/)
+    
+## Public Data Sources
+
+- [Utah GIS Data](https://opendata.gis.utah.gov) - maps, landmarks, demographics, climate, economy, energy, farming, geoscience, health, history, political science, recreation, society, transportation, utilities, and water. 
+
+- [Data.gov](https://data.gov) - more than 500k datasets from the US government
+  - Lake Powell [Releases](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-release-total-cfs-time-ser?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D and [Reservoir Elevation](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-elevation-ft-time-series-d?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D)
+  - Great Salt Lake [Bathymetry: Elevation, Area, and Volume tables](https://catalog.data.gov/dataset/great-salt-lake-elevation-area-volume-tables?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D)
+  - EnviroAtlas Salt Lake City
+    - [1 $\text{km}^2$ resolution data on the proportion of impervious surfaces](https://catalog.data.gov/dataset/enviroatlas-salt-lake-city-ut-impervious-proximity-gradient?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsIm9yZ19zbHVnIjoiZXBhIiwic3BhdGlhbF9nZW9tZXRyeSI6IntcInR5cGVcIjpcIk11bHRpUG9seWdvblwiLFwiY29vcmRpbmF0ZXNcIjpbW1tbLTExNC4wNDczLDM2Ljk5MTddLFstMTE0LjA0NzMsNDIuMDAyM10sWy0xMDkuMDQzMiw0Mi4wMDIzXSxbLTEwOS4wNDMyLDM2Ljk5MTddLFstMTE0LjA0NzMsMzYuOTkxN11dXV19Iiwic3BhdGlhbF93aXRoaW4iOiJ0cnVlIiwiZ2VvZ3JhcGh5X2xhYmVsIjoiVXRhaCJ9)
+    - Tree cover along [walkable roads](https://catalog.data.gov/dataset/enviroatlas-salt-lake-city-ut-estimated-percent-tree-cover-along-walkable-roads?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsIm9yZ19zbHVnIjoiZXBhIiwic3BhdGlhbF9nZW9tZXRyeSI6IntcInR5cGVcIjpcIk11bHRpUG9seWdvblwiLFwiY29vcmRpbmF0ZXNcIjpbW1tbLTExNC4wNDczLDM2Ljk5MTddLFstMTE0LjA0NzMsNDIuMDAyM10sWy0xMDkuMDQzMiw0Mi4wMDIzXSxbLTEwOS4wNDMyLDM2Ljk5MTddLFstMTE0LjA0NzMsMzYuOTkxN11dXV19Iiwic3BhdGlhbF93aXRoaW4iOiJ0cnVlIiwiZ2VvZ3JhcGh5X2xhYmVsIjoiVXRhaCJ9) and [busy roads](https://catalog.data.gov/dataset/enviroatlas-salt-lake-city-ut-estimated-tree-cover-along-busy-roads?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsIm9yZ19zbHVnIjoiZXBhIiwic3BhdGlhbF9nZW9tZXRyeSI6IntcInR5cGVcIjpcIk11bHRpUG9seWdvblwiLFwiY29vcmRpbmF0ZXNcIjpbW1tbLTExNC4wNDczLDM2Ljk5MTddLFstMTE0LjA0NzMsNDIuMDAyM10sWy0xMDkuMDQzMiw0Mi4wMDIzXSxbLTEwOS4wNDMyLDM2Ljk5MTddLFstMTE0LjA0NzMsMzYuOTkxN11dXV19Iiwic3BhdGlhbF93aXRoaW4iOiJ0cnVlIiwiZ2VvZ3JhcGh5X2xhYmVsIjoiVXRhaCJ9)
+    
+  - [Supply Chain Greenhouse Gas Emission Factors](https://catalog.data.gov/dataset/supply-chain-greenhouse-gas-emission-factors-v1-3-by-naics-6?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6Im5vbi1nZW9zcGF0aWFsIn0%3D)
+  
+  - [Meteorite Landings](https://catalog.data.gov/dataset/meteorite-landings?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6Im5vbi1nZW9zcGF0aWFsIn0%3D)
+  
+  - [CDC WONDER: Cancer Statistics](https://catalog.data.gov/dataset/cdc-wonder-cancer-statistics?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6Im5vbi1nZW9zcGF0aWFsIn0%3D)
+  
+  - [Baby Names from the Social Security Administration](https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-data?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiJiYWJ5IG5hbWVzIiwic3BhdGlhbF9maWx0ZXIiOiIifQ%3D%3D)
