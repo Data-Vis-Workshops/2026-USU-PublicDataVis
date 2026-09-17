@@ -1,0 +1,35 @@
+---
+title: "Data Science Workshops 2026: Visualization and Public Data"
+format: html
+---
+
+Welcome to the 2026 Data Science Workshops!
+
+::: {.callout-note collapse=true}
+## Schedule
+
+::: panel-tabset
+
+{{< include Blanding.qmd >}}
+
+{{< include Roosevelt.qmd >}}
+
+:::
+
+:::
+
+::: callout-note
+
+## Workshop 
+
+Prerequisites
+
+If you are planning to participate in the workshop, you should bring:
+
+1. A laptop    
+If you don't have a computer you can bring, please contact [Eric Rowley (Blanding)](mailto://eric.rowley@usu.edu) or [Don Busenbark (Roosevelt)](mailto://don.busenbark@usu.edu) to arrange to use a loaner laptop.
+2. R and RStudio software (see instructions below)
+
+{{< include setup.qmd >}}
+
+:::

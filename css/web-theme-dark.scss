@@ -1,42 +1,89 @@
+/*-- scss:uses --*/
+@use 'sass:color';
+
 /*-- scss:defaults --*/
 
 @import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
 
 $font-family: "Atkinson Hyperlegible", sans-serif;
 
+$aggie-blue: #0F2439;
+$white: #FFFFFF;
+$black: #000000;
+$pink-lt: #f692a1; /* 7.16 contrast with aggie blue */
+$pink: #f16278;
+$pink-dk: #B21028; /* 7 contrast with white */
+$orange-lt: #F9DCBE; /* 12.02 contrast with aggie blue */
+$orange: #f58220;
+$orange-dk: #8e4506; /* 6.99 contrast with white */
+$yellow-lt: #f9df90; /* 12.0 contrast with aggie blue */
+$yellow: #f6bd17;
+$yellow-dk: #6f5506; /* 7.05 contrast with white */
+$green-lt: #30c58e; /* 7.13 contrast with aggie blue */
+$green: #124734;
+$green-dk: #0f3e2c; /* 12.02 contrast with white */
+$sage-lt: #90b6a8; /* 7.09 contrast with aggie blue */
+$sage: #6b9e85;
+$sage-dk: #3e604c; /* 7.04 contrast with white */
+$cerulean-lt: #9febfe; /* 12.0 contrast with aggie blue */
+$cerulean: #01add8;
+$cerulean-dk: #016179; /* 7.02 contrast with white */
+$blue-lt: #6bb7e1; /* 7.12 contrast with aggie blue */
+$blue: #288dc2;
+$blue-dk: #1a5c7f; /* 7.28 contrast with white */
+$grey-lt: #a9afb2; /* 7.1 contrast with aggie blue */
+$grey: #a9afb2;
+$grey-dk: #4f5959; /* 7.22 contrast with white */
+$gray-lt: #a9afb2; /* 7.1 contrast with aggie blue */
+$gray: #a9afb2;
+$gray-dk: #4f5959; /* 7.22 contrast with white */
+$sand-lt: #e0e0d6; /* 11.86 contrast with aggie blue */
+$sand: #d1cbbd;
+$sand-dk: #5d5741; /* 7.22 contrast with white */
+
+$link-color: #e1f1f9;
+
+$primary: $aggie-blue;
+$secondary: $green-dk;
+$navbar-dark-color: rgba($primary, .75) !important;
+$navbar-dark-hover-color: $primary !important;
+$theme-colors: (
+  "primary": $aggie-blue,
+  "secondary": $green-dk,
+  "success": $sage-dk,
+  "info": $cerulean-dk,
+  "warning": $yellow-dk,
+  "danger": $orange-dk,
+  "dark": $aggie-blue,
+  "link": $sand-lt
+);
+
 // Base document colors
-$body-bg: #181818;
 $body-color: white;
-$link-color: #75AADB;
-
-$light: #525252;
-
-// Navigation element colors
-$footer-bg: #181818;
-$navbar-bg: #303030;
-$sidebar-bg: #303030;
 
 // Code blocks
 $code-block-bg-alpha: -.8;
 
 // Bootstrap popovers
-$popover-bg: #242424;
+$popover-bg: #0F2439;
 
 // Bootstrap inputs
-$input-bg: #242424;
+$input-bg: #0F2439;
 
 
 /*-- scss:rules --*/
 
-.layout-example {
-  background: $gray-700;
-}
-
 a {
-  font-size:calc(24px + 0.5vw);
-  line-height: 1.5;
+  line-height: calc(24px + 0.5vw);
+  font-weight:600;
+  color: $sand-lt!important;
 }
 
 .sidebar-logo{
   max-width:150px;
+}
+
+#quarto-sidebar .sidebar-title a {
+  color: "#ffffff"!important;
+  font-size: 2ex!important;
 }

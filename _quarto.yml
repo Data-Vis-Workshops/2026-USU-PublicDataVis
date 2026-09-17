@@ -1,0 +1,82 @@
+project:
+  type: website
+  output-dir: docs
+  post-render:
+    - code/touch-jekyll
+  render:
+    - index.qmd
+    - Roosevelt.qmd
+    - Blanding.qmd
+    - slides/*.qmd
+
+engine: knitr
+website:
+  page-navigation: true
+  title: "Visualization & Public Data"
+  description: "Homepage for Data Science Workshops 2026 on Visualization and Public Data"
+  site-url: "https://data-vis-workshops.github.io/2026-USU-PublicDataVis/"
+
+  repo-url: https://github.com/data-vis-workshops/2026-USU-PublicDataVis/
+  repo-actions: [issue]
+
+  open-graph: true
+
+  page-footer:
+    left: "&copy; Copyright 2026, Susan Vanderplas & Heike Hofmann"
+    background: "$secondary"
+
+  navbar:
+    background: "$secondary"
+    aria-label: "Top nagivation bar"
+    search: false
+    left:
+      - text: "Workshop Information"
+        aria-label: "Workshop information"
+        menu:
+        - href: index.qmd
+          text: Home
+        - href: setup.qmd
+          text: Setup Your Computer
+        - href: Blanding.qmd
+          text: USU Blanding Schedule
+        - href: Roosevelt.qmd
+          text: USU Roosevelt Schedule
+        - href: course-links.qmd
+          text: Useful links
+
+fontsize: "18pt"
+lineheight: "1.5ex"
+
+format:
+  html:
+    page-layout: full
+    grid:
+      sidebar-width: 400px
+      body-width: 800px
+      margin-width: 0px
+    theme:
+      light: [css/web-theme.scss, flatly]
+      dark: [css/web-theme-dark.scss, darkly]
+    mainfont: "Atkinson Hyperlegible"
+    toc: true
+
+# filters:
+#   - linkrot
+
+# extensions:
+  # linkrot:
+  #   fail-on-error: false      # Set to true to fail the build if broken links are found
+  #   timeout: 10               # Timeout in seconds for each URL check
+  #   user-agent: "Quarto-Linkrot/1.0"  # User agent string for requests
+  #   cache-results: true       # Cache results to avoid checking the same URL multiple times
+  #   debug: false              # Enable debug logging
+  #   output-file: linkrot-report.txt   # Write results to a file (e.g., "linkrot-report.txt")
+  #   skip-patterns:            # List of regex patterns to skip
+  #     - "example\\.com"
+  #     - "localhost"
+  #     - "usu\\.instructure\\.com"
+  #     - "archive\\.org"
+
+execute:
+  freeze: auto  # re-render only when source changes
+

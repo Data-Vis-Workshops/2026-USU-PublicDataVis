@@ -1,36 +1,32 @@
----
-title: "Roosevelt Schedule"
-format: html
----
+### Roosevelt
 
-
-## October 1, 2026
+#### October 1, 2026
 
 Session #1 of Data Science Workshop, 2:00 - 5:00 pm
 
-| Time        | Topic         | Slides | Materials |
-|-------------|---------------|--------|-----------|
-| 2:00 - 2:30 | Introductions |        |           |
-| 2:30 - 3:20 |               |        |           |
-| 3:20 - 3:30 | Break         |        |           |
-| 3:30 - 4:20 |               |        |           |
-| 4:20 - 4:30 | Break         |        |           |
-| 4:30 - 5:00 |               |        |           |
+| Time        | Topic                                           | Materials |
+|-------------|-------------------------------------------------|-----------|
+| 2:00 - 2:30 | [Introductions](slides/introductions.qmd)       |           |
+| 2:30 - 3:20 | [Why Graphics?](slides/why-graphics.qmd)        |           |
+| 3:20 - 3:30 | Break                                           |           |
+| 3:30 - 4:20 | [How to Make Graphics](slides/how-graphics.qmd) |           |
+| 4:20 - 4:30 | Break                                           |           |
+| 4:30 - 5:00 | [Perception & Graphics](slides/perception.qmd)  |           |
 
-: Schedule for Workshop Session #1
+: Schedule for Workshop Session #1. Slides are linked for each topic.
 
-## October 2, 2026
+#### October 2, 2026
 
 Session #2 of Data Science Workshop, 8:00 am - 12:00 pm
 
-| Time          | Topic | Slides | Materials |
-|---------------|-------|--------|-----------|
-| 8:00 - 8:50   |       |        |           |
-| 8:50 - 9:00   | Break |        |           |
-| 9:00 - 9:50   |       |        |           |
-| 9:50 - 10:00  | Break |        |           |
-| 10:00 - 10:50 |       |        |           |
-| 10:50 - 11:00 | Break |        |           |
-| 11:00 - 12:00 |       |        |           |
+| Time | Topic | Materials |
+|-------------|----------------------------------|-------------|
+| 8:00 - 8:50 | [Public Data Showcase](slides/public-data.qmd) |  |
+| 8:50 - 9:00 | Break |  |
+| 9:00 - 9:50 | [Theming & Customizing Charts](slides/theming.qmd) |  |
+| 9:50 - 10:00 | Break |  |
+| 10:00 - 10:50 | [Personal Data Activities](slides/personal-data.qmd) |  |
+| 10:50 - 11:00 | Break |  |
+| 11:00 - 12:00 | [Discussion: Resources and Opportunities](slides/resources-opportunities.qmd) |  |
 
-: Schedule for Workshop Session #2
+: Schedule for Workshop Session #2. Slides are linked for each topic.
