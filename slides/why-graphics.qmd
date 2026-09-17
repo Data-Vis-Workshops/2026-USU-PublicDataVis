@@ -33,6 +33,16 @@ library(vipor) # us counties data
 library(tigris)
 library(scales)
 theme_set(theme_bw())
+
+if(!file.exists("data/utah-counties.Rdata")){
+  utah_counties <- counties("UT")
+  data("counties", package = "vipor")
+  utah_counties_data <- counties |>
+    filter(state == "Utah") |>
+    mutate(population = as.numeric(population))
+  utah_counties <- left_join(utah_counties, utah_counties_data, by = c("NAMELSAD" = "county"))
+  save(utah_counties, file = "data/utah-counties.Rdata")
+}
 ```
 
 
@@ -184,12 +194,6 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width)) +
   geom_point() +
   labs(x = "", y = "", title = "Scatterplot")
 
-data("counties", package = "vipor")
-utah_counties <- counties("UT")
-utah_counties_data <- counties |>
-  filter(state == "Utah") |>
-  mutate(population = as.numeric(population))
-utah_counties <- left_join(utah_counties, utah_counties_data, by = c("NAMELSAD" = "county"))
 utah_counties |>
   ggplot() +
   geom_sf(aes(fill = population)) +
