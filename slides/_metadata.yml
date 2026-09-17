@@ -1,7 +1,7 @@
 format:
   revealjs:
     navigation-mode: vertical
-    logo: 
+    logo:
       path: ../css/usu-sq.png
       alt: "Utah State University Logo"
     css: ../css/styles.scss
@@ -10,6 +10,9 @@ format:
     lib_dir: libs
     highlight: "arrow"
     chalkboard: true
+    progress: true
+    lightbox: true
+    footer: "[Data Visualization & Public Data Workshops](https://data-vis-workshops.github.io/2026-USU-PublicDataVis/)"
     code-annotations: hover
     include-in-header:
       - text: |
