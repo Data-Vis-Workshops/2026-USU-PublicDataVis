@@ -28,7 +28,7 @@ library(readr)
 library(ragg)
 library(ggpcp)
 library(ggmosaic)
-library(ggradar)
+# library(ggradar)
 library(vipor) # us counties data
 library(tigris)
 library(scales)
@@ -58,6 +58,7 @@ if(!file.exists("data/utah-counties.Rdata")){
 #| message: false
 #| warning: false
 #| echo: false
+#| eval: false
 #| fig-cap: "The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star's life cycle: a hypothesis that only came to be because of this chart."
 #| fig-alt: "A scatter plot showing the color index of a star on the x-axis and the absolute magnitude (brightness) of the star on the y-axis. Points are colored by spectral class, which varies from blue to white to yellow to red as the color index increases and the star's temperature decreases. Points are primarily located along a downward-sloping line from the top left to the bottom right, which is labeled the 'main sequence'. There is another set of points which diverges from the main sequence and extends out horizontally in the middle of the graph; these are labeled 'giants', and a few outliers that are above the giant cluster are labeled 'supergiants'. Below the main sequence stars, there are outliers which are labeled 'dwarfs'."
 #| dev: agg_png
@@ -106,6 +107,14 @@ ggplot(data = filter(stars, dist < 500)) +
   coord_cartesian(xlim = c(-.25, 2.25), ylim = c(-12, 7)) +
   guides(color = guide_legend(override.aes = list(alpha = 1, size = 3)))
 ```
+
+```{r}
+#| fig-cap: "The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star's life cycle: a hypothesis that only came to be because of this chart."
+#| fig-alt: "A scatter plot showing the color index of a star on the x-axis and the absolute magnitude (brightness) of the star on the y-axis. Points are colored by spectral class, which varies from blue to white to yellow to red as the color index increases and the star's temperature decreases. Points are primarily located along a downward-sloping line from the top left to the bottom right, which is labeled the 'main sequence'. There is another set of points which diverges from the main sequence and extends out horizontally in the middle of the graph; these are labeled 'giants', and a few outliers that are above the giant cluster are labeled 'supergiants'. Below the main sequence stars, there are outliers which are labeled 'dwarfs'."
+
+knitr::include_graphics("images/HR-diagram-1.png")
+```
+
 
 Data source: the [HYG Database](https://github.com/astronexus/HYG-Database). Only stars within 500 AU are shown.
 
