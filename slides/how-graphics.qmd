@@ -3,3 +3,152 @@ title: How to Make Graphics
 format: revealjs
 css: ../css/slide-theme.scss
 ---
+
+# Data Types, Formats, and Structures
+
+## First Things First!
+
+Before we start creating graphics...
+
+Know the [**type**]{.emph .cerulean-dk .large} and [**format**]{.emph .green .large} of the data you’re working with.\
+<br/>
+
+[**Why?**]{.fragment .large}
+
+::: incremental
+- the data contains all of the information you want to convey
+
+- the appropriate chart depends on the data type
+
+- Working with R and ggplot is much easier if the data you use is in the right shape
+:::
+
+![](images/messy-data.png){.fragment fig-alt="A group of four tables are all different shapes, look ragged and concerned, and have different speech bubbles reading (from left to right) “my column are values and my rows are variables”, “I have variables in columns AND in rows”, “I have multiple variables in a single column”, and “I don’t even KNOW what my deal is.”" width="50%"}
+
+## Data: levels of measurement
+
+#### Quantitative
+
+- Continuous (e.g. height, weight)
+- Discrete (e.g. age in years)
+
+#### Qualitative
+
+- Nominal: categories have no meaningful order (e.g. colors)
+- Ordinal: categories have order but no meaningful distance between categories (e.g. five star ratings)
+
+## Data: Dimensions and Type
+
+| Dimensions                 | Types                                 |
+|----------------------------|---------------------------------------|
+| Univariate (1 variable)    | Count (word freq, scores)             |
+| Bivariate (2 variables)    | Time Series, Relationships            |
+| Multivariate (3 variables) | Spatial                               |
+|                            | Time to Event (Survival, Reliability) |
+|                            | Categorical                           |
+
+## Exploring Relationships
+
+::: {layout="[3, 1, 1, 1, 1]"}
+
+Continuous vs. Continuous
+
+![scatter plot](images/ScatterPlotSmall.png){fig-alt="small icon of a scatterplot" width="60px" height="60px"} 
+
+![line plot](images/LineSmall.png){fig-alt="small icon of a line plot" width="60px" height="60px"}
+
+![2D density plot](images/2dDensitySmall.png){fig-alt="small icon of a 2D density plot" width="60px" height="60px"}
+
+![area plot](images/AreaSmall.png){fig-alt="small icon of an area plot" width="60px" height="60px"}
+
+
+Continuous vs. Categorical
+
+![boxplot](images/Box1Small.png){fig-alt="small icon of a box plot" width="60px" height="60px"}
+
+![dotcharts](images/DotSmall.png){fig-alt="small icon of a dot plot" width="60px" height="60px"}  
+
+![multiple density plots](images/DensitySmall.png){fig-alt="small icon of a density plot" width="60px" height="60px"}
+
+![violin plots](images/ViolinSmall.png){fig-alt="small icon of a violin plot" width="60px" height="60px"}
+
+Categorical vs. Categorical
+
+![mosaic plot](images/MosaicSmall.png){fig-alt="small icon of a mosaic plot" width="60px" height="60px"} 
+
+![heat map](images/HeatmapSmall.png){fig-alt="small icon of a heatmap" width="60px" height="60px"}
+
+![grouped barplot](images/GroupedBarSmall.png){fig-alt="small icon of a grouped bar plot" width="60px" height="60px"} 
+
+![stacked barplots](images/StackedBarSmall.png){fig-alt="small icon of a stacked bar plot" width="60px" height="60px"}
+
+:::
+
+::: {layout="[3, 4]"}
+Multidimensional
+
+It depends...
+
+:::
+
+::: callout-tip
+
+#### Resources
+
+[Data to Viz](https://www.data-to-viz.com) - figure out what type(s) of chart to use for your data     
+[(use with an ad blocker)]{.small}
+:::
+
+## Tidy Data
+
+![Tidy Data: each variable is a column, each observation is a row, each cell is a single measurement](images/allison-horst-tidy-data.jpg){fig-alt="Stylized text providing an overview of Tidy Data. The top reads “Tidy data is a standard way of mapping the meaning of a dataset to its structure. - Hadley Wickham.” On the left reads “In tidy data: each variable forms a column; each observation forms a row; each cell is a single measurement.” There is an example table on the lower right with columns ‘id’, ‘name’ and ‘color’ with observations for different cats, illustrating tidy data structure." width="90%"}
+
+`ggplot2` assumes your data is tidy
+
+## Untidy data
+
+> Happy families are all alike; every unhappy family is unhappy in its own way. - Leo Tolstoy
+
+::: fragment
+#### Five main ways tables of data tend not to be tidy
+:::
+
+::: incremental
+1.  Column headers are values, not variable names.
+
+2.  Multiple variables are stored in one column.
+
+3.  Variables are stored in both rows and columns.
+
+4.  Multiple types of observational units are stored in the same table.
+
+5.  A single observational unit is stored in multiple tables.
+:::
+
+
+::: {.callout-tip .fragment}
+
+AI can be very useful to help you find the right R commands to move from untidy to tidy data. 
+
+Other resources: [Reshaping Data](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/05-data-reshape.html), a chapter in Statistical Computing in R and Python (free website)
+
+:::
+
+# `ggplot2`
+
+![ggplot2: Build a data masterpiece](images/ggplot2-data-masterpiece.png){fig-alt="A fuzzy monster in a beret and scarf, critiquing their own column graph on a canvas in front of them while other assistant monsters (also in berets) carry over boxes full of elements that can be used to customize a graph (like themes and geometric shapes). In the background is a wall with framed data visualizations. Stylized text reads “ggplot2: build a data masterpiece.” Learn more about ggplot2." width="70%"}
+
+## ggplot2 basics
+
+`ggplot2` is based on the **grammar of graphics** - every chart is based on the same components: 
+
+1. a data set, 
+2. coordinate system, 
+3. geoms -- visual marks that represent data points
+
+Values from the data set are **mapped** to properties of the geom using **aesthetics** like size, color, and/or x and y location
+
+![](images/grammar-data-coord-plot1.png){fig-alt="A dataset mapped to geoms, plus a coordinate system, yields a plot. Here, dat is mapped to x and y."}
+
+
+![](images/grammar-data-coord-plot2.png){fig-alt="A dataset mapped to geoms, plus a coordinate system, yields a plot. Here, data is mapped to x, y, color, and size."}

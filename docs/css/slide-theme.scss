@@ -313,3 +313,13 @@ $highlightcolors: (
 .cell-output {
   font-size: 130%
 }
+
+.line-header {
+  display: inline-block;
+  width: 100%!important;
+  margin-bottom: 60px!important;
+  margin-top: 60px!important;
+}
+.line-content{
+  display: inline-block;
+}
