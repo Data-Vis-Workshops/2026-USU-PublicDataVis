@@ -197,6 +197,47 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="data-summaries" class="title-slide slide level1 center">
+<h1>Data Summaries</h1>
+<ul>
+<li>Statistical Summaries are often not enough</li>
+<li>below: summaries of thirteen datasets of 142 observations each</li>
+</ul>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 13 × 6
+   dataset    mean_x  sd_x mean_y  sd_y    corr
+   &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
+ 1 away         54.3  16.8   47.8  26.9 -0.0641
+ 2 bullseye     54.3  16.8   47.8  26.9 -0.0686
+ 3 circle       54.3  16.8   47.8  26.9 -0.0683
+ 4 dino         54.3  16.8   47.8  26.9 -0.0645
+ 5 dots         54.3  16.8   47.8  26.9 -0.0603
+ 6 h_lines      54.3  16.8   47.8  26.9 -0.0617
+ 7 high_lines   54.3  16.8   47.8  26.9 -0.0685
+ 8 slant_down   54.3  16.8   47.8  26.9 -0.0690
+ 9 slant_up     54.3  16.8   47.8  26.9 -0.0686
+10 star         54.3  16.8   47.8  26.9 -0.0630
+11 v_lines      54.3  16.8   47.8  26.9 -0.0694
+12 wide_lines   54.3  16.8   47.8  26.9 -0.0666
+13 x_shape      54.3  16.8   47.8  26.9 -0.0656</code></pre>
+</div>
+</div>
+</section>
+
+<section id="visualize-it" class="title-slide slide level1 center">
+<h1>Visualize it!</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="why-graphics_files/figure-revealjs/unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="why-graphics_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+
 <section>
 <section id="overview-types-of-graphs" class="title-slide slide level1 center">
 <h1>Overview: Types of Graphs</h1>
@@ -233,19 +274,19 @@
 <div class="cell quarto-layout-panel" data-layout-ncol="5">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/beg-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="why-graphics_files/figure-revealjs/beg-1.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/beg-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="why-graphics_files/figure-revealjs/beg-1.png" data-fig-pos="center" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/beg-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="why-graphics_files/figure-revealjs/beg-2.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/beg-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="why-graphics_files/figure-revealjs/beg-2.png" data-fig-pos="center" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/beg-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="why-graphics_files/figure-revealjs/beg-3.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/beg-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="why-graphics_files/figure-revealjs/beg-3.png" data-fig-pos="center" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/beg-4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="why-graphics_files/figure-revealjs/beg-4.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/beg-4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="why-graphics_files/figure-revealjs/beg-4.png" data-fig-pos="center" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/beg-5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="why-graphics_files/figure-revealjs/beg-5.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/beg-5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="why-graphics_files/figure-revealjs/beg-5.png" data-fig-pos="center" width="384"></a></p>
 </div>
 </div>
 </div>
@@ -267,24 +308,24 @@
 <div class="cell quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/int-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="why-graphics_files/figure-revealjs/int-1.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/int-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="why-graphics_files/figure-revealjs/int-1.png" data-fig-pos="center" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/int-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="why-graphics_files/figure-revealjs/int-2.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/int-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="why-graphics_files/figure-revealjs/int-2.png" data-fig-pos="center" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/int-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="why-graphics_files/figure-revealjs/int-3.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/int-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="why-graphics_files/figure-revealjs/int-3.png" data-fig-pos="center" width="384"></a></p>
 </div>
 </div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/int-4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="why-graphics_files/figure-revealjs/int-4.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/int-4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="why-graphics_files/figure-revealjs/int-4.png" data-fig-pos="center" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/int-5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="why-graphics_files/figure-revealjs/int-5.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/int-5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="why-graphics_files/figure-revealjs/int-5.png" data-fig-pos="center" width="384"></a></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><a href="why-graphics_files/figure-revealjs/int-6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="why-graphics_files/figure-revealjs/int-6.png" data-fig-pos="center" width="384"></a></p>
+<p><a href="why-graphics_files/figure-revealjs/int-6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="why-graphics_files/figure-revealjs/int-6.png" data-fig-pos="center" width="384"></a></p>
 </div>
 </div>
 </div>
