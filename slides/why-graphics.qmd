@@ -6,12 +6,12 @@ css: ../css/slide-theme.scss
 ```{r}
 #| eval: false
 pak::pak("heike/ggpcp")
-pak::pak("haleyjeppson/ggmosaic")
+pak::pak("heike/ggmosaic")
 pak::pak("ricardo-bion/ggradar")
 ```
 
 
-```{r}
+```{r }
 #| echo: false
 #| message: false
 #| warning: false
@@ -32,6 +32,7 @@ library(ggmosaic)
 library(vipor) # us counties data
 library(tigris)
 library(scales)
+library(datasauRus)
 theme_set(theme_bw())
 
 if(!file.exists("data/utah-counties.Rdata")){
@@ -50,7 +51,7 @@ if(!file.exists("data/utah-counties.Rdata")){
 
 ## {.inverse}
 
-```{r}
+```{r cache=TRUE}
 #| label: HR-diagram
 #| fig-width: 1200
 #| fig-height: 800
@@ -143,6 +144,28 @@ When drawn well, statistical graphics help us understand our data and see things
 Well designed graphs can help us understand the natural phenomenon behind the raw numerical data we've collected.
 :::
 
+# Data Summaries
+
+- Statistical Summaries are often not enough
+- below: summaries of thirteen datasets of 142 observations each
+
+```{r}
+datasaurus_dozen |> group_by(dataset) |>
+  summarize(
+    mean_x = mean(x),
+    sd_x = sd(x),
+    mean_y = mean(y),
+    sd_y = sd(y),
+    corr = cor(x, y)
+  )
+```
+
+# Visualize it!
+
+```{r}
+datasaurus_dozen |> ggplot(aes(x =x, y = y)) + 
+  facet_wrap(~dataset)
+```
 
 # Overview: Types of Graphs
 
