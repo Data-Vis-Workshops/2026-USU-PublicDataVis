@@ -1,0 +1,146 @@
+---
+title: Weather Data
+format: revealjs
+---
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE, 
+  collapse = TRUE,
+  comment = "",
+  fig.height = 5,
+  fig.width = 8,
+  fig.align = "center",
+  cache = FALSE,
+  echo=FALSE
+)
+```
+
+```{r}
+#| echo: false
+#| eval: false
+#pak::pak("hadley/emo")
+#pak::pak("mitchelloharawild/icons")
+```
+
+```{r setup}
+library(leaflet)
+library(readr)
+library(tidyverse)
+library(htmlwidgets)
+
+```
+
+## Weather Stations in Utah (30 years plus)
+
+Clicking on point downloads data
+
+```{r}
+ut_stations <- read_csv("data/ut_stations.csv") |>
+  mutate(id = gsub("GHCND:", "", id), 
+         years = round((maxdate-mindate)/365)) |>
+  mutate(
+    file = sprintf("https://www.ncei.noaa.gov/pub/data/ghcn/daily/by_station/%s.csv.gz", id)
+  )
+
+ut_stations |>
+  filter(years > 30 ) |>
+  leaflet() |> addTiles() |> 
+  addCircleMarkers(lng = ~lon, lat=~lat, 
+                   label = ~paste(name, id, 
+                                  years, 
+                                  sep=" | "),
+                   layerId = ~file,
+                   radius = 5) |>
+  onRender("
+    function(el, x) {
+      this.eachLayer(function(layer) {
+        if (layer instanceof L.CircleMarker) {
+          layer.on('click', function(e) {
+            var url = layer.options.layerId;
+
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = '';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+          });
+        }
+      });
+    }
+  ")
+
+```
+
+## 
+
+```{r read-data}
+files <- dir("data/stations", pattern="csv.gz",
+             full.names = TRUE )
+weather <- read_csv(files,
+col_names = c(
+      "id", "date", "element", "value",
+      "m_flag", "q_flag", "s_flag", "obs_time"
+    ),
+    col_types = cols(
+      id       = col_character(),
+      date     = col_date(format = "%Y%m%d"),
+      element  = col_character(),
+      value    = col_double(),
+      m_flag   = col_character(),
+      q_flag   = col_character(),
+      s_flag   = col_character(),
+      obs_time = col_character()
+    ),
+    na = c("", "-9999")
+)
+
+weather <- weather |> left_join(ut_stations |> select(id, name))
+```
+
+
+```{r}
+weather |> 
+  filter(element == "TMIN") |>
+  ggplot(aes(x = year(date), y = value)) + 
+  geom_point(aes(colour = name)) +
+  facet_wrap(~month(date, label=TRUE)) +
+  geom_smooth(method="lm", aes(group = name)) + 
+  theme(legend.position = "bottom") + 
+  ggtitle("Minimum Daily Temperature")
+```
+
+## Your Turn {.inverse .large}
+
+Introduce yourself!
+
+1. Your Name
+2. What grade(s) and/or subject(s) you teach
+3. What you hope to learn from this workshop
+4. What type of data you geek out over
+
+
+
+
+## Resources
+
+-   Reference Sheets
+  - [RStudio](https://opensource.posit.co/resources/cheatsheets/rstudio-ide/)
+  - [Creating plots with ggplot2](https://opensource.posit.co/resources/cheatsheets/data-visualization/)
+  - [Importing Data](https://opensource.posit.co/resources/cheatsheets/data-import/)
+  - Wrangling Data: [dplyr](https://opensource.posit.co/resources/cheatsheets/data-transformation/), [tidyr](https://opensource.posit.co/resources/cheatsheets/tidyr/), [stringr](https://opensource.posit.co/resources/cheatsheets/strings/), [lubridate](https://opensource.posit.co/resources/cheatsheets/lubridate/)
+- Q/A site: <http://stackoverflow.com>
+- Free reference books:
+  - [Statistical Computing with R and Python](https://srvanderplas.github.io/stat-computing-r-python/), by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)
+  - [Big Book of R](https://www.bigbookofr.com) - A Book of (free) R books
+
+::: bottom
+[<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.]{style="display:inline-block;"}
+:::
