@@ -28,13 +28,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.17839331"
-     inkscape:cx="2034.8297"
-     inkscape:cy="838.03592"
-     inkscape:window-width="1920"
-     inkscape:window-height="1052"
+     inkscape:cx="2037.6325"
+     inkscape:cy="835.23313"
+     inkscape:window-width="937"
+     inkscape:window-height="281"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
@@ -1657,170 +1657,170 @@
     <g
        id="g44"
        transform="matrix(3.3741287,0,0,3.3741287,-756.78105,-3087.2234)"
-       style="fill:#808080;stroke:#808080;stroke-width:0.0784154">
+       style="fill:#808080;stroke:#808080;stroke-width:0.07853879;stroke-dasharray:none">
       <rect
-         style="fill:none;stroke:#000000;stroke-width:0.296373;stroke-linecap:round;stroke-linejoin:bevel"
+         style="fill:none;stroke:#000000;stroke-width:0.07853879;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
          id="rect36"
          width="37.046402"
          height="37.314529"
          x="392.02972"
          y="942.3031" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.296373;stroke-linecap:round;stroke-linejoin:bevel"
+         style="fill:none;stroke:#000000;stroke-width:0.07853879;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
          d="m 396.66054,942.30307 v 37.55347"
          id="path37" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.296373;stroke-linecap:round;stroke-linejoin:bevel"
+         style="fill:none;stroke:#000000;stroke-width:0.07853879;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
          d="m 401.29148,942.30307 v 37.55347"
          id="path38" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.296373;stroke-linecap:round;stroke-linejoin:bevel"
+         style="fill:none;stroke:#000000;stroke-width:0.07853879;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
          d="m 405.92201,942.30307 v 37.55347"
          id="path39" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.296373;stroke-linecap:round;stroke-linejoin:bevel"
+         style="fill:none;stroke:#000000;stroke-width:0.07853879;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
          d="m 410.53781,942.30307 0.0151,37.55347"
          id="path40" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.296373;stroke-linecap:round;stroke-linejoin:bevel"
+         style="fill:none;stroke:#000000;stroke-width:0.07853879;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
          d="m 415.18388,942.30307 v 37.55347"
          id="path41" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.296373;stroke-linecap:round;stroke-linejoin:bevel"
+         style="fill:none;stroke:#000000;stroke-width:0.07853879;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
          d="m 419.81441,942.30307 v 37.55347"
          id="path42" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:0.296373;stroke-linecap:round;stroke-linejoin:bevel"
+         style="fill:none;stroke:#000000;stroke-width:0.07853879;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
          d="M 424.44534,942.30307 V 979.6176"
          id="path43" />
       <g
          id="g43"
          transform="matrix(0,1,-0.97832671,0,1370.5073,532.74517)"
-         style="stroke-width:0.0792792">
+         style="stroke-width:0.07940398;stroke-dasharray:none">
         <g
            id="path1446-0-5"
            clip-path="url(#clipPath1447-4-0)"
-           style="fill:#808080;stroke:#808080;stroke-width:0.0792792"
+           style="fill:#808080;stroke:#808080;stroke-width:0.07532639;stroke-dasharray:none"
            transform="matrix(1.0541323,0,0,-1.0541324,414.59273,962.45933)">
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M 0,0 V -35.625"
              id="path3-2" />
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M -0.01953125,-35.625 V 0 h 0.0390625 v -35.625 z"
              id="path4-4" />
         </g>
         <g
            id="path1448-3-4"
            clip-path="url(#clipPath1449-9-2)"
-           style="fill:#808080;stroke:#808080;stroke-width:0.0792792"
+           style="fill:#808080;stroke:#808080;stroke-width:0.07532639;stroke-dasharray:none"
            transform="matrix(1.0541323,0,0,-1.0541324,419.22367,962.45933)">
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M 0,0 V -35.625"
              id="path5-3" />
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M -0.01953125,-35.625 V 0 h 0.0390625 v -35.625 z"
              id="path6-8" />
         </g>
         <g
            id="path1450-9-6"
            clip-path="url(#clipPath1451-2-0)"
-           style="fill:#808080;stroke:#808080;stroke-width:0.0792792"
+           style="fill:#808080;stroke:#808080;stroke-width:0.07532639;stroke-dasharray:none"
            transform="matrix(1.0541323,0,0,-1.0541324,423.8542,962.45933)">
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M 0,0 V -35.625"
              id="path7-0" />
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M -0.01953125,-35.625 V 0 h 0.0390625 v -35.625 z"
              id="path8-8" />
         </g>
         <g
            id="path1452-1-9"
            clip-path="url(#clipPath1453-7-7)"
-           style="fill:#808080;stroke:#808080;stroke-width:0.0792792"
+           style="fill:#808080;stroke:#808080;stroke-width:0.07532639;stroke-dasharray:none"
            transform="matrix(1.0541323,0,0,-1.0541324,428.48513,962.45933)">
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M 0,0 V -35.625"
              id="path9-2" />
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M -0.01953125,-35.625 V 0 h 0.0390625 v -35.625 z"
              id="path10-2" />
         </g>
         <g
            id="path1454-9-3"
            clip-path="url(#clipPath1455-5-0)"
-           style="fill:#808080;stroke:#808080;stroke-width:0.0792792"
+           style="fill:#808080;stroke:#808080;stroke-width:0.07532639;stroke-dasharray:none"
            transform="matrix(1.0541323,0,0,-1.0541324,433.11607,962.45933)">
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M 0,0 V -35.625"
              id="path11-1" />
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M -0.01953125,-35.625 V 0 h 0.0390625 v -35.625 z"
              id="path12-8" />
         </g>
         <g
            id="path1456-6-3"
            clip-path="url(#clipPath1457-8-4)"
-           style="fill:#808080;stroke:#808080;stroke-width:0.0792792"
+           style="fill:#808080;stroke:#808080;stroke-width:0.07532639;stroke-dasharray:none"
            transform="matrix(1.0541323,0,0,-1.0541324,437.7466,962.45933)">
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M 0,0 V -35.625"
              id="path13-4" />
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M -0.01953125,-35.625 V 0 h 0.0390625 v -35.625 z"
              id="path14-2" />
         </g>
         <g
            id="path1458-9-2"
            clip-path="url(#clipPath1459-2-2)"
-           style="fill:#808080;stroke:#808080;stroke-width:0.0792792"
+           style="fill:#808080;stroke:#808080;stroke-width:0.07532639;stroke-dasharray:none"
            transform="matrix(1.0541323,0,0,-1.0541324,442.37753,962.45933)">
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M 0,0 V -35.625"
              id="path15-4" />
           <path
-             style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke:none;stroke-width:0.0792792;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+             style="baseline-shift:baseline;display:inline;overflow:visible;fill:#000000;stroke:none;stroke-width:0.07532639;stroke-miterlimit:10;enable-background:accumulate;stop-color:#000000;stop-opacity:1;stroke-dasharray:none"
              d="M -0.01953125,-35.625 V 0 h 0.0390625 v -35.625 z"
              id="path16-5" />
         </g>
         <path
-           style="fill:none;stroke:#000000;stroke-width:0.299638;stroke-linecap:round;stroke-linejoin:bevel"
+           style="fill:none;stroke:#000000;stroke-width:0.07940398;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
            d="m 414.59274,962.45933 v 37.55347"
            id="path37-1" />
         <path
-           style="fill:none;stroke:#000000;stroke-width:0.299638;stroke-linecap:round;stroke-linejoin:bevel"
+           style="fill:none;stroke:#000000;stroke-width:0.07940398;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
            d="m 419.22368,962.45933 v 37.55347"
            id="path38-7" />
         <path
-           style="fill:none;stroke:#000000;stroke-width:0.299638;stroke-linecap:round;stroke-linejoin:bevel"
+           style="fill:none;stroke:#000000;stroke-width:0.07940398;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
            d="m 423.85421,962.45933 v 37.55347"
            id="path39-5" />
         <path
-           style="fill:none;stroke:#000000;stroke-width:0.299638;stroke-linecap:round;stroke-linejoin:bevel"
+           style="fill:none;stroke:#000000;stroke-width:0.07940398;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
            d="m 428.47001,962.45933 0.0151,37.55347"
            id="path40-7" />
         <path
-           style="fill:none;stroke:#000000;stroke-width:0.299638;stroke-linecap:round;stroke-linejoin:bevel"
+           style="fill:none;stroke:#000000;stroke-width:0.07940398;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
            d="m 433.11608,962.45933 v 37.55347"
            id="path41-1" />
         <path
-           style="fill:none;stroke:#000000;stroke-width:0.299638;stroke-linecap:round;stroke-linejoin:bevel"
+           style="fill:none;stroke:#000000;stroke-width:0.07940398;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
            d="m 437.74661,962.45933 v 37.55347"
            id="path42-6" />
         <path
-           style="fill:none;stroke:#000000;stroke-width:0.299638;stroke-linecap:round;stroke-linejoin:bevel"
+           style="fill:none;stroke:#000000;stroke-width:0.07940398;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
            d="m 442.37754,962.45933 v 37.31453"
            id="path43-9" />
       </g>
