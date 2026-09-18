@@ -137,6 +137,8 @@ Well designed graphs can help us understand the natural phenomenon behind the ra
 
 # Data Summaries
 
+- Statistical Summaries are often not enough
+- below: summaries of thirteen datasets of 142 observations each
 
 ```{r}
 datasaurus_dozen |> group_by(dataset) |>
