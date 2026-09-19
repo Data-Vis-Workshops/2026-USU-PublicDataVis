@@ -130,7 +130,7 @@
     "href": "slides/how-graphics.html#exploring-relationships",
     "title": "How to Make Graphics",
     "section": "Exploring Relationships",
-    "text": "Exploring Relationships\n\n\n\nContinuous vs. Continuous\n\n\n\n\n\nscatter plot\n\n\n\n\n\n\n\nline plot\n\n\n\n\n\n\n\n2D density plot\n\n\n\n\n\n\n\narea plot\n\n\n\n\n\n\nContinuous vs. Categorical\n\n\n\n\n\nboxplot\n\n\n\n\n\n\n\ndotcharts\n\n\n\n\n\n\n\nmultiple density plots\n\n\n\n\n\n\n\nviolin plots\n\n\n\n\n\n\nCategorical vs. Categorical\n\n\n\n\n\nmosaic plot\n\n\n\n\n\n\n\nheat map\n\n\n\n\n\n\n\ngrouped barplot\n\n\n\n\n\n\n\nstacked barplots\n\n\n\n\n\n\n\n\nMultidimensional\n\n\nIt depends…\n\n\n\n\n\n\n\n\n\nResources\n\n\nData to Viz - figure out what type(s) of chart to use for your data\n(use with an ad blocker)"
+    "text": "Exploring Relationships\n\n\n\n\n\n\nResources\n\n\nData to Viz - figure out what type(s) of chart to use for your data (use with an ad blocker)\n\n\n\n\n\n\nContinuous vs. Continuous\n\n\n\n\n\nscatter plot\n\n\n\n\n\n\n\nline plot\n\n\n\n\n\n\n\n2D density plot\n\n\n\n\n\n\n\narea plot\n\n\n\n\n\n\nContinuous vs. Categorical\n\n\n\n\n\nboxplot\n\n\n\n\n\n\n\ndotcharts\n\n\n\n\n\n\n\nmultiple density plots\n\n\n\n\n\n\n\nviolin plots\n\n\n\n\n\n\nCategorical vs. Categorical\n\n\n\n\n\nmosaic plot\n\n\n\n\n\n\n\nheat map\n\n\n\n\n\n\n\ngrouped barplot\n\n\n\n\n\n\n\nstacked barplots\n\n\n\n\n\n\n\n\nMultidimensional\n\n\nIt depends…"
   },
   {
     "objectID": "slides/how-graphics.html#tidy-data",
@@ -166,5 +166,47 @@
     "title": "How to Make Graphics",
     "section": "ggplot2 basics",
     "text": "ggplot2 basics\nggplot2 is based on the grammar of graphics - every chart is based on the same components:\n\na data set,\ncoordinate system,\ngeoms – visual marks that represent data points\n\nValues from the data set are mapped to properties of the geom using aesthetics like size, color, and/or x and y location"
+  },
+  {
+    "objectID": "slides/how-graphics.html#ggplot2-basics-1",
+    "href": "slides/how-graphics.html#ggplot2-basics-1",
+    "title": "How to Make Graphics",
+    "section": "ggplot2 basics",
+    "text": "ggplot2 basics\nggplot2 is based on the grammar of graphics - every chart is based on the same components:\n\na data set,\ncoordinate system,\ngeoms – visual marks that represent data points\n\nValues from the data set are mapped to properties of the geom using aesthetics like size, color, and/or x and y location"
+  },
+  {
+    "objectID": "slides/how-graphics.html#how-to-build-a-graph",
+    "href": "slides/how-graphics.html#how-to-build-a-graph",
+    "title": "How to Make Graphics",
+    "section": "How to build a graph",
+    "text": "How to build a graph\nggplot(data = mpg, aes(x = cty, y = hwy))\n\nThis will begin a plot that you can finish by adding layers to.\nYou can add one geom per layer"
+  },
+  {
+    "objectID": "slides/how-graphics.html#what-is-a-geom",
+    "href": "slides/how-graphics.html#what-is-a-geom",
+    "title": "How to Make Graphics",
+    "section": "What is a geom?",
+    "text": "What is a geom?\n\nA geom function represents data points\nAesthetic properties represent variables"
+  },
+  {
+    "objectID": "slides/how-graphics.html#geom-options",
+    "href": "slides/how-graphics.html#geom-options",
+    "title": "How to Make Graphics",
+    "section": "Geom Options",
+    "text": "Geom Options\n\n\n\n\n\n\n\n\n\n\nPrimitives\n\ngeom_path\n\ngeom_polygon\n\ngeom_rect\n\ngeom_ribbon\n\n\nOne Variable\n\ngeom_dotplot\n(cts)\n\ngeom_histogram\n(cts)\n\ngeom_density\n(cts)\n\ngeom_bar (discrete)\n\n\nTwo Cts Variables\n\ngeom_point\n\ngeom_smooth\n, \ngeom_label, geom_text\n\n\n\nDist of 2 Variables\n\ngeom_bin2d\n\ngeom_density_2d\n\ngeom_hex\n\n\n\nOne Discrete, One Cts\n\ngeom_col\n\ngeom_boxplot\n\ngeom_dotplot\n\ngeom_violin\n\n\nTwo Discrete\n\ngeom_count\n\ngeom_jitter"
+  },
+  {
+    "objectID": "slides/how-graphics.html#geom-options-geom_xxx",
+    "href": "slides/how-graphics.html#geom-options-geom_xxx",
+    "title": "How to Make Graphics",
+    "section": "Geom Options: geom_xxx",
+    "text": "Geom Options: geom_xxx\n\n\n\n\n\n\nPrimitives\n\n\n\n\n\n\n\n\npath\n\n\n\n\n\n\n\npolygon\n\n\n\n\n\n\n\nrect\n\n\n\n\n\n\n\nribbon\n\n\n\n\n\n\n\ncurve\n\n\n\n\n\n\n\n\n\n\n\nTwo Continuous Variables\n\n\n\n\n\nFunctions\n\n\n\n\n\narea\n\n\n\n\n\n\n\nline\n\n\n\n\n\n\n\nstep\n\n\n\n\n\n\nRelationships\n\n\n\n\n\npoint\n\n\n\n\n\n\n\nsmooth\n\n\n\n\n\n\n\ntext\n\n\n\n\n\n\nDistributions\n\n\n\n\n\nbin2d\n\n\n\n\n\n\n\ndensity2d\n\n\n\n\n\n\n\nhex\n\n\n\n\n\n\n\n\n\n\n\n\nOne Variable\n\n\n\n\n\nDiscrete\n\n\n \n\n\nContinuous\n\n\n\n\n\n\n\nbar\n\n\n\n\n \n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nhistogram\n\n\n\n\n\n\n\ndensity\n\n\n\n\n\n\n\n\n\n\n\nDiscrete + Continuous\n\n\n\n\n\n\n\n\ncol\n\n\n\n\n\n\n\nboxplot\n\n\n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nviolin\n\n\n\n\n\n\n\n\n\n\n\nTwo Discrete\n\n\n\n\n\n\n\n\ncount\n\n\n\n\n\n\n\njitter"
+  },
+  {
+    "objectID": "slides/how-graphics.html#section",
+    "href": "slides/how-graphics.html#section",
+    "title": "How to Make Graphics",
+    "section": "",
+    "text": "Primitives\npath | polygon |  rect |  ribbon |\n\n\nOne Variable\n dotplot (cts)\n histogram (cts)\n density (cts)\n bar (discrete)\n\n\nTwo Cts Variables\n point\n smooth\n label\n text\n\n\nDist of 2 Variables\n bin2d\n density_2d\n hex\n\n\n\nOne Discrete, One Cts\n  | col | boxplot | dotplot | violin\n\n\nTwo Discrete\n\ncount\n\njitter"
   }
 ]
