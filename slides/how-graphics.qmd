@@ -360,3 +360,56 @@ Continuous
 ::::
 :::::
 :::
+
+
+## What is a layer?
+
+- Determines the physical representation of the data
+
+- Data + mappings + statistical transformation + geom = a layer
+
+- A plot may have multiple layers
+ 
+```{r}
+#| fig-width: 4
+#| fig-height: 4
+#| layout-ncol: 3
+#| echo: false
+#| fig-alt:
+#|   - "A jittered dotplot of vehicle class (2 seater, compact, midsize, minivan, pickup, subcompact, suv) compared to highway mpg"
+#|   - "A violin plot of vehicle class (2 seater, compact, midsize, minivan, pickup, subcompact, suv) compared to highway mpg"
+#|   - "A jittered dotplot overlaid with a violin plot, showing  vehicle class (2 seater, compact, midsize, minivan, pickup, subcompact, suv) compared to highway mpg"
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1) + scale_fill_locuszoom() + scale_color_locuszoom() + 
+  guides(color="none")
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_violin(aes(fill = class), alpha = 0.4) + scale_fill_locuszoom() + scale_color_locuszoom() + 
+  guides(fill="none", color = "none")
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1) + geom_violin(aes(fill = class), alpha = 0.4) + scale_fill_locuszoom() + scale_color_locuszoom() + 
+  guides(fill="none", color = "none")
+```
+
+```{r}
+#| eval: false
+#| purl: true
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1)
+
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_violin(aes(fill = class), alpha = 0.4) 
+
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1) + geom_violin(aes(fill = class), alpha = 0.4)
+
+
+```
+
+
+## Your Turn {.inverse}
+
+Change the code below to have the points **on top** of the boxplots.
+
+```{r}
+#| echo: true
+#| fig-height: 4
+#| fig-width: 8
+#| purl: true
+ggplot(data = mpg, aes(x = class, y = hwy)) + 
+  geom_jitter() + 
+  geom_boxplot()
+```

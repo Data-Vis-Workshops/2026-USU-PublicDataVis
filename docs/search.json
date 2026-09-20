@@ -208,5 +208,19 @@
     "title": "How to Make Graphics",
     "section": "",
     "text": "Primitives\npath | polygon |  rect |  ribbon |\n\n\nOne Variable\n dotplot (cts)\n histogram (cts)\n density (cts)\n bar (discrete)\n\n\nTwo Cts Variables\n point\n smooth\n label\n text\n\n\nDist of 2 Variables\n bin2d\n density_2d\n hex\n\n\n\nOne Discrete, One Cts\n  | col | boxplot | dotplot | violin\n\n\nTwo Discrete\n\ncount\n\njitter"
+  },
+  {
+    "objectID": "slides/how-graphics.html#what-is-a-layer",
+    "href": "slides/how-graphics.html#what-is-a-layer",
+    "title": "How to Make Graphics",
+    "section": "What is a layer?",
+    "text": "What is a layer?\n\nDetermines the physical representation of the data\nData + mappings + statistical transformation + geom = a layer\nA plot may have multiple layers"
+  },
+  {
+    "objectID": "slides/how-graphics.html#your-turn",
+    "href": "slides/how-graphics.html#your-turn",
+    "title": "How to Make Graphics",
+    "section": "Your Turn",
+    "text": "Your Turn\nChange the code below to have the points on top of the boxplots.\n\nggplot(data = mpg, aes(x = class, y = hwy)) + \n  geom_jitter() + \n  geom_boxplot()"
   }
 ]
