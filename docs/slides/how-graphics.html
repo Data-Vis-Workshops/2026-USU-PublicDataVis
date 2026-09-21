@@ -6,7 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
   <title>Visualization &amp; Public Data – How to Make Graphics</title>
@@ -146,11 +149,276 @@
 </div>
 
 </section>
-<section class="slide level2">
-
-
+<section>
+<section id="data-types-formats-and-structures" class="title-slide slide level1 center">
+<h1>Data Types, Formats, and Structures</h1>
 
 </section>
+<section id="first-things-first" class="slide level2">
+<h2>First Things First!</h2>
+<p>Before we start creating graphics…</p>
+<p>Know the <span class="emph cerulean-dk large"><strong>type</strong></span> and <span class="emph green large"><strong>format</strong></span> of the data you’re working with.<br>
+<br></p>
+<p><span class="fragment large"><strong>Why?</strong></span></p>
+<ul>
+<li class="fragment"><p>the data contains all of the information you want to convey</p></li>
+<li class="fragment"><p>the appropriate chart depends on the data type</p></li>
+<li class="fragment"><p>Working with R and ggplot is much easier if the data you use is in the right shape</p></li>
+</ul>
+<p><a href="images/messy-data.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="images/messy-data.png" class="fragment" style="width:50.0%" alt="A group of four tables are all different shapes, look ragged and concerned, and have different speech bubbles reading (from left to right) “my column are values and my rows are variables”, “I have variables in columns AND in rows”, “I have multiple variables in a single column”, and “I don’t even KNOW what my deal is.”"></a></p>
+</section>
+<section id="data-levels-of-measurement" class="slide level2">
+<h2>Data: levels of measurement</h2>
+<h4 id="quantitative">Quantitative</h4>
+<ul>
+<li>Continuous (e.g.&nbsp;height, weight)</li>
+<li>Discrete (e.g.&nbsp;age in years)</li>
+</ul>
+<h4 id="qualitative">Qualitative</h4>
+<ul>
+<li>Nominal: categories have no meaningful order (e.g.&nbsp;colors)</li>
+<li>Ordinal: categories have order but no meaningful distance between categories (e.g.&nbsp;five star ratings)</li>
+</ul>
+</section>
+<section id="data-dimensions-and-type" class="slide level2">
+<h2>Data: Dimensions and Type</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Dimensions</th>
+<th>Types</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Univariate (1 variable)</td>
+<td>Count (word freq, scores)</td>
+</tr>
+<tr class="even">
+<td>Bivariate (2 variables)</td>
+<td>Time Series, Relationships</td>
+</tr>
+<tr class="odd">
+<td>Multivariate (3 variables)</td>
+<td>Spatial</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Time to Event (Survival, Reliability)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Categorical</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="exploring-relationships" class="slide level2">
+<h2>Exploring Relationships</h2>
+<div class="quarto-layout-panel" data-layout="[3, 1, 1, 1, 1]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 42.9%;justify-content: flex-start;">
+<p>Continuous vs.&nbsp;Continuous</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/ScatterPlotSmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="scatter plot"><img data-src="images/ScatterPlotSmall.png" alt="small icon of a scatterplot" width="60" height="60"></a></p>
+<figcaption>scatter plot</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/LineSmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="line plot"><img data-src="images/LineSmall.png" alt="small icon of a line plot" width="60" height="60"></a></p>
+<figcaption>line plot</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/2dDensitySmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="2D density plot"><img data-src="images/2dDensitySmall.png" alt="small icon of a 2D density plot" width="60" height="60"></a></p>
+<figcaption>2D density plot</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/AreaSmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="area plot"><img data-src="images/AreaSmall.png" alt="small icon of an area plot" width="60" height="60"></a></p>
+<figcaption>area plot</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 42.9%;justify-content: flex-start;">
+<p>Continuous vs.&nbsp;Categorical</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/Box1Small.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="boxplot"><img data-src="images/Box1Small.png" alt="small icon of a box plot" width="60" height="60"></a></p>
+<figcaption>boxplot</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/DotSmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="dotcharts"><img data-src="images/DotSmall.png" alt="small icon of a dot plot" width="60" height="60"></a></p>
+<figcaption>dotcharts</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/DensitySmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="multiple density plots"><img data-src="images/DensitySmall.png" alt="small icon of a density plot" width="60" height="60"></a></p>
+<figcaption>multiple density plots</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/ViolinSmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="violin plots"><img data-src="images/ViolinSmall.png" alt="small icon of a violin plot" width="60" height="60"></a></p>
+<figcaption>violin plots</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 42.9%;justify-content: flex-start;">
+<p>Categorical vs.&nbsp;Categorical</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/MosaicSmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="mosaic plot"><img data-src="images/MosaicSmall.png" alt="small icon of a mosaic plot" width="60" height="60"></a></p>
+<figcaption>mosaic plot</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/HeatmapSmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="heat map"><img data-src="images/HeatmapSmall.png" alt="small icon of a heatmap" width="60" height="60"></a></p>
+<figcaption>heat map</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/GroupedBarSmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="grouped barplot"><img data-src="images/GroupedBarSmall.png" alt="small icon of a grouped bar plot" width="60" height="60"></a></p>
+<figcaption>grouped barplot</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 14.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/StackedBarSmall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="stacked barplots"><img data-src="images/StackedBarSmall.png" alt="small icon of a stacked bar plot" width="60" height="60"></a></p>
+<figcaption>stacked barplots</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout="[3, 4]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 42.9%;justify-content: flex-start;">
+<p>Multidimensional</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 57.1%;justify-content: flex-start;">
+<p>It depends…</p>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Resources</strong></p>
+</div>
+<div class="callout-content">
+<p><a href="https://www.data-to-viz.com">Data to Viz</a> - figure out what type(s) of chart to use for your data<br>
+<span class="small">(use with an ad blocker)</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="tidy-data" class="slide level2">
+<h2>Tidy Data</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/allison-horst-tidy-data.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Tidy Data: each variable is a column, each observation is a row, each cell is a single measurement"><img data-src="images/allison-horst-tidy-data.jpg" style="width:90.0%" alt="Stylized text providing an overview of Tidy Data. The top reads “Tidy data is a standard way of mapping the meaning of a dataset to its structure. - Hadley Wickham.” On the left reads “In tidy data: each variable forms a column; each observation forms a row; each cell is a single measurement.” There is an example table on the lower right with columns ‘id’, ‘name’ and ‘color’ with observations for different cats, illustrating tidy data structure."></a></p>
+<figcaption>Tidy Data: each variable is a column, each observation is a row, each cell is a single measurement</figcaption>
+</figure>
+</div>
+<p><code>ggplot2</code> assumes your data is tidy</p>
+</section>
+<section id="untidy-data" class="slide level2">
+<h2>Untidy data</h2>
+<blockquote>
+<p>Happy families are all alike; every unhappy family is unhappy in its own way. - Leo Tolstoy</p>
+</blockquote>
+<div class="fragment">
+<h4 id="five-main-ways-tables-of-data-tend-not-to-be-tidy">Five main ways tables of data tend not to be tidy</h4>
+</div>
+<ol type="1">
+<li class="fragment"><p>Column headers are values, not variable names.</p></li>
+<li class="fragment"><p>Multiple variables are stored in one column.</p></li>
+<li class="fragment"><p>Variables are stored in both rows and columns.</p></li>
+<li class="fragment"><p>Multiple types of observational units are stored in the same table.</p></li>
+<li class="fragment"><p>A single observational unit is stored in multiple tables.</p></li>
+</ol>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>AI can be very useful to help you find the right R commands to move from untidy to tidy data.</p>
+<p>Other resources: <a href="https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/05-data-reshape.html">Reshaping Data</a>, a chapter in Statistical Computing in R and Python (free website)</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="ggplot2" class="title-slide slide level1 center">
+<h1><code>ggplot2</code></h1>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/ggplot2-data-masterpiece.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="ggplot2: Build a data masterpiece"><img data-src="images/ggplot2-data-masterpiece.png" style="width:70.0%" alt="A fuzzy monster in a beret and scarf, critiquing their own column graph on a canvas in front of them while other assistant monsters (also in berets) carry over boxes full of elements that can be used to customize a graph (like themes and geometric shapes). In the background is a wall with framed data visualizations. Stylized text reads “ggplot2: build a data masterpiece.” Learn more about ggplot2."></a></p>
+<figcaption>ggplot2: Build a data masterpiece</figcaption>
+</figure>
+</div>
+</section>
+<section id="ggplot2-basics" class="slide level2">
+<h2>ggplot2 basics</h2>
+<p><code>ggplot2</code> is based on the <strong>grammar of graphics</strong> - every chart is based on the same components:</p>
+<ol type="1">
+<li>a data set,</li>
+<li>coordinate system,</li>
+<li>geoms – visual marks that represent data points</li>
+</ol>
+<p>Values from the data set are <strong>mapped</strong> to properties of the geom using <strong>aesthetics</strong> like size, color, and/or x and y location</p>
+<p><a href="images/grammar-data-coord-plot1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="images/grammar-data-coord-plot1.png" alt="A dataset mapped to geoms, plus a coordinate system, yields a plot. Here, dat is mapped to x and y."></a></p>
+<p><a href="images/grammar-data-coord-plot2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="images/grammar-data-coord-plot2.png" alt="A dataset mapped to geoms, plus a coordinate system, yields a plot. Here, data is mapped to x, y, color, and size."></a></p>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../css/usu-sq.png" alt="Utah State University Logo" class="slide-logo"></p>
@@ -689,6 +957,38 @@
         }
       });
       </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>

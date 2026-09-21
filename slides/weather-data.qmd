@@ -34,7 +34,7 @@ library(leaflet)
 library(readr)
 library(tidyverse)
 library(htmlwidgets)
-
+library(plotly)
 ```
 
 ## Weather Stations in Utah (30 years plus)
@@ -79,7 +79,7 @@ ut_stations |>
 
 ```
 
-## 
+## Weather in Blanding
 
 ```{r read-data}
 files <- dir("data/stations", pattern="csv.gz",
@@ -105,17 +105,151 @@ col_names = c(
 weather <- weather |> left_join(ut_stations |> select(id, name))
 ```
 
+<!-- #https://utahweather.org/almanac/daily-weather-almanac-1847-1995 -->
+<!-- # # from readme-by-station -->
+<!-- # M-FLAG = 1 character Measurement Flag -->
+<!-- # Q-FLAG = 1 character Quality Flag -->
+<!-- # S-FLAG = 1 character Source Flag -->
+<!-- # OBS-TIME = 4-character time of observation -->
+
+<!-- # The five core elements are: -->
+<!-- # -->
+<!-- # PRCP = Precipitation (tenths of mm) -->
+<!-- # SNOW = Snowfall (mm) -->
+<!-- # SNWD = Snow depth (mm) -->
+<!-- # TMAX = Maximum temperature (tenths of degrees C) -->
+<!-- # TMIN = Minimum temperature (tenths of degrees C) -->
+
+
+<!-- DAEV = Number of days included in the multiday evaporation total (MDEV)  -->
+<!-- DAPR = Number of days included in the multiday precipitation total (MDPR)  -->
+<!-- DASF = Number of days included in the multiday snowfall total (MDSF)      -->
+<!-- DATN = Number of days included in the multiday minimum temperature (MDTN)  -->
+<!-- DATX = Number of days included in the multiday maximum temperature (MDTX)  -->
+<!-- DAWM = Number of days included in the multiday wind movement (MDWM)  -->
+<!-- DWPR = Number of days with non-zero precipitation included in multiday precipitation total (MDPR)  -->
 
 ```{r}
-weather |> 
-  filter(element == "TMIN") |>
-  ggplot(aes(x = year(date), y = value)) + 
-  geom_point(aes(colour = name)) +
+# make the data wide to get an overview of which data is included
+
+ww <- weather |> select(id, name, date, element, value) |>
+  filter(element %in% c("TMIN", "TMAX", "PRCP", "SNOW", "SNWD")) |>
+  pivot_wider(names_from="element", values_from="value") 
+  
+# assume that missing values in precipitation are 0s:
+ww <- ww |> mutate(
+  PRCP = ifelse(is.na(PRCP), 0, PRCP),
+  SNOW = ifelse(is.na(SNOW), 0, SNOW),
+  SNWD = ifelse(is.na(SNWD), 0, SNWD)
+)
+
+ww_long <- ww |> pivot_longer(cols=TMAX:SNWD, names_to = "element", 
+                              values_to = "value")
+```
+
+Station in `r ww$name[1]` reported daily from `r min(ww$date)` to `r max(ww$date)`
+(pre-dates founding of the city)
+
+Observed Measurements
+
+- TMAX = Maximum temperature (tenths of degrees C)
+- TMIN = Minimum temperature (tenths of degrees C)
+- PRCP = Precipitation (tenths of mm)
+- SNOW = Snowfall (mm)
+- SNWD = Snow depth (mm)
+
+Source for checking on unusual observations: [Daily Almanac](https://utahweather.org/almanac/daily-weather-almanac-1847-1995)
+
+## Daily Precipitation
+
+Average daily precipitation is `r round(mean(ww$PRCP, na.rm= TRUE),1)` mm, but it rained only on `r sum(ww$PRCP > 0)` out of `r nrow(ww)` recorded days.
+
+```{r}
+gg <- ww_long |> 
+  filter(element == "PRCP") |>
+  mutate(year = year(date)) |>
+  ggplot(aes(x = year, y = value)) + 
+  geom_point(aes(label = date)) +
   facet_wrap(~month(date, label=TRUE)) +
   geom_smooth(method="lm", aes(group = name)) + 
   theme(legend.position = "bottom") + 
-  ggtitle("Minimum Daily Temperature")
+  ggtitle("Daily Precipitation")
+
+ggplotly(gg, height = 550, width = 1000)
 ```
+
+## Rainfall over time
+
+
+```{r}
+prcp <- ww_long |> filter(element == "PRCP") |> mutate(
+  year = year(date),
+  month = month(date, label=TRUE)
+) |> group_by(id, name, year, element) |>
+  summarize(
+    n = sum(!is.na(value)),
+    prcp_day = sum(value > 0, na.rm=TRUE),
+    extreme = sum(value > 254, na.rm=TRUE),
+    value = sum(value, na.rm=TRUE)/n*365,
+    .groups = "drop_last"
+  )
+```
+
+```{r fig.width = 10}
+#| output-location: fragment
+prcp |> ggplot(aes(x = year, weight = value)) + geom_bar() + ggtitle("Amount of total precipitation by year") + ylab("sum(value)") 
+
+prcp |> ggplot(aes(x = year, weight = value)) + geom_bar() + ggtitle("Amount of total precipitation by year") + ylab("sum(value)") + 
+  geom_smooth(aes(x = year, y = value), method="lm")
+```
+
+## Average Temp
+
+```{r}
+temps <- ww_long |> mutate(
+  year = year(date),
+  month = month(date, label=TRUE)
+) |> group_by(id, name, year, month, element) |>
+  summarize(
+    value = mean(value, na.rm=TRUE),
+    n = sum(!is.na(value)),
+    .groups = "drop_last"
+  )
+```
+
+
+
+
+
+
+```{r fig.width = 10, fig.height = 6}
+temps |> 
+    filter(element %in% c("TMIN", "TMAX")) |>
+    ggplot(aes(x = year, y = value)) + 
+    geom_point(aes(colour = element)) +
+    facet_wrap(~month) +
+    geom_smooth(method="lm", aes(group = element), colour="grey20") + 
+    theme(legend.position = "bottom") + 
+    ggtitle("Monthly Averages of \nDaily Minimum and Maximum Temperatures")
+```
+
+
+
+## Length of snow cover
+
+```{r}
+
+snow <- weather |> filter(element == "SNWD") |> 
+  group_by(year = year(date), month = month(date)) |>
+  summarize(SNWD = mean(value, na.rm=TRUE), 
+            SNOW_ON_GROUND = sum(value > 0, na.rm = TRUE), 
+            days = sum(!is.na(value))) 
+
+snow |> filter(month <=4 | month >= 11, year >= 1925) |> 
+  ggplot(aes(x = year, y = SNOW_ON_GROUND/days)) + geom_point() + facet_wrap(~month)
+  
+```
+
 
 ## Your Turn {.inverse .large}
 
@@ -130,6 +264,10 @@ Introduce yourself!
 
 
 ## Resources
+
+- [Global Historical Climatology Network (NOAA)](https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily)
+- [Utah Weather](https://utahweather.org/)
+- [Utah Weather Almana](https://utahweather.org/almanac)
 
 -   Reference Sheets
   - [RStudio](https://opensource.posit.co/resources/cheatsheets/rstudio-ide/)
