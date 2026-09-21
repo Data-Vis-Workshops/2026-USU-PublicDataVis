@@ -4,6 +4,27 @@ format: revealjs
 css: ../css/slide-theme.scss
 ---
 
+```{r }
+#| echo: false
+#| message: false
+#| warning: false
+#| include: false
+#| label: setup
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+library(purrr)
+library(gridExtra)
+library(magrittr)
+library(stringr)
+library(readr)
+library(ragg)
+library(scales)
+library(ggsci)
+library(datasauRus)
+theme_set(theme_bw())
+```
+
 # Data Types, Formats, and Structures
 
 ## First Things First!
@@ -49,11 +70,16 @@ Know the [**type**]{.emph .cerulean-dk .large} and [**format**]{.emph .green .la
 
 ## Exploring Relationships
 
-::: {layout="[3, 1, 1, 1, 1]"}
+::: callout-tip
+#### Resources
 
+[Data to Viz](https://www.data-to-viz.com) - figure out what type(s) of chart to use for your data [(use with an ad blocker)]{.emph .green-dk}
+:::
+
+::: {layout="[3, 1, 1, 1, 1]"}
 Continuous vs. Continuous
 
-![scatter plot](images/ScatterPlotSmall.png){fig-alt="small icon of a scatterplot" width="60px" height="60px"} 
+![scatter plot](images/ScatterPlotSmall.png){fig-alt="small icon of a scatterplot" width="60px" height="60px"}
 
 ![line plot](images/LineSmall.png){fig-alt="small icon of a line plot" width="60px" height="60px"}
 
@@ -61,12 +87,11 @@ Continuous vs. Continuous
 
 ![area plot](images/AreaSmall.png){fig-alt="small icon of an area plot" width="60px" height="60px"}
 
-
 Continuous vs. Categorical
 
 ![boxplot](images/Box1Small.png){fig-alt="small icon of a box plot" width="60px" height="60px"}
 
-![dotcharts](images/DotSmall.png){fig-alt="small icon of a dot plot" width="60px" height="60px"}  
+![dotcharts](images/DotSmall.png){fig-alt="small icon of a dot plot" width="60px" height="60px"}
 
 ![multiple density plots](images/DensitySmall.png){fig-alt="small icon of a density plot" width="60px" height="60px"}
 
@@ -74,29 +99,19 @@ Continuous vs. Categorical
 
 Categorical vs. Categorical
 
-![mosaic plot](images/MosaicSmall.png){fig-alt="small icon of a mosaic plot" width="60px" height="60px"} 
+![mosaic plot](images/MosaicSmall.png){fig-alt="small icon of a mosaic plot" width="60px" height="60px"}
 
 ![heat map](images/HeatmapSmall.png){fig-alt="small icon of a heatmap" width="60px" height="60px"}
 
-![grouped barplot](images/GroupedBarSmall.png){fig-alt="small icon of a grouped bar plot" width="60px" height="60px"} 
+![grouped barplot](images/GroupedBarSmall.png){fig-alt="small icon of a grouped bar plot" width="60px" height="60px"}
 
 ![stacked barplots](images/StackedBarSmall.png){fig-alt="small icon of a stacked bar plot" width="60px" height="60px"}
-
 :::
 
 ::: {layout="[3, 4]"}
 Multidimensional
 
 It depends...
-
-:::
-
-::: callout-tip
-
-#### Resources
-
-[Data to Viz](https://www.data-to-viz.com) - figure out what type(s) of chart to use for your data     
-[(use with an ad blocker)]{.small}
 :::
 
 ## Tidy Data
@@ -125,13 +140,10 @@ It depends...
 5.  A single observational unit is stored in multiple tables.
 :::
 
-
 ::: {.callout-tip .fragment}
-
-AI can be very useful to help you find the right R commands to move from untidy to tidy data. 
+AI can be very useful to help you find the right R commands to move from untidy to tidy data.
 
 Other resources: [Reshaping Data](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/05-data-reshape.html), a chapter in Statistical Computing in R and Python (free website)
-
 :::
 
 # `ggplot2`
@@ -140,15 +152,264 @@ Other resources: [Reshaping Data](https://srvanderplas.github.io/stat-computing-
 
 ## ggplot2 basics
 
-`ggplot2` is based on the **grammar of graphics** - every chart is based on the same components: 
+`ggplot2` is based on the **grammar of graphics** - every chart is based on the same components:
 
-1. a data set, 
-2. coordinate system, 
-3. geoms -- visual marks that represent data points
+1.  a data set,
+2.  coordinate system,
+3.  geoms -- visual marks that represent data points
 
 Values from the data set are **mapped** to properties of the geom using **aesthetics** like size, color, and/or x and y location
 
 ![](images/grammar-data-coord-plot1.png){fig-alt="A dataset mapped to geoms, plus a coordinate system, yields a plot. Here, dat is mapped to x and y."}
 
+## ggplot2 basics
+
+`ggplot2` is based on the **grammar of graphics** - every chart is based on the same components:
+
+1.  a data set,
+2.  coordinate system,
+3.  geoms -- visual marks that represent data points
+
+Values from the data set are **mapped** to properties of the geom using **aesthetics** like size, color, and/or x and y location
 
 ![](images/grammar-data-coord-plot2.png){fig-alt="A dataset mapped to geoms, plus a coordinate system, yields a plot. Here, data is mapped to x, y, color, and size."}
+
+## How to build a graph
+
+`ggplot(data = mpg, aes(x = cty, y = hwy))`
+
+- This will begin a plot that you can finish by adding layers to.
+
+- You can add one geom per layer
+
+```{r}
+#| label: plots-4
+#| fig-height: 3
+#| fig-width: 3.3
+#| layout-ncol: 3
+#| echo: false
+#| fig-alt:
+#|   - "A blank plot with x-axis labeled class and y-axis labeled hwy"
+#|   - "A set of boxplots, one for each class of vehicle, showing the highway mpg of each class."
+#|   - "A set of boxplots on top of points showing the actual data for highway mpg for each class of vehicles."
+ggplot(data = mpg, aes(x = class, y = hwy)) +
+  labs(title = "")
+ggplot(data = mpg, aes(x = class, y = hwy)) +
+  geom_boxplot() +
+  labs(title = "+ geom_boxplot()")
+ggplot(data = mpg, aes(x = class, y = hwy)) +
+  geom_jitter() +
+  geom_boxplot() +
+  labs(title = "+ geom_jitter() + geom_boxplot()")
+```
+
+```{r}
+#| eval: false
+#| purl: true
+ggplot(data = mpg, aes(x = class, y = hwy)) +
+  labs(title = "")
+ggplot(data = mpg, aes(x = class, y = hwy)) +
+  geom_boxplot() +
+  labs(title = "+ geom_boxplot()")
+ggplot(data = mpg, aes(x = class, y = hwy)) +
+  geom_jitter() +
+  geom_boxplot() +
+  labs(title = "+ geom_jitter() + geom_boxplot()")
+```
+
+## What is a geom?
+
+- A geom function represents data points
+- Aesthetic properties represent variables
+
+```{r}
+#| echo: false
+#| layout-ncol: 2
+#| fig-width: 5
+#| fig-height: 5
+#| out-width: 80%
+ggplot(data = mpg, aes(x = cty, y = hwy, colour = class)) +
+  geom_text(aes(label = class)) +
+  scale_color_locuszoom() +
+  labs(x = "city mpg", y = "highway mpg", title = "Geom Text")
+ggplot(data = mpg, aes(x = cty, y = hwy, colour = class)) +
+  geom_point() +
+  scale_color_locuszoom() +
+  labs(x = "city mpg", y = "highway mpg", title = "Geom Point")
+```
+
+```{r}
+#| eval: false
+#| purl: true
+#|
+ggplot(data = mpg, aes(x = cty, y = hwy, colour = class)) +
+  geom_text(aes(label = class)) +
+  labs(x = "city mpg", y = "highway mpg", title = "Geom Text")
+
+ggplot(data = mpg, aes(x = cty, y = hwy, colour = class)) +
+  geom_point() +
+  labs(x = "city mpg", y = "highway mpg", title = "Geom Point")
+```
+
+<!-- Once our data is formatted and we know what type of variables we are working with, we can select the correct geom for our visualization.  -->
+
+## Geom Options: `geom_xxx`
+:::::: large
+::::: columns
+:::: column
+
+::: {.callout-note icon=false}
+#### Primitives
+::: {layout-ncol=5}
+
+![path](images/geom-path.png){width="75" fig-alt="geom_path"}
+
+![polygon](images/geom-polygon.png){width="75" fig-alt="geom_polygon"}
+
+![rect](images/geom-rect.png){width="75" fig-alt="geom_rect"}
+
+![ribbon](images/geom-ribbon.png){width="75" fig-alt="geom_ribbon"}
+
+![curve](images/geom-curve.png){width="75" fig-alt="geom_curve"}
+
+:::
+:::
+
+::: {.callout-note icon=false}
+#### Two Continuous Variables
+::: {layout="[[2,1,1,1],[2, 1, 1, 1],[2, 1, 1, 1]]"}
+
+Functions
+
+![area](images/geom-area.png){width="75" fig-alt="geom_area"}
+
+![line](images/geom-line.png){width="75" fig-alt="geom_line"}
+
+![step](images/geom-step.png){width="75" fig-alt="geom_step"}
+
+
+Relationships
+
+![point](images/geom-point.png){width="75" fig-alt="geom_point"}
+
+![smooth](images/geom-smooth.png){width="75" fig-alt="geom_smooth"}
+
+![text](images/geom-text.png){width="75" fig-alt="geom_text"}
+
+Distributions
+
+![bin2d](images/geom-bin2d.png){width="75" fig-alt="geom_bin2d"}
+
+![density2d](images/geom-density-2d.png){width="75" fig-alt="geom_density_2d"}
+
+![hex](images/geom-hex.png){width="75" fig-alt="geom_hex"}
+
+:::
+:::
+::::
+
+:::: column
+
+::: {.callout-note icon=false}
+#### One Variable
+
+::: {layout="[[1,-1, 3],[1,-1, 1,1,1]]"}
+Discrete
+
+Continuous
+
+![bar](images/geom-bar.png){width="75" fig-alt="geom_bar"}
+
+![dotplot](images/geom-dotplot.png){width="75" fig-alt="geom_dotplot"}
+
+![histogram](images/geom-histogram.png){width="75" fig-alt="geom_histogram"}
+
+![density](images/geom-density.png){width="75" fig-alt="geom_density"}
+
+:::
+:::
+
+::: {.callout-note icon=false}
+#### Discrete + Continuous
+::: {layout="[[1,1,1,1,1]]"}
+
+
+![col](images/geom-col.png){width="75" fig-alt="geom_col"}
+
+![boxplot](images/geom-boxplot.png "geom_boxplot"){width="75" fig-alt="geom_boxplot"}
+
+![dotplot](images/geom-dotplot2.png "geom_dotplot"){width="75" fig-alt="geom_dotplot"}
+
+![violin](images/geom-violin.png "geom_violin"){width="75" fig-alt="geom_violin"}
+
+:::
+:::
+
+::: {.callout-note icon=false}
+#### Two Discrete
+::: {layout="[1.5,1,1,-1.5]"}
+
+![count](images/geom-count.png){width="75" fig-alt="geom_count"}
+
+![jitter](images/geom-jitter.png){width="75" fig-alt="geom_jitter"}
+
+
+:::
+:::
+
+::::
+:::::
+:::
+
+
+## What is a layer?
+
+- Determines the physical representation of the data
+
+- Data + mappings + statistical transformation + geom = a layer
+
+- A plot may have multiple layers
+ 
+```{r}
+#| fig-width: 4
+#| fig-height: 4
+#| layout-ncol: 3
+#| echo: false
+#| fig-alt:
+#|   - "A jittered dotplot of vehicle class (2 seater, compact, midsize, minivan, pickup, subcompact, suv) compared to highway mpg"
+#|   - "A violin plot of vehicle class (2 seater, compact, midsize, minivan, pickup, subcompact, suv) compared to highway mpg"
+#|   - "A jittered dotplot overlaid with a violin plot, showing  vehicle class (2 seater, compact, midsize, minivan, pickup, subcompact, suv) compared to highway mpg"
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1) + scale_fill_locuszoom() + scale_color_locuszoom() + 
+  guides(color="none")
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_violin(aes(fill = class), alpha = 0.4) + scale_fill_locuszoom() + scale_color_locuszoom() + 
+  guides(fill="none", color = "none")
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1) + geom_violin(aes(fill = class), alpha = 0.4) + scale_fill_locuszoom() + scale_color_locuszoom() + 
+  guides(fill="none", color = "none")
+```
+
+```{r}
+#| eval: false
+#| purl: true
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1)
+
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_violin(aes(fill = class), alpha = 0.4) 
+
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1) + geom_violin(aes(fill = class), alpha = 0.4)
+
+
+```
+
+
+## Your Turn {.inverse}
+
+Change the code below to have the points **on top** of the boxplots.
+
+```{r}
+#| echo: true
+#| fig-height: 4
+#| fig-width: 8
+#| purl: true
+ggplot(data = mpg, aes(x = class, y = hwy)) + 
+  geom_jitter() + 
+  geom_boxplot()
+```
