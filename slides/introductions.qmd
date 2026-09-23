@@ -47,10 +47,10 @@ theme_set(theme_bw())
 ## {background-image="images/Hello-Susan.png" background-size="contain"  background-image-alt="A 'Hello, my name is' sticker with the name Susan"}
 
 
-## Data explorations
+## Visual explorations
 
 ![](images/explorer.jpeg)
-I like to go on data explorations: [Weather in Blanding](../materials/weather-data.html)
+We like to go on data explorations: [Weather in Blanding](../materials/weather-data.html)
 
 ## Your Turn {.inverse .large}
 
