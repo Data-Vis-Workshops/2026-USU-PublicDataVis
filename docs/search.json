@@ -4,14 +4,7 @@
     "href": "slides/why-graphics.html#section",
     "title": "Why Graphics?",
     "section": "",
-    "text": "The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star’s life cycle: a hypothesis that only came to be because of this chart.\n\n\n\n\nData source: the HYG Database. Only stars within 500 AU are shown."
-  },
-  {
-    "objectID": "slides/why-graphics.html#why-graphics",
-    "href": "slides/why-graphics.html#why-graphics",
-    "title": "Why Graphics?",
-    "section": "Why Graphics?",
-    "text": "Why Graphics?\n\n\n\nCommunication\nAbility to see the data can lead to new insights\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhen drawn well, statistical graphics help us understand our data and see things that we didn’t know were there. The relationship between star magnitude, star color, and spectral class wasn’t well understood until someone created a chart like this that showed the color index (or spectral class) against the absolute brightness. Then, it was much easier to see that the chart described a life-cycle - stars start out in the main sequence, and then become giants, dwarfs, or slowly change spectral class over time as they cool down in temperature.\nWell designed graphs can help us understand the natural phenomenon behind the raw numerical data we’ve collected."
+    "text": "The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star’s life cycle: a hypothesis that only came to be because of this chart.\n\n\n\n\nData source: the HYG Database. Only stars within 500 AU are shown.\n\nWhen drawn well, statistical graphics help us understand our data and see things that we didn’t know were there. The relationship between star magnitude, star color, and spectral class wasn’t well understood until someone created a chart like this that showed the color index (or spectral class) against the absolute brightness. Then, it was much easier to see that the chart described a life-cycle - stars start out in the main sequence, and then become giants, dwarfs, or slowly change spectral class over time as they cool down in temperature.\nWell designed graphs can help us understand the natural phenomenon behind the raw numerical data we’ve collected."
   },
   {
     "objectID": "slides/why-graphics.html#basic",
@@ -32,21 +25,14 @@
     "href": "slides/why-graphics.html#quantitative-literacy",
     "title": "Why Graphics?",
     "section": "Quantitative Literacy",
-    "text": "Quantitative Literacy"
+    "text": "Quantitative Literacy\n\n\nElementary\n\nVisual Mappings 📊\nScales 📐\nPie charts 🥧 (fractions)\nLine charts 📈 (time)\nRange, Mean, Median, Mode 📏\n\n\nMiddle\n\nCartesian Coordinates \nSlope, Intercept form \nFunctions, Polynomials \nProbability\n  \n\n\nHigh School\n\nPolar Coordinates\nFunctions - Trigonometry , Logarithms🪵, Exponential growth \nConnecting equations & inequalities to graphs\nStatistical reasoning - inference 🧠"
   },
   {
     "objectID": "slides/why-graphics.html#connections-to-art-science-civics-media-literacy",
     "href": "slides/why-graphics.html#connections-to-art-science-civics-media-literacy",
     "title": "Why Graphics?",
     "section": "Connections to Art, Science, Civics, Media Literacy",
-    "text": "Connections to Art, Science, Civics, Media Literacy"
-  },
-  {
-    "objectID": "slides/why-graphics.html#exploratory-data-analysis-demo",
-    "href": "slides/why-graphics.html#exploratory-data-analysis-demo",
-    "title": "Why Graphics?",
-    "section": "Exploratory Data Analysis: Demo",
-    "text": "Exploratory Data Analysis: Demo"
+    "text": "Connections to Art, Science, Civics, Media Literacy\n\nScience: data collection📋, inference, estimation of constants 🌳🍎\nCivics: election maps🗺️, census, polling, charts about current events\nArt: personal data collection/visualization, generative art\nMedia Literacy: best/worst practices, claims & support\n\n\n\n\n\n\n\nTip\n\n\nThe US Census commissioned Statistical Atlases for the 1870, 1880, and 1890 censuses. They have amazing data visualizations of the US population during westward expansion."
   },
   {
     "objectID": "slides/why-graphics.html#your-turn",
@@ -56,32 +42,67 @@
     "text": "Your Turn\n\nHow could data visualization connect to learning objectives for your grade(s) and subject(s)?\nWhat types of charts are most important for your students?\nWhat data would you like to show students?"
   },
   {
+    "objectID": "slides/introductions.html#weather-stations-in-utah-40-years-plus",
+    "href": "slides/introductions.html#weather-stations-in-utah-40-years-plus",
+    "title": "Weather Data",
+    "section": "Weather Stations in Utah (40 years plus)",
+    "text": "Weather Stations in Utah (40 years plus)\nClicking on point downloads data"
+  },
+  {
+    "objectID": "slides/introductions.html#weather-in-blanding",
+    "href": "slides/introductions.html#weather-in-blanding",
+    "title": "Weather Data",
+    "section": "Weather in Blanding",
+    "text": "Weather in Blanding\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStation in BLANDING, UT US reported daily from 1904-11-26 to 2026-07-05 (pre-dates founding of the city)\nObserved Measurements\n\nTMAX = Maximum temperature (tenths of degrees C)\nTMIN = Minimum temperature (tenths of degrees C)\nPRCP = Precipitation (tenths of mm)\nSNOW = Snowfall (mm)\nSNWD = Snow depth (mm)\n\nSource for checking on unusual observations: Daily Almanac"
+  },
+  {
+    "objectID": "slides/introductions.html#daily-precipitation",
+    "href": "slides/introductions.html#daily-precipitation",
+    "title": "Weather Data",
+    "section": "Daily Precipitation",
+    "text": "Daily Precipitation\nAverage daily precipitation is 7.3 mm, but it rained only on 15524 out of 97537 recorded days."
+  },
+  {
+    "objectID": "slides/introductions.html#rainfall-over-time",
+    "href": "slides/introductions.html#rainfall-over-time",
+    "title": "Weather Data",
+    "section": "Rainfall over time",
+    "text": "Rainfall over time"
+  },
+  {
+    "objectID": "slides/introductions.html#rainfall-over-time-1",
+    "href": "slides/introductions.html#rainfall-over-time-1",
+    "title": "Weather Data",
+    "section": "Rainfall over time",
+    "text": "Rainfall over time"
+  },
+  {
+    "objectID": "slides/introductions.html#average-temp",
+    "href": "slides/introductions.html#average-temp",
+    "title": "Weather Data",
+    "section": "Average Temp",
+    "text": "Average Temp"
+  },
+  {
+    "objectID": "slides/introductions.html#length-of-snow-cover",
+    "href": "slides/introductions.html#length-of-snow-cover",
+    "title": "Weather Data",
+    "section": "Length of snow cover",
+    "text": "Length of snow cover"
+  },
+  {
     "objectID": "slides/introductions.html#your-turn",
     "href": "slides/introductions.html#your-turn",
-    "title": "Introductions",
+    "title": "Weather Data",
     "section": "Your Turn",
     "text": "Your Turn\nIntroduce yourself!\n\nYour Name\nWhat grade(s) and/or subject(s) you teach\nWhat you hope to learn from this workshop\nWhat type of data you geek out over"
   },
   {
-    "objectID": "slides/introductions.html#logistics",
-    "href": "slides/introductions.html#logistics",
-    "title": "Introductions",
-    "section": "Logistics",
-    "text": "Logistics\n\nAll course materials are available at https://data-vis-workshops.github.io/2026-USU-PublicDataVis/"
-  },
-  {
-    "objectID": "slides/introductions.html#check-your-r-setup",
-    "href": "slides/introductions.html#check-your-r-setup",
-    "title": "Introductions",
-    "section": "Check your R setup",
-    "text": "Check your R setup\n\n“If R were an airplane, RStudio would be the airport”\nJulie Lowndes, Openscapes"
-  },
-  {
     "objectID": "slides/introductions.html#resources",
     "href": "slides/introductions.html#resources",
-    "title": "Introductions",
+    "title": "Weather Data",
     "section": "Resources",
-    "text": "Resources\n\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+    "text": "Resources\n\nGlobal Historical Climatology Network (NOAA)\nUtah Weather\nUtah Weather Almana\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
   },
   {
     "objectID": "Blanding.html",
@@ -105,39 +126,11 @@
     "text": "Roosevelt\n\nOctober 1, 2026\nSession #1 of Data Science Workshop, 2:00 - 5:00 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:00 - 2:30\nIntroductions\n\n\n\n2:30 - 3:20\nWhy Graphics?\n\n\n\n3:20 - 3:30\nBreak\n\n\n\n3:30 - 4:20\nHow to Make Graphics\n\n\n\n4:20 - 4:30\nBreak\n\n\n\n4:30 - 5:00\nPerception & Graphics\n\n\n\n\n\n\nOctober 2, 2026\nSession #2 of Data Science Workshop, 8:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n8:00 - 8:50\nPublic Data Showcase\n\n\n\n8:50 - 9:00\nBreak\n\n\n\n9:00 - 9:50\nTheming & Customizing Charts\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nPersonal Data Activities\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities"
   },
   {
-<<<<<<< HEAD
-    "objectID": "slides/weather-data.html#weather-stations-in-utah",
-    "href": "slides/weather-data.html#weather-stations-in-utah",
-    "title": "Weather Data",
-    "section": "Weather Stations in Utah",
-    "text": "Weather Stations in Utah"
-  },
-  {
-    "objectID": "slides/weather-data.html#your-turn",
-    "href": "slides/weather-data.html#your-turn",
-    "title": "Weather Data",
-    "section": "Your Turn",
-    "text": "Your Turn\nIntroduce yourself!\n\nYour Name\nWhat grade(s) and/or subject(s) you teach\nWhat you hope to learn from this workshop\nWhat type of data you geek out over"
-  },
-  {
-    "objectID": "slides/weather-data.html#resources",
-    "href": "slides/weather-data.html#resources",
-    "title": "Weather Data",
-    "section": "Resources",
-    "text": "Resources\n\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
-  },
-  {
-    "objectID": "slides/weather-data.html#weather-stations-in-utah-30-years-plus",
-    "href": "slides/weather-data.html#weather-stations-in-utah-30-years-plus",
-    "title": "Weather Data",
-    "section": "Weather Stations in Utah (30 years plus)",
-    "text": "Weather Stations in Utah (30 years plus)\nClicking on point downloads data"
-=======
-    "objectID": "slides/how-graphics.html#data",
-    "href": "slides/how-graphics.html#data",
+    "objectID": "slides/how-graphics.html#first-things-first",
+    "href": "slides/how-graphics.html#first-things-first",
     "title": "How to Make Graphics",
-    "section": "Data",
-    "text": "Data\nBefore it is possible to talk about how to make graphics, it is important to know the type and format of the data you’re working with.\nWhy?\n\nthe data contains all of the information you’re trying to convey\nthe appropriate chart depends on the data type\nWorking with R and ggplot is much easier if the data you use is in the right shape"
+    "section": "First Things First!",
+    "text": "First Things First!\nBefore we start creating graphics…\nKnow the type and format of the data you’re working with.\n\nWhy?\n\nthe data contains all of the information you want to convey\nthe appropriate chart depends on the data type\nWorking with R and ggplot is much easier if the data you use is in the right shape"
   },
   {
     "objectID": "slides/how-graphics.html#data-levels-of-measurement",
@@ -147,11 +140,11 @@
     "text": "Data: levels of measurement\nQuantitative\n\nContinuous (e.g. height, weight)\nDiscrete (e.g. age in years)\n\nQualitative\n\nNominal: categories have no meaningful order (e.g. colors)\nOrdinal: categories have order but no meaningful distance between categories (e.g. five star ratings)"
   },
   {
-    "objectID": "slides/how-graphics.html#data-dimensions-form-and-type",
-    "href": "slides/how-graphics.html#data-dimensions-form-and-type",
+    "objectID": "slides/how-graphics.html#data-dimensions-and-type",
+    "href": "slides/how-graphics.html#data-dimensions-and-type",
     "title": "How to Make Graphics",
-    "section": "Data: Dimensions, Form, and Type",
-    "text": "Data: Dimensions, Form, and Type\n\n\n\nDimensions\nForms\nTypes\n\n\n\n\nUnivariate (1 variable)\nTraditional\nCount (word freq, scores)\n\n\nBivariate (2 variables)\nAggregated\nTime Series\n\n\nMultivariate (3 variables)\n\nSpatial\n\n\n\nTime to Event (Survival, Reliability)\n\n\n\n\nCategorical"
+    "section": "Data: Dimensions and Type",
+    "text": "Data: Dimensions and Type\n\n\n\nDimensions\nTypes\n\n\n\n\nUnivariate (1 variable)\nCount (word freq, scores)\n\n\nBivariate (2 variables)\nTime Series, Relationships\n\n\nMultivariate (3 variables)\nSpatial\n\n\n\nTime to Event (Survival, Reliability)\n\n\n\nCategorical"
   },
   {
     "objectID": "slides/how-graphics.html#exploring-relationships",
@@ -175,28 +168,11 @@
     "text": "Untidy data\n\nHappy families are all alike; every unhappy family is unhappy in its own way. - Leo Tolstoy\n\n\nFive main ways tables of data tend not to be tidy\n\n\nColumn headers are values, not variable names.\nMultiple variables are stored in one column.\nVariables are stored in both rows and columns.\nMultiple types of observational units are stored in the same table.\nA single observational unit is stored in multiple tables.\n\n\n\n\n\n\n\n\nTip\n\n\nAI can be very useful to help you find the right R commands to move from untidy to tidy data.\nOther resources: Reshaping Data, a chapter in Statistical Computing in R and Python (free website)"
   },
   {
-    "objectID": "slides/how-graphics.html#first-things-first",
-    "href": "slides/how-graphics.html#first-things-first",
-    "title": "How to Make Graphics",
-    "section": "First Things First!",
-    "text": "First Things First!\nBefore we start creating graphics…\nKnow the type and format of the data you’re working with.\n\nWhy?\n\nthe data contains all of the information you want to convey\nthe appropriate chart depends on the data type\nWorking with R and ggplot is much easier if the data you use is in the right shape"
-  },
-  {
-    "objectID": "slides/how-graphics.html#data-dimensions-and-type",
-    "href": "slides/how-graphics.html#data-dimensions-and-type",
-    "title": "How to Make Graphics",
-    "section": "Data: Dimensions and Type",
-    "text": "Data: Dimensions and Type\n\n\n\nDimensions\nTypes\n\n\n\n\nUnivariate (1 variable)\nCount (word freq, scores)\n\n\nBivariate (2 variables)\nTime Series, Relationships\n\n\nMultivariate (3 variables)\nSpatial\n\n\n\nTime to Event (Survival, Reliability)\n\n\n\nCategorical"
-  },
-  {
     "objectID": "slides/how-graphics.html#ggplot2-basics",
     "href": "slides/how-graphics.html#ggplot2-basics",
     "title": "How to Make Graphics",
     "section": "ggplot2 basics",
     "text": "ggplot2 basics\nggplot2 is based on the grammar of graphics - every chart is based on the same components:\n\na data set,\ncoordinate system,\ngeoms – visual marks that represent data points\n\nValues from the data set are mapped to properties of the geom using aesthetics like size, color, and/or x and y location"
-<<<<<<< HEAD
->>>>>>> b4c1178cde7d536621b6cb2a309222daa10e33e1
-=======
   },
   {
     "objectID": "slides/how-graphics.html#ggplot2-basics-1",
@@ -220,25 +196,11 @@
     "text": "What is a geom?\n\nA geom function represents data points\nAesthetic properties represent variables"
   },
   {
-    "objectID": "slides/how-graphics.html#geom-options",
-    "href": "slides/how-graphics.html#geom-options",
-    "title": "How to Make Graphics",
-    "section": "Geom Options",
-    "text": "Geom Options\n\n\n\n\n\n\n\n\n\n\nPrimitives\n\ngeom_path\n\ngeom_polygon\n\ngeom_rect\n\ngeom_ribbon\n\n\nOne Variable\n\ngeom_dotplot\n(cts)\n\ngeom_histogram\n(cts)\n\ngeom_density\n(cts)\n\ngeom_bar (discrete)\n\n\nTwo Cts Variables\n\ngeom_point\n\ngeom_smooth\n, \ngeom_label, geom_text\n\n\n\nDist of 2 Variables\n\ngeom_bin2d\n\ngeom_density_2d\n\ngeom_hex\n\n\n\nOne Discrete, One Cts\n\ngeom_col\n\ngeom_boxplot\n\ngeom_dotplot\n\ngeom_violin\n\n\nTwo Discrete\n\ngeom_count\n\ngeom_jitter"
-  },
-  {
     "objectID": "slides/how-graphics.html#geom-options-geom_xxx",
     "href": "slides/how-graphics.html#geom-options-geom_xxx",
     "title": "How to Make Graphics",
     "section": "Geom Options: geom_xxx",
     "text": "Geom Options: geom_xxx\n\n\n\n\n\n\nPrimitives\n\n\n\n\n\n\n\n\npath\n\n\n\n\n\n\n\npolygon\n\n\n\n\n\n\n\nrect\n\n\n\n\n\n\n\nribbon\n\n\n\n\n\n\n\ncurve\n\n\n\n\n\n\n\n\n\n\n\nTwo Continuous Variables\n\n\n\n\n\nFunctions\n\n\n\n\n\narea\n\n\n\n\n\n\n\nline\n\n\n\n\n\n\n\nstep\n\n\n\n\n\n\nRelationships\n\n\n\n\n\npoint\n\n\n\n\n\n\n\nsmooth\n\n\n\n\n\n\n\ntext\n\n\n\n\n\n\nDistributions\n\n\n\n\n\nbin2d\n\n\n\n\n\n\n\ndensity2d\n\n\n\n\n\n\n\nhex\n\n\n\n\n\n\n\n\n\n\n\n\nOne Variable\n\n\n\n\n\nDiscrete\n\n\n \n\n\nContinuous\n\n\n\n\n\n\n\nbar\n\n\n\n\n \n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nhistogram\n\n\n\n\n\n\n\ndensity\n\n\n\n\n\n\n\n\n\n\n\nDiscrete + Continuous\n\n\n\n\n\n\n\n\ncol\n\n\n\n\n\n\n\nboxplot\n\n\n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nviolin\n\n\n\n\n\n\n\n\n\n\n\nTwo Discrete\n\n\n\n\n\n\n\n\ncount\n\n\n\n\n\n\n\njitter"
-  },
-  {
-    "objectID": "slides/how-graphics.html#section",
-    "href": "slides/how-graphics.html#section",
-    "title": "How to Make Graphics",
-    "section": "",
-    "text": "Primitives\npath | polygon |  rect |  ribbon |\n\n\nOne Variable\n dotplot (cts)\n histogram (cts)\n density (cts)\n bar (discrete)\n\n\nTwo Cts Variables\n point\n smooth\n label\n text\n\n\nDist of 2 Variables\n bin2d\n density_2d\n hex\n\n\n\nOne Discrete, One Cts\n  | col | boxplot | dotplot | violin\n\n\nTwo Discrete\n\ncount\n\njitter"
   },
   {
     "objectID": "slides/how-graphics.html#what-is-a-layer",
@@ -253,6 +215,5 @@
     "title": "How to Make Graphics",
     "section": "Your Turn",
     "text": "Your Turn\nChange the code below to have the points on top of the boxplots.\n\nggplot(data = mpg, aes(x = class, y = hwy)) + \n  geom_jitter() + \n  geom_boxplot()"
->>>>>>> ec8c3856145fb3e535a89717d31d63f635b22bb1
   }
 ]
