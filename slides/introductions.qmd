@@ -28,8 +28,8 @@ knitr::opts_chunk$set(
 ```{r}
 #| echo: false
 #| eval: false
-#pak::pak("hadley/emo")
-#pak::pak("mitchelloharawild/icons")
+pak::pak("hadley/emo") 
+pak::pak("mitchelloharawild/icons") 
 ```
 
 ```{r setup}
@@ -50,7 +50,7 @@ theme_set(theme_bw())
 ## Data explorations
 
 ![](images/explorer.jpeg)
-I like to go on data explorations: [Weather in Blanding](../materials/weather-data.html)
+I like to go on data explorations: [Weather in Blanding](../materials/weather-data.qmd)
 
 ## Your Turn {.inverse .large}
 
@@ -60,63 +60,6 @@ Introduce yourself!
 2. What grade(s) and/or subject(s) you teach
 3. What you hope to learn from this workshop
 4. What type of data you geek out over
-
-
-## Your turn: Course materials {.inverse .middle}
-
-<!-- ::: {.smaller} -->
-<!-- All materials at <https://github.com/dicook/SISBID> -->
-
-<!-- - __Download__ `SISBID_day1.zip` (a zip archive). This contains all  -->
-<!--     - the code files,  -->
-<!--     - `qmd` files,  -->
-<!--     - and data for day 1 of this workshop.  -->
-<!-- - __Unzip the file__ Windows user: use **extract**, don't just double-click -->
-<!-- - __Double-click__ `SISBID.Rproj`. The R project helps organise your work over these next few days. ![](images/projectname.png) -->
-<!-- ::: -->
-
-## What's in the zip?
-
-<!-- -   `.R` file of code, one for each module of the course, use this to follow along -->
-<!-- -   `data` folder containing data sets used in the course -->
-<!-- -   `SISBID.Rproj` for starting RStudio in your course working directory -->
-
-<!-- `r anicon::nia("Please run, edit and change the code as we go! Experiment, break and fix.", colour="#B78ED2", anitype="hover")` -->
-
-## Check your R setup
-
-<!-- > ["If R were an airplane, RStudio would be the airport"\ -->
-<!-- > [Julie Lowndes, Openscapes](http://jules32.github.io/resources/RStudio_intro/)]{.orange} -->
-
-<!-- ![](images/setup.png){width="200%"} -->
-
-## R package locations:
-
-<!-- CRAN -->
-
-<!-- ```{r} -->
-<!-- #| eval: false -->
-<!-- install.packages("nullabor") -->
-<!-- ``` -->
-
-<!-- Bioconductor -->
-
-<!-- ```{r} -->
-<!-- #| eval: false -->
-<!-- if (!requireNamespace("BiocManager", quietly = TRUE)) -->
-<!--     install.packages("BiocManager") -->
-
-<!-- BiocManager::install("bigPint") -->
-<!-- ``` -->
-
-<!-- Github -->
-
-<!-- ```{r} -->
-<!-- #| eval: false -->
-<!-- remotes::install_github("wmurphyrd/fiftystater") -->
-<!-- ``` -->
-
-<!-- [Code to install all packages required for the course](../r-pkg-deps.R) is available on course website.  -->
 
 
 
