@@ -93,16 +93,16 @@
   {
     "objectID": "slides/introductions.html#your-turn",
     "href": "slides/introductions.html#your-turn",
-    "title": "Weather Data",
+    "title": "Visualization and Public Data",
     "section": "Your Turn",
     "text": "Your Turn\nIntroduce yourself!\n\nYour Name\nWhat grade(s) and/or subject(s) you teach\nWhat you hope to learn from this workshop\nWhat type of data you geek out over"
   },
   {
     "objectID": "slides/introductions.html#resources",
     "href": "slides/introductions.html#resources",
-    "title": "Weather Data",
+    "title": "Visualization and Public Data",
     "section": "Resources",
-    "text": "Resources\n\nGlobal Historical Climatology Network (NOAA)\nUtah Weather\nUtah Weather Almana\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+    "text": "Resources\n\nGlobal Historical Climatology Network (NOAA)\nUtah Weather\nUtah Weather Almanac\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
   },
   {
     "objectID": "Blanding.html",
@@ -215,5 +215,96 @@
     "title": "How to Make Graphics",
     "section": "Your Turn",
     "text": "Your Turn\nChange the code below to have the points on top of the boxplots.\n\nggplot(data = mpg, aes(x = class, y = hwy)) + \n  geom_jitter() + \n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/weather-data.html#weather-stations-in-utah-30-years-plus",
+    "href": "slides/weather-data.html#weather-stations-in-utah-30-years-plus",
+    "title": "Weather Data",
+    "section": "Weather Stations in Utah (30 years plus)",
+    "text": "Weather Stations in Utah (30 years plus)\nClicking on point downloads data"
+  },
+  {
+    "objectID": "slides/weather-data.html#weather-in-blanding",
+    "href": "slides/weather-data.html#weather-in-blanding",
+    "title": "Weather Data",
+    "section": "Weather in Blanding",
+    "text": "Weather in Blanding\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStation in BLANDING, UT US reported daily from 1904-11-26 to 2026-07-05 (pre-dates founding of the city)\nObserved Measurements\n\nTMAX = Maximum temperature (tenths of degrees C)\nTMIN = Minimum temperature (tenths of degrees C)\nPRCP = Precipitation (tenths of mm)\nSNOW = Snowfall (mm)\nSNWD = Snow depth (mm)\n\nSource for checking on unusual observations: Daily Almanac"
+  },
+  {
+    "objectID": "slides/weather-data.html#daily-precipitation",
+    "href": "slides/weather-data.html#daily-precipitation",
+    "title": "Weather Data",
+    "section": "Daily Precipitation",
+    "text": "Daily Precipitation\nAverage daily precipitation is 8.9 mm, but it rained only on 7220 out of 43094 recorded days."
+  },
+  {
+    "objectID": "slides/weather-data.html#rainfall-over-time",
+    "href": "slides/weather-data.html#rainfall-over-time",
+    "title": "Weather Data",
+    "section": "Rainfall over time",
+    "text": "Rainfall over time"
+  },
+  {
+    "objectID": "slides/weather-data.html#average-temp",
+    "href": "slides/weather-data.html#average-temp",
+    "title": "Weather Data",
+    "section": "Average Temp",
+    "text": "Average Temp"
+  },
+  {
+    "objectID": "slides/weather-data.html#length-of-snow-cover",
+    "href": "slides/weather-data.html#length-of-snow-cover",
+    "title": "Weather Data",
+    "section": "Length of snow cover",
+    "text": "Length of snow cover"
+  },
+  {
+    "objectID": "slides/weather-data.html#your-turn",
+    "href": "slides/weather-data.html#your-turn",
+    "title": "Weather Data",
+    "section": "Your Turn",
+    "text": "Your Turn\nIntroduce yourself!\n\nYour Name\nWhat grade(s) and/or subject(s) you teach\nWhat you hope to learn from this workshop\nWhat type of data you geek out over"
+  },
+  {
+    "objectID": "slides/weather-data.html#resources",
+    "href": "slides/weather-data.html#resources",
+    "title": "Weather Data",
+    "section": "Resources",
+    "text": "Resources\n\nGlobal Historical Climatology Network (NOAA)\nUtah Weather\nUtah Weather Almana\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+  },
+  {
+    "objectID": "slides/introductions.html#your-turn-course-materials",
+    "href": "slides/introductions.html#your-turn-course-materials",
+    "title": "Visualization and Public Data",
+    "section": "Your turn: Course materials",
+    "text": "Your turn: Course materials"
+  },
+  {
+    "objectID": "slides/introductions.html#whats-in-the-zip",
+    "href": "slides/introductions.html#whats-in-the-zip",
+    "title": "Visualization and Public Data",
+    "section": "What’s in the zip?",
+    "text": "What’s in the zip?"
+  },
+  {
+    "objectID": "slides/introductions.html#check-your-r-setup",
+    "href": "slides/introductions.html#check-your-r-setup",
+    "title": "Visualization and Public Data",
+    "section": "Check your R setup",
+    "text": "Check your R setup"
+  },
+  {
+    "objectID": "slides/introductions.html#r-package-locations",
+    "href": "slides/introductions.html#r-package-locations",
+    "title": "Visualization and Public Data",
+    "section": "R package locations:",
+    "text": "R package locations:"
+  },
+  {
+    "objectID": "slides/introductions.html#data-explorations",
+    "href": "slides/introductions.html#data-explorations",
+    "title": "Visualization and Public Data",
+    "section": "Data explorations",
+    "text": "Data explorations\n I like to go on data explorations: Weather in Blanding"
   }
 ]
