@@ -119,24 +119,6 @@ knitr::include_graphics("images/HR-diagram-1.png")
 
 Data source: the [HYG Database](https://github.com/astronexus/HYG-Database). Only stars within 500 AU are shown.
 
-## Why Graphics?
-
-::: columns
-::: column
-::: incremental
-
-- Communication
-- Ability to see the data can lead to new insights
-
-:::
-:::
-::: column
-```{r}
-#| label: HR-diagram
-```
-:::
-:::
-
 ::: notes
 
 When drawn well, statistical graphics help us understand our data and see things that we didn't know were there. The relationship between star magnitude, star color, and spectral class wasn't well understood until someone created a chart like this that showed the color index (or spectral class) against the absolute brightness. Then, it was much easier to see that the chart described a life-cycle - stars start out in the main sequence, and then become giants, dwarfs, or slowly change spectral class over time as they cool down in temperature.
@@ -162,8 +144,11 @@ datasaurus_dozen |> group_by(dataset) |>
 # Visualize it!
 
 ```{r}
+#| fig-width: 12
+#| fig-height: 5
 datasaurus_dozen |> ggplot(aes(x =x, y = y)) + 
-  facet_wrap(~dataset)
+  geom_point() + 
+  facet_wrap(~dataset, ncol = 7)
 ```
 
 # Overview: Types of Graphs
@@ -340,19 +325,50 @@ ggplot(aes(x = body_mass, fill = species, color = species)) +
 
 ## Quantitative Literacy
 
+::: columns
+:::  {.column width="30%"}
+### Elementary 
 
+- Visual Mappings 📊
+- Scales 📐
+- Pie charts 🥧 (fractions)
+- Line charts 📈 (time)
+- Range, Mean, Median, Mode 📏
 
+:::
+:::  {.column width="30%"}
+### Middle
 
+- Cartesian Coordinates <i class="fa-solid fa-table-cells-large"></i>
+- Slope, Intercept form <i class="fa-solid fa-chart-line"></i>
+- Functions, Polynomials <i class="fa-solid fa-bezier-curve"></i>
+- Probability    
+![dotplot](images/geom-dotplot.png){width="40" fig-alt="geom_dotplot"} ![histogram](images/geom-histogram.png){width="40" fig-alt="geom_histogram"} ![boxplot](images/geom-boxplot.png){width="40" fig-alt="geom_boxplot" style="padding-bottom: 12px"}
+
+:::
+::: {.column width="40%"}
+### High School
+
+- Polar Coordinates
+- Functions - Trigonometry <i class="fa-solid fa-water"></i>, Logarithms🪵, Exponential growth <i class="fa-solid fa-superscript"></i>
+- Connecting equations & inequalities to graphs
+- Statistical reasoning - inference 🧠
+:::
+:::
 
 ## Connections to Art, Science, Civics, Media Literacy
 
+- Science: data collection📋, inference, estimation of constants 🌳🍎
 
+- Civics: election maps🗺️, census, polling, charts about current events
 
+- Art: [personal data collection/visualization](https://towardsdatascience.com/create-beautiful-art-from-your-personal-data-9dc0abfeeaf/), [generative](https://flametree.djnavarro.net) [art](https://art.djnavarro.net/gallery/)
 
+- Media Literacy: [best/worst practices](https://empirestats.net/2026/03/26/misleading-graphs-examples/), claims & support
 
-## Exploratory Data Analysis: Demo
-
-<!-- Heike's weather exploration stuff here? -->
+::: callout-tip
+The US Census commissioned Statistical Atlases for the [1870](https://www.loc.gov/item/05019329/), [1880](https://www.loc.gov/item/a40001834/), and [1890](https://www.loc.gov/item/07019233) censuses. They have *amazing* data visualizations of the US population during westward expansion. 
+:::
 
 ## Your Turn {.inverse}
 

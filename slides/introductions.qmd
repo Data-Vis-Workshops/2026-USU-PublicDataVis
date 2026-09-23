@@ -1,5 +1,5 @@
 ---
-title: Introductions
+title: Weather Data
 format: revealjs
 ---
 
@@ -21,16 +21,261 @@ knitr::opts_chunk$set(
   echo=FALSE
 )
 ```
+
 ```{r}
 #| echo: false
 #| eval: false
-pak::pak("hadley/emo")
-pak::pak("mitchelloharawild/icons")
+#pak::pak("hadley/emo")
+#pak::pak("mitchelloharawild/icons")
+```
+
+```{r setup}
+library(leaflet)
+library(readr)
+library(tidyverse)
+library(htmlwidgets)
+library(plotly)
+library(ggplot2)
+theme_set(theme_bw())
 ```
 
 ## {background-image="images/Hello-Heike.png" background-size="contain" background-image-alt="A 'Hello, my name is' sticker with the name Heike"}
 
 ## {background-image="images/Hello-Susan.png" background-size="contain"  background-image-alt="A 'Hello, my name is' sticker with the name Susan"}
+
+
+## Weather Stations in Utah (40 years plus)
+
+Clicking on point downloads data
+
+```{r}
+ut_stations <- read_csv("data/ut_stations.csv") |>
+  mutate(id = gsub("GHCND:", "", id), 
+         years = round((maxdate-mindate)/365)) |>
+  mutate(
+    file = sprintf("https://www.ncei.noaa.gov/pub/data/ghcn/daily/by_station/%s.csv.gz", id)
+  )
+
+ut_stations |>
+  filter(years > 40 ) |>
+  leaflet() |> addTiles() |> 
+  addCircleMarkers(lng = ~lon, lat=~lat, 
+                   label = ~paste(name, id, 
+                                  years, 
+                                  sep=" | "),
+                   layerId = ~file,
+                   radius = 5) |>
+  onRender("
+    function(el, x) {
+      this.eachLayer(function(layer) {
+        if (layer instanceof L.CircleMarker) {
+          layer.on('click', function(e) {
+            var url = layer.options.layerId;
+
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = '';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+          });
+        }
+      });
+    }
+  ")
+
+```
+
+## Weather in Blanding
+
+```{r read-data}
+files <- dir("data/stations", pattern="csv.gz",
+             full.names = TRUE )
+weather <- read_csv(files,
+col_names = c(
+      "id", "date", "element", "value",
+      "m_flag", "q_flag", "s_flag", "obs_time"
+    ),
+    col_types = cols(
+      id       = col_character(),
+      date     = col_date(format = "%Y%m%d"),
+      element  = col_character(),
+      value    = col_double(),
+      m_flag   = col_character(),
+      q_flag   = col_character(),
+      s_flag   = col_character(),
+      obs_time = col_character()
+    ),
+    na = c("", "-9999")
+)
+
+weather <- weather |> left_join(ut_stations |> select(id, name))
+```
+
+<!-- #https://utahweather.org/almanac/daily-weather-almanac-1847-1995 -->
+<!-- # # from readme-by-station -->
+<!-- # M-FLAG = 1 character Measurement Flag -->
+<!-- # Q-FLAG = 1 character Quality Flag -->
+<!-- # S-FLAG = 1 character Source Flag -->
+<!-- # OBS-TIME = 4-character time of observation -->
+
+<!-- # The five core elements are: -->
+<!-- # -->
+<!-- # PRCP = Precipitation (tenths of mm) -->
+<!-- # SNOW = Snowfall (mm) -->
+<!-- # SNWD = Snow depth (mm) -->
+<!-- # TMAX = Maximum temperature (tenths of degrees C) -->
+<!-- # TMIN = Minimum temperature (tenths of degrees C) -->
+
+
+<!-- DAEV = Number of days included in the multiday evaporation total (MDEV)  -->
+<!-- DAPR = Number of days included in the multiday precipitation total (MDPR)  -->
+<!-- DASF = Number of days included in the multiday snowfall total (MDSF)      -->
+<!-- DATN = Number of days included in the multiday minimum temperature (MDTN)  -->
+<!-- DATX = Number of days included in the multiday maximum temperature (MDTX)  -->
+<!-- DAWM = Number of days included in the multiday wind movement (MDWM)  -->
+<!-- DWPR = Number of days with non-zero precipitation included in multiday precipitation total (MDPR)  -->
+
+```{r}
+# make the data wide to get an overview of which data is included
+
+ww <- weather |> 
+  select(id, name, date, element, value) |>
+  filter(element %in% c("TMIN", "TMAX", "PRCP", "SNOW", "SNWD")) |>
+  pivot_wider(names_from="element", values_from="value") 
+  
+# assume that missing values in precipitation are 0s:
+ww <- ww |> mutate(
+  PRCP = ifelse(is.na(PRCP), 0, PRCP),
+  SNOW = ifelse(is.na(SNOW), 0, SNOW),
+  SNWD = ifelse(is.na(SNWD), 0, SNWD)
+)
+
+ww_long <- ww |> pivot_longer(cols=TMAX:SNWD, names_to = "element", 
+                              values_to = "value")
+```
+
+Station in `r ww$name[1]` reported daily from `r min(ww$date)` to `r max(ww$date)`
+(pre-dates founding of the city)
+
+Observed Measurements
+
+- TMAX = Maximum temperature (tenths of degrees C)
+- TMIN = Minimum temperature (tenths of degrees C)
+- PRCP = Precipitation (tenths of mm)
+- SNOW = Snowfall (mm)
+- SNWD = Snow depth (mm)
+
+Source for checking on unusual observations: [Daily Almanac](https://utahweather.org/almanac/daily-weather-almanac-1847-1995)
+
+## Daily Precipitation
+
+Average daily precipitation is `r round(mean(ww$PRCP, na.rm= TRUE),1)` mm, but it rained only on `r sum(ww$PRCP > 0)` out of `r nrow(ww)` recorded days.
+
+```{r}
+gg <- ww_long |> 
+  filter(element == "PRCP") |>
+  mutate(year = year(date), value = value/10) |>
+  ggplot(aes(x = year, y = value)) + 
+  geom_point(aes(label = date)) +
+  facet_wrap(~month(date, label=TRUE)) +
+  geom_smooth(method="lm", aes(group = name)) + 
+  ylab("mm") + 
+  theme(legend.position = "bottom") + 
+  ggtitle("Daily Precipitation")
+
+ggplotly(gg, height = 550, width = 1000)
+```
+
+## Rainfall over time
+
+
+```{r}
+prcp <- ww_long |> 
+  filter(element == "PRCP") |> 
+  mutate(
+    year = year(date),
+    month = month(date, label=TRUE),
+    value = value/10
+  ) |> group_by(id, name, year, element) |>
+  summarize(
+    n = sum(!is.na(value)),
+    prcp_day = sum(value > 0, na.rm=TRUE),
+    extreme = sum(value > 254, na.rm=TRUE),
+    value = sum(value, na.rm=TRUE)/n*365,
+    .groups = "drop_last"
+  )
+```
+
+```{r}
+#| fig-width: 10
+#| fig-height: 4
+
+prcp |> ggplot(aes(x = year, weight = value)) + geom_bar() + ggtitle("Annual Precipitation") + ylab("mm") 
+```
+
+## Rainfall over time
+
+```{r}
+#| fig-width: 10
+#| fig-height: 4
+prcp |> ggplot(aes(x = year, weight = value)) + geom_bar() + ggtitle("Annual Precipitation") + ylab("mm") + 
+  geom_smooth(aes(x = year, y = value), method="lm")
+```
+
+## Average Temp
+
+```{r}
+#| echo: false
+#| include: false
+temps <- ww_long |> mutate(
+  year = year(date),
+  month = month(date, label=TRUE),
+  value = value/10
+) |> group_by(id, name, year, month, element) |>
+  summarize(
+    value = mean(value, na.rm=TRUE),
+    n = sum(!is.na(value)),
+    .groups = "drop_last"
+  )
+```
+
+
+
+
+
+
+```{r fig.width = 10, fig.height = 6}
+temps |> 
+    filter(element %in% c("TMIN", "TMAX")) |>
+  mutate(element = str_replace_all(element, c("TMIN" = "Min", "TMAX" = "Max"))) |>
+    ggplot(aes(x = year, y = value)) + 
+    geom_point(aes(colour = element)) +
+  scale_color_discrete("") + 
+  ylab("°C") + 
+    facet_wrap(~month) +
+    geom_smooth(method="lm", aes(group = element), colour="grey20") + 
+    theme(legend.position = "bottom") + 
+    ggtitle("Monthly Averages of Daily Minimum and Maximum Temperatures")
+```
+
+
+
+## Length of snow cover
+
+```{r}
+
+snow <- weather |> filter(element == "SNWD") |> 
+  group_by(year = year(date), month = month(date)) |>
+  summarize(SNWD = mean(value, na.rm=TRUE), 
+            SNOW_ON_GROUND = sum(value > 0, na.rm = TRUE), 
+            days = sum(!is.na(value))) 
+
+snow |> filter(month <=4 | month >= 11, year >= 1925) |> 
+  ggplot(aes(x = year, y = SNOW_ON_GROUND/days)) + geom_point() + facet_wrap(~month)
+  
+```
+
 
 ## Your Turn {.inverse .large}
 
@@ -42,22 +287,13 @@ Introduce yourself!
 4. What type of data you geek out over
 
 
-## Logistics
-
-- All course materials are available at <https://data-vis-workshops.github.io/2026-USU-PublicDataVis/>
-
-
-
-
-## Check your R setup
-
-> ["If R were an airplane, RStudio would be the airport"]{.emph .orange-dk}\
-> [Julie Lowndes, Openscapes](http://jules32.github.io/resources/RStudio_intro/)
-
-![](images/setup.png){width="100%" fig-alt="A screenshot of the RStudio program window"}
 
 
 ## Resources
+
+- [Global Historical Climatology Network (NOAA)](https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily)
+- [Utah Weather](https://utahweather.org/)
+- [Utah Weather Almana](https://utahweather.org/almanac)
 
 -   Reference Sheets
   - [RStudio](https://opensource.posit.co/resources/cheatsheets/rstudio-ide/)

@@ -336,11 +336,11 @@ Continuous
 
 ![col](images/geom-col.png){width="75" fig-alt="geom_col"}
 
-![boxplot](images/geom-boxplot.png "geom_boxplot"){width="75" fig-alt="geom_boxplot"}
+![boxplot](images/geom-boxplot.png){width="75" fig-alt="geom_boxplot"}
 
-![dotplot](images/geom-dotplot2.png "geom_dotplot"){width="75" fig-alt="geom_dotplot"}
+![dotplot](images/geom-dotplot2.png){width="75" fig-alt="geom_dotplot"}
 
-![violin](images/geom-violin.png "geom_violin"){width="75" fig-alt="geom_violin"}
+![violin](images/geom-violin.png){width="75" fig-alt="geom_violin"}
 
 :::
 :::
