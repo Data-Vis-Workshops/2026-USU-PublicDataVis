@@ -394,7 +394,6 @@ ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_violin(aes(fi
 
 ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1) + geom_violin(aes(fill = class), alpha = 0.4)
 
-
 ```
 
 
@@ -411,3 +410,22 @@ ggplot(data = mpg, aes(x = class, y = hwy)) +
   geom_jitter() + 
   geom_boxplot()
 ```
+
+
+## Charts on Parade
+
+The Grammar of Graphics makes it easy to change plot types. 
+
+[Halloween candy preference data](https://navigatorresearch.org/reeses-is-the-most-preferred-halloween-candy-among-ameri)
+
+```{r}
+library(tibble)
+df <- tribble(~candy, ~dem, ~ind, ~rep, "Reese's", 29, 29, 28, "Snickers", 13, 13, 9, "M&Ms", 7, 5, 10, "Kit Kat", 7, 12, 7, "Candy Corn", 6, 6, 10, "Chocolate bars", 7, 4, 5, "Twix", 6, 3, 5, "Milky Way", 5, 1, 6, "Almond Joy", 4, 7, 5, "Sour Patch Kids", 4, 5, 3, "Skittles", 3, 1, 2, "Starburst", 2, 2, 2, "Twizzlers", 2, 0, 1, "Raisinets", 1, 1, 1, "Other", 4, 11, 6)
+
+library(ggplot2)
+df |>
+  pivot_longer(-candy, names_to = "politics", values_to = "pct") |>
+  # group_by(politics) |> summarize(pct = sum(pct)) |>
+  ggplot(aes(x = politics, y = pct, fill = candy)) + geom_col()
+```
+
