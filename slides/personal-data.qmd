@@ -3,3 +3,66 @@ title: Personal Data Visualization
 format: revealjs
 css: ../css/slide-theme.scss
 ---
+
+## Take measure of your surroundings
+
+- Personal and personally collected data is more fun to analyse
+
+- 
+
+## NameGrapher
+
+Laura and Martin Wattenberg's approach to name their firstborn 
+
+https://namerology.com/baby-name-grapher/
+
+![](../images/namegrapher.png)
+## Your Turn
+
+- Did you first check your own name?
+
+- How many names start with a vowel?
+
+- Lautner or Swift? Which Taylor has more influence on baby names?
+
+- What about Orange and Pink as kids' names?
+
+## Praerie Dog Town
+
+From a college-level course on Spatial Ecology: use GPS coordinates from a morning of measuring out a praerie dog town
+
+```{r}
+library(tidyverse)
+
+pd_town <- read_csv(here::here("data/praeriedogtown.csv"))
+
+if (!require(leaflet)) {
+  install.packages("leaflet")
+}
+library(leaflet)
+
+pd_town |>
+  leaflet() |>
+  addProviderTiles(providers$Esri.WorldImagery, group = "World Imagery (satellite)") |>
+  addCircles(
+    ~ longitude,
+    ~ latitude,
+    stroke = FALSE,
+    group = "inactive",
+    fillColor = "brown4",
+    fillOpacity = .5,
+    radius = 2.5,
+    data = pd_town |> filter(active == "n")
+  ) |>
+  addCircles(
+    ~ longitude,
+    ~ latitude,
+    stroke = FALSE,
+    group = "active",
+    fillColor = "yellow",
+    fillOpacity = .5,
+    radius = 2.5,
+    data = pd_town |> filter(active == "y")
+  )
+
+```
