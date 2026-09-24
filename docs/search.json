@@ -1,129 +1,80 @@
 [
   {
-    "objectID": "slides/why-graphics.html#section",
-    "href": "slides/why-graphics.html#section",
-    "title": "Why Graphics?",
-    "section": "",
-    "text": "The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star’s life cycle: a hypothesis that only came to be because of this chart.\n\n\n\n\nData source: the HYG Database. Only stars within 500 AU are shown.\n\nWhen drawn well, statistical graphics help us understand our data and see things that we didn’t know were there. The relationship between star magnitude, star color, and spectral class wasn’t well understood until someone created a chart like this that showed the color index (or spectral class) against the absolute brightness. Then, it was much easier to see that the chart described a life-cycle - stars start out in the main sequence, and then become giants, dwarfs, or slowly change spectral class over time as they cool down in temperature.\nWell designed graphs can help us understand the natural phenomenon behind the raw numerical data we’ve collected."
-  },
-  {
-    "objectID": "slides/why-graphics.html#basic",
-    "href": "slides/why-graphics.html#basic",
-    "title": "Why Graphics?",
-    "section": "Basic",
-    "text": "Basic\n\n\nOne Variable\n\nDiscrete\n\nBar Chart\nPie Chart\n\nContinuous\n\nStem and Leaf Plots\nHistograms\n\n\n\nTwo variables\n\nContinuous X, Continuous Y\n\nScatterplots\n(w/ and w/o trend lines)\n\nMaps"
-  },
-  {
-    "objectID": "slides/why-graphics.html#more-fancy",
-    "href": "slides/why-graphics.html#more-fancy",
-    "title": "Why Graphics?",
-    "section": "More “Fancy”",
-    "text": "More “Fancy”\n\n\n\nParallel Coordinate Plots\nMosaic Plots\nRadar Charts\nHeat Maps\nDensity Plots\nViolin Plots\nSocial Network Plots"
-  },
-  {
-    "objectID": "slides/why-graphics.html#quantitative-literacy",
-    "href": "slides/why-graphics.html#quantitative-literacy",
-    "title": "Why Graphics?",
-    "section": "Quantitative Literacy",
-    "text": "Quantitative Literacy\n\n\nElementary\n\nVisual Mappings 📊\nScales 📐\nPie charts 🥧 (fractions)\nLine charts 📈 (time)\nRange, Mean, Median, Mode 📏\n\n\nMiddle\n\nCartesian Coordinates \nSlope, Intercept form \nFunctions, Polynomials \nProbability\n  \n\n\nHigh School\n\nPolar Coordinates\nFunctions - Trigonometry , Logarithms🪵, Exponential growth \nConnecting equations & inequalities to graphs\nStatistical reasoning - inference 🧠"
-  },
-  {
-    "objectID": "slides/why-graphics.html#connections-to-art-science-civics-media-literacy",
-    "href": "slides/why-graphics.html#connections-to-art-science-civics-media-literacy",
-    "title": "Why Graphics?",
-    "section": "Connections to Art, Science, Civics, Media Literacy",
-    "text": "Connections to Art, Science, Civics, Media Literacy\n\nScience: data collection📋, inference, estimation of constants 🌳🍎\nCivics: election maps🗺️, census, polling, charts about current events\nArt: personal data collection/visualization, generative art\nMedia Literacy: best/worst practices, claims & support\n\n\n\n\n\n\n\nTip\n\n\nThe US Census commissioned Statistical Atlases for the 1870, 1880, and 1890 censuses. They have amazing data visualizations of the US population during westward expansion."
-  },
-  {
-    "objectID": "slides/why-graphics.html#your-turn",
-    "href": "slides/why-graphics.html#your-turn",
-    "title": "Why Graphics?",
-    "section": "Your Turn",
-    "text": "Your Turn\n\nHow could data visualization connect to learning objectives for your grade(s) and subject(s)?\nWhat types of charts are most important for your students?\nWhat data would you like to show students?"
-  },
-  {
-    "objectID": "slides/introductions.html#weather-stations-in-utah-40-years-plus",
-    "href": "slides/introductions.html#weather-stations-in-utah-40-years-plus",
+    "objectID": "materials/weather-data.html#weather-stations-in-utah-30-years-plus",
+    "href": "materials/weather-data.html#weather-stations-in-utah-30-years-plus",
     "title": "Weather Data",
-    "section": "Weather Stations in Utah (40 years plus)",
-    "text": "Weather Stations in Utah (40 years plus)\nClicking on point downloads data"
+    "section": "Weather Stations in Utah (30 years plus)",
+    "text": "Weather Stations in Utah (30 years plus)\nClicking on point downloads data"
   },
   {
-    "objectID": "slides/introductions.html#weather-in-blanding",
-    "href": "slides/introductions.html#weather-in-blanding",
+    "objectID": "materials/weather-data.html#weather-in-blanding",
+    "href": "materials/weather-data.html#weather-in-blanding",
     "title": "Weather Data",
     "section": "Weather in Blanding",
     "text": "Weather in Blanding\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStation in BLANDING, UT US reported daily from 1904-11-26 to 2026-07-05 (pre-dates founding of the city)\nObserved Measurements\n\nTMAX = Maximum temperature (tenths of degrees C)\nTMIN = Minimum temperature (tenths of degrees C)\nPRCP = Precipitation (tenths of mm)\nSNOW = Snowfall (mm)\nSNWD = Snow depth (mm)\n\nSource for checking on unusual observations: Daily Almanac"
   },
   {
-    "objectID": "slides/introductions.html#daily-precipitation",
-    "href": "slides/introductions.html#daily-precipitation",
+    "objectID": "materials/weather-data.html#daily-precipitation",
+    "href": "materials/weather-data.html#daily-precipitation",
     "title": "Weather Data",
     "section": "Daily Precipitation",
-    "text": "Daily Precipitation\nAverage daily precipitation is 7.3 mm, but it rained only on 15524 out of 97537 recorded days."
+    "text": "Daily Precipitation\nAverage daily precipitation is 0.0350394 inch, but it rained only on 7220 out of 43094 recorded days."
   },
   {
-    "objectID": "slides/introductions.html#rainfall-over-time",
-    "href": "slides/introductions.html#rainfall-over-time",
+    "objectID": "materials/weather-data.html#yearly-total-precipitation",
+    "href": "materials/weather-data.html#yearly-total-precipitation",
     "title": "Weather Data",
-    "section": "Rainfall over time",
-    "text": "Rainfall over time"
+    "section": "Yearly Total Precipitation",
+    "text": "Yearly Total Precipitation\n\nNote: totals are rescaled to 365 days in a year (b/c leap years, missing data)"
   },
   {
-    "objectID": "slides/introductions.html#rainfall-over-time-1",
-    "href": "slides/introductions.html#rainfall-over-time-1",
+    "objectID": "materials/weather-data.html#yearly-total-precipitation-2",
+    "href": "materials/weather-data.html#yearly-total-precipitation-2",
     "title": "Weather Data",
-    "section": "Rainfall over time",
-    "text": "Rainfall over time"
+    "section": "Yearly Total Precipitation (2)",
+    "text": "Yearly Total Precipitation (2)"
   },
   {
-    "objectID": "slides/introductions.html#average-temp",
-    "href": "slides/introductions.html#average-temp",
+    "objectID": "materials/weather-data.html#yearly-total-precipitation-3",
+    "href": "materials/weather-data.html#yearly-total-precipitation-3",
     "title": "Weather Data",
-    "section": "Average Temp",
-    "text": "Average Temp"
+    "section": "Yearly Total Precipitation (3)",
+    "text": "Yearly Total Precipitation (3)\n\n\n\nCall:\nlm(formula = value/254 ~ I(year - 1905), data = prcp)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-13.5617  -2.3962  -0.1296   2.5266   9.1649 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    13.66773    0.72805  18.773   &lt;2e-16 ***\nI(year - 1905) -0.01768    0.01044  -1.693   0.0931 .  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 4.112 on 121 degrees of freedom\nMultiple R-squared:  0.02313,   Adjusted R-squared:  0.01506 \nF-statistic: 2.866 on 1 and 121 DF,  p-value: 0.09306"
   },
   {
-    "objectID": "slides/introductions.html#length-of-snow-cover",
-    "href": "slides/introductions.html#length-of-snow-cover",
+    "objectID": "materials/weather-data.html#monthly-temperatures",
+    "href": "materials/weather-data.html#monthly-temperatures",
     "title": "Weather Data",
-    "section": "Length of snow cover",
-    "text": "Length of snow cover"
+    "section": "Monthly Temperatures",
+    "text": "Monthly Temperatures"
   },
   {
-    "objectID": "slides/introductions.html#your-turn",
-    "href": "slides/introductions.html#your-turn",
-    "title": "Visualization and Public Data",
-    "section": "Your Turn",
-    "text": "Your Turn\nIntroduce yourself!\n\nYour Name\nWhat grade(s) and/or subject(s) you teach\nWhat you hope to learn from this workshop\nWhat type of data you geek out over"
+    "objectID": "materials/weather-data.html#some-of-the-high-highs",
+    "href": "materials/weather-data.html#some-of-the-high-highs",
+    "title": "Weather Data",
+    "section": "Some of the high Highs",
+    "text": "Some of the high Highs\n\n# A tibble: 1,428 × 7\n# Groups:   id, name, year, month [1,428]\n   id          name             year month element     n value\n   &lt;chr&gt;       &lt;chr&gt;           &lt;dbl&gt; &lt;ord&gt; &lt;chr&gt;   &lt;int&gt; &lt;dbl&gt;\n 1 USC00420738 BLANDING, UT US  2003 Jul   TMAX       31  123.\n 2 USC00420738 BLANDING, UT US  1905 Aug   TMAX       31  122.\n 3 USC00420738 BLANDING, UT US  2005 Jul   TMAX       31  120.\n 4 USC00420738 BLANDING, UT US  2002 Jul   TMAX       31  120.\n 5 USC00420738 BLANDING, UT US  1996 Jul   TMAX       31  120.\n 6 USC00420738 BLANDING, UT US  1994 Jul   TMAX       31  120.\n 7 USC00420738 BLANDING, UT US  1905 Jul   TMAX       31  119.\n 8 USC00420738 BLANDING, UT US  2007 Jul   TMAX       31  119.\n 9 USC00420738 BLANDING, UT US  2000 Jul   TMAX       31  119.\n10 USC00420738 BLANDING, UT US  2009 Jul   TMAX       31  119.\n# ℹ 1,418 more rows"
   },
   {
-    "objectID": "slides/introductions.html#resources",
-    "href": "slides/introductions.html#resources",
-    "title": "Visualization and Public Data",
-    "section": "Resources",
-    "text": "Resources\n\nGlobal Historical Climatology Network (NOAA)\nUtah Weather\nUtah Weather Almanac\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+    "objectID": "materials/weather-data.html#model-maximum-temperatures",
+    "href": "materials/weather-data.html#model-maximum-temperatures",
+    "title": "Weather Data",
+    "section": "Model Maximum temperatures",
+    "text": "Model Maximum temperatures\n\n\nCall:\nlm(formula = value ~ I(year - 1905), data = filter(temps, element == \n    \"TMAX\"))\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-36.074 -16.113  -0.022  16.447  34.240 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    87.75975    0.94689  92.682   &lt;2e-16 ***\nI(year - 1905)  0.03130    0.01347   2.323   0.0203 *  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 17.66 on 1422 degrees of freedom\n  (4 observations deleted due to missingness)\nMultiple R-squared:  0.003781,  Adjusted R-squared:  0.00308 \nF-statistic: 5.397 on 1 and 1422 DF,  p-value: 0.02031"
   },
   {
-    "objectID": "Blanding.html",
-    "href": "Blanding.html",
-    "title": "Visualization & Public Data",
-    "section": "",
-    "text": "Blanding\n\nSeptember 25, 2026\nSession #1 of Data Science Workshop, 2:30 - 5:30 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:30 - 3:00\nIntroductions\n\n\n\n3:00 - 3:50\nWhy Graphics?\n\n\n\n3:50 - 4:00\nBreak\n\n\n\n4:00 - 4:50\nHow to Make Graphics\n\n\n\n4:50 - 5:00\nBreak\n\n\n\n5:00 - 5:30\nPerception\n\n\n\n\n\n\nSeptember 26, 2026\nSession #2 of Data Science Workshop, 9:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n9:00 - 9:50\nShowcase of Public Data Resources\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nTheming & Customization of Charts\n\n\n\n(parallel session - Elementary focus)\nPersonal Data Projects\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities"
+    "objectID": "materials/weather-data.html#model-minimum-temperatures",
+    "href": "materials/weather-data.html#model-minimum-temperatures",
+    "title": "Weather Data",
+    "section": "Model Minimum temperatures",
+    "text": "Model Minimum temperatures\n\n\nCall:\nlm(formula = value ~ I(year - 1905), data = filter(temps, element == \n    \"TMIN\"))\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-37.751 -12.414  -0.677  12.857  30.301 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    59.70858    0.76504  78.046  &lt; 2e-16 ***\nI(year - 1905)  0.05597    0.01089   5.138 3.16e-07 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 14.29 on 1424 degrees of freedom\n  (2 observations deleted due to missingness)\nMultiple R-squared:  0.0182,    Adjusted R-squared:  0.01751 \nF-statistic:  26.4 on 1 and 1424 DF,  p-value: 3.161e-07"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data Science Workshops 2026: Visualization and Public Data",
-    "section": "",
-    "text": "Welcome to the 2026 Data Science Workshops!\n\n\n\n\n\n\nNoteSchedule\n\n\n\n\n\n\nBlandingRoosevelt\n\n\n\nSeptember 25, 2026\nSession #1 of Data Science Workshop, 2:30 - 5:30 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:30 - 3:00\nIntroductions\n\n\n\n3:00 - 3:50\nWhy Graphics?\n\n\n\n3:50 - 4:00\nBreak\n\n\n\n4:00 - 4:50\nHow to Make Graphics\n\n\n\n4:50 - 5:00\nBreak\n\n\n\n5:00 - 5:30\nPerception\n\n\n\n\n\n\nSeptember 26, 2026\nSession #2 of Data Science Workshop, 9:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n9:00 - 9:50\nShowcase of Public Data Resources\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nTheming & Customization of Charts\n\n\n\n(parallel session - Elementary focus)\nPersonal Data Projects\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities\n\n\n\n\n\n\n\n\nOctober 1, 2026\nSession #1 of Data Science Workshop, 2:00 - 5:00 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:00 - 2:30\nIntroductions\n\n\n\n2:30 - 3:20\nWhy Graphics?\n\n\n\n3:20 - 3:30\nBreak\n\n\n\n3:30 - 4:20\nHow to Make Graphics\n\n\n\n4:20 - 4:30\nBreak\n\n\n\n4:30 - 5:00\nPerception & Graphics\n\n\n\n\n\n\nOctober 2, 2026\nSession #2 of Data Science Workshop, 8:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n8:00 - 8:50\nPublic Data Showcase\n\n\n\n8:50 - 9:00\nBreak\n\n\n\n9:00 - 9:50\nTheming & Customizing Charts\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nPersonal Data Activities\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteWorkshop\n\n\n\nPrerequisites\nIf you are planning to participate in the workshop, you should bring:\n\nA laptop\nIf you don’t have a computer you can bring, please contact Eric Rowley (Blanding) or Don Busenbark (Roosevelt) to arrange to use a loaner laptop.\nR and RStudio software (see instructions below)\n\n\nSoftware Installation Instructions\n\nDownload and install the latest R version first, and then download and install RStudio.\nOpen RStudio from your applications menu. In the Console (bottom left) pane, type install.packages(\"tidyverse\") and hit enter.\n\nYou should be good to go! If you encounter any issues, please contact Susan Vanderplas and she can help you resolve any errors or set you up with an alternate means to use R and RStudio through the browser."
-  },
-  {
-    "objectID": "Roosevelt.html",
-    "href": "Roosevelt.html",
-    "title": "Visualization & Public Data",
-    "section": "",
-    "text": "Roosevelt\n\nOctober 1, 2026\nSession #1 of Data Science Workshop, 2:00 - 5:00 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:00 - 2:30\nIntroductions\n\n\n\n2:30 - 3:20\nWhy Graphics?\n\n\n\n3:20 - 3:30\nBreak\n\n\n\n3:30 - 4:20\nHow to Make Graphics\n\n\n\n4:20 - 4:30\nBreak\n\n\n\n4:30 - 5:00\nPerception & Graphics\n\n\n\n\n\n\nOctober 2, 2026\nSession #2 of Data Science Workshop, 8:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n8:00 - 8:50\nPublic Data Showcase\n\n\n\n8:50 - 9:00\nBreak\n\n\n\n9:00 - 9:50\nTheming & Customizing Charts\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nPersonal Data Activities\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities"
+    "objectID": "materials/weather-data.html#so-many-more-questions",
+    "href": "materials/weather-data.html#so-many-more-questions",
+    "title": "Weather Data",
+    "section": "So many more questions",
+    "text": "So many more questions\n\nWhat is the first day of snowfall?\nHow long does the snow stay on the ground?\nDid the average snow depth change?\n\n\n\nWhat questions do you have? \n\n\n\n\nend of excursion"
   },
   {
     "objectID": "slides/how-graphics.html#first-things-first",
@@ -200,7 +151,7 @@
     "href": "slides/how-graphics.html#geom-options-geom_xxx",
     "title": "How to Make Graphics",
     "section": "Geom Options: geom_xxx",
-    "text": "Geom Options: geom_xxx\n\n\n\n\n\n\nPrimitives\n\n\n\n\n\n\n\n\npath\n\n\n\n\n\n\n\npolygon\n\n\n\n\n\n\n\nrect\n\n\n\n\n\n\n\nribbon\n\n\n\n\n\n\n\ncurve\n\n\n\n\n\n\n\n\n\n\n\nTwo Continuous Variables\n\n\n\n\n\nFunctions\n\n\n\n\n\narea\n\n\n\n\n\n\n\nline\n\n\n\n\n\n\n\nstep\n\n\n\n\n\n\nRelationships\n\n\n\n\n\npoint\n\n\n\n\n\n\n\nsmooth\n\n\n\n\n\n\n\ntext\n\n\n\n\n\n\nDistributions\n\n\n\n\n\nbin2d\n\n\n\n\n\n\n\ndensity2d\n\n\n\n\n\n\n\nhex\n\n\n\n\n\n\n\n\n\n\n\n\nOne Variable\n\n\n\n\n\nDiscrete\n\n\n \n\n\nContinuous\n\n\n\n\n\n\n\nbar\n\n\n\n\n \n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nhistogram\n\n\n\n\n\n\n\ndensity\n\n\n\n\n\n\n\n\n\n\n\nDiscrete + Continuous\n\n\n\n\n\n\n\n\ncol\n\n\n\n\n\n\n\nboxplot\n\n\n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nviolin\n\n\n\n\n\n\n\n\n\n\n\nTwo Discrete\n\n\n\n\n\n\n\n\ncount\n\n\n\n\n\n\n\njitter"
+    "text": "Geom Options: geom_xxx\n\n\n\n\n\nPrimitives\n\n\n\n\n\n\n\n\npath\n\n\n\n\n\n\n\npolygon\n\n\n\n\n\n\n\nrect\n\n\n\n\n\n\n\nribbon\n\n\n\n\n\n\n\ncurve\n\n\n\n\n\n\n\n\n\n\n\nTwo Continuous Variables\n\n\n\n\n\nFunctions\n\n\n\n\n\narea\n\n\n\n\n\n\n\nline\n\n\n\n\n\n\n\nstep\n\n\n\n\n\n\nRelationships\n\n\n\n\n\npoint\n\n\n\n\n\n\n\nsmooth\n\n\n\n\n\n\n\ntext\n\n\n\n\n\n\nDistributions\n\n\n\n\n\nbin2d\n\n\n\n\n\n\n\ndensity2d\n\n\n\n\n\n\n\nhex\n\n\n\n\n\n\n\n\n\n\n\n\nOne Variable\n\n\n\n\n\nDiscrete\n\n\n \n\n\nContinuous\n\n\n\n\n\n\n\nbar\n\n\n\n\n \n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nhistogram\n\n\n\n\n\n\n\ndensity\n\n\n\n\n\n\n\n\n\n\n\nDiscrete + Continuous\n\n\n\n\n\n\n\n\ncol\n\n\n\n\n\n\n\nboxplot\n\n\n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nviolin\n\n\n\n\n\n\n\n\n\n\n\nTwo Discrete\n\n\n\n\n\n\n\n\ncount\n\n\n\n\n\n\n\njitter"
   },
   {
     "objectID": "slides/how-graphics.html#what-is-a-layer",
@@ -217,88 +168,25 @@
     "text": "Your Turn\nChange the code below to have the points on top of the boxplots.\n\nggplot(data = mpg, aes(x = class, y = hwy)) + \n  geom_jitter() + \n  geom_boxplot()"
   },
   {
-    "objectID": "slides/weather-data.html#weather-stations-in-utah-30-years-plus",
-    "href": "slides/weather-data.html#weather-stations-in-utah-30-years-plus",
-    "title": "Weather Data",
-    "section": "Weather Stations in Utah (30 years plus)",
-    "text": "Weather Stations in Utah (30 years plus)\nClicking on point downloads data"
+    "objectID": "Roosevelt.html",
+    "href": "Roosevelt.html",
+    "title": "Visualization & Public Data",
+    "section": "",
+    "text": "Roosevelt\n\nOctober 1, 2026\nSession #1 of Data Science Workshop, 2:00 - 5:00 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:00 - 2:30\nIntroductions\n\n\n\n2:30 - 3:20\nWhy Graphics?\n\n\n\n3:20 - 3:30\nBreak\n\n\n\n3:30 - 4:20\nHow to Make Graphics\n\n\n\n4:20 - 4:30\nBreak\n\n\n\n4:30 - 5:00\nPerception & Graphics\n\n\n\n\n\n\nOctober 2, 2026\nSession #2 of Data Science Workshop, 8:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n8:00 - 8:50\nPublic Data Showcase\n\n\n\n8:50 - 9:00\nBreak\n\n\n\n9:00 - 9:50\nTheming & Customizing Charts\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nPersonal Data Activities\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities"
   },
   {
-    "objectID": "slides/weather-data.html#weather-in-blanding",
-    "href": "slides/weather-data.html#weather-in-blanding",
-    "title": "Weather Data",
-    "section": "Weather in Blanding",
-    "text": "Weather in Blanding\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStation in BLANDING, UT US reported daily from 1904-11-26 to 2026-07-05 (pre-dates founding of the city)\nObserved Measurements\n\nTMAX = Maximum temperature (tenths of degrees C)\nTMIN = Minimum temperature (tenths of degrees C)\nPRCP = Precipitation (tenths of mm)\nSNOW = Snowfall (mm)\nSNWD = Snow depth (mm)\n\nSource for checking on unusual observations: Daily Almanac"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Science Workshops 2026: Visualization and Public Data",
+    "section": "",
+    "text": "Welcome to the 2026 Data Science Workshops!\n\n\n\n\n\n\nNoteSchedule\n\n\n\n\n\n\nBlandingRoosevelt\n\n\n\nSeptember 25, 2026\nSession #1 of Data Science Workshop, 2:30 - 5:30 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:30 - 3:00\nIntroductions\n\n\n\n3:00 - 3:50\nWhy Graphics?\n\n\n\n3:50 - 4:00\nBreak\n\n\n\n4:00 - 4:50\nHow to Make Graphics\n\n\n\n4:50 - 5:00\nBreak\n\n\n\n5:00 - 5:30\nPerception\n\n\n\n\n\n\nSeptember 26, 2026\nSession #2 of Data Science Workshop, 9:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n9:00 - 9:50\nShowcase of Public Data Resources\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nTheming & Customization of Charts\n\n\n\n(parallel session - Elementary focus)\nPersonal Data Projects\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities\n\n\n\n\n\n\n\n\nOctober 1, 2026\nSession #1 of Data Science Workshop, 2:00 - 5:00 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:00 - 2:30\nIntroductions\n\n\n\n2:30 - 3:20\nWhy Graphics?\n\n\n\n3:20 - 3:30\nBreak\n\n\n\n3:30 - 4:20\nHow to Make Graphics\n\n\n\n4:20 - 4:30\nBreak\n\n\n\n4:30 - 5:00\nPerception & Graphics\n\n\n\n\n\n\nOctober 2, 2026\nSession #2 of Data Science Workshop, 8:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n8:00 - 8:50\nPublic Data Showcase\n\n\n\n8:50 - 9:00\nBreak\n\n\n\n9:00 - 9:50\nTheming & Customizing Charts\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nPersonal Data Activities\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteWorkshop\n\n\n\nPrerequisites\nIf you are planning to participate in the workshop, you should bring:\n\nA laptop\nIf you don’t have a computer you can bring, please contact Eric Rowley (Blanding) or Don Busenbark (Roosevelt) to arrange to use a loaner laptop.\nR and RStudio software (see instructions below)\n\n\nSoftware Installation Instructions\n\nDownload and install the latest R version first, and then download and install RStudio.\nOpen RStudio from your applications menu. In the Console (bottom left) pane, type install.packages(\"tidyverse\") and hit enter.\n\nYou should be good to go! If you encounter any issues, please contact Susan Vanderplas and she can help you resolve any errors or set you up with an alternate means to use R and RStudio through the browser."
   },
   {
-    "objectID": "slides/weather-data.html#daily-precipitation",
-    "href": "slides/weather-data.html#daily-precipitation",
-    "title": "Weather Data",
-    "section": "Daily Precipitation",
-    "text": "Daily Precipitation\nAverage daily precipitation is 8.9 mm, but it rained only on 7220 out of 43094 recorded days."
-  },
-  {
-    "objectID": "slides/weather-data.html#rainfall-over-time",
-    "href": "slides/weather-data.html#rainfall-over-time",
-    "title": "Weather Data",
-    "section": "Rainfall over time",
-    "text": "Rainfall over time"
-  },
-  {
-    "objectID": "slides/weather-data.html#average-temp",
-    "href": "slides/weather-data.html#average-temp",
-    "title": "Weather Data",
-    "section": "Average Temp",
-    "text": "Average Temp"
-  },
-  {
-    "objectID": "slides/weather-data.html#length-of-snow-cover",
-    "href": "slides/weather-data.html#length-of-snow-cover",
-    "title": "Weather Data",
-    "section": "Length of snow cover",
-    "text": "Length of snow cover"
-  },
-  {
-    "objectID": "slides/weather-data.html#your-turn",
-    "href": "slides/weather-data.html#your-turn",
-    "title": "Weather Data",
-    "section": "Your Turn",
-    "text": "Your Turn\nIntroduce yourself!\n\nYour Name\nWhat grade(s) and/or subject(s) you teach\nWhat you hope to learn from this workshop\nWhat type of data you geek out over"
-  },
-  {
-    "objectID": "slides/weather-data.html#resources",
-    "href": "slides/weather-data.html#resources",
-    "title": "Weather Data",
-    "section": "Resources",
-    "text": "Resources\n\nGlobal Historical Climatology Network (NOAA)\nUtah Weather\nUtah Weather Almana\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
-  },
-  {
-    "objectID": "slides/introductions.html#your-turn-course-materials",
-    "href": "slides/introductions.html#your-turn-course-materials",
-    "title": "Visualization and Public Data",
-    "section": "Your turn: Course materials",
-    "text": "Your turn: Course materials"
-  },
-  {
-    "objectID": "slides/introductions.html#whats-in-the-zip",
-    "href": "slides/introductions.html#whats-in-the-zip",
-    "title": "Visualization and Public Data",
-    "section": "What’s in the zip?",
-    "text": "What’s in the zip?"
-  },
-  {
-    "objectID": "slides/introductions.html#check-your-r-setup",
-    "href": "slides/introductions.html#check-your-r-setup",
-    "title": "Visualization and Public Data",
-    "section": "Check your R setup",
-    "text": "Check your R setup"
-  },
-  {
-    "objectID": "slides/introductions.html#r-package-locations",
-    "href": "slides/introductions.html#r-package-locations",
-    "title": "Visualization and Public Data",
-    "section": "R package locations:",
-    "text": "R package locations:"
+    "objectID": "Blanding.html",
+    "href": "Blanding.html",
+    "title": "Visualization & Public Data",
+    "section": "",
+    "text": "Blanding\n\nSeptember 25, 2026\nSession #1 of Data Science Workshop, 2:30 - 5:30 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:30 - 3:00\nIntroductions\n\n\n\n3:00 - 3:50\nWhy Graphics?\n\n\n\n3:50 - 4:00\nBreak\n\n\n\n4:00 - 4:50\nHow to Make Graphics\n\n\n\n4:50 - 5:00\nBreak\n\n\n\n5:00 - 5:30\nPerception\n\n\n\n\n\n\nSeptember 26, 2026\nSession #2 of Data Science Workshop, 9:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n9:00 - 9:50\nShowcase of Public Data Resources\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nTheming & Customization of Charts\n\n\n\n(parallel session - Elementary focus)\nPersonal Data Projects\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities"
   },
   {
     "objectID": "slides/introductions.html#data-explorations",
@@ -306,5 +194,61 @@
     "title": "Visualization and Public Data",
     "section": "Data explorations",
     "text": "Data explorations\n I like to go on data explorations: Weather in Blanding"
+  },
+  {
+    "objectID": "slides/introductions.html#your-turn",
+    "href": "slides/introductions.html#your-turn",
+    "title": "Visualization and Public Data",
+    "section": "Your Turn",
+    "text": "Your Turn\nIntroduce yourself!\n\nYour Name\nWhat grade(s) and/or subject(s) you teach\nWhat you hope to learn from this workshop\nWhat type of data you geek out over"
+  },
+  {
+    "objectID": "slides/introductions.html#resources",
+    "href": "slides/introductions.html#resources",
+    "title": "Visualization and Public Data",
+    "section": "Resources",
+    "text": "Resources\n\nGlobal Historical Climatology Network (NOAA)\nUtah Weather\nUtah Weather Almanac\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+  },
+  {
+    "objectID": "slides/why-graphics.html#section",
+    "href": "slides/why-graphics.html#section",
+    "title": "Why Graphics?",
+    "section": "",
+    "text": "The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star’s life cycle: a hypothesis that only came to be because of this chart.\n\n\n\n\nData source: the HYG Database. Only stars within 500 AU are shown.\n\nWhen drawn well, statistical graphics help us understand our data and see things that we didn’t know were there. The relationship between star magnitude, star color, and spectral class wasn’t well understood until someone created a chart like this that showed the color index (or spectral class) against the absolute brightness. Then, it was much easier to see that the chart described a life-cycle - stars start out in the main sequence, and then become giants, dwarfs, or slowly change spectral class over time as they cool down in temperature.\nWell designed graphs can help us understand the natural phenomenon behind the raw numerical data we’ve collected."
+  },
+  {
+    "objectID": "slides/why-graphics.html#basic",
+    "href": "slides/why-graphics.html#basic",
+    "title": "Why Graphics?",
+    "section": "Basic",
+    "text": "Basic\n\n\nOne Variable\n\nDiscrete\n\nBar Chart\nPie Chart\n\nContinuous\n\nStem and Leaf Plots\nHistograms\n\n\n\nTwo variables\n\nContinuous X, Continuous Y\n\nScatterplots\n(w/ and w/o trend lines)\n\nMaps"
+  },
+  {
+    "objectID": "slides/why-graphics.html#more-fancy",
+    "href": "slides/why-graphics.html#more-fancy",
+    "title": "Why Graphics?",
+    "section": "More “Fancy”",
+    "text": "More “Fancy”\n\n\n\nParallel Coordinate Plots\nMosaic Plots\nRadar Charts\nHeat Maps\nDensity Plots\nViolin Plots\nSocial Network Plots"
+  },
+  {
+    "objectID": "slides/why-graphics.html#quantitative-literacy",
+    "href": "slides/why-graphics.html#quantitative-literacy",
+    "title": "Why Graphics?",
+    "section": "Quantitative Literacy",
+    "text": "Quantitative Literacy\n\n\nElementary\n\nVisual Mappings 📊\nScales 📐\nPie charts 🥧 (fractions)\nLine charts 📈 (time)\nRange, Mean, Median, Mode 📏\n\n\nMiddle\n\nCartesian Coordinates \nSlope, Intercept form \nFunctions, Polynomials \nProbability\n  \n\n\nHigh School\n\nPolar Coordinates\nFunctions - Trigonometry , Logarithms🪵, Exponential growth \nConnecting equations & inequalities to graphs\nStatistical reasoning - inference 🧠"
+  },
+  {
+    "objectID": "slides/why-graphics.html#connections-to-art-science-civics-media-literacy",
+    "href": "slides/why-graphics.html#connections-to-art-science-civics-media-literacy",
+    "title": "Why Graphics?",
+    "section": "Connections to Art, Science, Civics, Media Literacy",
+    "text": "Connections to Art, Science, Civics, Media Literacy\n\nScience: data collection📋, inference, estimation of constants 🌳🍎\nCivics: election maps🗺️, census, polling, charts about current events\nArt: personal data collection/visualization, generative art\nMedia Literacy: best/worst practices, claims & support\n\n\n\n\n\n\n\nTip\n\n\nThe US Census commissioned Statistical Atlases for the 1870, 1880, and 1890 censuses. They have amazing data visualizations of the US population during westward expansion."
+  },
+  {
+    "objectID": "slides/why-graphics.html#your-turn",
+    "href": "slides/why-graphics.html#your-turn",
+    "title": "Why Graphics?",
+    "section": "Your Turn",
+    "text": "Your Turn\n\nHow could data visualization connect to learning objectives for your grade(s) and subject(s)?\nWhat types of charts are most important for your students?\nWhat data would you like to show students?"
   }
 ]

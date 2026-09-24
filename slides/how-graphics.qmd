@@ -254,7 +254,6 @@ ggplot(data = mpg, aes(x = cty, y = hwy, colour = class)) +
 <!-- Once our data is formatted and we know what type of variables we are working with, we can select the correct geom for our visualization.  -->
 
 ## Geom Options: `geom_xxx`
-:::::: large
 ::::: columns
 :::: column
 
@@ -359,7 +358,6 @@ Continuous
 
 ::::
 :::::
-:::
 
 
 ## What is a layer?
@@ -371,7 +369,7 @@ Continuous
 - A plot may have multiple layers
  
 ```{r}
-#| fig-width: 4
+#| fig-width: 5
 #| fig-height: 4
 #| layout-ncol: 3
 #| echo: false

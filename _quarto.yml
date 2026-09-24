@@ -8,6 +8,7 @@ project:
     - Roosevelt.qmd
     - Blanding.qmd
     - slides/*.qmd
+    - materials/*.qmd
 
 engine: knitr
 website:

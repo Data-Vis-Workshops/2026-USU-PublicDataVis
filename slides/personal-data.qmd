@@ -3,3 +3,17 @@ title: Personal Data Visualization
 format: revealjs
 css: ../css/slide-theme.scss
 ---
+
+## Take measure of your surroundings
+
+- Personal and personally collected data is more fun to analyse
+
+- 
+
+## NameGrapher
+
+Laura and Martin Wattenberg's approach to name their firstborn 
+
+https://namerology.com/baby-name-grapher/
+
+![](../images/namegrapher.png)
