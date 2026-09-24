@@ -250,5 +250,33 @@
     "title": "Why Graphics?",
     "section": "Your Turn",
     "text": "Your Turn\n\nHow could data visualization connect to learning objectives for your grade(s) and subject(s)?\nWhat types of charts are most important for your students?\nWhat data would you like to show students?"
+  },
+  {
+    "objectID": "slides/introductions.html#visual-explorations",
+    "href": "slides/introductions.html#visual-explorations",
+    "title": "Visualization and Public Data",
+    "section": "Visual explorations",
+    "text": "Visual explorations\n We like to go on data explorations: Weather in Blanding"
+  },
+  {
+    "objectID": "slides/personal-data.html#take-measure-of-your-surroundings",
+    "href": "slides/personal-data.html#take-measure-of-your-surroundings",
+    "title": "Personal Data Visualization",
+    "section": "Take measure of your surroundings",
+    "text": "Take measure of your surroundings\n\nPersonal and personally collected data is more fun to analyse"
+  },
+  {
+    "objectID": "slides/personal-data.html#namegrapher",
+    "href": "slides/personal-data.html#namegrapher",
+    "title": "Personal Data Visualization",
+    "section": "NameGrapher",
+    "text": "NameGrapher\nLaura and Martin Wattenberg’s approach to name their firstborn\nhttps://namerology.com/baby-name-grapher/\n ## Your Turn\n\nDid you first check your own name?\nHow many names start with a vowel?\nLautner or Swift? Which Taylor has more influence on baby names?\nWhat about Orange and Pink as kids’ names?"
+  },
+  {
+    "objectID": "slides/personal-data.html#praerie-dog-town",
+    "href": "slides/personal-data.html#praerie-dog-town",
+    "title": "Personal Data Visualization",
+    "section": "Praerie Dog Town",
+    "text": "Praerie Dog Town\nFrom a college-level course on Spatial Ecology: use GPS coordinates from a morning of measuring out a praerie dog town"
   }
 ]
