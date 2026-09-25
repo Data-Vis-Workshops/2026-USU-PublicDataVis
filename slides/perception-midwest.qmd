@@ -4,7 +4,9 @@ format: revealjs
 css: ../css/slide-theme.scss
 ---
 
-```{r setup, include = F}
+```{r}
+#| label: setup
+#| include: false
 library(tidyverse)
 library(ggplot2)
 library(dplyr)
@@ -13,7 +15,10 @@ library(gridExtra)
 library(ggsci)
 ```
 
-```{r knitr-setup, include = F, purl = F}
+```{r}
+#| label: knitr-setup
+#| include: false
+#| purl: false
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(
   cache = TRUE,
@@ -25,41 +30,30 @@ knitr::opts_chunk$set(
 
 ## What do you see?
 
-.center[
-![](https://www.moillusions.com/wp-content/uploads/2009/12/Mysterious-Dalmatian-Optical-Illusion.jpg)
-]
-.bottom[Image source: https://www.moillusions.com/mysterious-dots-optical-illusion/]
+![[Image source](https://www.moillusions.com/mysterious-dots-optical-illusion/)](https://www.moillusions.com/wp-content/uploads/2009/12/Mysterious-Dalmatian-Optical-Illusion.jpg){fig-alt="A set of black and white. Some of the black blobs roughly form the shape of a dalmation dog."}
 
 
 ## What do you see?
 
-.center[
-![](images/dalmation.png)
-]
+![[Image source](https://www.moillusions.com/mysterious-dots-optical-illusion/)](images/dalmation.png){fig-alt="A set of black, white, and grey blobs. The black blobs roughly form the shape of a dalmation dog."}
 
-::: notes
-
-
-Vision, in general, involves a *lot* of unconscious pattern recognition. If we can harness that power, we can show people data in a way that doesn't require a lot of thought for them to engage with the data.
-
-:::
 
 ## It's not just an illusion - it's a photo
 
-.center[
-<img src="images/dalmation_life_1965.png" alt="1965 Life magazine cover showing the dalmation illusion" width="50%"/>
-]
+![Life Magazine, 19 Feb 1965](images/dalmation_life_1965.png){fig-alt="1965 Life magazine cover showing the dalmation illusion" width="50%"]
 
-.bottom[Life Magazine, 19 Feb 1965]
 
 
 ## Why Graphics Matter
 
 Graphics are a form of **external cognition** that allow us to think about the **data** rather than the **chart**
 
+::: fragment
+
+Good graphics take advantage of how the brain works
+:::
 
 ::: incremental
-Good graphics take advantage of how the brain works
 
 - preattentive processing
 
@@ -88,62 +82,62 @@ The **structure** and **aesthetics** used to create the chart should contribute 
 
 <iframe src="https://xkcd.com/1138/#comic" width="800px" height="560px"/>
 
-::: notes
-
-
-Of course, even decent visualizations can't compensate for lousy data... or rather, chart designers who aren't thinking about how to represent the data well.
-
-:::
 ## Bad Graphics
 
 
-.center[<img alt="Top 500 Supercomputers by Processor Family" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Processor_families_in_TOP500_supercomputers.svg/1280px-Processor_families_in_TOP500_supercomputers.svg.png" width = "80%"/>]
+[![Top 500 Supercomputers by Processor Family](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Processor_families_in_TOP500_supercomputers.svg/1280px-Processor_families_in_TOP500_supercomputers.svg.png){fig-alt="" width = "80%"}](https://en.wikipedia.org/wiki/File:Processor_families_in_TOP500_supercomputers.svg)
 
 
-.bottom[https://en.wikipedia.org/wiki/File:Processor_families_in_TOP500_supercomputers.svg]
-
-::: notes
-
-
-But perfectly reasonable data can also be ruined by bad aesthetic choices.
-
-As with anything, graphics require a combination of "art" and "science" - you not only have to use the best method to display the data (which this isn't, necessarily), you also have to use some judgment as to how to show what you're hoping to show... and this is a good example of what happens when that doesn't happen. 
-
-:::
 
 ## Spot the Difference
 
-```{r preattentive1,echo=FALSE,include=T, fig.width=4, fig.height=4, out.width = "49.5%", purl = F}
+```{r}
+#| label: preattentive1
+#| echo: false
+#| include: true
+#| fig.width: 4
+#| fig.height: 4
+#| layout-ncol: 2
 set.seed(153253)
 data <- data.frame(expand.grid(x=1:6, y=1:6), color=sample(c(1,2), 36, replace=TRUE))
-data$x <- data$x+rnorm(36, 0, .25)
-data$y <- data$y+rnorm(36, 0, .25)
+data$x <- data$x+rnorm(36, 0, .5)
+data$y <- data$y+rnorm(36, 0, .5)
 suppressWarnings(library(ggplot2))
 new_theme_empty <- theme_bw()
 new_theme_empty$line <- element_blank()
-# new_theme_empty$rect <- element_blank()
 new_theme_empty$strip.text <- element_blank()
 new_theme_empty$axis.text <- element_blank()
 new_theme_empty$plot.title <- element_blank()
 new_theme_empty$axis.title <- element_blank()
-# new_theme_empty$plot.margin <- structure(c(0, 0, -1, -1), unit = "lines", valid.unit = 3L, class = "unit")
 
 data$shape <- c(rep(2, 15), 1, rep(2,20))
 library(scales)
-qplot(data=data, x=x, y=y, color=factor(1, levels=c(1,2)), shape=factor(shape), size=I(5))+scale_shape_manual(guide="none", values=c(19, 15)) + scale_color_discrete(guide="none") + new_theme_empty
+ggplot(data=data, aes(x=x, y=y, color=factor(1, levels=c(1,2)), shape=factor(shape)), size=5)+
+  geom_point() + 
+  scale_shape_manual(guide="none", values=c(19, 15)) +
+  scale_color_discrete(guide="none") + new_theme_empty
 
 data$shape <- c(rep(2, 25), 1, rep(2,10))
-qplot(data=data, x=x, y=y, color=factor(shape), shape=I(19), size=I(5))+scale_shape_manual(guide="none", values=c(19, 15)) + scale_color_discrete(guide="none") + new_theme_empty
+ggplot(data=data, aes(x=x, y=y, color=factor(shape)), shape=19)+
+  geom_point() + 
+  scale_shape_manual(guide="none", values=c(19, 15)) + 
+  scale_color_discrete(guide="none") + new_theme_empty
 ```
 
 
 ## Spot the Difference
 
-```{r preattentive2,echo=FALSE,include=T, fig.width=4, fig.height=4, out.width = "49.5%", purl = F}
-set.seed(1532534)
+```{r}
+#| label: preattentive2
+#| echo: false
+#| include: true
+#| fig.width: 4
+#| fig.height: 4
+#| layout-ncol: 2
+set.seed(1532532)
 data <- data.frame(expand.grid(x=1:6, y=1:6), color=sample(c(1,2), 36, replace=TRUE))
-data$x <- data$x+rnorm(36, 0, .25)
-data$y <- data$y+rnorm(36, 0, .25)
+data$x <- data$x+rnorm(36, 0, .5)
+data$y <- data$y+rnorm(36, 0, .5)
 suppressWarnings(library(ggplot2))
 new_theme_empty <- theme_bw()
 new_theme_empty$line <- element_blank()
@@ -155,11 +149,19 @@ new_theme_empty$axis.title <- element_blank()
 # new_theme_empty$plot.margin <- structure(c(0, 0, -1, -1), unit = "lines", valid.unit = 3L, class = "unit")
 
 data$shape <- data$color
-qplot(data=data, x=x, y=y, color=factor(color), shape=factor(shape), size=I(5))+scale_shape_manual(guide="none", values=c(19, 15)) + scale_color_discrete(guide="none") + new_theme_empty
+# qplot(data=data, x=x, y=y, color=factor(color), shape=factor(shape), size=I(5))+scale_shape_manual(guide="none", values=c(19, 15)) + scale_color_discrete(guide="none") + new_theme_empty
+ggplot(data=data, aes(x=x, y=y, color=factor(color)), shape=factor(shape))+
+  geom_point() + 
+  scale_shape_manual(guide="none", values=c(19, 15)) +
+  scale_color_discrete(guide="none") + new_theme_empty
 
 
 data$shape[1] <- if(data$shape[1]==2) 1 else 2
-qplot(data=data, x=x, y=y, color=factor(color), shape=factor(shape), size=I(5))+scale_shape_manual(guide="none", values=c(19, 15)) + scale_color_discrete(guide="none") + new_theme_empty
+# qplot(data=data, x=x, y=y, color=factor(color), shape=factor(shape), size=I(5))+scale_shape_manual(guide="none", values=c(19, 15)) + scale_color_discrete(guide="none") + new_theme_empty
+ggplot(data=data, aes(x=x, y=y, color=factor(color)), shape=factor(shape))+
+  geom_point() + 
+  scale_shape_manual(guide="none", values=c(19, 15)) + 
+  scale_color_discrete(guide="none") + new_theme_empty
 ```
 
 
@@ -182,17 +184,9 @@ Using preattentive features reduces the amount of work your viewer has to expend
 
 ## What do you see?
 
-.center[![](images/IllusoryContour.png)]
-
-::: notes
+![](images/IllusoryContour.png)
 
 
-What do you see here? 3 pac-men shapes and 3 acute angles? No? 
-
-I see 3 circles, a triangle with a black outline, and a white triangle with no outline.  But... that's not really what's there, is it?
-
-I'll talk next about the Gestalt laws, but if you can't remember them, just remember this saying - "The whole is greater than the sum of the parts" - just as here, what we see is more orderly than what is actually there.
-:::
 # Gestalt Principles
 
 ### What sorts of relationships are inferred, and under what circumstances? 
@@ -200,31 +194,15 @@ I'll talk next about the Gestalt laws, but if you can't remember them, just reme
 
 ## Gestalt Laws of Perception
 
-.center[![](images/gestalt.jpg)]
+![](images/gestalt.jpg)
 
-::: notes
-
-
-The Gestalt laws are a set of rules for how we interpret ambiguity in the visual scene. 
-
-The law of Closure says that it's easier to interpret things if you imagine them as a closed figure - it's more likely that a closed figure is for instance obstructed, than that it is a set of more complex, less meaningful figures. This is sometimes also stated as the "law of good figure"
-
-the law of Proximity says that things that are close together are likely part of the same unit. So you might interpret things as a dalmation instead of a series of blobs of black ink. 
-
-The law of continuation says that figures with edges that are smooth are more likely to be continuous than things with edges that are sharp angles. 
-
-the law of similarity says that things are likely to be viewed as part of a group if they look similar. 
-
-Then, the law of figure/ground helps explain why we see both the tree and the AL figure combination here - we have contextual information that helps us simplify the picture into two groups - the figure (the tree), and the background (the AL); thus also helps us separate the AL from the white background behind it. 
-
-There are a few other gestalt laws, but these are the main ones.
-
-Now, let's talk about how these laws apply to charts! I swear, I didn't forget that I am supposed to be talking about data visualization.
-:::
 
 ## Gestalt Laws in Data Visualization
 
-```{r, fig.width = 8, fig.height = 4, out.width = "100%", purl = F}
+```{r}
+#| fig-width: 8
+#| fig-height: 4
+#| out-width: 100%
 tmp <- tibble(x = c(-1, 0, 1), y = c(1, -1, 1), group = c(1, 2, 3)) %>%
   mutate(x = purrr::map(x, rnorm, n = 100, sd = .75), 
          y = purrr::map(y, rnorm, n = 100, sd = .75)) %>%
@@ -246,7 +224,10 @@ nrow = 1)
 
 ## Gestalt Laws in Data Visualization
 
-```{r, fig.width = 8, fig.height = 4, out.width = "100%"}
+```{r}
+#| fig-width: 8
+#| fig-height: 4
+#| out-width: 100%
 
 tmp <- tibble(g1 = 1, x = seq(-2, 2, .01), y = -sin(pi*x)) %>%
   bind_rows(tibble(x = seq(-2, 2, .01), y = 0, g1 = 2)) %>%
@@ -259,7 +240,11 @@ ggplot(tmp, aes(x = x, y = y, group = g1)) + geom_line() + scale_size_continuous
 ## Gestalt Laws in Data Visualization
 
 
-```{r, fig.width = 8, fig.height = 4, out.width = "100%", purl = F}
+```{r}
+#| fig-width: 8
+#| fig-height: 4
+#| out-width: 100%
+#| 
 grid.arrange(
 ggplot(tmp, aes(x = x, y = y, group = g1, color = color, size = size)) + geom_line() + scale_size_continuous(range = c(.75, 1.25)) + guides(size = "none", color = "none") + theme_minimal() + theme(axis.title = element_blank(), axis.text = element_blank()) + coord_fixed(),
 
@@ -267,47 +252,43 @@ ggplot(tmp, aes(x = x, y = y, group = g1, color = g1, size = g1)) + geom_line() 
 nrow = 1)
 ```
 
+
 - Good continuation
 
 
 ## Which one is different?
 
-.center[<img src="images/set-48-k-5-sdline-0.45-sdgroup-0.25-TREND.png" alt="Lineup with trend lines" width = "70%"/>]
+
+![](images/set-48-k-5-sdline-0.45-sdgroup-0.25-TREND.png){fig-alt="Lineup with trend lines" width = "70%"}
 
 
 ## Which one is different?
 
-.center[<img src="images/set-48-k-5-sdline-0.45-sdgroup-0.25-COLOR.png" alt="Lineup with color lines" width = "70%"/>]
+![](images/set-48-k-5-sdline-0.45-sdgroup-0.25-COLOR.png){fig-alt="Lineup with color lines" width = "70%"}
 
 
 ## Plot Annotations Matter!
 
-.pull-left[
+::: columns
+::: column
 
-.center[![](images/set-48-k-5-sdline-0.45-sdgroup-0.25-TREND.png)]
+![](images/set-48-k-5-sdline-0.45-sdgroup-0.25-TREND.png)
 
 - Plot 12: 59.1% 
 - Plot 5:  9.1% 
 - Other plots: 31.7% 
 
-]
-.pull-right[
+:::
+::: column
 
-.center[![](images/set-48-k-5-sdline-0.45-sdgroup-0.25-COLOR.png)]
+![](images/set-48-k-5-sdline-0.45-sdgroup-0.25-COLOR.png)]
 
 - Plot 12: 9.7%
 - Plot 5: 29.0% 
 - Plot 18: 32.3% 
 - Other plots: 29.0% 
 
-]
-
-::: notes
-
-
-Add annotations to your plots based on what you want to emphasize. If you want to show the trend (or deviations from it), add a line and maybe a confidence band. If you want to show clustering, use ellipses and color and/or shape. 
-
-What you add to the plot helps to determine what people will see in the data!
+:::
 :::
 
 # Visual Limitations
@@ -354,11 +335,6 @@ You may have heard people talk about how awful pie charts are - that's because a
 
 ![](images/curve-difference.png)
 
-::: notes
-
-
-We're really bad at judging vertical distance, as well. If you need to show the difference between two curves, you should attempt to find a different way to do it than showing both curves on the same chart - for instance, plot the difference alongside the two curves.
-:::
 
 ## Designing for Accessibility
 
@@ -377,11 +353,7 @@ We're really bad at judging vertical distance, as well. If you need to show the 
     - sonify - represent data using sound
     - gt - tables with metadata that is easy for screen readers
 
-::: notes
 
-Unfortunately, there is relatively little research on other disabilities + statistical graphics
-
-:::
 ## Color
 
 - **Hue**: shade of color (red, orange, yellow...)
@@ -413,7 +385,9 @@ Which is bigger?
 - Color: not always ordered. More contrast = bigger.
 - Shape: Unordered. 
 
-```{r, echo=FALSE, fig.width=20, purl = F}
+```{r}
+#| echo: false
+#| fig-width: 20
 library(RColorBrewer)
 library(gridExtra)
 
@@ -461,59 +435,62 @@ grid.arrange(p1, p2, p3, nrow = 1)
 
  - to change a mapping, add a new scale
 
-```{r fig.width=6, echo=FALSE, fig.align = "center"}
-knitr::include_graphics("images/scales1.png")
-```
-
+![](images/scales1.png)
 
 ## Scales
 
-.pull-left[
-```{r fig.width=4.5, echo=FALSE, fig.align = "top", purl = F}
-knitr::include_graphics("images/scales2.png")
-```
-]
-.pull-right[
-```{r fig.width=4.5, echo=FALSE, fig.align = "top", purl = F}
-knitr::include_graphics("images/scales3.png")
-```
-]
+::: {layout-ncol=2}
 
+![](images/scales2.png)
+
+![](images/scales3.png)
+
+:::
 
 ## Gradients
 
 Qualitative schemes: no more than 7 colors
 
 
-```{r, echo=FALSE, fig.width=7, fig.height=1.2, purl = F}
+```{r}
+#| echo: false
+#| fig-width: 7
+#| fig-height: 1.2
+#| purl: false
 data <- data.frame(x = 1:7, 
                    blues = brewer.pal(7, "Blues"), 
                    set1 = brewer.pal(7, "Set1"), 
                    diverge = brewer.pal(7,"RdBu"))
 
-qplot(xmin = x-.5, xmax = x+.5, ymin = 0, ymax = 1, data = data, geom = "rect", color = I("black"), fill = set1) + 
-    scale_fill_identity() + 
-    ylab("") + 
-    xlab("") + 
-    theme(axis.text = element_blank(), 
-          axis.ticks = element_blank(), 
-          rect = element_blank()) + 
-    coord_fixed(ratio = 1) + 
-    theme_void()
+ggplot(aes(xmin = x-.5, xmax = x+.5, ymin = 0, ymax = 1, fill = set1), data = data) +
+  geom_rect() + 
+  scale_fill_identity() + 
+  ylab("") + 
+  xlab("") + 
+  theme(axis.text = element_blank(), 
+        axis.ticks = element_blank(), 
+        rect = element_blank()) + 
+  coord_fixed(ratio = 1) + 
+  theme_void()
 ```
 
-<small>
-Can use `colorRampPalette()` from the RColorBrewer package to produce larger palettes by interpolating existing ones
-</small>
+[Can use `colorRampPalette()` from the RColorBrewer package to produce larger palettes by interpolating existing ones]{.small}
 
-```{r, echo=FALSE, fig.width=10, fig.height=1.2, purl = F}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 1.2
+#| purl: false
+
 
 getPalette = colorRampPalette(brewer.pal(9, "Set1"))
 
 data2 <- data.frame(x = 1:20, 
                    expanded = getPalette(20))
 
-qplot(xmin = x-.5, xmax = x+.5, ymin = 0, ymax = 1, data = data2, geom = "rect", color = I("black"), fill = expanded) + 
+ggplot(aes(xmin = x-.5, xmax = x+.5, ymin = 0, ymax = 1, fill = expanded), data = data2) +
+  geom_rect() + 
     scale_fill_identity() + 
     ylab("") + 
     xlab("") + 
@@ -526,39 +503,51 @@ qplot(xmin = x-.5, xmax = x+.5, ymin = 0, ymax = 1, data = data2, geom = "rect",
 
 Quantitative schemes: use color gradient with only one hue for positive values
 
-```{r, echo=FALSE, fig.width=7, fig.height=1.2, purl = F}
-qplot(xmin = x-.5, xmax = x+.5, ymin = 0, ymax = 1, data = data, geom = "rect", color = I("black"), fill = blues) + 
-    scale_fill_identity() + 
-    ylab("") + 
-    xlab("") + 
-    theme(axis.text = element_blank(), 
-          axis.ticks = element_blank(), 
-          rect = element_blank()) + 
-    coord_fixed(ratio = 1) + 
-    theme_void()
-```
+```{r}
+#| echo: false
+#| fig-width: 7
+#| fig-height: 1.2
+#| purl: false
 
----
+ggplot(aes(xmin = x-.5, xmax = x+.5, ymin = 0, ymax = 1, fill = blues), data = data) +
+  geom_rect() + 
+  scale_fill_identity() + 
+  ylab("") + 
+  xlab("") + 
+  theme(axis.text = element_blank(), 
+        axis.ticks = element_blank(), 
+        rect = element_blank()) + 
+  coord_fixed(ratio = 1) + 
+  theme_void()
+
+```
 
 ## More Gradients
 
 Quantitative schemes: use color gradient with two hues for positive and negative values. Gradient should go through a light, neutral color (white)
 
-```{r, echo=FALSE, fig.width=7, fig.height=1.5, purl = F} 
-qplot(xmin = x-.5, xmax = x+.5, ymin = 0, ymax = 1, data = data, geom = "rect", color = I("black"), fill = diverge) + 
-    scale_fill_identity() + 
-    ylab("") + 
-    xlab("") + 
-    theme(axis.text = element_blank(), 
-          axis.ticks = element_blank(), 
-          rect = element_blank()) + 
-    coord_fixed(ratio = 1) + 
-    theme_void()
+```{r} 
+#| echo: false
+#| fig-width: 7
+#| fig-height: 1.5
+#| purl: false
+
+
+
+ggplot(aes(xmin = x-.5, xmax = x+.5, ymin = 0, ymax = 1, fill = diverge), data = data) +
+  geom_rect() + 
+  scale_fill_identity() + 
+  ylab("") + 
+  xlab("") + 
+  theme(axis.text = element_blank(), 
+        axis.ticks = element_blank(), 
+        rect = element_blank()) + 
+  coord_fixed(ratio = 1) + 
+  theme_void()
 ``` 
 
 Small objects or thin lines need more contrast than larger areas
 
----
 ## Factors vs. Continuous variables
 
 - Factor variable:
@@ -569,10 +558,13 @@ Small objects or thin lines need more contrast than larger areas
     - `scale_colour_gradient2` (define low, mid, and high values)
     - Equivalents for fill: `scale_fill_...`
 
-```{r, fig.align='top', fig.height=4, fig.width=10, purl = F}
-p1 <- ggplot(data = mpg, aes(x = cty, y = hwy, colour = class)) + geom_point() + scale_color_locuszoom() +labs(x = "city mpg", y = "highway mpg", title = "Factor variable")
-p2 <- ggplot(data = mpg, aes(x = cty, y = hwy, colour = hwy)) + geom_point() + labs(x = "city mpg", y = "highway mpg", title = "Continuous variable")
-grid.arrange(p1, p2, ncol = 2, nrow = 1)
+```{r}
+#| fig-height: 4
+#| fig-width: 10
+#| purl: false
+#| layout-ncol: 2
+ggplot(data = mpg, aes(x = cty, y = hwy, colour = class)) + geom_point() + scale_color_locuszoom() +labs(x = "city mpg", y = "highway mpg", title = "Factor variable")
+ggplot(data = mpg, aes(x = cty, y = hwy, colour = hwy)) + geom_point() + labs(x = "city mpg", y = "highway mpg", title = "Continuous variable")
 ``` 
 
 
@@ -580,29 +572,28 @@ grid.arrange(p1, p2, ncol = 2, nrow = 1)
 
 - There are packages available (`ggsci`, `viridis`, `wesanderson`, `RColorBrewer`) that have color schemes for any occasion.
 
-```{r color-ggplot2, fig.width = 10, fig.height = 5, out.width = "100%"}
+```{r}
+#| label: color-ggplot2
+#| fig.width: 3
+#| fig.height: 3
+#| layout-ncol: 4
 library(ggsci)
 library(viridis)
 library(wesanderson)
 library(RColorBrewer)
 
+
 p1 <- ggplot(data = mpg, aes(x = class, fill = class)) + geom_bar() +
   theme_bw() +theme(legend.position = "none", axis.text.x = element_blank())
   
-p11 <- p1 + labs(title= "ggplot2 default")
-p2 = p1 + scale_fill_npg() + labs(title = "NPG")
-p3 = p1 + scale_fill_startrek() + labs(title = "Star Trek")
-p4 = p1 + scale_fill_ucscgb() + labs(title = "UCSCGB")
-p5 = p1 + scale_fill_viridis(discrete = TRUE) + labs(title = "Viridis")
-p6 = p1 + scale_fill_viridis(option="magma", discrete = TRUE) + labs(title = "Magma")
-#p7 = p1 + scale_color_manual(values = wes_palette(4, "Rushmore")) + labs(title = "Rushmore")
-#p8 = p1 + scale_color_manual(values = wes_palette(5, "Zissou")) + labs(title = "Zissou")
-p9 = p1 + scale_fill_brewer(palette="Set2") + labs(title = "Set2")
-p0 = p1 + scale_fill_brewer(palette="Dark2") + labs(title = "Dark2")
-
-grid.arrange(p11, p2, p3, p4, p5, p6, #p7, p8, 
-             p9, p0, nrow = 2)
-
+p1 + labs(title= "ggplot2 default")
+p1 + scale_fill_npg() + labs(title = "NPG")
+p1 + scale_fill_startrek() + labs(title = "Star Trek")
+p1 + scale_fill_ucscgb() + labs(title = "UCSCGB")
+p1 + scale_fill_viridis(discrete = TRUE) + labs(title = "Viridis")
+p1 + scale_fill_viridis(option="magma", discrete = TRUE) + labs(title = "Magma")
+p1 + scale_fill_brewer(palette="Set2") + labs(title = "Set2")
+p1 + scale_fill_brewer(palette="Dark2") + labs(title = "Dark2")
 ```
   
   
@@ -616,21 +607,6 @@ data(diamonds)
 - In the diamonds data, clarity and cut are ordinal, while price and carat are continuous
 
 - Find a graphic that gives an overview of these four variables while respecting their types
-
-
-<!-- --- -->
-<!-- class: inverse -->
-<!-- ## Your Turn 2 -->
-
-<!-- The `movies` data set contains information from IMDB.com including ratings, genre, length in minutes, and year of release. -->
-
-<!-- ```{r, echo = TRUE, purl = T} -->
-<!-- movies <- read.csv("http://heike.github.io/summerschool-2021/02-graphics/data/MovieSummary.csv") -->
-<!-- ``` -->
-
-
-<!-- - Explore the differences in length, rating, etc. in movie genres over time -->
-<!-- - Hint: use facetting! -->
 
 ## Additional Resources
 

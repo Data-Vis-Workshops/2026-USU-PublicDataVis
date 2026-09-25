@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/materials/weather-data.html</loc>
-    <lastmod>2026-09-23T16:16:00.081Z</lastmod>
+    <lastmod>2026-09-23T16:03:28.567Z</lastmod>
   </url>
   <url>
     <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/theming.html</loc>
-    <lastmod>2026-09-17T21:04:03.171Z</lastmod>
+    <lastmod>2026-09-17T21:57:44.482Z</lastmod>
   </url>
   <url>
     <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/public-data.html</loc>
-    <lastmod>2026-09-25T03:38:35.599Z</lastmod>
+    <lastmod>2026-09-25T13:35:42.599Z</lastmod>
   </url>
   <url>
     <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/perception.html</loc>
-    <lastmod>2026-09-25T00:07:40.040Z</lastmod>
+    <lastmod>2026-09-25T13:36:19.621Z</lastmod>
   </url>
   <url>
-    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/how-graphics.html</loc>
-    <lastmod>2026-09-25T03:31:26.269Z</lastmod>
+    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/introductions.html</loc>
+    <lastmod>2026-09-23T16:26:42.192Z</lastmod>
   </url>
   <url>
-    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/Roosevelt.html</loc>
-    <lastmod>2026-09-17T16:55:13.520Z</lastmod>
+    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/Blanding.html</loc>
+    <lastmod>2026-09-17T21:57:44.226Z</lastmod>
   </url>
   <url>
     <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/index.html</loc>
     <lastmod>2026-09-17T21:57:44.457Z</lastmod>
   </url>
   <url>
-    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/Blanding.html</loc>
-    <lastmod>2026-09-17T16:55:07.684Z</lastmod>
+    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/Roosevelt.html</loc>
+    <lastmod>2026-09-17T21:57:44.227Z</lastmod>
   </url>
   <url>
-    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/introductions.html</loc>
-    <lastmod>2026-09-24T23:39:53.342Z</lastmod>
-  </url>
-  <url>
-    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/personal-data.html</loc>
-    <lastmod>2026-09-25T03:10:14.245Z</lastmod>
-  </url>
-  <url>
-    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/resources-opportunities.html</loc>
-    <lastmod>2026-09-17T21:04:13.391Z</lastmod>
-  </url>
-  <url>
-    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/why-graphics.html</loc>
-    <lastmod>2026-09-23T02:00:48.544Z</lastmod>
+    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/how-graphics.html</loc>
+    <lastmod>2026-09-25T19:56:36.348Z</lastmod>
   </url>
   <url>
     <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/perception-midwest.html</loc>
-    <lastmod>2026-09-25T03:27:24.076Z</lastmod>
+    <lastmod>2026-09-25T13:36:19.558Z</lastmod>
+  </url>
+  <url>
+    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/personal-data.html</loc>
+    <lastmod>2026-09-25T13:36:19.648Z</lastmod>
+  </url>
+  <url>
+    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/resources-opportunities.html</loc>
+    <lastmod>2026-09-17T21:57:44.481Z</lastmod>
+  </url>
+  <url>
+    <loc>https://data-vis-workshops.github.io/2026-USU-PublicDataVis/slides/why-graphics.html</loc>
+    <lastmod>2026-09-23T13:27:17.655Z</lastmod>
   </url>
 </urlset>
