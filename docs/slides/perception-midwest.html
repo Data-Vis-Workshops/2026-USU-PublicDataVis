@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <title>Visualization &amp; Public Data – Graphics and Perception</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d2cfaf4017ec6d6e95d384acfb7920a7.css">
+  <link rel="stylesheet" href="../css/slide-theme.scss">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <style>
+    .code-copy-outer-scaffold:has(.code-annotated)>.code-copy-button {
+      right: 1.5em;
+      margin-right: 0;
+    }
+  </style>
+<meta property="og:title" content="Graphics and Perception – Visualization &amp; Public Data">
+<meta property="og:site_name" content="Visualization &amp; Public Data">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Graphics and Perception</h1>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section id="what-do-you-see" class="slide level2">
+<h2>What do you see?</h2>
+<p>.center[ <img data-src="https://www.moillusions.com/wp-content/uploads/2009/12/Mysterious-Dalmatian-Optical-Illusion.jpg">] .bottom[Image source: https://www.moillusions.com/mysterious-dots-optical-illusion/]</p>
+</section>
+<section id="what-do-you-see-1" class="slide level2">
+<h2>What do you see?</h2>
+<p>.center[ <img data-src="images/dalmation.png">]</p>
+<aside class="notes">
+<p>Vision, in general, involves a <em>lot</em> of unconscious pattern recognition. If we can harness that power, we can show people data in a way that doesn’t require a lot of thought for them to engage with the data.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="its-not-just-an-illusion---its-a-photo" class="slide level2">
+<h2>It’s not just an illusion - it’s a photo</h2>
+<p>.center[ <img src="images/dalmation_life_1965.png" alt="1965 Life magazine cover showing the dalmation illusion" width="50%">]</p>
+<p>.bottom[Life Magazine, 19 Feb 1965]</p>
+</section>
+<section id="why-graphics-matter" class="slide level2">
+<h2>Why Graphics Matter</h2>
+<p>Graphics are a form of <strong>external cognition</strong> that allow us to think about the <strong>data</strong> rather than the <strong>chart</strong></p>
+<p>Good graphics take advantage of how the brain works</p>
+<ul>
+<li class="fragment"><p>preattentive processing</p></li>
+<li class="fragment"><p>perceptual grouping</p></li>
+<li class="fragment"><p>awareness of visual limitations</p></li>
+</ul>
+</section>
+<section id="good-graphics" class="slide level2">
+<h2>Good Graphics</h2>
+<p>In good graphics, the</p>
+<ol type="1">
+<li>graph form</li>
+<li>data (and structure)</li>
+<li>aesthetics</li>
+</ol>
+<p>all work together to pass information to the brain via the visual system.</p>
+<p>The <strong>structure</strong> and <strong>aesthetics</strong> used to create the chart should contribute to the understanding of what is being shown!</p>
+</section>
+<section id="bad-graphics" class="slide level2">
+<h2>Bad Graphics</h2>
+<iframe src="https://xkcd.com/1138/#comic" width="800px" height="560px">
+<aside class="notes">
+<p>Of course, even decent visualizations can’t compensate for lousy data… or rather, chart designers who aren’t thinking about how to represent the data well.</p>
+</aside>
+</section>
+<section id="bad-graphics-1" class="slide level2">
+<h2>Bad Graphics</h2>
+<p>.center[<img alt="Top 500 Supercomputers by Processor Family" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Processor_families_in_TOP500_supercomputers.svg/1280px-Processor_families_in_TOP500_supercomputers.svg.png" width = "80%"/>]</p>
+<p>.bottom[https://en.wikipedia.org/wiki/File:Processor_families_in_TOP500_supercomputers.svg]</p>
+<aside class="notes">
+<p>But perfectly reasonable data can also be ruined by bad aesthetic choices.</p>
+<p>As with anything, graphics require a combination of “art” and “science” - you not only have to use the best method to display the data (which this isn’t, necessarily), you also have to use some judgment as to how to show what you’re hoping to show… and this is a good example of what happens when that doesn’t happen.</p>
+</aside>
+</section>
+<section id="spot-the-difference" class="slide level2">
+<h2>Spot the Difference</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/preattentive1-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="perception-midwest_files/figure-revealjs/preattentive1-1.png" style="width:49.5%" /></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/preattentive1-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="perception-midwest_files/figure-revealjs/preattentive1-2.png" style="width:49.5%" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="spot-the-difference-1" class="slide level2">
+<h2>Spot the Difference</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/preattentive2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="perception-midwest_files/figure-revealjs/preattentive2-1.png" style="width:49.5%" /></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/preattentive2-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="perception-midwest_files/figure-revealjs/preattentive2-2.png" style="width:49.5%" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="preattentive-perception" class="slide level2">
+<h2>Preattentive perception</h2>
+<ul>
+<li><p>Occurs automatically (no effort)</p></li>
+<li><p>Color, shape, angle</p></li>
+<li><p>Combinations of preattentive features require attention</p>
+<ul>
+<li>Unless you double-encode<br />
+(use different features for the same variable)</li>
+</ul></li>
+</ul>
+<div class=".increment">
+<p>Using preattentive features reduces the amount of work your viewer has to expend to understand your chart</p>
+</div>
+</section>
+<section id="what-do-you-see-2" class="slide level2">
+<h2>What do you see?</h2>
+<p>.center[<img data-src="images/IllusoryContour.png" />]</p>
+<aside class="notes">
+<p>What do you see here? 3 pac-men shapes and 3 acute angles? No?</p>
+<p>I see 3 circles, a triangle with a black outline, and a white triangle with no outline. But… that’s not really what’s there, is it?</p>
+<p>I’ll talk next about the Gestalt laws, but if you can’t remember them, just remember this saying - “The whole is greater than the sum of the parts” - just as here, what we see is more orderly than what is actually there.</p>
+</aside>
+</section>
+<section>
+<section id="gestalt-principles" class="title-slide slide level1">
+<h1>Gestalt Principles</h1>
+
+</section>
+<h3 id="what-sorts-of-relationships-are-inferred-and-under-what-circumstances">What sorts of relationships are inferred, and under what circumstances?</h3>
+<section id="gestalt-laws-of-perception" class="slide level2">
+<h2>Gestalt Laws of Perception</h2>
+<p>.center[<img data-src="images/gestalt.jpg" />]</p>
+<aside class="notes">
+<p>The Gestalt laws are a set of rules for how we interpret ambiguity in the visual scene.</p>
+<p>The law of Closure says that it’s easier to interpret things if you imagine them as a closed figure - it’s more likely that a closed figure is for instance obstructed, than that it is a set of more complex, less meaningful figures. This is sometimes also stated as the “law of good figure”</p>
+<p>the law of Proximity says that things that are close together are likely part of the same unit. So you might interpret things as a dalmation instead of a series of blobs of black ink.</p>
+<p>The law of continuation says that figures with edges that are smooth are more likely to be continuous than things with edges that are sharp angles.</p>
+<p>the law of similarity says that things are likely to be viewed as part of a group if they look similar.</p>
+<p>Then, the law of figure/ground helps explain why we see both the tree and the AL figure combination here - we have contextual information that helps us simplify the picture into two groups - the figure (the tree), and the background (the AL); thus also helps us separate the AL from the white background behind it.</p>
+<p>There are a few other gestalt laws, but these are the main ones.</p>
+<p>Now, let’s talk about how these laws apply to charts! I swear, I didn’t forget that I am supposed to be talking about data visualization.</p>
+</aside>
+</section>
+<section id="gestalt-laws-in-data-visualization" class="slide level2">
+<h2>Gestalt Laws in Data Visualization</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/unnamed-chunk-1-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="perception-midwest_files/figure-revealjs/unnamed-chunk-1-1.png" style="width:100.0%" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p>Proximity</p></li>
+<li><p>Similarity</p></li>
+</ul>
+</section>
+<section id="gestalt-laws-in-data-visualization-1" class="slide level2">
+<h2>Gestalt Laws in Data Visualization</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="perception-midwest_files/figure-revealjs/unnamed-chunk-2-1.png" style="width:100.0%" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="gestalt-laws-in-data-visualization-2" class="slide level2">
+<h2>Gestalt Laws in Data Visualization</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="perception-midwest_files/figure-revealjs/unnamed-chunk-3-1.png" style="width:100.0%" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Good continuation</li>
+</ul>
+</section>
+<section id="which-one-is-different" class="slide level2">
+<h2>Which one is different?</h2>
+<p>.center[<img src="images/set-48-k-5-sdline-0.45-sdgroup-0.25-TREND.png" alt="Lineup with trend lines" width = "70%"/>]</p>
+</section>
+<section id="which-one-is-different-1" class="slide level2">
+<h2>Which one is different?</h2>
+<p>.center[<img src="images/set-48-k-5-sdline-0.45-sdgroup-0.25-COLOR.png" alt="Lineup with color lines" width = "70%"/>]</p>
+</section>
+<section id="plot-annotations-matter" class="slide level2">
+<h2>Plot Annotations Matter!</h2>
+<p>.pull-left[</p>
+<p>.center[<img data-src="images/set-48-k-5-sdline-0.45-sdgroup-0.25-TREND.png" />]</p>
+<ul>
+<li>Plot 12: 59.1%</li>
+<li>Plot 5: 9.1%</li>
+<li>Other plots: 31.7%</li>
+</ul>
+<p>] .pull-right[</p>
+<p>.center[<img data-src="images/set-48-k-5-sdline-0.45-sdgroup-0.25-COLOR.png" />]</p>
+<ul>
+<li>Plot 12: 9.7%</li>
+<li>Plot 5: 29.0%</li>
+<li>Plot 18: 32.3%</li>
+<li>Other plots: 29.0%</li>
+</ul>
+<p>]</p>
+<aside class="notes">
+<p>Add annotations to your plots based on what you want to emphasize. If you want to show the trend (or deviations from it), add a line and maybe a confidence band. If you want to show clustering, use ellipses and color and/or shape.</p>
+<p>What you add to the plot helps to determine what people will see in the data!</p>
+</aside>
+</section></section>
+<section>
+<section id="visual-limitations" class="title-slide slide level1">
+<h1>Visual Limitations</h1>
+
+</section>
+<section id="visual-limitations-1" class="slide level2">
+<h2>Visual Limitations</h2>
+<ul>
+<li><p>Not all graphical representations are equally accurate</p></li>
+<li><p>Optical illusions</p></li>
+<li><p>Designing plots for disabilities</p></li>
+<li><p>Color choices</p></li>
+</ul>
+</section>
+<section id="accuracy-of-graphical-judgements" class="slide level2">
+<h2>Accuracy of Graphical Judgements</h2>
+<ol type="1">
+<li>Position along a common scale (most accurate)
+<ul>
+<li>scatter plot</li>
+</ul></li>
+<li>Position along nonaligned scale
+<ul>
+<li>multiple scatter plots</li>
+</ul></li>
+<li>Length
+<ul>
+<li>bar chart</li>
+</ul></li>
+<li>Angle, Slope
+<ul>
+<li>pie chart</li>
+</ul></li>
+<li>Area
+<ul>
+<li>bubble chart</li>
+</ul></li>
+<li>Volume, Density, Color saturation
+<ul>
+<li>heatmap</li>
+</ul></li>
+<li>Color hue (least accurate)</li>
+</ol>
+<aside class="notes">
+<p>When you design a visualization, try to make the most important variables represented by dimensions that are accurate.</p>
+<p>In some cases, we only care about relative accuracy - for those, things like color saturation are fine for encoding information.</p>
+<p>You may have heard people talk about how awful pie charts are - that’s because anything that can be put into a pie chart can also be put into a bar chart, which will be read more accurately.</p>
+</aside>
+</section>
+<section id="optical-illusions" class="slide level2">
+<h2>Optical Illusions</h2>
+<p><a href="images/curve-difference.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="images/curve-difference.png" /></a></p>
+<aside class="notes">
+<p>We’re really bad at judging vertical distance, as well. If you need to show the difference between two curves, you should attempt to find a different way to do it than showing both curves on the same chart - for instance, plot the difference alongside the two curves.</p>
+</aside>
+</section>
+<section id="designing-for-accessibility" class="slide level2">
+<h2>Designing for Accessibility</h2>
+<ul>
+<li>Low visual acuity:
+<ul>
+<li>High contrast (bright/dark)</li>
+<li>large font size</li>
+<li>textures/patterns can be hard to make out</li>
+</ul></li>
+<li>Colorblindness:
+<ul>
+<li>Safest: design for a black-and-white photocopier</li>
+<li>Avoid rainbow gradients</li>
+<li>If you need a 2-color gradient, use blue/purple - white - orange (safe for most types of colorblindness)</li>
+</ul></li>
+<li>R packages for accessibility
+<ul>
+<li>ajrgodfrey/BrailleR - translate plots into text descriptions for screen readers</li>
+<li>sonify - represent data using sound</li>
+<li>gt - tables with metadata that is easy for screen readers</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>Unfortunately, there is relatively little research on other disabilities + statistical graphics</p>
+</aside>
+</section>
+<section id="color" class="slide level2">
+<h2>Color</h2>
+<ul>
+<li><p><strong>Hue</strong>: shade of color (red, orange, yellow…)</p></li>
+<li><p><strong>Intensity</strong>: amount of color</p></li>
+<li><p>Both color and hue are pre-attentive. Bigger contrast corresponds to faster detection.</p></li>
+<li><p>Use color to your advantage</p></li>
+<li><p>When choosing color schemes, we will want mappings from data to color that are not just numerically but also <strong><em>perceptually</em></strong> uniform</p></li>
+<li><p>Distinguish between sequential scales and categorical scales</p></li>
+</ul>
+</section>
+<section id="color-1" class="slide level2">
+<h2>Color</h2>
+<p>Color is context-sensitive: A and B are the same intensity and hue, but appear to be different.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/shadow-illusion3.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Edward Adelson’s checkershadow illusion"><img data-src="images/shadow-illusion3.jpg" alt="Edward Adelson’s checkershadow illusion" /></a></p>
+<figcaption>Edward Adelson’s checkershadow illusion</figcaption>
+</figure>
+</div>
+</section>
+<section id="ordering-variables" class="slide level2">
+<h2>Ordering Variables</h2>
+<p>Which is bigger?</p>
+<ul>
+<li>Position: higher is bigger (y), items to the right are bigger (x)</li>
+<li>Size, Area</li>
+<li>Color: not always ordered. More contrast = bigger.</li>
+<li>Shape: Unordered.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="perception-midwest_files/figure-revealjs/unnamed-chunk-4-1.png" width="1920" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="aesthetics-in-ggplot2-scales" class="title-slide slide level1">
+<h1>Aesthetics in <code>ggplot2</code>: Scales</h1>
+
+</section>
+<section id="aesthetics-in-ggplot2" class="slide level2">
+<h2>Aesthetics in <code>ggplot2</code></h2>
+<p><strong>Aesthetics</strong>: features such as color, shape, and size that map other characteristics to structural features</p>
+<p><strong>Scales</strong> map data values to the visual values of an aesthetic</p>
+<ul>
+<li>to change a mapping, add a new scale</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/scales1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="images/scales1.png" class="quarto-figure quarto-figure-center" width="138" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="scales" class="slide level2">
+<h2>Scales</h2>
+<p>.pull-left[</p>
+<div class="cell" data-layout-align="top">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-top">
+<figure>
+<p><a href="images/scales2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img data-src="images/scales2.png" class="quarto-figure quarto-figure-top" width="138" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>] .pull-right[</p>
+<div class="cell" data-layout-align="top">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-top">
+<figure>
+<p><a href="images/scales3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img data-src="images/scales3.png" class="quarto-figure quarto-figure-top" width="138" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>]</p>
+</section>
+<section id="gradients" class="slide level2">
+<h2>Gradients</h2>
+<p>Qualitative schemes: no more than 7 colors</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/unnamed-chunk-8-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="perception-midwest_files/figure-revealjs/unnamed-chunk-8-1.png" width="672" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p><small> Can use <code>colorRampPalette()</code> from the RColorBrewer package to produce larger palettes by interpolating existing ones </small></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="perception-midwest_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Quantitative schemes: use color gradient with only one hue for positive values</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/unnamed-chunk-10-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="perception-midwest_files/figure-revealjs/unnamed-chunk-10-1.png" width="672" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="more-gradients" class="slide level2">
+<h2>More Gradients</h2>
+<p>Quantitative schemes: use color gradient with two hues for positive and negative values. Gradient should go through a light, neutral color (white)</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/unnamed-chunk-11-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="perception-midwest_files/figure-revealjs/unnamed-chunk-11-1.png" width="672" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Small objects or thin lines need more contrast than larger areas</p>
+</section>
+<section id="factors-vs.-continuous-variables" class="slide level2">
+<h2>Factors vs. Continuous variables</h2>
+<ul>
+<li>Factor variable:
+<ul>
+<li><code>scale_colour_discrete</code></li>
+<li><code>scale_colour_brewer(palette = ...)</code></li>
+</ul></li>
+<li>Continuous variable:
+<ul>
+<li><code>scale_colour_gradient</code> (define low, high values)</li>
+<li><code>scale_colour_gradient2</code> (define low, mid, and high values)</li>
+<li>Equivalents for fill: <code>scale_fill_...</code></li>
+</ul></li>
+</ul>
+<div class="cell" data-layout-align="top">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-top">
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/unnamed-chunk-12-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="perception-midwest_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-top" width="960" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="color-in-ggplot2" class="slide level2">
+<h2>Color in ggplot2</h2>
+<ul>
+<li>There are packages available (<code>ggsci</code>, <code>viridis</code>, <code>wesanderson</code>, <code>RColorBrewer</code>) that have color schemes for any occasion.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="perception-midwest_files/figure-revealjs/color-ggplot2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img data-src="perception-midwest_files/figure-revealjs/color-ggplot2-1.png" style="width:100.0%" /></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="your-turn" class="slide level2">
+<h2>Your Turn</h2>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r cell-code number-lines"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">data</span>(diamonds)</span></code></pre></div>
+</div>
+<ul>
+<li><p>In the diamonds data, clarity and cut are ordinal, while price and carat are continuous</p></li>
+<li><p>Find a graphic that gives an overview of these four variables while respecting their types</p></li>
+</ul>
+<!-- --- -->
+<!-- class: inverse -->
+<!-- ## Your Turn 2 -->
+<!-- The `movies` data set contains information from IMDB.com including ratings, genre, length in minutes, and year of release. -->
+<!-- ```{r, echo = TRUE, purl = T} -->
+<!-- movies <- read.csv("http://heike.github.io/summerschool-2021/02-graphics/data/MovieSummary.csv") -->
+<!-- ``` -->
+<!-- - Explore the differences in length, rating, etc. in movie genres over time -->
+<!-- - Hint: use facetting! -->
+</section>
+<section id="additional-resources" class="slide level2">
+<h2>Additional Resources</h2>
+<ul>
+<li>Maps in ggplot2
+<ul>
+<li><a href="https://ggplot2-book.org/maps.html">ggplot2 book chapter</a></li>
+<li><a href="https://kelseyandersen.github.io/DataVizR/mapping.html">Mapping with ggplot2 (Workshop)</a></li>
+<li><a href="https://r-spatial.org/r/2018/10/25/ggplot2-sf.html">r-spatial ggplot2 maps tutorial</a></li>
+</ul></li>
+<li>General references
+<ul>
+<li><a href="https://r-graphics.org/">R graphics Cookbook</a></li>
+<li><a href="https://datavizcatalogue.com/">Data Visualization Catalogue</a></li>
+</ul></li>
+</ul>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Graphics and Perception – Visualization &amp; Public Data</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Graphics and Perception – Visualization &amp; Public Data</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Graphics and Perception – Visualization &amp; Public Data</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Visualization &amp; Public Data</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Homepage for Data Science Workshops 2026 on Visualization and Public Data</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Homepage for Data Science Workshops 2026 on Visualization and Public Data</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlZGVzYw==">Homepage for Data Science Workshops 2026 on Visualization and Public Data</span></p>
+</div>
+<div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="../css/usu-sq.png" alt="Utah State University Logo" class="slide-logo" /></p>
+<div class="footer footer-default">
+<p><a href="https://data-vis-workshops.github.io/2026-USU-PublicDataVis/">Workshop Homepage</a></p>
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id = "quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/data-vis-workshops\.github\.io\/2026-USU-PublicDataVis\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+            let selectedAnnoteEl;
+            const selectorForAnnotation = ( cell, annotation) => {
+              let cellAttr = 'data-code-cell="' + cell + '"';
+              let lineAttr = 'data-code-annotation="' +  annotation + '"';
+              const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+              return selector;
+            }
+            const selectCodeLines = (annoteEl) => {
+              const doc = window.document;
+              const targetCell = annoteEl.getAttribute("data-target-cell");
+              const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+              const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+              const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+              const lineIds = lines.map((line) => {
+                return targetCell + "-" + line;
+              })
+              let top = null;
+              let height = null;
+              let parent = null;
+              if (lineIds.length > 0) {
+                  //compute the position of the single el (top and bottom and make a div)
+                  const el = window.document.getElementById(lineIds[0]);
+                  top = el.offsetTop;
+                  height = el.offsetHeight;
+                  parent = el.parentElement.parentElement;
+                if (lineIds.length > 1) {
+                  const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+                  const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+                  height = bottom - top;
+                }
+                if (top !== null && height !== null && parent !== null) {
+                  // cook up a div (if necessary) and position it 
+                  let div = window.document.getElementById("code-annotation-line-highlight");
+                  if (div === null) {
+                    div = window.document.createElement("div");
+                    div.setAttribute("id", "code-annotation-line-highlight");
+                    div.style.position = 'absolute';
+                    parent.appendChild(div);
+                  }
+                  div.style.top = top - 2 + "px";
+                  div.style.height = height + 4 + "px";
+                  div.style.left = 0;
+                  let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+                  if (gutterDiv === null) {
+                    gutterDiv = window.document.createElement("div");
+                    gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                    gutterDiv.style.position = 'absolute';
+                    const codeCell = window.document.getElementById(targetCell);
+                    const gutter = codeCell.querySelector('.code-annotation-gutter');
+                    gutter.appendChild(gutterDiv);
+                  }
+                  gutterDiv.style.top = top - 2 + "px";
+                  gutterDiv.style.height = height + 4 + "px";
+                }
+                selectedAnnoteEl = annoteEl;
+              }
+            };
+            const unselectCodeLines = () => {
+              const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+              elementsIds.forEach((elId) => {
+                const div = window.document.getElementById(elId);
+                if (div) {
+                  div.remove();
+                }
+              });
+              selectedAnnoteEl = undefined;
+            };
+              // Handle positioning of the toggle
+          window.addEventListener(
+            "resize",
+            throttle(() => {
+              elRect = undefined;
+              if (selectedAnnoteEl) {
+                selectCodeLines(selectedAnnoteEl);
+              }
+            }, 10)
+          );
+          function throttle(fn, ms) {
+          let throttle = false;
+          let timer;
+            return (...args) => {
+              if(!throttle) { // first call gets through
+                  fn.apply(this, args);
+                  throttle = true;
+              } else { // all the others get throttled
+                  if(timer) clearTimeout(timer); // cancel #2
+                  timer = setTimeout(() => {
+                    fn.apply(this, args);
+                    timer = throttle = false;
+                  }, ms);
+              }
+            };
+          }
+            const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+            for (let i=0; i<annoteTargets.length; i++) {
+              const annoteTarget = annoteTargets[i];
+              const targetCell = annoteTarget.getAttribute("data-target-cell");
+              const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+              const contentFn = () => {
+                const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+                if (content) {
+                  const tipContent = content.cloneNode(true);
+                  tipContent.classList.add("code-annotation-tip-content");
+                  return tipContent.outerHTML;
+                }
+              }
+              const config = {
+                allowHTML: true,
+                content: contentFn,
+                onShow: (instance) => {
+                  selectCodeLines(instance.reference);
+                  instance.reference.classList.add('code-annotation-active');
+                  window.tippy.hideAll();
+                },
+                onHide: (instance) => {
+                  unselectCodeLines();
+                  instance.reference.classList.remove('code-annotation-active');
+                },
+                maxWidth: 300,
+                delay: [50, 0],
+                duration: [200, 0],
+                offset: [5, 10],
+                arrow: true,
+                appendTo: function(el) {
+                  return el.parentElement.parentElement.parentElement;
+                },
+                interactive: true,
+                interactiveBorder: 10,
+                theme: 'light-border',
+                placement: 'right',
+                popperOptions: {
+                  modifiers: [
+                  {
+                    name: 'flip',
+                    options: {
+                      flipVariations: false, // true by default
+                      allowedAutoPlacements: ['right'],
+                      fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                    },
+                  },
+                  {
+                    name: 'preventOverflow',
+                    options: {
+                      mainAxis: false,
+                      altAxis: false
+                    }
+                  }
+                  ]        
+                }      
+              };
+              window.tippy(annoteTarget, config); 
+            }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
+    </body>
+</html>
+</iframe></section></div></div></body></html>
