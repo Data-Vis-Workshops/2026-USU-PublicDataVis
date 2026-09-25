@@ -176,7 +176,7 @@ Values from the data set are **mapped** to properties of the geom using **aesthe
 
 ## How to build a graph
 
-`ggplot(data = mpg, aes(x = cty, y = hwy))`
+`ggplot(data = mpg, aes(x = class, y = hwy))`
 
 - This will begin a plot that you can finish by adding layers to.
 

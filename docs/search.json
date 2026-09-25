@@ -417,7 +417,7 @@
     "href": "slides/how-graphics.html#how-to-build-a-graph",
     "title": "How to Make Graphics",
     "section": "How to build a graph",
-    "text": "How to build a graph\nggplot(data = mpg, aes(x = cty, y = hwy))\n\nThis will begin a plot that you can finish by adding layers to.\nYou can add one geom per layer"
+    "text": "How to build a graph\nggplot(data = mpg, aes(x = class, y = hwy))\n\nThis will begin a plot that you can finish by adding layers to.\nYou can add one geom per layer"
   },
   {
     "objectID": "slides/how-graphics.html#what-is-a-geom",
