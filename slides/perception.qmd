@@ -4,3 +4,35 @@ format: revealjs
 css: ../css/slide-theme.scss
 ---
 
+## Charts vs. Tables
+
+Would you rather have a chart, or a data table
+
+::: incremental
+
+- to understand a relationship?
+
+- to estimate a statistic?
+
+- to compute exact quantities?
+
+- to explain something?
+
+:::
+
+::: fragment
+
+Human retinas have a “bandwidth” of 8.75 megabits per second^[https://psychology.stackexchange.com/questions/26748/what-is-the-bandwidth-of-visual-perception]
+:::
+
+::: fragment
+Reading speed is ~ 200 words per minute^[https://howmanywords.app/blog/how-fast-do-humans-read], or ~ 0.0229 megabits per second
+:::
+
+
+## External Cognition
+
+> The greatest value of a picture is when it forces us to notice what we never expected to see.
+> 
+> John Tukey, Exploratory Data Analysis
+
