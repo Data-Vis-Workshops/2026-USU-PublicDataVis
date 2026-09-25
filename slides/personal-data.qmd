@@ -107,6 +107,7 @@ claude <- read_csv(here::here("data/estimated_dataset.csv"))
 library(ggpcp)
 claude |> pcp_select(distance_traveled, days_until_destination) |> pcp_scale() |> ggplot(aes_pcp()) + geom_pcp() + theme_pcp()
 ```
+
 :::
 
 AIs can't 'see' for us, even when they just try to regenerate data (Clause was trying to resist because of the large number of overplotted lines)
@@ -124,6 +125,7 @@ Using Claude AI: "recreate the data from the chart; days are integer; there are 
 claude2 <- read_csv(here::here("data/estimated_dataset_2.csv"))
 claude2 |> pcp_select(distance_traveled, days_until_destination) |> pcp_scale() |> ggplot(aes_pcp()) + geom_pcp() + theme_pcp()
 ```
+
 :::
 
 What about now?
@@ -183,11 +185,14 @@ stickerdata_cleaner |> ggplot(aes(x = `Distance From SF`, y = days_travelled, co
 
 What do you see?
 
--- 
-
+::: fragment
 Three clusters
+:::
 
-Only for very large distances there is a positive relationship with
-the number of days to destination
+::: fragment
+Only for very large distances there is a positive relationship with the number of days to destination
+:::
 
+::: fragment
 There might be a hint of a positive association between the two variables in the first cluster (distances to 1250 miles)
+:::
