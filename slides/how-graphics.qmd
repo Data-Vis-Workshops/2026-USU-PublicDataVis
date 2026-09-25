@@ -377,23 +377,36 @@ Continuous
 #|   - "A jittered dotplot of vehicle class (2 seater, compact, midsize, minivan, pickup, subcompact, suv) compared to highway mpg"
 #|   - "A violin plot of vehicle class (2 seater, compact, midsize, minivan, pickup, subcompact, suv) compared to highway mpg"
 #|   - "A jittered dotplot overlaid with a violin plot, showing  vehicle class (2 seater, compact, midsize, minivan, pickup, subcompact, suv) compared to highway mpg"
-ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1) + scale_fill_locuszoom() + scale_color_locuszoom() + 
-  guides(color="none")
-ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_violin(aes(fill = class), alpha = 0.4) + scale_fill_locuszoom() + scale_color_locuszoom() + 
-  guides(fill="none", color = "none")
-ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1) + geom_violin(aes(fill = class), alpha = 0.4) + scale_fill_locuszoom() + scale_color_locuszoom() + 
-  guides(fill="none", color = "none")
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) +
+  geom_jitter(width = 0.1) +
+  scale_fill_locuszoom() +
+  scale_color_locuszoom() +
+  guides(color = "none")
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) +
+  geom_violin(aes(fill = class), alpha = 0.4) +
+  scale_fill_locuszoom() +
+  scale_color_locuszoom() +
+  guides(fill = "none", color = "none")
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) +
+  geom_jitter(width = 0.1) +
+  geom_violin(aes(fill = class), alpha = 0.4) +
+  scale_fill_locuszoom() +
+  scale_color_locuszoom() +
+  guides(fill = "none", color = "none")
 ```
 
 ```{r}
 #| eval: false
 #| purl: true
-ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1)
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) +
+  geom_jitter(width = 0.1)
 
-ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_violin(aes(fill = class), alpha = 0.4) 
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) +
+  geom_violin(aes(fill = class), alpha = 0.4)
 
-ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) + geom_jitter(width = 0.1) + geom_violin(aes(fill = class), alpha = 0.4)
-
+ggplot(data = mpg, aes(x = class, y = hwy, colour = class)) +
+  geom_jitter(width = 0.1) +
+  geom_violin(aes(fill = class), alpha = 0.4)
 ```
 
 
@@ -406,37 +419,294 @@ Change the code below to have the points **on top** of the boxplots.
 #| fig-height: 4
 #| fig-width: 8
 #| purl: true
-ggplot(data = mpg, aes(x = class, y = hwy)) + 
-  geom_jitter() + 
+ggplot(data = mpg, aes(x = class, y = hwy)) +
+  geom_jitter() +
   geom_boxplot()
 ```
 
 
-## Charts on Parade
 
-The Grammar of Graphics makes it easy to change plot types. 
+# Charts on Parade
+
+## Favorite Halloween Candy
 
 [Halloween candy preference data](https://navigatorresearch.org/reeses-is-the-most-preferred-halloween-candy-among-ameri)
+![](images/navigator-research-October-31-Reeses-and-Snickers.jpg){fig-alt="Bar graph of polling data from Navigator Research. Title: Reese’s and Snickers Come Out on Top As Americans’ Favorite Halloween Candy. Also shows a word cloud of favorite candy responses." width="80%"}
+
+- Doesn't add up to 100%, so I've adjusted "Other" category
+
+We'll assume [27% Democrats, 27% Republicans, 46% Independents](https://news.gallup.com/poll/700499/new-high-identify-political-independents.aspx) and not consider political party
+
+
+## Favorite Halloween Candy
 
 ```{r}
 library(tibble)
-candy <- tribble(~candy, ~dem, ~ind, ~rep, "Reese's", 29, 29, 28, "Snickers", 13, 13, 9, "M&Ms", 7, 5, 10, "Kit Kat", 7, 12, 7, "Candy Corn", 6, 6, 10, "Chocolate bars", 7, 4, 5, "Twix", 6, 3, 5, "Milky Way", 5, 1, 6, "Almond Joy", 4, 7, 5, "Sour Patch Kids", 4, 5, 3, "Skittles", 3, 1, 2, "Starburst", 2, 2, 2, "Twizzlers", 2, 0, 1, "Raisinets", 1, 1, 1, "Other", 4, 11, 6)
+candy <- tribble(~candy, ~dem, ~ind, ~rep, 
+                 "Reese's", 29, 29, 28, 
+                 "Snickers", 13, 13, 9, 
+                 "M&Ms", 7, 5, 10, 
+                 "Kit Kat", 7, 12, 7, 
+                 "Candy Corn", 6, 6, 10, 
+                 "Chocolate bars", 7, 4, 5, 
+                 "Twix", 6, 3, 5, 
+                 "Milky Way", 5, 1, 6, 
+                 "Almond Joy", 4, 7, 5, 
+                 "Sour Patch Kids", 4, 5, 3, 
+                 "Skittles", 3, 1, 2, 
+                 "Starburst", 2, 2, 2, 
+                 "Twizzlers", 2, 0, 1, 
+                 "Raisinets", 1, 1, 1, 
+                 "Other", 4, 11, 6)
+candy_types <-  candy$candy
+candy_types_min <- c("Reese's", "Snickers", "Kit Kat", "Candy Corn", "M&Ms", "Other")
 
 library(ggplot2)
-candy_long <- candy |>
-  pivot_longer(-candy, names_to = "politics", values_to = "pct") |>
-  group_by(candy) |> 
-  mutate(overall = mean(pct)) |>
-  ungroup() |> 
+candy_sum <- candy |>
+  # Average over political orientation (weighted by % alignment)
+  mutate(overall = .27*dem + .46*ind + .27*rep) |>
+  # Sort in descending order by proportion
   arrange(desc(overall)) |>
-  mutate(candy = factor(candy, levels = unique(candy), ordered = T))
-  # group_by(politics) |> summarize(pct = sum(pct)) |>
+  # Set bar order and create labels that are single-decimal values with % sign
+  mutate(candy = factor(candy, levels = candy_types, ordered = T),
+         label = sprintf("%0.1f%%", overall))
 
-candy_long |>
-  ggplot(aes(x = politics, y = pct, fill = candy)) + geom_col()
-
-
-candy_long |>
-  ggplot(aes(x = candy, y = pct, fill = politics)) + geom_col() + coord_flip()
+candy_short <- candy_sum |>
+  # Collapse so that we have only a reasonable number of categories
+  mutate(candy = str_replace_all(candy, "Raisinets|Twizzlers|Starburst|Skittles|Sour.Patch.Kids|Milky.Way|Almond.Joy|Chocolate.bars|Twix", "Other")) |>
+  group_by(candy) |>
+  # Calculate "Other" total proportion
+  summarize(overall = sum(overall)) |>
+  # Order of categories by size, with other at the end
+  mutate(candy = factor(candy, levels = candy_types_min, ordered = T)) |>
+  # Arrange the table in descending order
+  arrange(desc(candy)) |>
+  # Calculate label position as (everything to that point) + 1/2 of label value
+  mutate(pos = overall / 2 + lag(cumsum(overall), 1, default = 0),
+         label = sprintf("%s %0.1f%%", candy, overall))
 ```
+
+::: columns
+::: {.column width="65%"}
+```{r}
+#| label: halloween-all
+#| echo: true
+#| eval: false
+
+ggplot(data = candy_sum, 
+       aes(x = candy, y = overall, 
+           fill = candy)) +
+  geom_col() +
+  geom_text(aes(label = label), 
+            hjust = -0.1) + 
+  coord_flip() + 
+  ylab("Percent") + 
+  xlab("") + 
+  ggtitle("Favorite US Halloween Candy") +
+  scale_y_continuous(limits = c(0, 35)) +
+  guides(fill = "none") 
+```
+:::
+::: {.column width="35%"}
+
+```{r}
+#| label: halloween-all
+#| echo: false
+#| eval: true
+#| fig-width: 4
+#| fig-height: 5
+#| fig-alt: "A bar chart showing the favorite types of Halloween Candy reported by americans. Reese's (28.7%), Snickers (11.9%), Kit Kat (8.4%), M&Ms (7.3%), Candy Corn (7.1%), Chocolate bars (5.7%), Almond Joy (5.1%), Twix (4.9%), Milky Way (4.2%), Sour Patch Kids (4.0%), Skittles (2.2%), Starburst (2.0%), Twizzlers (1.2%), Raisinets (1.0%), Other (6.4%)"
+```
+
+
+
+:::
+:::
+
+## Favorite Halloween Candy
+
+Define some extra theme bits:
+
+```{r}
+#| echo: true
+labels <- list(ylab("Percent"),
+               xlab(""),
+               ggtitle("Favorite Halloween Candy of US Population"),
+               guides(fill = "none", color = "none"))
+
+stack_extras <- list(theme(panel.grid = element_blank())) 
+
+polar_extras <- list(theme(axis.text = element_blank(), 
+                           axis.title = element_blank(), 
+                           axis.ticks = element_blank(), 
+                           panel.grid = element_blank()))
+
+```
+
+
+## Favorite Halloween Candy
+```{r}
+#| echo: true
+ggplot(candy_short, aes(x = candy, y = overall, fill = candy)) +
+  geom_col() + 
+  labels
+
+```
+
+## Favorite Halloween Candy
+### Basic Bar Chart
+
+::: columns
+::: {.column width="65%"}
+```{r}
+#| label: halloween-bar
+#| echo: true
+#| eval: false
+candy_short |>
+ggplot(
+  aes(x = candy, 
+      y = overall, 
+      fill = candy)) +
+  geom_col() + 
+  labels
+```
+:::
+::: {.column width="35%"}
+
+```{r}
+#| label: halloween-bar
+#| echo: false
+#| eval: true
+#| fig-width: 4
+#| fig-height: 5
+#| fig-alt: "A stacked bar chart showing the favorite types of Halloween Candy reported by americans. Other (36.1%), M&Ms (6.9%), Candy Corn (7.1%), Kit Kat (9.3%), Snickers (11.9%), Reese's (28.7%)"
+```
+
+
+:::
+:::
+
+
+## Favorite Halloween Candy
+### Position: Stack
+::: columns
+::: {.column width="65%"}
+```{r}
+#| label: halloween-stacked-bar
+#| echo: true
+#| eval: false
+
+candy_short |>
+ggplot(
+  aes(y = overall)) +
+  geom_col(
+    aes(x = 0, 
+        fill = candy), 
+    position = "stack") +
+  geom_label(
+    aes(x = 0,
+        y = pos, 
+        label = label, 
+        color = candy), 
+    text.color = "black", size = 3) +
+  labels + stack_extras
+
+```
+:::
+::: {.column width="35%"}
+
+```{r}
+#| label: halloween-stacked-bar
+#| echo: false
+#| eval: true
+#| fig-width: 4
+#| fig-height: 5
+#| fig-alt: "A stacked bar chart showing the favorite types of Halloween Candy reported by americans. Other (36.1%), M&Ms (6.9%), Candy Corn (7.1%), Kit Kat (9.3%), Snickers (11.9%), Reese's (28.7%)"
+```
+
+
+:::
+:::
+
+## Favorite Halloween Candy
+### Coordinates: Polar
+
+::: columns
+::: {.column width="65%"}
+```{r}
+#| label: halloween-pie
+#| echo: true
+#| eval: false
+candy_short |>
+ggplot(
+  aes(y = overall)) +
+  geom_col(
+    aes(
+      x = 1, 
+      fill = candy), 
+    position = "stack") +
+  geom_label(
+    aes(x = 1.65, y = pos, 
+        label = label, color = candy), 
+    text.color = "black", size = 3) +
+  labels + polar_extras + 
+  coord_polar(theta = "y", start = pi)
+
+```
+:::
+::: {.column width="35%"}
+
+```{r}
+#| label: halloween-pie
+#| echo: false
+#| eval: true
+#| fig-width: 4
+#| fig-height: 5
+#| fig-alt: "A pie chart showing the favorite types of Halloween Candy reported by americans. Other (36.1%), M&Ms (6.9%), Candy Corn (7.1%), Kit Kat (9.3%), Snickers (11.9%), Reese's (28.7%)"
+```
+
+
+:::
+:::
+
+
+## Favorite Halloween Candy
+### Coordinates: Polar
+::: columns
+::: {.column width="65%"}
+```{r}
+#| label: halloween-pie2
+#| echo: true
+#| eval: false
+
+ggplot(
+  candy_short, 
+  aes(x = 3, y = overall)) +
+  geom_col(
+    aes(fill = candy), 
+    position = "stack") +
+  geom_label(
+    aes(x = 4, y = pos,
+        label = label, color = candy), 
+    text.color = "black", size = 3) +
+  labels + polar_extras + 
+  scale_x_continuous(limits = c(0, 5)) + 
+  coord_polar(theta = "y", start = pi)
+
+```
+:::
+::: {.column width="35%"}
+
+```{r}
+#| label: halloween-pie2
+#| echo: false
+#| eval: true
+#| fig-width: 4
+#| fig-height: 5
+#| fig-alt: "A pie chart showing the favorite types of Halloween Candy reported by americans. Other (36.1%), M&Ms (6.9%), Candy Corn (7.1%), Kit Kat (9.3%), Snickers (11.9%), Reese's (28.7%)"
+```
+
+
+:::
+:::
 
