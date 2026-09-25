@@ -263,7 +263,7 @@
     "href": "slides/personal-data.html#take-measure-of-your-surroundings",
     "title": "Personal Data Visualization",
     "section": "Take measure of your surroundings",
-    "text": "Take measure of your surroundings\n\nPersonal and personally collected data is more fun to analyse"
+    "text": "Take measure of your surroundings\n\nPersonal and personally collected data is more fun/engaging to analyse"
   },
   {
     "objectID": "slides/personal-data.html#namegrapher",
@@ -278,5 +278,68 @@
     "title": "Personal Data Visualization",
     "section": "Praerie Dog Town",
     "text": "Praerie Dog Town\nFrom a college-level course on Spatial Ecology: use GPS coordinates from a morning of measuring out a praerie dog town"
+  },
+  {
+    "objectID": "slides/personal-data.html#your-turn",
+    "href": "slides/personal-data.html#your-turn",
+    "title": "Personal Data Visualization",
+    "section": "Your Turn",
+    "text": "Your Turn\nWhat data could you collect and visualize with your class?\nReading logs? Habits?\nThe letter project: how long does it take to get the letter?\ne.g. Henry Kristin’s project"
+  },
+  {
+    "objectID": "slides/personal-data.html#relationship-between-distance-travelled-and-time",
+    "href": "slides/personal-data.html#relationship-between-distance-travelled-and-time",
+    "title": "Personal Data Visualization",
+    "section": "Relationship between Distance travelled and Time",
+    "text": "Relationship between Distance travelled and Time\nFrom Kristin Henry’s blog:\n\n\n\n\n\n\n\n\n\n\nWhich of these two charts do you like better for showing the relationship between distance travelled and days to reach destination?\nWhat chart would you suggest to use?"
+  },
+  {
+    "objectID": "slides/personal-data.html#an-approximate-re-creation",
+    "href": "slides/personal-data.html#an-approximate-re-creation",
+    "title": "Personal Data Visualization",
+    "section": "An approximate re-creation",
+    "text": "An approximate re-creation"
+  },
+  {
+    "objectID": "slides/personal-data.html#re-creation-attempt-2",
+    "href": "slides/personal-data.html#re-creation-attempt-2",
+    "title": "Personal Data Visualization",
+    "section": "Re-creation attempt 2",
+    "text": "Re-creation attempt 2\nUsing Claude AI: “recreate the data from the chart; days are integer; there are only three observations with more than 14 days of time to destination”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat about now?\n\nMarginal distributions are not faithful: gaps along either of the axis is not preserved.\n2d clusters seem washed out"
+  },
+  {
+    "objectID": "slides/personal-data.html#section",
+    "href": "slides/personal-data.html#section",
+    "title": "Personal Data Visualization",
+    "section": "",
+    "text": "[1] \"https://raw.githubusercontent.com/KristinHenry/KristinHenry.github.io/refs/heads/master/ArtsAndChartsTalk/StickerData051622.csv\""
+  },
+  {
+    "objectID": "slides/personal-data.html#an-approximate-re-creation-of-the-data",
+    "href": "slides/personal-data.html#an-approximate-re-creation-of-the-data",
+    "title": "Personal Data Visualization",
+    "section": "An approximate re-creation of the data",
+    "text": "An approximate re-creation of the data\nUsing Claude AI: “recreate the data from the chart”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAIs can’t ‘see’ for us, even when they just try to regenerate data (Clause was trying to resist because of the large number of overplotted lines)\nWhat patterns did Claude miss?"
+  },
+  {
+    "objectID": "slides/personal-data.html#a-different-attempt",
+    "href": "slides/personal-data.html#a-different-attempt",
+    "title": "Personal Data Visualization",
+    "section": "A different attempt",
+    "text": "A different attempt\nBased on a (larger) dataset published by Kristin Henry"
+  },
+  {
+    "objectID": "slides/personal-data.html#with-colour",
+    "href": "slides/personal-data.html#with-colour",
+    "title": "Personal Data Visualization",
+    "section": "With Colour",
+    "text": "With Colour"
+  },
+  {
+    "objectID": "slides/personal-data.html#and-now-a-scatterplot",
+    "href": "slides/personal-data.html#and-now-a-scatterplot",
+    "title": "Personal Data Visualization",
+    "section": "And now a Scatterplot",
+    "text": "And now a Scatterplot\n\n\n\n\n\n\n\n\n\nWhat do you see?\n–\nThree clusters\nOnly for very large distances there is a positive relationship with the number of days to destination\nThere might be a hint of a positive association between the two variables in the first cluster (distances to 1250 miles)"
   }
 ]

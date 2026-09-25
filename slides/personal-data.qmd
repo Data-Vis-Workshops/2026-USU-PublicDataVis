@@ -6,7 +6,7 @@ css: ../css/slide-theme.scss
 
 ## Take measure of your surroundings
 
-- Personal and personally collected data is more fun to analyse
+- Personal and personally collected data is more fun/engaging to analyse
 
 - 
 
@@ -66,3 +66,128 @@ pd_town |>
   )
 
 ```
+
+## Your Turn
+
+What data could you collect and visualize with your class?
+
+Reading logs? Habits?
+
+The letter project: how long does it take to get the letter?
+
+e.g. [Henry Kristin's project](https://kristinhenry.github.io/StickersAndStamps/)
+
+
+
+## Relationship between Distance travelled and Time 
+
+From Kristin Henry's [blog](https://www.patreon.com/KristinHenry/posts/stickers-and-new-45230596): 
+
+::: {layout-ncol=2}
+
+![](https://c10.patreonusercontent.com/4/patreon-media/p/post/45230596/96ef7e3fec224932a45304c9e1caa031/eyJhIjoxLCJ3Ijo4MjB9/1.png?token-hash=NiKZOVRjXNaMnVxBhnyzqDHPJ6EADp8GquLuNkUPwIY%3D&token-time=1791504000)
+
+![](https://c10.patreonusercontent.com/4/patreon-media/p/post/45230596/a73a3268c18a498c848c5ba1ddd96510/eyJhIjoxLCJ3Ijo4MjB9/1.png?token-hash=tYalTDwwr0htLQEw2OVmz_GLMtfA2ER6zutNd3StJTI%3D&token-time=1791504000)
+
+:::
+
+Which of these two charts do you like better for showing the relationship between *distance travelled* and *days to reach destination*?
+
+What chart would you suggest to use?
+
+## An approximate re-creation of the data
+
+Using Claude AI: "recreate the data from the chart"
+
+::: {layout-ncol=2}
+![](https://c10.patreonusercontent.com/4/patreon-media/p/post/45230596/a73a3268c18a498c848c5ba1ddd96510/eyJhIjoxLCJ3Ijo4MjB9/1.png?token-hash=tYalTDwwr0htLQEw2OVmz_GLMtfA2ER6zutNd3StJTI%3D&token-time=1791504000)
+
+```{r}
+claude <- read_csv(here::here("data/estimated_dataset.csv"))
+library(ggpcp)
+claude |> pcp_select(distance_traveled, days_until_destination) |> pcp_scale() |> ggplot(aes_pcp()) + geom_pcp() + theme_pcp()
+```
+:::
+
+AIs can't 'see' for us, even when they just try to regenerate data (Clause was trying to resist because of the large number of overplotted lines)
+
+What patterns did Claude miss?
+
+## Re-creation attempt 2
+
+Using Claude AI: "recreate the data from the chart; days are integer; there are only three observations with more than 14 days of time to destination"
+
+::: {layout-ncol=2}
+![](https://c10.patreonusercontent.com/4/patreon-media/p/post/45230596/a73a3268c18a498c848c5ba1ddd96510/eyJhIjoxLCJ3Ijo4MjB9/1.png?token-hash=tYalTDwwr0htLQEw2OVmz_GLMtfA2ER6zutNd3StJTI%3D&token-time=1791504000)
+
+```{r}
+claude2 <- read_csv(here::here("data/estimated_dataset_2.csv"))
+claude2 |> pcp_select(distance_traveled, days_until_destination) |> pcp_scale() |> ggplot(aes_pcp()) + geom_pcp() + theme_pcp()
+```
+:::
+
+What about now?
+
+::: incremental
+- Marginal distributions are not faithful: gaps along either of the axis is not preserved. 
+
+- 2d clusters seem washed out
+:::
+
+
+
+## A different attempt
+
+Based on a (larger) dataset published by Kristin Henry
+
+```{r}
+# large dataset
+#"https://raw.githubusercontent.com/KristinHenry/KristinHenry.github.io/refs/heads/master/ArtsAndChartsTalk/StickerData051622.csv"
+stickerdata <- read_csv("https://raw.githubusercontent.com/KristinHenry/KristinHenry.github.io/refs/heads/master/ArtsAndChartsTalk/StickerData122920.csv")
+
+
+stickerdata_cleaner <- stickerdata |> 
+  mutate(date_sent = lubridate::mdy(`Date Mailed`),
+         date_arrived = lubridate::mdy(`Date reported recieved`),
+         days_travelled = as.numeric(difftime(date_arrived, date_sent))) |>
+  filter(days_travelled > 0) 
+
+stickerdata_cleaner |>
+  pcp_select(`Distance From SF`,days_travelled) |>
+  pcp_scale() |>
+  ggplot(aes_pcp()) + geom_pcp() + theme_pcp()
+```
+
+## With Colour
+
+```{r}
+
+my_breaks <- c(0, 1, 2, 5, 10, 20, 50, 100)
+
+stickerdata_cleaner |>
+  pcp_select(`Distance From SF`,days_travelled) |>
+  pcp_scale() |>
+  ggplot(aes_pcp()) + geom_pcp(aes(colour = days_travelled)) + theme_pcp() + 
+  scale_colour_viridis_c(breaks = my_breaks, labels = my_breaks, 
+                       trans = scales::pseudo_log_trans(sigma = 0.001))
+
+```
+
+## And now a Scatterplot
+
+```{r}
+stickerdata_cleaner |> ggplot(aes(x = `Distance From SF`, y = days_travelled, colour = days_travelled)) + geom_point(size = 2) + 
+  scale_colour_viridis_c(breaks = my_breaks, labels = my_breaks, 
+                       trans = scales::pseudo_log_trans(sigma = 0.001)) + scale_y_log10()
+```
+
+What do you see?
+
+-- 
+
+Three clusters
+
+Only for very large distances there is a positive relationship with
+the number of days to destination
+
+There might be a hint of a positive association between the two variables in the first cluster (distances to 1250 miles)
