@@ -525,16 +525,28 @@ ggplot(data = candy_sum,
 
 ## Favorite Halloween Candy
 
-Define some extra theme bits:
+Define base plot and extra theme bits:
 
 ```{r}
 #| echo: true
+
+base_plot <- candy_short |>
+  ggplot(aes(x = candy, 
+             y = overall, 
+             label = label,
+             fill = candy, 
+             color = candy)) 
+
+
 labels <- list(ylab("Percent"),
                xlab(""),
-               ggtitle("Favorite Halloween Candy of US Population"),
+               ggtitle("Favorite US Halloween Candy"),
                guides(fill = "none", color = "none"))
 
-stack_extras <- list(theme(panel.grid = element_blank())) 
+stack_extras <- list(theme(panel.grid = element_blank(),
+                           axis.text.x = element_blank(),
+                           axis.title.x = element_blank(),
+                           axis.ticks.x = element_blank())) 
 
 polar_extras <- list(theme(axis.text = element_blank(), 
                            axis.title = element_blank(), 
@@ -547,7 +559,8 @@ polar_extras <- list(theme(axis.text = element_blank(),
 ## Favorite Halloween Candy
 ```{r}
 #| echo: true
-ggplot(candy_short, aes(x = candy, y = overall, fill = candy)) +
+
+base_plot + 
   geom_col() + 
   labels
 
@@ -562,13 +575,14 @@ ggplot(candy_short, aes(x = candy, y = overall, fill = candy)) +
 #| label: halloween-bar
 #| echo: true
 #| eval: false
-candy_short |>
-ggplot(
-  aes(x = candy, 
-      y = overall, 
-      fill = candy)) +
-  geom_col() + 
-  labels
+base_plot +
+  labels + 
+  geom_col(aes(x = candy),
+           position = "identity" ) + 
+  geom_label(aes(x = candy), 
+             text.color = "black",
+             fill = "white", 
+             size = 3)
 ```
 :::
 ::: {.column width="35%"}
@@ -595,22 +609,14 @@ ggplot(
 #| label: halloween-stacked-bar
 #| echo: true
 #| eval: false
-
-candy_short |>
-ggplot(
-  aes(y = overall,
-      label = label,
-      color = candy,
-      fill = candy)) +
-  geom_col(
-    aes(x = 0), 
-    position = "stack") +
-  geom_label(
-    aes(x = 0, y = pos), 
-    text.color = "black",
-    fill = "white", 
-    size = 3) +
-  labels + stack_extras
+base_plot  +
+  labels + stack_extras +
+  geom_col(aes(x = 0), 
+           position = "stack") +
+  geom_label(aes(x = 0, y = pos), 
+             text.color = "black",
+             fill = "white", 
+             size = 3)
 
 ```
 :::
@@ -638,21 +644,14 @@ ggplot(
 #| label: halloween-pie
 #| echo: true
 #| eval: false
-candy_short |>
-ggplot(
-  aes(y = overall,
-      label = label,
-      color = candy,
-      fill = candy)) +
-  geom_col(
-    aes(x = 0), 
-    position = "stack") +
-  geom_label(
-    aes(x = 0.65,  y = pos), 
-    text.color = "black", 
-    fill = "white",
-    size = 3) +
+base_plot +
   labels + polar_extras + 
+  geom_col(aes(x = 0), 
+           position = "stack") +
+  geom_label(aes(x = 0.65,  y = pos), 
+             text.color = "black", 
+             fill = "white",
+             size = 3) +
   coord_polar(theta = "y", start = pi)
 
 ```
@@ -682,25 +681,16 @@ ggplot(
 #| echo: true
 #| eval: false
 
-candy_short |>
-ggplot(
-  aes(y = overall,
-      label = label,
-      color = candy,
-      fill = candy)) +
-  geom_col(
-    aes(x = 3), 
-    position = "stack") +
-  geom_label(
-    aes(x = 4, y = pos,
-        label = label, color = candy), 
-    text.color = "black", 
-    fill = "white",
-    size = 3) +
-  scale_x_continuous(limits = c(0, 5)) + 
+base_plot + 
   labels + polar_extras + 
-  coord_polar(theta = "y", start = pi)
-
+  geom_col(aes(x = 2), 
+           position = "stack") +
+  geom_label(aes(x = 2.75, y = pos), 
+             text.color = "black", 
+             fill = "white",
+             size = 3) + 
+  coord_polar(theta = "y", start = pi) +
+  scale_x_continuous(limits = c(0, 3))
 ```
 :::
 ::: {.column width="35%"}
