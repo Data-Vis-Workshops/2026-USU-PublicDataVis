@@ -75,7 +75,7 @@ Reading logs? Habits?
 
 The letter project: how long does it take to get the letter?
 
-e.g. [](https://www.patreon.com/KristinHenry/posts/stickers-and-new-45230596)
+e.g. [Henry Kristin's project](https://kristinhenry.github.io/StickersAndStamps/)
 
 
 
@@ -128,11 +128,13 @@ claude2 |> pcp_select(distance_traveled, days_until_destination) |> pcp_scale() 
 
 What about now?
 
---
+::: incremental
+- Marginal distributions are not faithful: gaps along either of the axis is not preserved. 
 
-Marginal distributions are not faithful: gaps along either of the axis is not preserved. 
+- 2d clusters seem washed out
+:::
 
-2d clusters seem washed out
+
 
 ## A different attempt
 

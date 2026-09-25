@@ -284,7 +284,7 @@
     "href": "slides/personal-data.html#your-turn",
     "title": "Personal Data Visualization",
     "section": "Your Turn",
-    "text": "Your Turn\nWhat data could you collect and visualize with your class?\nReading logs? Habits?\nThe letter project: how long does it take to get the letter?\ne.g."
+    "text": "Your Turn\nWhat data could you collect and visualize with your class?\nReading logs? Habits?\nThe letter project: how long does it take to get the letter?\ne.g. Henry Kristin’s project"
   },
   {
     "objectID": "slides/personal-data.html#relationship-between-distance-travelled-and-time",
@@ -305,7 +305,7 @@
     "href": "slides/personal-data.html#re-creation-attempt-2",
     "title": "Personal Data Visualization",
     "section": "Re-creation attempt 2",
-    "text": "Re-creation attempt 2\nUsing Claude AI: “recreate the data from the chart; days are integer; there are only three observations with more than 14 days of time to destination”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat about now?\n–\nMarginal distributions are not faithful: gaps along either of the axis is not preserved.\n2d clusters seem washed out"
+    "text": "Re-creation attempt 2\nUsing Claude AI: “recreate the data from the chart; days are integer; there are only three observations with more than 14 days of time to destination”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat about now?\n\nMarginal distributions are not faithful: gaps along either of the axis is not preserved.\n2d clusters seem washed out"
   },
   {
     "objectID": "slides/personal-data.html#section",
