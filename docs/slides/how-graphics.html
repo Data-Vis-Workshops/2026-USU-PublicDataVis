@@ -907,25 +907,36 @@
 </section>
 <section id="favorite-halloween-candy-2" class="slide level2">
 <h2>Favorite Halloween Candy</h2>
-<p>Define some extra theme bits:</p>
+<p>Define base plot and extra theme bits:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>labels <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">ylab</span>(<span class="st">"Percent"</span>),</span>
-<span id="cb3-2"><a></a>               <span class="fu">xlab</span>(<span class="st">""</span>),</span>
-<span id="cb3-3"><a></a>               <span class="fu">ggtitle</span>(<span class="st">"Favorite Halloween Candy of US Population"</span>),</span>
-<span id="cb3-4"><a></a>               <span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">"none"</span>, <span class="at">color =</span> <span class="st">"none"</span>))</span>
-<span id="cb3-5"><a></a></span>
-<span id="cb3-6"><a></a>stack_extras <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">theme</span>(<span class="at">panel.grid =</span> <span class="fu">element_blank</span>())) </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>base_plot <span class="ot">&lt;-</span> candy_short <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> candy, </span>
+<span id="cb3-3"><a></a>             <span class="at">y =</span> overall, </span>
+<span id="cb3-4"><a></a>             <span class="at">label =</span> label,</span>
+<span id="cb3-5"><a></a>             <span class="at">fill =</span> candy, </span>
+<span id="cb3-6"><a></a>             <span class="at">color =</span> candy)) </span>
 <span id="cb3-7"><a></a></span>
-<span id="cb3-8"><a></a>polar_extras <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_blank</span>(), </span>
-<span id="cb3-9"><a></a>                           <span class="at">axis.title =</span> <span class="fu">element_blank</span>(), </span>
-<span id="cb3-10"><a></a>                           <span class="at">axis.ticks =</span> <span class="fu">element_blank</span>(), </span>
-<span id="cb3-11"><a></a>                           <span class="at">panel.grid =</span> <span class="fu">element_blank</span>()))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-8"><a></a></span>
+<span id="cb3-9"><a></a>labels <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">ylab</span>(<span class="st">"Percent"</span>),</span>
+<span id="cb3-10"><a></a>               <span class="fu">xlab</span>(<span class="st">""</span>),</span>
+<span id="cb3-11"><a></a>               <span class="fu">ggtitle</span>(<span class="st">"Favorite US Halloween Candy"</span>),</span>
+<span id="cb3-12"><a></a>               <span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">"none"</span>, <span class="at">color =</span> <span class="st">"none"</span>))</span>
+<span id="cb3-13"><a></a></span>
+<span id="cb3-14"><a></a>stack_extras <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">theme</span>(<span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb3-15"><a></a>                           <span class="at">axis.text.x =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb3-16"><a></a>                           <span class="at">axis.title.x =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb3-17"><a></a>                           <span class="at">axis.ticks.x =</span> <span class="fu">element_blank</span>())) </span>
+<span id="cb3-18"><a></a></span>
+<span id="cb3-19"><a></a>polar_extras <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb3-20"><a></a>                           <span class="at">axis.title =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb3-21"><a></a>                           <span class="at">axis.ticks =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb3-22"><a></a>                           <span class="at">panel.grid =</span> <span class="fu">element_blank</span>()))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="favorite-halloween-candy-3" class="slide level2">
 <h2>Favorite Halloween Candy</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">ggplot</span>(candy_short, <span class="fu">aes</span>(<span class="at">x =</span> candy, <span class="at">y =</span> overall, <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>base_plot <span class="sc">+</span> </span>
 <span id="cb4-2"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
 <span id="cb4-3"><a></a>  labels</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
@@ -943,13 +954,14 @@
 <div class="columns">
 <div class="column" style="width:65%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>candy_short <span class="sc">|&gt;</span></span>
-<span id="cb5-2"><a></a><span class="fu">ggplot</span>(</span>
-<span id="cb5-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> candy, </span>
-<span id="cb5-4"><a></a>      <span class="at">y =</span> overall, </span>
-<span id="cb5-5"><a></a>      <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
-<span id="cb5-6"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
-<span id="cb5-7"><a></a>  labels</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>base_plot <span class="sc">+</span></span>
+<span id="cb5-2"><a></a>  labels <span class="sc">+</span> </span>
+<span id="cb5-3"><a></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">x =</span> candy),</span>
+<span id="cb5-4"><a></a>           <span class="at">position =</span> <span class="st">"identity"</span> ) <span class="sc">+</span> </span>
+<span id="cb5-5"><a></a>  <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x =</span> candy), </span>
+<span id="cb5-6"><a></a>             <span class="at">text.color =</span> <span class="st">"black"</span>,</span>
+<span id="cb5-7"><a></a>             <span class="at">fill =</span> <span class="st">"white"</span>, </span>
+<span id="cb5-8"><a></a>             <span class="at">size =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div><div class="column" style="width:35%;">
 <div class="cell">
@@ -969,21 +981,14 @@
 <div class="columns">
 <div class="column" style="width:65%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>candy_short <span class="sc">|&gt;</span></span>
-<span id="cb6-2"><a></a><span class="fu">ggplot</span>(</span>
-<span id="cb6-3"><a></a>  <span class="fu">aes</span>(<span class="at">y =</span> overall,</span>
-<span id="cb6-4"><a></a>      <span class="at">label =</span> label,</span>
-<span id="cb6-5"><a></a>      <span class="at">color =</span> candy,</span>
-<span id="cb6-6"><a></a>      <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
-<span id="cb6-7"><a></a>  <span class="fu">geom_col</span>(</span>
-<span id="cb6-8"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>), </span>
-<span id="cb6-9"><a></a>    <span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
-<span id="cb6-10"><a></a>  <span class="fu">geom_label</span>(</span>
-<span id="cb6-11"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> pos), </span>
-<span id="cb6-12"><a></a>    <span class="at">text.color =</span> <span class="st">"black"</span>,</span>
-<span id="cb6-13"><a></a>    <span class="at">fill =</span> <span class="st">"white"</span>, </span>
-<span id="cb6-14"><a></a>    <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb6-15"><a></a>  labels <span class="sc">+</span> stack_extras</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>base_plot  <span class="sc">+</span></span>
+<span id="cb6-2"><a></a>  labels <span class="sc">+</span> stack_extras <span class="sc">+</span></span>
+<span id="cb6-3"><a></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>), </span>
+<span id="cb6-4"><a></a>           <span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a></a>  <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> pos), </span>
+<span id="cb6-6"><a></a>             <span class="at">text.color =</span> <span class="st">"black"</span>,</span>
+<span id="cb6-7"><a></a>             <span class="at">fill =</span> <span class="st">"white"</span>, </span>
+<span id="cb6-8"><a></a>             <span class="at">size =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div><div class="column" style="width:35%;">
 <div class="cell">
@@ -1003,22 +1008,15 @@
 <div class="columns">
 <div class="column" style="width:65%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>candy_short <span class="sc">|&gt;</span></span>
-<span id="cb7-2"><a></a><span class="fu">ggplot</span>(</span>
-<span id="cb7-3"><a></a>  <span class="fu">aes</span>(<span class="at">y =</span> overall,</span>
-<span id="cb7-4"><a></a>      <span class="at">label =</span> label,</span>
-<span id="cb7-5"><a></a>      <span class="at">color =</span> candy,</span>
-<span id="cb7-6"><a></a>      <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
-<span id="cb7-7"><a></a>  <span class="fu">geom_col</span>(</span>
-<span id="cb7-8"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>), </span>
-<span id="cb7-9"><a></a>    <span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
-<span id="cb7-10"><a></a>  <span class="fu">geom_label</span>(</span>
-<span id="cb7-11"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">0.65</span>,  <span class="at">y =</span> pos), </span>
-<span id="cb7-12"><a></a>    <span class="at">text.color =</span> <span class="st">"black"</span>, </span>
-<span id="cb7-13"><a></a>    <span class="at">fill =</span> <span class="st">"white"</span>,</span>
-<span id="cb7-14"><a></a>    <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb7-15"><a></a>  labels <span class="sc">+</span> polar_extras <span class="sc">+</span> </span>
-<span id="cb7-16"><a></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>, <span class="at">start =</span> pi)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>base_plot <span class="sc">+</span></span>
+<span id="cb7-2"><a></a>  labels <span class="sc">+</span> polar_extras <span class="sc">+</span> </span>
+<span id="cb7-3"><a></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>), </span>
+<span id="cb7-4"><a></a>           <span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
+<span id="cb7-5"><a></a>  <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">0.65</span>,  <span class="at">y =</span> pos), </span>
+<span id="cb7-6"><a></a>             <span class="at">text.color =</span> <span class="st">"black"</span>, </span>
+<span id="cb7-7"><a></a>             <span class="at">fill =</span> <span class="st">"white"</span>,</span>
+<span id="cb7-8"><a></a>             <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb7-9"><a></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>, <span class="at">start =</span> pi)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div><div class="column" style="width:35%;">
 <div class="cell">
@@ -1038,24 +1036,16 @@
 <div class="columns">
 <div class="column" style="width:65%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>candy_short <span class="sc">|&gt;</span></span>
-<span id="cb8-2"><a></a><span class="fu">ggplot</span>(</span>
-<span id="cb8-3"><a></a>  <span class="fu">aes</span>(<span class="at">y =</span> overall,</span>
-<span id="cb8-4"><a></a>      <span class="at">label =</span> label,</span>
-<span id="cb8-5"><a></a>      <span class="at">color =</span> candy,</span>
-<span id="cb8-6"><a></a>      <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
-<span id="cb8-7"><a></a>  <span class="fu">geom_col</span>(</span>
-<span id="cb8-8"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">3</span>), </span>
-<span id="cb8-9"><a></a>    <span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
-<span id="cb8-10"><a></a>  <span class="fu">geom_label</span>(</span>
-<span id="cb8-11"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">4</span>, <span class="at">y =</span> pos,</span>
-<span id="cb8-12"><a></a>        <span class="at">label =</span> label, <span class="at">color =</span> candy), </span>
-<span id="cb8-13"><a></a>    <span class="at">text.color =</span> <span class="st">"black"</span>, </span>
-<span id="cb8-14"><a></a>    <span class="at">fill =</span> <span class="st">"white"</span>,</span>
-<span id="cb8-15"><a></a>    <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb8-16"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">5</span>)) <span class="sc">+</span> </span>
-<span id="cb8-17"><a></a>  labels <span class="sc">+</span> polar_extras <span class="sc">+</span> </span>
-<span id="cb8-18"><a></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>, <span class="at">start =</span> pi)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>base_plot <span class="sc">+</span> </span>
+<span id="cb8-2"><a></a>  labels <span class="sc">+</span> polar_extras <span class="sc">+</span> </span>
+<span id="cb8-3"><a></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">2</span>), </span>
+<span id="cb8-4"><a></a>           <span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
+<span id="cb8-5"><a></a>  <span class="fu">geom_label</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">2.75</span>, <span class="at">y =</span> pos), </span>
+<span id="cb8-6"><a></a>             <span class="at">text.color =</span> <span class="st">"black"</span>, </span>
+<span id="cb8-7"><a></a>             <span class="at">fill =</span> <span class="st">"white"</span>,</span>
+<span id="cb8-8"><a></a>             <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span> </span>
+<span id="cb8-9"><a></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>, <span class="at">start =</span> pi) <span class="sc">+</span></span>
+<span id="cb8-10"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div><div class="column" style="width:35%;">
 <div class="cell">
