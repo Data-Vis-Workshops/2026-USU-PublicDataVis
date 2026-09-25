@@ -850,8 +850,8 @@
 <h2>Your Turn</h2>
 <p>Change the code below to have the points <strong>on top</strong> of the boxplots.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> mpg, <span class="fu">aes</span>(<span class="at">x =</span> class, <span class="at">y =</span> hwy)) <span class="sc">+</span> </span>
-<span id="cb1-2"><a></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> mpg, <span class="fu">aes</span>(<span class="at">x =</span> class, <span class="at">y =</span> hwy)) <span class="sc">+</span></span>
+<span id="cb1-2"><a></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
 <span id="cb1-3"><a></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
@@ -861,6 +861,213 @@
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="charts-on-parade" class="title-slide slide level1 center">
+<h1>Charts on Parade</h1>
+
+</section>
+<section id="favorite-halloween-candy" class="slide level2">
+<h2>Favorite Halloween Candy</h2>
+<p><a href="https://navigatorresearch.org/reeses-is-the-most-preferred-halloween-candy-among-ameri">Halloween candy preference data</a> <img data-src="images/navigator-research-October-31-Reeses-and-Snickers.jpg" style="width:80.0%" alt="Bar graph of polling data from Navigator Research. Title: Reese’s and Snickers Come Out on Top As Americans’ Favorite Halloween Candy. Also shows a word cloud of favorite candy responses."></p>
+<ul>
+<li>Doesn’t add up to 100%, so I’ve adjusted “Other” category</li>
+</ul>
+<p>We’ll assume <a href="https://news.gallup.com/poll/700499/new-high-identify-political-independents.aspx">27% Democrats, 27% Republicans, 46% Independents</a> and not consider political party</p>
+</section>
+<section id="favorite-halloween-candy-1" class="slide level2">
+<h2>Favorite Halloween Candy</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> candy_sum, </span>
+<span id="cb2-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> candy, <span class="at">y =</span> overall, </span>
+<span id="cb2-3"><a></a>           <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
+<span id="cb2-4"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb2-5"><a></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> label), </span>
+<span id="cb2-6"><a></a>            <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>) <span class="sc">+</span> </span>
+<span id="cb2-7"><a></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span> </span>
+<span id="cb2-8"><a></a>  <span class="fu">ylab</span>(<span class="st">"Percent"</span>) <span class="sc">+</span> </span>
+<span id="cb2-9"><a></a>  <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span> </span>
+<span id="cb2-10"><a></a>  <span class="fu">ggtitle</span>(<span class="st">"Favorite US Halloween Candy"</span>) <span class="sc">+</span></span>
+<span id="cb2-11"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">35</span>)) <span class="sc">+</span></span>
+<span id="cb2-12"><a></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">"none"</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:35%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="how-graphics_files/figure-revealjs/halloween-all-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-51"><img data-src="how-graphics_files/figure-revealjs/halloween-all-1.png" alt="A bar chart showing the favorite types of Halloween Candy reported by americans. Reese's (28.7%), Snickers (11.9%), Kit Kat (8.4%), M&amp;Ms (7.3%), Candy Corn (7.1%), Chocolate bars (5.7%), Almond Joy (5.1%), Twix (4.9%), Milky Way (4.2%), Sour Patch Kids (4.0%), Skittles (2.2%), Starburst (2.0%), Twizzlers (1.2%), Raisinets (1.0%), Other (6.4%)" width="384"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="favorite-halloween-candy-2" class="slide level2">
+<h2>Favorite Halloween Candy</h2>
+<p>Define some extra theme bits:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>labels <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">ylab</span>(<span class="st">"Percent"</span>),</span>
+<span id="cb3-2"><a></a>               <span class="fu">xlab</span>(<span class="st">""</span>),</span>
+<span id="cb3-3"><a></a>               <span class="fu">ggtitle</span>(<span class="st">"Favorite Halloween Candy of US Population"</span>),</span>
+<span id="cb3-4"><a></a>               <span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">"none"</span>, <span class="at">color =</span> <span class="st">"none"</span>))</span>
+<span id="cb3-5"><a></a></span>
+<span id="cb3-6"><a></a>stack_extras <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">theme</span>(<span class="at">panel.grid =</span> <span class="fu">element_blank</span>())) </span>
+<span id="cb3-7"><a></a></span>
+<span id="cb3-8"><a></a>polar_extras <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb3-9"><a></a>                           <span class="at">axis.title =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb3-10"><a></a>                           <span class="at">axis.ticks =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb3-11"><a></a>                           <span class="at">panel.grid =</span> <span class="fu">element_blank</span>()))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="favorite-halloween-candy-3" class="slide level2">
+<h2>Favorite Halloween Candy</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">ggplot</span>(candy_short, <span class="fu">aes</span>(<span class="at">x =</span> candy, <span class="at">y =</span> overall, <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
+<span id="cb4-2"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
+<span id="cb4-3"><a></a>  labels</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="how-graphics_files/figure-revealjs/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-52"><img data-src="how-graphics_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="favorite-halloween-candy-4" class="slide level2">
+<h2>Favorite Halloween Candy</h2>
+<h3 id="basic-bar-chart">Basic Bar Chart</h3>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>candy_short <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a></a><span class="fu">ggplot</span>(</span>
+<span id="cb5-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> candy, </span>
+<span id="cb5-4"><a></a>      <span class="at">y =</span> overall, </span>
+<span id="cb5-5"><a></a>      <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
+<span id="cb5-6"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
+<span id="cb5-7"><a></a>  labels</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:35%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="how-graphics_files/figure-revealjs/halloween-bar-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-53"><img data-src="how-graphics_files/figure-revealjs/halloween-bar-1.png" alt="A stacked bar chart showing the favorite types of Halloween Candy reported by americans. Other (36.1%), M&amp;Ms (6.9%), Candy Corn (7.1%), Kit Kat (9.3%), Snickers (11.9%), Reese's (28.7%)" width="384"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="favorite-halloween-candy-5" class="slide level2">
+<h2>Favorite Halloween Candy</h2>
+<h3 id="position-stack">Position: Stack</h3>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>candy_short <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a></a><span class="fu">ggplot</span>(</span>
+<span id="cb6-3"><a></a>  <span class="fu">aes</span>(<span class="at">y =</span> overall,</span>
+<span id="cb6-4"><a></a>      <span class="at">label =</span> label,</span>
+<span id="cb6-5"><a></a>      <span class="at">color =</span> candy,</span>
+<span id="cb6-6"><a></a>      <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
+<span id="cb6-7"><a></a>  <span class="fu">geom_col</span>(</span>
+<span id="cb6-8"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>), </span>
+<span id="cb6-9"><a></a>    <span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
+<span id="cb6-10"><a></a>  <span class="fu">geom_label</span>(</span>
+<span id="cb6-11"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> pos), </span>
+<span id="cb6-12"><a></a>    <span class="at">text.color =</span> <span class="st">"black"</span>,</span>
+<span id="cb6-13"><a></a>    <span class="at">fill =</span> <span class="st">"white"</span>, </span>
+<span id="cb6-14"><a></a>    <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb6-15"><a></a>  labels <span class="sc">+</span> stack_extras</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:35%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="how-graphics_files/figure-revealjs/halloween-stacked-bar-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-54"><img data-src="how-graphics_files/figure-revealjs/halloween-stacked-bar-1.png" alt="A stacked bar chart showing the favorite types of Halloween Candy reported by americans. Other (36.1%), M&amp;Ms (6.9%), Candy Corn (7.1%), Kit Kat (9.3%), Snickers (11.9%), Reese's (28.7%)" width="384"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="favorite-halloween-candy-6" class="slide level2">
+<h2>Favorite Halloween Candy</h2>
+<h3 id="coordinates-polar">Coordinates: Polar</h3>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>candy_short <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a></a><span class="fu">ggplot</span>(</span>
+<span id="cb7-3"><a></a>  <span class="fu">aes</span>(<span class="at">y =</span> overall,</span>
+<span id="cb7-4"><a></a>      <span class="at">label =</span> label,</span>
+<span id="cb7-5"><a></a>      <span class="at">color =</span> candy,</span>
+<span id="cb7-6"><a></a>      <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
+<span id="cb7-7"><a></a>  <span class="fu">geom_col</span>(</span>
+<span id="cb7-8"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>), </span>
+<span id="cb7-9"><a></a>    <span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
+<span id="cb7-10"><a></a>  <span class="fu">geom_label</span>(</span>
+<span id="cb7-11"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">0.65</span>,  <span class="at">y =</span> pos), </span>
+<span id="cb7-12"><a></a>    <span class="at">text.color =</span> <span class="st">"black"</span>, </span>
+<span id="cb7-13"><a></a>    <span class="at">fill =</span> <span class="st">"white"</span>,</span>
+<span id="cb7-14"><a></a>    <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb7-15"><a></a>  labels <span class="sc">+</span> polar_extras <span class="sc">+</span> </span>
+<span id="cb7-16"><a></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>, <span class="at">start =</span> pi)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:35%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="how-graphics_files/figure-revealjs/halloween-pie-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-55"><img data-src="how-graphics_files/figure-revealjs/halloween-pie-1.png" alt="A pie chart showing the favorite types of Halloween Candy reported by americans. Other (36.1%), M&amp;Ms (6.9%), Candy Corn (7.1%), Kit Kat (9.3%), Snickers (11.9%), Reese's (28.7%)" width="384"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="favorite-halloween-candy-7" class="slide level2">
+<h2>Favorite Halloween Candy</h2>
+<h3 id="coordinates-polar-1">Coordinates: Polar</h3>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>candy_short <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a></a><span class="fu">ggplot</span>(</span>
+<span id="cb8-3"><a></a>  <span class="fu">aes</span>(<span class="at">y =</span> overall,</span>
+<span id="cb8-4"><a></a>      <span class="at">label =</span> label,</span>
+<span id="cb8-5"><a></a>      <span class="at">color =</span> candy,</span>
+<span id="cb8-6"><a></a>      <span class="at">fill =</span> candy)) <span class="sc">+</span></span>
+<span id="cb8-7"><a></a>  <span class="fu">geom_col</span>(</span>
+<span id="cb8-8"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">3</span>), </span>
+<span id="cb8-9"><a></a>    <span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
+<span id="cb8-10"><a></a>  <span class="fu">geom_label</span>(</span>
+<span id="cb8-11"><a></a>    <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">4</span>, <span class="at">y =</span> pos,</span>
+<span id="cb8-12"><a></a>        <span class="at">label =</span> label, <span class="at">color =</span> candy), </span>
+<span id="cb8-13"><a></a>    <span class="at">text.color =</span> <span class="st">"black"</span>, </span>
+<span id="cb8-14"><a></a>    <span class="at">fill =</span> <span class="st">"white"</span>,</span>
+<span id="cb8-15"><a></a>    <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb8-16"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">5</span>)) <span class="sc">+</span> </span>
+<span id="cb8-17"><a></a>  labels <span class="sc">+</span> polar_extras <span class="sc">+</span> </span>
+<span id="cb8-18"><a></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>, <span class="at">start =</span> pi)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:35%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="how-graphics_files/figure-revealjs/halloween-pie2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-56"><img data-src="how-graphics_files/figure-revealjs/halloween-pie2-1.png" alt="A pie chart showing the favorite types of Halloween Candy reported by americans. Other (36.1%), M&amp;Ms (6.9%), Candy Corn (7.1%), Kit Kat (9.3%), Snickers (11.9%), Reese's (28.7%)" width="384"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
 
 
 </section></section>

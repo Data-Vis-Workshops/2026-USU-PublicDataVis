@@ -598,17 +598,18 @@ ggplot(
 
 candy_short |>
 ggplot(
-  aes(y = overall)) +
+  aes(y = overall,
+      label = label,
+      color = candy,
+      fill = candy)) +
   geom_col(
-    aes(x = 0, 
-        fill = candy), 
+    aes(x = 0), 
     position = "stack") +
   geom_label(
-    aes(x = 0,
-        y = pos, 
-        label = label, 
-        color = candy), 
-    text.color = "black", size = 3) +
+    aes(x = 0, y = pos), 
+    text.color = "black",
+    fill = "white", 
+    size = 3) +
   labels + stack_extras
 
 ```
@@ -639,16 +640,18 @@ ggplot(
 #| eval: false
 candy_short |>
 ggplot(
-  aes(y = overall)) +
+  aes(y = overall,
+      label = label,
+      color = candy,
+      fill = candy)) +
   geom_col(
-    aes(
-      x = 1, 
-      fill = candy), 
+    aes(x = 0), 
     position = "stack") +
   geom_label(
-    aes(x = 1.65, y = pos, 
-        label = label, color = candy), 
-    text.color = "black", size = 3) +
+    aes(x = 0.65,  y = pos), 
+    text.color = "black", 
+    fill = "white",
+    size = 3) +
   labels + polar_extras + 
   coord_polar(theta = "y", start = pi)
 
@@ -679,18 +682,23 @@ ggplot(
 #| echo: true
 #| eval: false
 
+candy_short |>
 ggplot(
-  candy_short, 
-  aes(x = 3, y = overall)) +
+  aes(y = overall,
+      label = label,
+      color = candy,
+      fill = candy)) +
   geom_col(
-    aes(fill = candy), 
+    aes(x = 3), 
     position = "stack") +
   geom_label(
     aes(x = 4, y = pos,
         label = label, color = candy), 
-    text.color = "black", size = 3) +
-  labels + polar_extras + 
+    text.color = "black", 
+    fill = "white",
+    size = 3) +
   scale_x_continuous(limits = c(0, 5)) + 
+  labels + polar_extras + 
   coord_polar(theta = "y", start = pi)
 
 ```

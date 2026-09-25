@@ -165,7 +165,7 @@
     "href": "slides/how-graphics.html#your-turn",
     "title": "How to Make Graphics",
     "section": "Your Turn",
-    "text": "Your Turn\nChange the code below to have the points on top of the boxplots.\n\nggplot(data = mpg, aes(x = class, y = hwy)) + \n  geom_jitter() + \n  geom_boxplot()"
+    "text": "Your Turn\nChange the code below to have the points on top of the boxplots.\n\nggplot(data = mpg, aes(x = class, y = hwy)) +\n  geom_jitter() +\n  geom_boxplot()"
   },
   {
     "objectID": "Roosevelt.html",
@@ -341,5 +341,61 @@
     "title": "Personal Data Visualization",
     "section": "And now a Scatterplot",
     "text": "And now a Scatterplot\n\n\n\n\n\n\n\n\n\nWhat do you see?\n–\nThree clusters\nOnly for very large distances there is a positive relationship with the number of days to destination\nThere might be a hint of a positive association between the two variables in the first cluster (distances to 1250 miles)"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy",
+    "href": "slides/how-graphics.html#favorite-halloween-candy",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nHalloween candy preference data \n\nDoesn’t add up to 100%, so I’ve adjusted “Other” category\n\nWe’ll assume 27% Democrats, 27% Republicans, 46% Independents and not consider political party"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-1",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-1",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\n\n\n\nggplot(data = candy_sum, \n       aes(x = candy, y = overall, \n           fill = candy)) +\n  geom_col() +\n  geom_text(aes(label = label), \n            hjust = -0.1) + \n  coord_flip() + \n  ylab(\"Percent\") + \n  xlab(\"\") + \n  ggtitle(\"Favorite US Halloween Candy\") +\n  scale_y_continuous(limits = c(0, 35)) +\n  guides(fill = \"none\")"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-2",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-2",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nDefine some extra theme bits:\n\nlabels &lt;- list(ylab(\"Percent\"),\n               xlab(\"\"),\n               ggtitle(\"Favorite Halloween Candy of US Population\"),\n               guides(fill = \"none\", color = \"none\"))\n\nstack_extras &lt;- list(theme(panel.grid = element_blank())) \n\npolar_extras &lt;- list(theme(axis.text = element_blank(), \n                           axis.title = element_blank(), \n                           axis.ticks = element_blank(), \n                           panel.grid = element_blank()))"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-3",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-3",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\n\nggplot(candy_short, aes(x = candy, y = overall, fill = candy)) +\n  geom_col() + \n  labels"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-4",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-4",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nBasic Bar Chart\n\n\n\ncandy_short |&gt;\nggplot(\n  aes(x = candy, \n      y = overall, \n      fill = candy)) +\n  geom_col() + \n  labels"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-5",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-5",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nPosition: Stack\n\n\n\ncandy_short |&gt;\nggplot(\n  aes(y = overall,\n      label = label,\n      color = candy,\n      fill = candy)) +\n  geom_col(\n    aes(x = 0), \n    position = \"stack\") +\n  geom_label(\n    aes(x = 0, y = pos), \n    text.color = \"black\",\n    fill = \"white\", \n    size = 3) +\n  labels + stack_extras"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-6",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-6",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nCoordinates: Polar\n\n\n\ncandy_short |&gt;\nggplot(\n  aes(y = overall,\n      label = label,\n      color = candy,\n      fill = candy)) +\n  geom_col(\n    aes(x = 0), \n    position = \"stack\") +\n  geom_label(\n    aes(x = 0.65,  y = pos), \n    text.color = \"black\", \n    fill = \"white\",\n    size = 3) +\n  labels + polar_extras + \n  coord_polar(theta = \"y\", start = pi)"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-7",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-7",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nCoordinates: Polar\n\n\n\ncandy_short |&gt;\nggplot(\n  aes(y = overall,\n      label = label,\n      color = candy,\n      fill = candy)) +\n  geom_col(\n    aes(x = 3), \n    position = \"stack\") +\n  geom_label(\n    aes(x = 4, y = pos,\n        label = label, color = candy), \n    text.color = \"black\", \n    fill = \"white\",\n    size = 3) +\n  scale_x_continuous(limits = c(0, 5)) + \n  labels + polar_extras + \n  coord_polar(theta = \"y\", start = pi)"
   }
 ]
