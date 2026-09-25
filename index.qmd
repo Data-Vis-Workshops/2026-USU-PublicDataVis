@@ -33,3 +33,13 @@ If you don't have a computer you can bring, please contact [Eric Rowley (Blandin
 {{< include setup.qmd >}}
 
 :::
+
+## Resources & Links
+
+- [Cheat Sheets for R packages](https://opensource.posit.co/resources/cheatsheets/)
+    - [Convenient set of cheat sheets used for Stat 1080 (introductory statistics) at USU](https://srvanderplas.github.io/stat1080/demos/r-cheat-sheets.pdf)
+
+
+- **Tidy Tuesday** is an R organization that posts a new public data set every week, and has since 2018. You can find the [data](https://github.com/rfordatascience/tidytuesday#datasets), but there are also people who [livestream analyzing the data](https://www.youtube.com/results?search_query=%23tidytuesday), and those videos are on YouTube and are an excellent way to learn how to use the `tidyverse` set of packages (which include `ggplot2`)
+
+    
