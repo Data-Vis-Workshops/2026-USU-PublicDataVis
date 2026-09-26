@@ -4,3 +4,39 @@ format: revealjs
 css: ../css/slide-theme.scss
 ---
 
+## Tidy Tuesday Project
+
+Run by the [Data Science Learning Community](https://dslc.io/)
+
+Every Tuesday a (mostly) curated dataset is made available with some sample questions 
+
+The Data Science community is encouraged to work on solutions with code and share with #TidyTuesday hashtag on social media
+
+[Overview of current and past datasets](https://github.com/rfordatascience/tidytuesday#datasets){preview-link="true"}
+
+[ttmeta package](https://github.com/rfordatascience/tidytuesday/blob/main/data/2024/2024-07-02/readme.md) 
+
+## Some Tidy Tuesday Explorations
+
+- [Mastodon](https://fosstodon.org/tags/tidytuesday)
+- [Tidy Tuesday screencasts by David Robinson](https://www.youtube.com/playlist?list=PL19ev-r1GBwkuyiwnxoHTRC8TTqP8OEi8)
+
+
+## Physical Sciences
+
+- [Global Historical Climatology Network daily (GHCNd)](https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily)
+
+- [USGS Earthquake Information](https://earthquake.usgs.gov/)
+
+
+## Sports Data
+
+with the [SportsDataVerse](https://www.sportsdataverse.org/)
+
+https://github.com/sportsdataverse
+
+- [Baseball Reference Data](https://www.baseball-reference.com/) based on Sean Lahman's Baseball database
+
+In R it's the [Lahman package](https://cdalzell.github.io/Lahman/)
+
+- R package [nflverse](https://nflverse.nflverse.com/)
