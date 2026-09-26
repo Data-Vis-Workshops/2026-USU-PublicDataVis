@@ -60,7 +60,11 @@ Kelly Bodwin created a [series of puzzles](https://github.com/kbodwin/decoder) t
 
 
 - **Tidy Tuesday** is an R organization that posts a new public data set every week, and has since 2018. You can find the [data](https://github.com/rfordatascience/tidytuesday#datasets), but there are also people who [livestream analyzing the data](https://www.youtube.com/results?search_query=%23tidytuesday), and those videos are on YouTube and are an excellent way to learn how to use the `tidyverse` set of packages (which include `ggplot2`)
+    - [On Bluesky](https://bsky.app/search?q=%23tidytuesday)
+    - [On Mastodon](https://mastodon.social/tags/tidytuesday)
+    - [On X](https://x.com/search?q=%23tidytuesday&src=typed_query)
 
+- [Sports DataVerse](https://r.sportsdataverse.org) - a list of sports data packages, including play-by-play information for many sports as well as related topics like sports betting, injuries, etc.
 
 - [Utah GIS Data](https://opendata.gis.utah.gov) - maps, landmarks, demographics, climate, economy, energy, farming, geoscience, health, history, political science, recreation, society, transportation, utilities, and water. 
 

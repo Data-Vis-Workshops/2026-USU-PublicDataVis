@@ -18,7 +18,7 @@ css: ../css/slide-theme.scss
 
 - Some Tidy Tuesday Explorations
 
-  - [Mastodon](https://fosstodon.org/tags/tidytuesday)
+  - [Mastodon](https://fosstodon.org/tags/tidytuesday), [Bluesky](https://bsky.app/search?q=%23tidytuesday)
   - [Tidy Tuesday screencasts by David Robinson](https://www.youtube.com/playlist?list=PL19ev-r1GBwkuyiwnxoHTRC8TTqP8OEi8)
 
 ## Sports Data
@@ -38,18 +38,35 @@ In R it's the [Lahman package](https://cdalzell.github.io/Lahman/)
 
 
 ## More Data Sources 
+### Physical Sciences
 
-- Physical Sciences
+- [Global Historical Climatology Network daily (GHCNd)](https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily)
 
-  - [Global Historical Climatology Network daily (GHCNd)](https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily)
+- [USGS Earthquake Information](https://earthquake.usgs.gov/)
 
-  - [USGS Earthquake Information](https://earthquake.usgs.gov/)
+- Lake Powell [Releases](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-release-total-cfs-time-ser?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D) and [Reservoir Elevation](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-elevation-ft-time-series-d?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D)
+- Great Salt Lake [Bathymetry: Elevation, Area, and Volume tables](https://catalog.data.gov/dataset/great-salt-lake-elevation-area-volume-tables?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D)
 
-- Social Sciences
+- EnviroAtlas Salt Lake City
+  - [1 $\text{km}^2$ resolution data on the proportion of impervious surfaces](https://catalog.data.gov/dataset/enviroatlas-salt-lake-city-ut-impervious-proximity-gradient?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsIm9yZ19zbHVnIjoiZXBhIiwic3BhdGlhbF9nZW9tZXRyeSI6IntcInR5cGVcIjpcIk11bHRpUG9seWdvblwiLFwiY29vcmRpbmF0ZXNcIjpbW1tbLTExNC4wNDczLDM2Ljk5MTddLFstMTE0LjA0NzMsNDIuMDAyM10sWy0xMDkuMDQzMiw0Mi4wMDIzXSxbLTEwOS4wNDMyLDM2Ljk5MTddLFstMTE0LjA0NzMsMzYuOTkxN11dXV19Iiwic3BhdGlhbF93aXRoaW4iOiJ0cnVlIiwiZ2VvZ3JhcGh5X2xhYmVsIjoiVXRhaCJ9)
+  - Tree cover along [walkable roads](https://catalog.data.gov/dataset/enviroatlas-salt-lake-city-ut-estimated-percent-tree-cover-along-walkable-roads?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsIm9yZ19zbHVnIjoiZXBhIiwic3BhdGlhbF9nZW9tZXRyeSI6IntcInR5cGVcIjpcIk11bHRpUG9seWdvblwiLFwiY29vcmRpbmF0ZXNcIjpbW1tbLTExNC4wNDczLDM2Ljk5MTddLFstMTE0LjA0NzMsNDIuMDAyM10sWy0xMDkuMDQzMiw0Mi4wMDIzXSxbLTEwOS4wNDMyLDM2Ljk5MTddLFstMTE0LjA0NzMsMzYuOTkxN11dXV19Iiwic3BhdGlhbF93aXRoaW4iOiJ0cnVlIiwiZ2VvZ3JhcGh5X2xhYmVsIjoiVXRhaCJ9) and [busy roads](https://catalog.data.gov/dataset/enviroatlas-salt-lake-city-ut-estimated-tree-cover-along-busy-roads?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsIm9yZ19zbHVnIjoiZXBhIiwic3BhdGlhbF9nZW9tZXRyeSI6IntcInR5cGVcIjpcIk11bHRpUG9seWdvblwiLFwiY29vcmRpbmF0ZXNcIjpbW1tbLTExNC4wNDczLDM2Ljk5MTddLFstMTE0LjA0NzMsNDIuMDAyM10sWy0xMDkuMDQzMiw0Mi4wMDIzXSxbLTEwOS4wNDMyLDM2Ljk5MTddLFstMTE0LjA0NzMsMzYuOTkxN11dXV19Iiwic3BhdGlhbF93aXRoaW4iOiJ0cnVlIiwiZ2VvZ3JhcGh5X2xhYmVsIjoiVXRhaCJ9)
+    
+- [Meteorite Landings](https://catalog.data.gov/dataset/meteorite-landings?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6Im5vbi1nZW9zcGF0aWFsIn0%3D)
+
+
+
+## More Data Sources 
+### Social Sciences
 
   - [CDC and Prevention: Behavioral Risk Factor Surveillance System](https://www.cdc.gov/brfss/index.html)
   
   - [General Social Survey (NORC)](https://gss.norc.org/)
+  
+  - [Supply Chain Greenhouse Gas Emission Factors](https://catalog.data.gov/dataset/supply-chain-greenhouse-gas-emission-factors-v1-3-by-naics-6?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6Im5vbi1nZW9zcGF0aWFsIn0%3D)
+  
+  - [CDC WONDER: Cancer Statistics](https://catalog.data.gov/dataset/cdc-wonder-cancer-statistics?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6Im5vbi1nZW9zcGF0aWFsIn0%3D)
+  
+  - [Baby Names from the Social Security Administration](https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-data?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiJiYWJ5IG5hbWVzIiwic3BhdGlhbF9maWx0ZXIiOiIifQ%3D%3D)
   
 ```{r} 
 #| fig-width: 12
