@@ -655,7 +655,7 @@
     "href": "slides/public-data.html#tidy-tuesday-project",
     "title": "Public Data Sources",
     "section": "Tidy Tuesday Project",
-    "text": "Tidy Tuesday Project\nRun by the Data Science Learning Community\nEvery Tuesday a (mostly) curated dataset is made available with some sample questions\nThe Data Science community is encouraged to work on solutions with code and share with #TidyTuesday hashtag on social media\nOverview of current and past datasets\nttmeta package"
+    "text": "Tidy Tuesday Project\n\nRun by the Data Science Learning Community\nEvery Tuesday a (mostly) curated dataset is made available with some sample questions\nThe Data Science community is encouraged to work on solutions with code and share with #TidyTuesday hashtag on social media\nOverview of current and past datasets\nAn R package ttmeta package\nSome Tidy Tuesday Explorations\n\nMastodon\nTidy Tuesday screencasts by David Robinson"
   },
   {
     "objectID": "slides/public-data.html#some-tidy-tuesday-explorations",
@@ -676,6 +676,27 @@
     "href": "slides/public-data.html#sports-data",
     "title": "Public Data Sources",
     "section": "Sports Data",
-    "text": "Sports Data\nwith the SportsDataVerse\nhttps://github.com/sportsdataverse\n\nBaseball Reference Data based on Sean Lahman’s Baseball database\n\nIn R it’s the Lahman package\n\nR package nflverse"
+    "text": "Sports Data\nwith the SportsDataVerse\n\nOther Packages\n\nBaseball Reference Data based on Sean Lahman’s Baseball database\n\nIn R it’s the Lahman package\n\nR package nflverse"
+  },
+  {
+    "objectID": "slides/public-data.html#your-turn",
+    "href": "slides/public-data.html#your-turn",
+    "title": "Public Data Sources",
+    "section": "Your Turn",
+    "text": "Your Turn"
+  },
+  {
+    "objectID": "slides/public-data.html#more-data-sources",
+    "href": "slides/public-data.html#more-data-sources",
+    "title": "Public Data Sources",
+    "section": "More Data Sources",
+    "text": "More Data Sources\n\nPhysical Sciences\n\nGlobal Historical Climatology Network daily (GHCNd)\nUSGS Earthquake Information\n\nSocial Sciences\n\nCDC and Prevention: Behavioral Risk Factor Surveillance System\nGeneral Social Survey (NORC)"
+  },
+  {
+    "objectID": "slides/public-data.html#data-portals",
+    "href": "slides/public-data.html#data-portals",
+    "title": "Public Data Sources",
+    "section": "Data Portals",
+    "text": "Data Portals\n\nThe Utah State Geographic Information Datasource\nUDOT Open Data Portal\nUtah Data"
   }
 ]

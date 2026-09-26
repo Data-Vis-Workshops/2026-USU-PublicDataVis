@@ -6,7 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
   <title>Visualization &amp; Public Data – Public Data Sources</title>
@@ -148,36 +151,62 @@
 </section>
 <section id="tidy-tuesday-project" class="slide level2">
 <h2>Tidy Tuesday Project</h2>
-<p>Run by the <a href="https://dslc.io/">Data Science Learning Community</a></p>
-<p>Every Tuesday a (mostly) curated dataset is made available with some sample questions</p>
-<p>The Data Science community is encouraged to work on solutions with code and share with #TidyTuesday hashtag on social media</p>
-<p><a href="https://github.com/rfordatascience/tidytuesday#datasets" data-preview-link="true">Overview of current and past datasets</a></p>
-<p><a href="https://github.com/rfordatascience/tidytuesday/blob/main/data/2024/2024-07-02/readme.md">ttmeta package</a></p>
-</section>
-<section id="some-tidy-tuesday-explorations" class="slide level2">
-<h2>Some Tidy Tuesday Explorations</h2>
+<ul>
+<li><p>Run by the <a href="https://dslc.io/">Data Science Learning Community</a></p></li>
+<li><p>Every Tuesday a (mostly) curated dataset is made available with some sample questions</p></li>
+<li><p>The Data Science community is encouraged to work on solutions with code and share with #TidyTuesday hashtag on social media</p></li>
+<li><p><a href="https://github.com/rfordatascience/tidytuesday#datasets">Overview of current and past datasets</a></p></li>
+<li><p>An R package <a href="https://github.com/rfordatascience/tidytuesday/blob/main/data/2024/2024-07-02/readme.md">ttmeta package</a></p></li>
+<li><p>Some Tidy Tuesday Explorations</p>
 <ul>
 <li><a href="https://fosstodon.org/tags/tidytuesday">Mastodon</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PL19ev-r1GBwkuyiwnxoHTRC8TTqP8OEi8">Tidy Tuesday screencasts by David Robinson</a></li>
-</ul>
-</section>
-<section id="physical-sciences" class="slide level2">
-<h2>Physical Sciences</h2>
-<ul>
-<li><p><a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily">Global Historical Climatology Network daily (GHCNd)</a></p></li>
-<li><p><a href="https://earthquake.usgs.gov/">USGS Earthquake Information</a></p></li>
+</ul></li>
 </ul>
 </section>
 <section id="sports-data" class="slide level2">
 <h2>Sports Data</h2>
 <p>with the <a href="https://www.sportsdataverse.org/">SportsDataVerse</a></p>
-<p>https://github.com/sportsdataverse</p>
+<p><a href="https://raw.githubusercontent.com/sportsdataverse/.github/main/profile/sdv-hex-wall.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="https://raw.githubusercontent.com/sportsdataverse/.github/main/profile/sdv-hex-wall.png" width="250"></a></p>
+<p>Other Packages</p>
 <ul>
 <li><a href="https://www.baseball-reference.com/">Baseball Reference Data</a> based on Sean Lahman’s Baseball database</li>
 </ul>
 <p>In R it’s the <a href="https://cdalzell.github.io/Lahman/">Lahman package</a></p>
 <ul>
 <li>R package <a href="https://nflverse.nflverse.com/">nflverse</a></li>
+</ul>
+</section>
+<section id="more-data-sources" class="slide level2">
+<h2>More Data Sources</h2>
+<ul>
+<li><p>Physical Sciences</p>
+<ul>
+<li><p><a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily">Global Historical Climatology Network daily (GHCNd)</a></p></li>
+<li><p><a href="https://earthquake.usgs.gov/">USGS Earthquake Information</a></p></li>
+</ul></li>
+<li><p>Social Sciences</p>
+<ul>
+<li><p><a href="https://www.cdc.gov/brfss/index.html">CDC and Prevention: Behavioral Risk Factor Surveillance System</a></p></li>
+<li><p><a href="https://gss.norc.org/">General Social Survey (NORC)</a></p></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><a href="public-data_files/figure-revealjs/unnamed-chunk-1-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="public-data_files/figure-revealjs/unnamed-chunk-1-1.png" width="1152"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="data-portals" class="slide level2">
+<h2>Data Portals</h2>
+<ul>
+<li><p><a href="https://opendata.gis.utah.gov/">The Utah State Geographic Information Datasource</a></p></li>
+<li><p><a href="https://data-uplan.opendata.arcgis.com/">UDOT Open Data Portal</a></p></li>
+<li><p><a href="https://www.utah.gov/government/data.html">Utah Data</a></p></li>
 </ul>
 
 
@@ -400,6 +429,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -720,6 +787,38 @@
         }
       });
       </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>
