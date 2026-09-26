@@ -577,8 +577,8 @@
     "objectID": "slides/resources-opportunities.html#the-big-book-of-r",
     "href": "slides/resources-opportunities.html#the-big-book-of-r",
     "title": "Resources & Opportunities",
-    "section": "The Big Book of R",
-    "text": "The Big Book of R\n)"
+    "section": "",
+    "text": ")"
   },
   {
     "objectID": "slides/resources-opportunities.html#r-for-data-science",
@@ -642,5 +642,40 @@
     "title": "Why Graphics?",
     "section": "Your Turn",
     "text": "Your Turn\n\nHow could data visualization connect to learning objectives for your grade(s) and subject(s)?\nWhat types of charts are most important for your students?\nWhat data would you like to show students?"
+  },
+  {
+    "objectID": "slides/resources-opportunities.html",
+    "href": "slides/resources-opportunities.html",
+    "title": "Resources & Opportunities",
+    "section": "",
+    "text": ")"
+  },
+  {
+    "objectID": "slides/public-data.html#tidy-tuesday-project",
+    "href": "slides/public-data.html#tidy-tuesday-project",
+    "title": "Public Data Sources",
+    "section": "Tidy Tuesday Project",
+    "text": "Tidy Tuesday Project\nRun by the Data Science Learning Community\nEvery Tuesday a (mostly) curated dataset is made available with some sample questions\nThe Data Science community is encouraged to work on solutions with code and share with #TidyTuesday hashtag on social media\nOverview of current and past datasets\nttmeta package"
+  },
+  {
+    "objectID": "slides/public-data.html#some-tidy-tuesday-explorations",
+    "href": "slides/public-data.html#some-tidy-tuesday-explorations",
+    "title": "Public Data Sources",
+    "section": "Some Tidy Tuesday Explorations",
+    "text": "Some Tidy Tuesday Explorations\n\nMastodon\nTidy Tuesday screencasts by David Robinson"
+  },
+  {
+    "objectID": "slides/public-data.html#physical-sciences",
+    "href": "slides/public-data.html#physical-sciences",
+    "title": "Public Data Sources",
+    "section": "Physical Sciences",
+    "text": "Physical Sciences\n\nGlobal Historical Climatology Network daily (GHCNd)\nUSGS Earthquake Information"
+  },
+  {
+    "objectID": "slides/public-data.html#sports-data",
+    "href": "slides/public-data.html#sports-data",
+    "title": "Public Data Sources",
+    "section": "Sports Data",
+    "text": "Sports Data\nwith the SportsDataVerse\nhttps://github.com/sportsdataverse\n\nBaseball Reference Data based on Sean Lahman’s Baseball database\n\nIn R it’s the Lahman package\n\nR package nflverse"
   }
 ]
