@@ -7,6 +7,13 @@
     "text": "Cheat Sheets for R packages\n\nConvenient set of cheat sheets used for Stat 1080 (introductory statistics) at USU\n\n\n\n\nKelly Bodwin created a series of puzzles to reinforce different introductory R concepts.\n\nIndexing, matrix/vector creation, introductory debugging\nWriting functions and ciphers\nData Cleaning with dplyr\nSolving Crimes with lubridate\nRegression Diagnostics and Looney Tunes\nJoins with tidyr and Military Spending\n\n\n\n\n\nStat-assignments collection of assignments for data science and statistics classes\nWorksheets for Intro Statistics\n(some of these will need updated links)\n\nConfidence Intervals & The Great Emu War\nDifference of Proportions & Pandemics\nDifference of Means: Vampires & Wizards\n\n\n\n\n\n\n\nObserve, Collect, Draw! A Visual Journal, by Giorgia Lupi & Stefanie Posavec Amazon, Author’s site\n\nDear Data, by Giorgia Lupi & Stefanie Posavec Amazon, Author’s site\n\nDrawing Data with Kids, Cultivating Data-Literacy: A screen-free journey through the art of visualization for kids, by Gulrez Khan Amazon, Author’s site – includes free activities for classes\nMath with Bad Drawings, by Ben Orlin Amazon, Author’s site\n\nMath Games with Bad Drawings, by Ben Orlin Amazon\n\nThe Big Book of R - A collection of free online R books\nR for Data Science - Book focusing on data science packages, by Hadley Wickham (author of ggplot2, dplyr, tidyr, …)\nStatistical Computing in R and Python - textbook for UNL (and soon USU?) statistical computing courses\n\n\n\n\n\nTidy Tuesday is an R organization that posts a new public data set every week, and has since 2018. You can find the data, but there are also people who livestream analyzing the data, and those videos are on YouTube and are an excellent way to learn how to use the tidyverse set of packages (which include ggplot2)\nUtah GIS Data - maps, landmarks, demographics, climate, economy, energy, farming, geoscience, health, history, political science, recreation, society, transportation, utilities, and water.\nData.gov - more than 500k datasets from the US government\n\nLake Powell Releases and Reservoir Elevation\nGreat Salt Lake Bathymetry: Elevation, Area, and Volume tables\nEnviroAtlas Salt Lake City\n\n1 \\(\\text{km}^2\\) resolution data on the proportion of impervious surfaces\nTree cover along walkable roads and busy roads\n\nSupply Chain Greenhouse Gas Emission Factors\nMeteorite Landings\nCDC WONDER: Cancer Statistics\nBaby Names from the Social Security Administration"
   },
   {
+    "objectID": "course-links.html#teaching-resources",
+    "href": "course-links.html#teaching-resources",
+    "title": "Useful Links",
+    "section": "",
+    "text": "Cheat Sheets for R packages\n\nConvenient set of cheat sheets used for Stat 1080 (introductory statistics) at USU\n\n\n\n\nKelly Bodwin created a series of puzzles to reinforce different introductory R concepts.\n\nIndexing, matrix/vector creation, introductory debugging\nWriting functions and ciphers\nData Cleaning with dplyr\nSolving Crimes with lubridate\nRegression Diagnostics and Looney Tunes\nJoins with tidyr and Military Spending\n\n\n\n\n\nStat-assignments collection of assignments for data science and statistics classes\nWorksheets for Intro Statistics\n(some of these will need updated links)\n\nConfidence Intervals & The Great Emu War\nDifference of Proportions & Pandemics\nDifference of Means: Vampires & Wizards"
+  },
+  {
     "objectID": "course-links.html#books-and-inspiration",
     "href": "course-links.html#books-and-inspiration",
     "title": "Useful Links",
@@ -663,12 +670,5 @@
     "title": "Weather Data",
     "section": "So many more questions",
     "text": "So many more questions\n\nWhat is the first day of snowfall?\nHow long does the snow stay on the ground?\nDid the average snow depth change?\n\n\n\nWhat questions do you have? \n\n\n\n\nend of excursion"
-  },
-  {
-    "objectID": "course-links.html#teaching-resources",
-    "href": "course-links.html#teaching-resources",
-    "title": "Useful Links",
-    "section": "",
-    "text": "Cheat Sheets for R packages\n\nConvenient set of cheat sheets used for Stat 1080 (introductory statistics) at USU\n\n\n\n\nKelly Bodwin created a series of puzzles to reinforce different introductory R concepts.\n\nIndexing, matrix/vector creation, introductory debugging\nWriting functions and ciphers\nData Cleaning with dplyr\nSolving Crimes with lubridate\nRegression Diagnostics and Looney Tunes\nJoins with tidyr and Military Spending\n\n\n\n\n\nStat-assignments collection of assignments for data science and statistics classes\nWorksheets for Intro Statistics\n(some of these will need updated links)\n\nConfidence Intervals & The Great Emu War\nDifference of Proportions & Pandemics\nDifference of Means: Vampires & Wizards"
   }
 ]
