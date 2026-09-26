@@ -49,7 +49,7 @@ Kelly Bodwin created a [series of puzzles](https://github.com/kbodwin/decoder) t
     - Math Games with Bad Drawings, by Ben Orlin [Amazon](https://www.amazon.com/Math-Games-Bad-Drawings-Challenging/dp/0762499869/)
     
     
-- [The Big Book of R](www.bigbookofr.com) - A collection of free online R books
+- [The Big Book of R](https://bigbookofr.com) - A collection of free online R books
 
 - [R for Data Science](https://r4ds.hadley.nz) - Book focusing on data science packages, by Hadley Wickham (author of `ggplot2`, `dplyr`, `tidyr`, ...)
 
