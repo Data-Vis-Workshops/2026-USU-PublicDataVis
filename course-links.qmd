@@ -1,5 +1,43 @@
 # Useful Links
 
+## Teaching Resources
+
+- [Cheat Sheets for R packages](https://opensource.posit.co/resources/cheatsheets/)
+    - [Convenient set of cheat sheets used for Stat 1080 (introductory statistics) at USU](https://srvanderplas.github.io/stat1080/demos/r-cheat-sheets.pdf)
+
+
+### Teaching R with `decoder`
+
+Kelly Bodwin created a [series of puzzles](https://github.com/kbodwin/decoder) to reinforce different introductory R concepts. 
+
+- [Indexing, matrix/vector creation, introductory debugging](https://github.com/kbodwin/decodeR/tree/master/Base_R)
+
+- [Writing functions and ciphers](https://github.com/kbodwin/decodeR/blob/master/general/general-Puzzle.Rmd)
+
+- [Data Cleaning with `dplyr`](https://github.com/kbodwin/decodeR/blob/master/dplyr/dplyr-Instructions.Rmd)
+
+- [Solving Crimes with `lubridate`](https://github.com/kbodwin/decodeR/blob/master/lubridate/lubridate-Puzzle.Rmd)
+
+- [Regression Diagnostics and Looney Tunes](https://github.com/kbodwin/decodeR/blob/master/regression/regression.Rmd)
+
+- [Joins with `tidyr` and Military Spending](https://github.com/kbodwin/decodeR/blob/master/tidyr/tidyr-Puzzle.qmd)
+
+
+### Susan's Introductory Statistics Teaching Materials 
+
+
+- [Stat-assignments](https://github.com/orgs/stat-assignments/repositories?q=visibility%3Apublic+archived%3Afalse) collection of assignments for data science and statistics classes
+
+- Worksheets for Intro Statistics    
+(some of these will need updated links)
+
+  - [Confidence Intervals & The Great Emu War](https://github.com/srvanderplas/unl-stat218-materials/blob/master/handouts/03_Confidence-Intervals.Rmd)
+  
+  - [Difference of Proportions & Pandemics](https://github.com/srvanderplas/unl-stat218-materials/blob/master/handouts/05_Difference_Proportions.Rmd)
+  
+  - [Difference of Means: Vampires & Wizards](https://github.com/srvanderplas/unl-stat218-materials/blob/master/handouts/06_Difference_Means.Rmd) 
+
+
 ## Books and Inspiration
 
 - Observe, Collect, Draw! A Visual Journal, by Giorgia Lupi & Stefanie Posavec [Amazon](https://www.amazon.com/Observe-Collect-Draw-Visual-Journal/dp/1616897147), [Author's site](https://giorgialupi.com/observe-collect-draw/)
@@ -10,12 +48,24 @@
 - Math with Bad Drawings, by Ben Orlin [Amazon](https://www.amazon.com/Math-Bad-Drawings-Illuminating-Reality/dp/0316509043), [Author's site](https://mathwithbaddrawings.com)
     - Math Games with Bad Drawings, by Ben Orlin [Amazon](https://www.amazon.com/Math-Games-Bad-Drawings-Challenging/dp/0762499869/)
     
+    
+- [The Big Book of R](www.bigbookofr.com) - A collection of free online R books
+
+- [R for Data Science](https://r4ds.hadley.nz) - Book focusing on data science packages, by Hadley Wickham (author of `ggplot2`, `dplyr`, `tidyr`, ...)
+
+- [Statistical Computing in R and Python](https://srvanderplas.github.io/stat-computing-r-python/) - textbook for UNL (and soon USU?) statistical computing courses
+
+    
 ## Public Data Sources
+
+
+- **Tidy Tuesday** is an R organization that posts a new public data set every week, and has since 2018. You can find the [data](https://github.com/rfordatascience/tidytuesday#datasets), but there are also people who [livestream analyzing the data](https://www.youtube.com/results?search_query=%23tidytuesday), and those videos are on YouTube and are an excellent way to learn how to use the `tidyverse` set of packages (which include `ggplot2`)
+
 
 - [Utah GIS Data](https://opendata.gis.utah.gov) - maps, landmarks, demographics, climate, economy, energy, farming, geoscience, health, history, political science, recreation, society, transportation, utilities, and water. 
 
 - [Data.gov](https://data.gov) - more than 500k datasets from the US government
-  - Lake Powell [Releases](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-release-total-cfs-time-ser?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D and [Reservoir Elevation](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-elevation-ft-time-series-d?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D)
+  - Lake Powell [Releases](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-release-total-cfs-time-ser?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D) and [Reservoir Elevation](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-elevation-ft-time-series-d?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D)
   - Great Salt Lake [Bathymetry: Elevation, Area, and Volume tables](https://catalog.data.gov/dataset/great-salt-lake-elevation-area-volume-tables?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D)
   - EnviroAtlas Salt Lake City
     - [1 $\text{km}^2$ resolution data on the proportion of impervious surfaces](https://catalog.data.gov/dataset/enviroatlas-salt-lake-city-ut-impervious-proximity-gradient?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsIm9yZ19zbHVnIjoiZXBhIiwic3BhdGlhbF9nZW9tZXRyeSI6IntcInR5cGVcIjpcIk11bHRpUG9seWdvblwiLFwiY29vcmRpbmF0ZXNcIjpbW1tbLTExNC4wNDczLDM2Ljk5MTddLFstMTE0LjA0NzMsNDIuMDAyM10sWy0xMDkuMDQzMiw0Mi4wMDIzXSxbLTEwOS4wNDMyLDM2Ljk5MTddLFstMTE0LjA0NzMsMzYuOTkxN11dXV19Iiwic3BhdGlhbF93aXRoaW4iOiJ0cnVlIiwiZ2VvZ3JhcGh5X2xhYmVsIjoiVXRhaCJ9)

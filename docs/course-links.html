@@ -333,6 +333,11 @@ window.Quarto = {
   <ul>
   <li><a href="#useful-links" id="toc-useful-links" class="nav-link active" data-scroll-target="#useful-links">Useful Links</a>
   <ul class="collapse">
+  <li><a href="#teaching-resources" id="toc-teaching-resources" class="nav-link" data-scroll-target="#teaching-resources">Teaching Resources</a>
+  <ul class="collapse">
+  <li><a href="#teaching-r-with-decoder" id="toc-teaching-r-with-decoder" class="nav-link" data-scroll-target="#teaching-r-with-decoder">Teaching R with <code>decoder</code></a></li>
+  <li><a href="#susans-introductory-statistics-teaching-materials" id="toc-susans-introductory-statistics-teaching-materials" class="nav-link" data-scroll-target="#susans-introductory-statistics-teaching-materials">Susan’s Introductory Statistics Teaching Materials</a></li>
+  </ul></li>
   <li><a href="#books-and-inspiration" id="toc-books-and-inspiration" class="nav-link" data-scroll-target="#books-and-inspiration">Books and Inspiration</a></li>
   <li><a href="#public-data-sources" id="toc-public-data-sources" class="nav-link" data-scroll-target="#public-data-sources">Public Data Sources</a></li>
   </ul></li>
@@ -348,6 +353,40 @@ window.Quarto = {
 
 <section id="useful-links" class="level1">
 <h1>Useful Links</h1>
+<section id="teaching-resources" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-resources">Teaching Resources</h2>
+<ul>
+<li><a href="https://opensource.posit.co/resources/cheatsheets/">Cheat Sheets for R packages</a>
+<ul>
+<li><a href="https://srvanderplas.github.io/stat1080/demos/r-cheat-sheets.pdf">Convenient set of cheat sheets used for Stat 1080 (introductory statistics) at USU</a></li>
+</ul></li>
+</ul>
+<section id="teaching-r-with-decoder" class="level3">
+<h3 class="anchored" data-anchor-id="teaching-r-with-decoder">Teaching R with <code>decoder</code></h3>
+<p>Kelly Bodwin created a <a href="https://github.com/kbodwin/decoder">series of puzzles</a> to reinforce different introductory R concepts.</p>
+<ul>
+<li><p><a href="https://github.com/kbodwin/decodeR/tree/master/Base_R">Indexing, matrix/vector creation, introductory debugging</a></p></li>
+<li><p><a href="https://github.com/kbodwin/decodeR/blob/master/general/general-Puzzle.Rmd">Writing functions and ciphers</a></p></li>
+<li><p><a href="https://github.com/kbodwin/decodeR/blob/master/dplyr/dplyr-Instructions.Rmd">Data Cleaning with <code>dplyr</code></a></p></li>
+<li><p><a href="https://github.com/kbodwin/decodeR/blob/master/lubridate/lubridate-Puzzle.Rmd">Solving Crimes with <code>lubridate</code></a></p></li>
+<li><p><a href="https://github.com/kbodwin/decodeR/blob/master/regression/regression.Rmd">Regression Diagnostics and Looney Tunes</a></p></li>
+<li><p><a href="https://github.com/kbodwin/decodeR/blob/master/tidyr/tidyr-Puzzle.qmd">Joins with <code>tidyr</code> and Military Spending</a></p></li>
+</ul>
+</section>
+<section id="susans-introductory-statistics-teaching-materials" class="level3">
+<h3 class="anchored" data-anchor-id="susans-introductory-statistics-teaching-materials">Susan’s Introductory Statistics Teaching Materials</h3>
+<ul>
+<li><p><a href="https://github.com/orgs/stat-assignments/repositories?q=visibility%3Apublic+archived%3Afalse">Stat-assignments</a> collection of assignments for data science and statistics classes</p></li>
+<li><p>Worksheets for Intro Statistics<br>
+(some of these will need updated links)</p>
+<ul>
+<li><p><a href="https://github.com/srvanderplas/unl-stat218-materials/blob/master/handouts/03_Confidence-Intervals.Rmd">Confidence Intervals &amp; The Great Emu War</a></p></li>
+<li><p><a href="https://github.com/srvanderplas/unl-stat218-materials/blob/master/handouts/05_Difference_Proportions.Rmd">Difference of Proportions &amp; Pandemics</a></p></li>
+<li><p><a href="https://github.com/srvanderplas/unl-stat218-materials/blob/master/handouts/06_Difference_Means.Rmd">Difference of Means: Vampires &amp; Wizards</a></p></li>
+</ul></li>
+</ul>
+</section>
+</section>
 <section id="books-and-inspiration" class="level2">
 <h2 class="anchored" data-anchor-id="books-and-inspiration">Books and Inspiration</h2>
 <ul>
@@ -360,15 +399,19 @@ window.Quarto = {
 <ul>
 <li>Math Games with Bad Drawings, by Ben Orlin <a href="https://www.amazon.com/Math-Games-Bad-Drawings-Challenging/dp/0762499869/">Amazon</a></li>
 </ul></li>
+<li><p><a href="www.bigbookofr.com">The Big Book of R</a> - A collection of free online R books</p></li>
+<li><p><a href="https://r4ds.hadley.nz">R for Data Science</a> - Book focusing on data science packages, by Hadley Wickham (author of <code>ggplot2</code>, <code>dplyr</code>, <code>tidyr</code>, …)</p></li>
+<li><p><a href="https://srvanderplas.github.io/stat-computing-r-python/">Statistical Computing in R and Python</a> - textbook for UNL (and soon USU?) statistical computing courses</p></li>
 </ul>
 </section>
 <section id="public-data-sources" class="level2">
 <h2 class="anchored" data-anchor-id="public-data-sources">Public Data Sources</h2>
 <ul>
+<li><p><strong>Tidy Tuesday</strong> is an R organization that posts a new public data set every week, and has since 2018. You can find the <a href="https://github.com/rfordatascience/tidytuesday#datasets">data</a>, but there are also people who <a href="https://www.youtube.com/results?search_query=%23tidytuesday">livestream analyzing the data</a>, and those videos are on YouTube and are an excellent way to learn how to use the <code>tidyverse</code> set of packages (which include <code>ggplot2</code>)</p></li>
 <li><p><a href="https://opendata.gis.utah.gov">Utah GIS Data</a> - maps, landmarks, demographics, climate, economy, energy, farming, geoscience, health, history, political science, recreation, society, transportation, utilities, and water.</p></li>
 <li><p><a href="https://data.gov">Data.gov</a> - more than 500k datasets from the US government</p>
 <ul>
-<li><p>Lake Powell [Releases](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-release-total-cfs-time-ser?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D and <a href="https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-elevation-ft-time-series-d?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D">Reservoir Elevation</a></p></li>
+<li><p>Lake Powell <a href="https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-release-total-cfs-time-ser?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D">Releases</a> and <a href="https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-elevation-ft-time-series-d?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D">Reservoir Elevation</a></p></li>
 <li><p>Great Salt Lake <a href="https://catalog.data.gov/dataset/great-salt-lake-elevation-area-volume-tables?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D">Bathymetry: Elevation, Area, and Volume tables</a></p></li>
 <li><p>EnviroAtlas Salt Lake City</p>
 <ul>
