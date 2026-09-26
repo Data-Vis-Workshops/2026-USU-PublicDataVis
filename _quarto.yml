@@ -9,6 +9,7 @@ project:
     - Blanding.qmd
     - slides/*.qmd
     - materials/*.qmd
+    - course-links.qmd
 
 engine: knitr
 website:
