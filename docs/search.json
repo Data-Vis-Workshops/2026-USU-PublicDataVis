@@ -1,80 +1,360 @@
 [
   {
-    "objectID": "materials/weather-data.html#weather-stations-in-utah-30-years-plus",
-    "href": "materials/weather-data.html#weather-stations-in-utah-30-years-plus",
-    "title": "Weather Data",
-    "section": "Weather Stations in Utah (30 years plus)",
-    "text": "Weather Stations in Utah (30 years plus)\nClicking on point downloads data"
+    "objectID": "course-links.html",
+    "href": "course-links.html",
+    "title": "Useful Links",
+    "section": "",
+    "text": "Observe, Collect, Draw! A Visual Journal, by Giorgia Lupi & Stefanie Posavec Amazon, Author’s site\n\nDear Data, by Giorgia Lupi & Stefanie Posavec Amazon, Author’s site\n\nDrawing Data with Kids, Cultivating Data-Literacy: A screen-free journey through the art of visualization for kids, by Gulrez Khan Amazon, Author’s site – includes free activities for classes\nMath with Bad Drawings, by Ben Orlin Amazon, Author’s site\n\nMath Games with Bad Drawings, by Ben Orlin Amazon\n\n\n\n\n\n\nUtah GIS Data - maps, landmarks, demographics, climate, economy, energy, farming, geoscience, health, history, political science, recreation, society, transportation, utilities, and water.\nData.gov - more than 500k datasets from the US government\n\nLake Powell [Releases](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-release-total-cfs-time-ser?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D and Reservoir Elevation\nGreat Salt Lake Bathymetry: Elevation, Area, and Volume tables\nEnviroAtlas Salt Lake City\n\n1 \\(\\text{km}^2\\) resolution data on the proportion of impervious surfaces\nTree cover along walkable roads and busy roads\n\nSupply Chain Greenhouse Gas Emission Factors\nMeteorite Landings\nCDC WONDER: Cancer Statistics\nBaby Names from the Social Security Administration"
   },
   {
-    "objectID": "materials/weather-data.html#weather-in-blanding",
-    "href": "materials/weather-data.html#weather-in-blanding",
-    "title": "Weather Data",
-    "section": "Weather in Blanding",
-    "text": "Weather in Blanding\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStation in BLANDING, UT US reported daily from 1904-11-26 to 2026-07-05 (pre-dates founding of the city)\nObserved Measurements\n\nTMAX = Maximum temperature (tenths of degrees C)\nTMIN = Minimum temperature (tenths of degrees C)\nPRCP = Precipitation (tenths of mm)\nSNOW = Snowfall (mm)\nSNWD = Snow depth (mm)\n\nSource for checking on unusual observations: Daily Almanac"
+    "objectID": "course-links.html#books-and-inspiration",
+    "href": "course-links.html#books-and-inspiration",
+    "title": "Useful Links",
+    "section": "",
+    "text": "Observe, Collect, Draw! A Visual Journal, by Giorgia Lupi & Stefanie Posavec Amazon, Author’s site\n\nDear Data, by Giorgia Lupi & Stefanie Posavec Amazon, Author’s site\n\nDrawing Data with Kids, Cultivating Data-Literacy: A screen-free journey through the art of visualization for kids, by Gulrez Khan Amazon, Author’s site – includes free activities for classes\nMath with Bad Drawings, by Ben Orlin Amazon, Author’s site\n\nMath Games with Bad Drawings, by Ben Orlin Amazon"
   },
   {
-    "objectID": "materials/weather-data.html#daily-precipitation",
-    "href": "materials/weather-data.html#daily-precipitation",
-    "title": "Weather Data",
-    "section": "Daily Precipitation",
-    "text": "Daily Precipitation\nAverage daily precipitation is 0.0350394 inch, but it rained only on 7220 out of 43094 recorded days."
+    "objectID": "course-links.html#public-data-sources",
+    "href": "course-links.html#public-data-sources",
+    "title": "Useful Links",
+    "section": "",
+    "text": "Utah GIS Data - maps, landmarks, demographics, climate, economy, energy, farming, geoscience, health, history, political science, recreation, society, transportation, utilities, and water.\nData.gov - more than 500k datasets from the US government\n\nLake Powell [Releases](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-release-total-cfs-time-ser?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D and Reservoir Elevation\nGreat Salt Lake Bathymetry: Elevation, Area, and Volume tables\nEnviroAtlas Salt Lake City\n\n1 \\(\\text{km}^2\\) resolution data on the proportion of impervious surfaces\nTree cover along walkable roads and busy roads\n\nSupply Chain Greenhouse Gas Emission Factors\nMeteorite Landings\nCDC WONDER: Cancer Statistics\nBaby Names from the Social Security Administration"
   },
   {
-    "objectID": "materials/weather-data.html#yearly-total-precipitation",
-    "href": "materials/weather-data.html#yearly-total-precipitation",
-    "title": "Weather Data",
-    "section": "Yearly Total Precipitation",
-    "text": "Yearly Total Precipitation\n\nNote: totals are rescaled to 365 days in a year (b/c leap years, missing data)"
+    "objectID": "slides/why-graphics.html#section",
+    "href": "slides/why-graphics.html#section",
+    "title": "Why Graphics?",
+    "section": "",
+    "text": "The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star’s life cycle: a hypothesis that only came to be because of this chart.\n\n\n\n\nData source: the HYG Database. Only stars within 500 AU are shown.\n\nWhen drawn well, statistical graphics help us understand our data and see things that we didn’t know were there. The relationship between star magnitude, star color, and spectral class wasn’t well understood until someone created a chart like this that showed the color index (or spectral class) against the absolute brightness. Then, it was much easier to see that the chart described a life-cycle - stars start out in the main sequence, and then become giants, dwarfs, or slowly change spectral class over time as they cool down in temperature.\nWell designed graphs can help us understand the natural phenomenon behind the raw numerical data we’ve collected."
   },
   {
-    "objectID": "materials/weather-data.html#yearly-total-precipitation-2",
-    "href": "materials/weather-data.html#yearly-total-precipitation-2",
-    "title": "Weather Data",
-    "section": "Yearly Total Precipitation (2)",
-    "text": "Yearly Total Precipitation (2)"
+    "objectID": "slides/why-graphics.html#basic",
+    "href": "slides/why-graphics.html#basic",
+    "title": "Why Graphics?",
+    "section": "Basic",
+    "text": "Basic\n\n\nOne Variable\n\nDiscrete\n\nBar Chart\nPie Chart\n\nContinuous\n\nStem and Leaf Plots\nHistograms\n\n\n\nTwo variables\n\nContinuous X, Continuous Y\n\nScatterplots\n(w/ and w/o trend lines)\n\nMaps"
   },
   {
-    "objectID": "materials/weather-data.html#yearly-total-precipitation-3",
-    "href": "materials/weather-data.html#yearly-total-precipitation-3",
-    "title": "Weather Data",
-    "section": "Yearly Total Precipitation (3)",
-    "text": "Yearly Total Precipitation (3)\n\n\n\nCall:\nlm(formula = value/254 ~ I(year - 1905), data = prcp)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-13.5617  -2.3962  -0.1296   2.5266   9.1649 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    13.66773    0.72805  18.773   &lt;2e-16 ***\nI(year - 1905) -0.01768    0.01044  -1.693   0.0931 .  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 4.112 on 121 degrees of freedom\nMultiple R-squared:  0.02313,   Adjusted R-squared:  0.01506 \nF-statistic: 2.866 on 1 and 121 DF,  p-value: 0.09306"
+    "objectID": "slides/why-graphics.html#more-fancy",
+    "href": "slides/why-graphics.html#more-fancy",
+    "title": "Why Graphics?",
+    "section": "More “Fancy”",
+    "text": "More “Fancy”\n\n\n\nParallel Coordinate Plots\nMosaic Plots\nRadar Charts\nHeat Maps\nDensity Plots\nViolin Plots\nSocial Network Plots"
   },
   {
-    "objectID": "materials/weather-data.html#monthly-temperatures",
-    "href": "materials/weather-data.html#monthly-temperatures",
-    "title": "Weather Data",
-    "section": "Monthly Temperatures",
-    "text": "Monthly Temperatures"
+    "objectID": "slides/why-graphics.html#quantitative-literacy",
+    "href": "slides/why-graphics.html#quantitative-literacy",
+    "title": "Why Graphics?",
+    "section": "Quantitative Literacy",
+    "text": "Quantitative Literacy\n\n\nElementary\n\nVisual Mappings 📊\nScales 📐\nPie charts 🥧 (fractions)\nLine charts 📈 (time)\nRange, Mean, Median, Mode 📏\n\n\nMiddle\n\nCartesian Coordinates \nSlope, Intercept form \nFunctions, Polynomials \nProbability\n  \n\n\nHigh School\n\nPolar Coordinates\nFunctions - Trigonometry , Logarithms🪵, Exponential growth \nConnecting equations & inequalities to graphs\nStatistical reasoning - inference 🧠"
   },
   {
-    "objectID": "materials/weather-data.html#some-of-the-high-highs",
-    "href": "materials/weather-data.html#some-of-the-high-highs",
-    "title": "Weather Data",
-    "section": "Some of the high Highs",
-    "text": "Some of the high Highs\n\n# A tibble: 1,428 × 7\n# Groups:   id, name, year, month [1,428]\n   id          name             year month element     n value\n   &lt;chr&gt;       &lt;chr&gt;           &lt;dbl&gt; &lt;ord&gt; &lt;chr&gt;   &lt;int&gt; &lt;dbl&gt;\n 1 USC00420738 BLANDING, UT US  2003 Jul   TMAX       31  123.\n 2 USC00420738 BLANDING, UT US  1905 Aug   TMAX       31  122.\n 3 USC00420738 BLANDING, UT US  2005 Jul   TMAX       31  120.\n 4 USC00420738 BLANDING, UT US  2002 Jul   TMAX       31  120.\n 5 USC00420738 BLANDING, UT US  1996 Jul   TMAX       31  120.\n 6 USC00420738 BLANDING, UT US  1994 Jul   TMAX       31  120.\n 7 USC00420738 BLANDING, UT US  1905 Jul   TMAX       31  119.\n 8 USC00420738 BLANDING, UT US  2007 Jul   TMAX       31  119.\n 9 USC00420738 BLANDING, UT US  2000 Jul   TMAX       31  119.\n10 USC00420738 BLANDING, UT US  2009 Jul   TMAX       31  119.\n# ℹ 1,418 more rows"
+    "objectID": "slides/why-graphics.html#connections-to-art-science-civics-media-literacy",
+    "href": "slides/why-graphics.html#connections-to-art-science-civics-media-literacy",
+    "title": "Why Graphics?",
+    "section": "Connections to Art, Science, Civics, Media Literacy",
+    "text": "Connections to Art, Science, Civics, Media Literacy\n\nScience: data collection📋, inference, estimation of constants 🌳🍎\nCivics: election maps🗺️, census, polling, charts about current events\nArt: personal data collection/visualization, generative art\nMedia Literacy: best/worst practices, claims & support\n\n\n\n\n\n\n\nTip\n\n\nThe US Census commissioned Statistical Atlases for the 1870, 1880, and 1890 censuses. They have amazing data visualizations of the US population during westward expansion."
   },
   {
-    "objectID": "materials/weather-data.html#model-maximum-temperatures",
-    "href": "materials/weather-data.html#model-maximum-temperatures",
-    "title": "Weather Data",
-    "section": "Model Maximum temperatures",
-    "text": "Model Maximum temperatures\n\n\nCall:\nlm(formula = value ~ I(year - 1905), data = filter(temps, element == \n    \"TMAX\"))\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-36.074 -16.113  -0.022  16.447  34.240 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    87.75975    0.94689  92.682   &lt;2e-16 ***\nI(year - 1905)  0.03130    0.01347   2.323   0.0203 *  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 17.66 on 1422 degrees of freedom\n  (4 observations deleted due to missingness)\nMultiple R-squared:  0.003781,  Adjusted R-squared:  0.00308 \nF-statistic: 5.397 on 1 and 1422 DF,  p-value: 0.02031"
+    "objectID": "slides/why-graphics.html#your-turn",
+    "href": "slides/why-graphics.html#your-turn",
+    "title": "Why Graphics?",
+    "section": "Your Turn",
+    "text": "Your Turn\n\nHow could data visualization connect to learning objectives for your grade(s) and subject(s)?\nWhat types of charts are most important for your students?\nWhat data would you like to show students?"
   },
   {
-    "objectID": "materials/weather-data.html#model-minimum-temperatures",
-    "href": "materials/weather-data.html#model-minimum-temperatures",
-    "title": "Weather Data",
-    "section": "Model Minimum temperatures",
-    "text": "Model Minimum temperatures\n\n\nCall:\nlm(formula = value ~ I(year - 1905), data = filter(temps, element == \n    \"TMIN\"))\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-37.751 -12.414  -0.677  12.857  30.301 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    59.70858    0.76504  78.046  &lt; 2e-16 ***\nI(year - 1905)  0.05597    0.01089   5.138 3.16e-07 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 14.29 on 1424 degrees of freedom\n  (2 observations deleted due to missingness)\nMultiple R-squared:  0.0182,    Adjusted R-squared:  0.01751 \nF-statistic:  26.4 on 1 and 1424 DF,  p-value: 3.161e-07"
+    "objectID": "slides/resources-opportunities.html#the-big-book-of-r",
+    "href": "slides/resources-opportunities.html#the-big-book-of-r",
+    "title": "Resources & Opportunities",
+    "section": "The Big Book of R",
+    "text": "The Big Book of R\n)"
   },
   {
-    "objectID": "materials/weather-data.html#so-many-more-questions",
-    "href": "materials/weather-data.html#so-many-more-questions",
-    "title": "Weather Data",
-    "section": "So many more questions",
-    "text": "So many more questions\n\nWhat is the first day of snowfall?\nHow long does the snow stay on the ground?\nDid the average snow depth change?\n\n\n\nWhat questions do you have? \n\n\n\n\nend of excursion"
+    "objectID": "slides/resources-opportunities.html#r-for-data-science",
+    "href": "slides/resources-opportunities.html#r-for-data-science",
+    "title": "Resources & Opportunities",
+    "section": "R for Data Science",
+    "text": "R for Data Science\n)"
+  },
+  {
+    "objectID": "slides/resources-opportunities.html#teaching-r-with-decoder",
+    "href": "slides/resources-opportunities.html#teaching-r-with-decoder",
+    "title": "Resources & Opportunities",
+    "section": "Teaching R with decoder",
+    "text": "Teaching R with decoder\nKelly Bodwin created a series of puzzles to reinforce different introductory R concepts.\n\nIndexing, matrix/vector creation, introductory debugging\nWriting functions and ciphers\nData Cleaning with dplyr\nSolving Crimes with lubridate\nRegression Diagnostics and Looney Tunes\nJoins with tidyr and Military Spending"
+  },
+  {
+    "objectID": "slides/resources-opportunities.html#materials-ive-made",
+    "href": "slides/resources-opportunities.html#materials-ive-made",
+    "title": "Resources & Opportunities",
+    "section": "Materials I’ve made",
+    "text": "Materials I’ve made\n\nStatistical Computing in R and Python - textbook for UNL (and soon USU?) statistical computing courses\nStat-assignments collection of assignments for data science and statistics classes\nWorksheets for Intro Statistics\n(some of these will need updated links)\n\nConfidence Intervals & The Great Emu War\nDifference of Proportions & Pandemics\nDifference of Means: Vampires & Wizards"
+  },
+  {
+    "objectID": "slides/personal-data.html#take-measure-of-your-surroundings",
+    "href": "slides/personal-data.html#take-measure-of-your-surroundings",
+    "title": "Personal Data Visualization",
+    "section": "Take measure of your surroundings",
+    "text": "Take measure of your surroundings\n\nPersonal and personally collected data is more fun/engaging to analyse"
+  },
+  {
+    "objectID": "slides/personal-data.html#namegrapher",
+    "href": "slides/personal-data.html#namegrapher",
+    "title": "Personal Data Visualization",
+    "section": "NameGrapher",
+    "text": "NameGrapher\nLaura and Martin Wattenberg’s approach to name their firstborn\nhttps://namerology.com/baby-name-grapher/\n ## Your Turn\n\nDid you first check your own name?\nHow many names start with a vowel?\nLautner or Swift? Which Taylor has more influence on baby names?\nWhat about Orange and Pink as kids’ names?"
+  },
+  {
+    "objectID": "slides/personal-data.html#praerie-dog-town",
+    "href": "slides/personal-data.html#praerie-dog-town",
+    "title": "Personal Data Visualization",
+    "section": "Praerie Dog Town",
+    "text": "Praerie Dog Town\nFrom a college-level course on Spatial Ecology: use GPS coordinates from a morning of measuring out a praerie dog town"
+  },
+  {
+    "objectID": "slides/personal-data.html#your-turn",
+    "href": "slides/personal-data.html#your-turn",
+    "title": "Personal Data Visualization",
+    "section": "Your Turn",
+    "text": "Your Turn\nWhat data could you collect and visualize with your class?\nReading logs? Habits?\nThe letter project: how long does it take to get the letter?\ne.g. Henry Kristin’s project"
+  },
+  {
+    "objectID": "slides/personal-data.html#relationship-between-distance-travelled-and-time",
+    "href": "slides/personal-data.html#relationship-between-distance-travelled-and-time",
+    "title": "Personal Data Visualization",
+    "section": "Relationship between Distance travelled and Time",
+    "text": "Relationship between Distance travelled and Time\nFrom Kristin Henry’s blog:\n\n\n\n\n\n\n\n\n\n\nWhich of these two charts do you like better for showing the relationship between distance travelled and days to reach destination?\nWhat chart would you suggest to use?"
+  },
+  {
+    "objectID": "slides/personal-data.html#an-approximate-re-creation-of-the-data",
+    "href": "slides/personal-data.html#an-approximate-re-creation-of-the-data",
+    "title": "Personal Data Visualization",
+    "section": "An approximate re-creation of the data",
+    "text": "An approximate re-creation of the data\nUsing Claude AI: “recreate the data from the chart”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAIs can’t ‘see’ for us, even when they just try to regenerate data (Clause was trying to resist because of the large number of overplotted lines)\nWhat patterns did Claude miss?"
+  },
+  {
+    "objectID": "slides/personal-data.html#re-creation-attempt-2",
+    "href": "slides/personal-data.html#re-creation-attempt-2",
+    "title": "Personal Data Visualization",
+    "section": "Re-creation attempt 2",
+    "text": "Re-creation attempt 2\nUsing Claude AI: “recreate the data from the chart; days are integer; there are only three observations with more than 14 days of time to destination”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat about now?\n\nMarginal distributions are not faithful: gaps along either of the axis is not preserved.\n2d clusters seem washed out"
+  },
+  {
+    "objectID": "slides/personal-data.html#a-different-attempt",
+    "href": "slides/personal-data.html#a-different-attempt",
+    "title": "Personal Data Visualization",
+    "section": "A different attempt",
+    "text": "A different attempt\nBased on a (larger) dataset published by Kristin Henry"
+  },
+  {
+    "objectID": "slides/personal-data.html#with-colour",
+    "href": "slides/personal-data.html#with-colour",
+    "title": "Personal Data Visualization",
+    "section": "With Colour",
+    "text": "With Colour"
+  },
+  {
+    "objectID": "slides/personal-data.html#and-now-a-scatterplot",
+    "href": "slides/personal-data.html#and-now-a-scatterplot",
+    "title": "Personal Data Visualization",
+    "section": "And now a Scatterplot",
+    "text": "And now a Scatterplot\n\n\n\n\n\n\n\n\n\nWhat do you see?\n\nThree clusters\n\n\nOnly for very large distances there is a positive relationship with the number of days to destination\n\n\nThere might be a hint of a positive association between the two variables in the first cluster (distances to 1250 miles)"
+  },
+  {
+    "objectID": "slides/introductions.html#visual-explorations",
+    "href": "slides/introductions.html#visual-explorations",
+    "title": "Visualization and Public Data",
+    "section": "Visual explorations",
+    "text": "Visual explorations\n We like to go on data explorations: Weather in Blanding"
+  },
+  {
+    "objectID": "slides/introductions.html#your-turn",
+    "href": "slides/introductions.html#your-turn",
+    "title": "Visualization and Public Data",
+    "section": "Your Turn",
+    "text": "Your Turn\nIntroduce yourself!\n\nYour Name\nWhat grade(s) and/or subject(s) you teach\nWhat you hope to learn from this workshop\nWhat type of data you geek out over"
+  },
+  {
+    "objectID": "slides/introductions.html#resources",
+    "href": "slides/introductions.html#resources",
+    "title": "Visualization and Public Data",
+    "section": "Resources",
+    "text": "Resources\n\nGlobal Historical Climatology Network (NOAA)\nUtah Weather\nUtah Weather Almanac\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+  },
+  {
+    "objectID": "Blanding.html",
+    "href": "Blanding.html",
+    "title": "Visualization & Public Data",
+    "section": "",
+    "text": "Blanding\n\nSeptember 25, 2026\nSession #1 of Data Science Workshop, 2:30 - 5:30 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:30 - 3:00\nIntroductions\n\n\n\n3:00 - 3:50\nWhy Graphics?\n\n\n\n3:50 - 4:00\nBreak\n\n\n\n4:00 - 5:30\nHow to Make Graphics\n\n\n\n\n\n\nSeptember 26, 2026\nSession #2 of Data Science Workshop, 9:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n9:00 - 9:50\nPerception\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:30\nShowcase of Public Data Resources\n\n\n\n10:30 - 11:00\nPersonal Data Projects\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Science Workshops 2026: Visualization and Public Data",
+    "section": "",
+    "text": "Welcome to the 2026 Data Science Workshops!"
+  },
+  {
+    "objectID": "index.html#resources-links",
+    "href": "index.html#resources-links",
+    "title": "Data Science Workshops 2026: Visualization and Public Data",
+    "section": "Resources & Links",
+    "text": "Resources & Links\n\nCheat Sheets for R packages\n\nConvenient set of cheat sheets used for Stat 1080 (introductory statistics) at USU\n\nTidy Tuesday is an R organization that posts a new public data set every week, and has since 2018. You can find the data, but there are also people who livestream analyzing the data, and those videos are on YouTube and are an excellent way to learn how to use the tidyverse set of packages (which include ggplot2)"
+  },
+  {
+    "objectID": "Roosevelt.html",
+    "href": "Roosevelt.html",
+    "title": "Visualization & Public Data",
+    "section": "",
+    "text": "Roosevelt\n\nOctober 1, 2026\nSession #1 of Data Science Workshop, 2:00 - 5:00 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:00 - 2:30\nIntroductions\n\n\n\n2:30 - 3:20\nWhy Graphics?\n\n\n\n3:20 - 3:30\nBreak\n\n\n\n3:30 - 4:20\nHow to Make Graphics\n\n\n\n4:20 - 4:30\nBreak\n\n\n\n4:30 - 5:00\nPerception & Graphics\n\n\n\n\n\n\nOctober 2, 2026\nSession #2 of Data Science Workshop, 8:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n8:00 - 8:50\nPublic Data Showcase\n\n\n\n8:50 - 9:00\nBreak\n\n\n\n9:00 - 9:50\nTheming & Customizing Charts\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nPersonal Data Activities\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities"
+  },
+  {
+    "objectID": "slides/how-graphics.html#first-things-first",
+    "href": "slides/how-graphics.html#first-things-first",
+    "title": "How to Make Graphics",
+    "section": "First Things First!",
+    "text": "First Things First!\nBefore we start creating graphics…\nKnow the type and format of the data you’re working with.\n\nWhy?\n\nthe data contains all of the information you want to convey\nthe appropriate chart depends on the data type\nWorking with R and ggplot is much easier if the data you use is in the right shape"
+  },
+  {
+    "objectID": "slides/how-graphics.html#data-levels-of-measurement",
+    "href": "slides/how-graphics.html#data-levels-of-measurement",
+    "title": "How to Make Graphics",
+    "section": "Data: levels of measurement",
+    "text": "Data: levels of measurement\nQuantitative\n\nContinuous (e.g. height, weight)\nDiscrete (e.g. age in years)\n\nQualitative\n\nNominal: categories have no meaningful order (e.g. colors)\nOrdinal: categories have order but no meaningful distance between categories (e.g. five star ratings)"
+  },
+  {
+    "objectID": "slides/how-graphics.html#data-dimensions-and-type",
+    "href": "slides/how-graphics.html#data-dimensions-and-type",
+    "title": "How to Make Graphics",
+    "section": "Data: Dimensions and Type",
+    "text": "Data: Dimensions and Type\n\n\n\nDimensions\nTypes\n\n\n\n\nUnivariate (1 variable)\nCount (word freq, scores)\n\n\nBivariate (2 variables)\nTime Series, Relationships\n\n\nMultivariate (3 variables)\nSpatial\n\n\n\nTime to Event (Survival, Reliability)\n\n\n\nCategorical"
+  },
+  {
+    "objectID": "slides/how-graphics.html#exploring-relationships",
+    "href": "slides/how-graphics.html#exploring-relationships",
+    "title": "How to Make Graphics",
+    "section": "Exploring Relationships",
+    "text": "Exploring Relationships\n\n\n\n\n\n\nResources\n\n\nData to Viz - figure out what type(s) of chart to use for your data (use with an ad blocker)\n\n\n\n\n\n\nContinuous vs. Continuous\n\n\n\n\n\nscatter plot\n\n\n\n\n\n\n\nline plot\n\n\n\n\n\n\n\n2D density plot\n\n\n\n\n\n\n\narea plot\n\n\n\n\n\n\nContinuous vs. Categorical\n\n\n\n\n\nboxplot\n\n\n\n\n\n\n\ndotcharts\n\n\n\n\n\n\n\nmultiple density plots\n\n\n\n\n\n\n\nviolin plots\n\n\n\n\n\n\nCategorical vs. Categorical\n\n\n\n\n\nmosaic plot\n\n\n\n\n\n\n\nheat map\n\n\n\n\n\n\n\ngrouped barplot\n\n\n\n\n\n\n\nstacked barplots\n\n\n\n\n\n\n\n\nMultidimensional\n\n\nIt depends…"
+  },
+  {
+    "objectID": "slides/how-graphics.html#tidy-data",
+    "href": "slides/how-graphics.html#tidy-data",
+    "title": "How to Make Graphics",
+    "section": "Tidy Data",
+    "text": "Tidy Data\n\n\n\nTidy Data: each variable is a column, each observation is a row, each cell is a single measurement\n\n\nggplot2 assumes your data is tidy"
+  },
+  {
+    "objectID": "slides/how-graphics.html#untidy-data",
+    "href": "slides/how-graphics.html#untidy-data",
+    "title": "How to Make Graphics",
+    "section": "Untidy data",
+    "text": "Untidy data\n\nHappy families are all alike; every unhappy family is unhappy in its own way. - Leo Tolstoy\n\n\nFive main ways tables of data tend not to be tidy\n\n\nColumn headers are values, not variable names.\nMultiple variables are stored in one column.\nVariables are stored in both rows and columns.\nMultiple types of observational units are stored in the same table.\nA single observational unit is stored in multiple tables.\n\n\n\n\n\n\n\n\nTip\n\n\nAI can be very useful to help you find the right R commands to move from untidy to tidy data.\nOther resources: Reshaping Data, a chapter in Statistical Computing in R and Python (free website)"
+  },
+  {
+    "objectID": "slides/how-graphics.html#ggplot2-basics",
+    "href": "slides/how-graphics.html#ggplot2-basics",
+    "title": "How to Make Graphics",
+    "section": "ggplot2 basics",
+    "text": "ggplot2 basics\nggplot2 is based on the grammar of graphics - every chart is based on the same components:\n\na data set,\ncoordinate system,\ngeoms – visual marks that represent data points\n\nValues from the data set are mapped to properties of the geom using aesthetics like size, color, and/or x and y location"
+  },
+  {
+    "objectID": "slides/how-graphics.html#ggplot2-basics-1",
+    "href": "slides/how-graphics.html#ggplot2-basics-1",
+    "title": "How to Make Graphics",
+    "section": "ggplot2 basics",
+    "text": "ggplot2 basics\nggplot2 is based on the grammar of graphics - every chart is based on the same components:\n\na data set,\ncoordinate system,\ngeoms – visual marks that represent data points\n\nValues from the data set are mapped to properties of the geom using aesthetics like size, color, and/or x and y location"
+  },
+  {
+    "objectID": "slides/how-graphics.html#how-to-build-a-graph",
+    "href": "slides/how-graphics.html#how-to-build-a-graph",
+    "title": "How to Make Graphics",
+    "section": "How to build a graph",
+    "text": "How to build a graph\nggplot(data = mpg, aes(x = class, y = hwy))\n\nThis will begin a plot that you can finish by adding layers to.\nYou can add one geom per layer"
+  },
+  {
+    "objectID": "slides/how-graphics.html#what-is-a-geom",
+    "href": "slides/how-graphics.html#what-is-a-geom",
+    "title": "How to Make Graphics",
+    "section": "What is a geom?",
+    "text": "What is a geom?\n\nA geom function represents data points\nAesthetic properties represent variables"
+  },
+  {
+    "objectID": "slides/how-graphics.html#geom-options-geom_xxx",
+    "href": "slides/how-graphics.html#geom-options-geom_xxx",
+    "title": "How to Make Graphics",
+    "section": "Geom Options: geom_xxx",
+    "text": "Geom Options: geom_xxx\n\n\n\n\n\nPrimitives\n\n\n\n\n\n\n\n\npath\n\n\n\n\n\n\n\npolygon\n\n\n\n\n\n\n\nrect\n\n\n\n\n\n\n\nribbon\n\n\n\n\n\n\n\ncurve\n\n\n\n\n\n\n\n\n\n\n\nTwo Continuous Variables\n\n\n\n\n\nFunctions\n\n\n\n\n\narea\n\n\n\n\n\n\n\nline\n\n\n\n\n\n\n\nstep\n\n\n\n\n\n\nRelationships\n\n\n\n\n\npoint\n\n\n\n\n\n\n\nsmooth\n\n\n\n\n\n\n\ntext\n\n\n\n\n\n\nDistributions\n\n\n\n\n\nbin2d\n\n\n\n\n\n\n\ndensity2d\n\n\n\n\n\n\n\nhex\n\n\n\n\n\n\n\n\n\n\n\n\nOne Variable\n\n\n\n\n\nDiscrete\n\n\n \n\n\nContinuous\n\n\n\n\n\n\n\nbar\n\n\n\n\n \n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nhistogram\n\n\n\n\n\n\n\ndensity\n\n\n\n\n\n\n\n\n\n\n\nDiscrete + Continuous\n\n\n\n\n\n\n\n\ncol\n\n\n\n\n\n\n\nboxplot\n\n\n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nviolin\n\n\n\n\n\n\n\n\n\n\n\nTwo Discrete\n\n\n\n\n\n\n\n\ncount\n\n\n\n\n\n\n\njitter"
+  },
+  {
+    "objectID": "slides/how-graphics.html#what-is-a-layer",
+    "href": "slides/how-graphics.html#what-is-a-layer",
+    "title": "How to Make Graphics",
+    "section": "What is a layer?",
+    "text": "What is a layer?\n\nDetermines the physical representation of the data\nData + mappings + statistical transformation + geom = a layer\nA plot may have multiple layers"
+  },
+  {
+    "objectID": "slides/how-graphics.html#your-turn",
+    "href": "slides/how-graphics.html#your-turn",
+    "title": "How to Make Graphics",
+    "section": "Your Turn",
+    "text": "Your Turn\nChange the code below to have the points on top of the boxplots.\n\nggplot(data = mpg, aes(x = class, y = hwy)) +\n  geom_jitter() +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy",
+    "href": "slides/how-graphics.html#favorite-halloween-candy",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nHalloween candy preference data \n\nDoesn’t add up to 100%, so I’ve adjusted “Other” category\n\nWe’ll assume 27% Democrats, 27% Republicans, 46% Independents and not consider political party"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-1",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-1",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\n\n\n\nggplot(data = candy_sum, \n       aes(x = candy, y = overall, \n           fill = candy)) +\n  geom_col() +\n  geom_text(aes(label = label), \n            hjust = -0.1) + \n  coord_flip() + \n  ylab(\"Percent\") + \n  xlab(\"\") + \n  ggtitle(\"Favorite US Halloween Candy\") +\n  scale_y_continuous(limits = c(0, 35)) +\n  guides(fill = \"none\")"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-2",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-2",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nDefine base plot and extra theme bits:\n\nbase_plot &lt;- candy_short |&gt;\n  ggplot(aes(x = candy, \n             y = overall, \n             label = label,\n             fill = candy, \n             color = candy)) \n\n\nlabels &lt;- list(ylab(\"Percent\"),\n               xlab(\"\"),\n               ggtitle(\"Favorite US Halloween Candy\"),\n               guides(fill = \"none\", color = \"none\"))\n\nstack_extras &lt;- list(theme(panel.grid = element_blank(),\n                           axis.text.x = element_blank(),\n                           axis.title.x = element_blank(),\n                           axis.ticks.x = element_blank())) \n\npolar_extras &lt;- list(theme(axis.text = element_blank(), \n                           axis.title = element_blank(), \n                           axis.ticks = element_blank(), \n                           panel.grid = element_blank()))"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-3",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-3",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\n\nbase_plot + \n  geom_col() + \n  labels"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-4",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-4",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nBasic Bar Chart\n\n\n\nbase_plot +\n  labels + \n  geom_col(aes(x = candy),\n           position = \"identity\" ) + \n  geom_label(aes(x = candy), \n             text.color = \"black\",\n             fill = \"white\", \n             size = 3)"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-5",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-5",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nPosition: Stack\n\n\n\nbase_plot  +\n  labels + stack_extras +\n  geom_col(aes(x = 0), \n           position = \"stack\") +\n  geom_label(aes(x = 0, y = pos), \n             text.color = \"black\",\n             fill = \"white\", \n             size = 3)"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-6",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-6",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nCoordinates: Polar\n\n\n\nbase_plot +\n  labels + polar_extras + \n  geom_col(aes(x = 0), \n           position = \"stack\") +\n  geom_label(aes(x = 0.65,  y = pos), \n             text.color = \"black\", \n             fill = \"white\",\n             size = 3) +\n  coord_polar(theta = \"y\", start = pi)"
+  },
+  {
+    "objectID": "slides/how-graphics.html#favorite-halloween-candy-7",
+    "href": "slides/how-graphics.html#favorite-halloween-candy-7",
+    "title": "How to Make Graphics",
+    "section": "Favorite Halloween Candy",
+    "text": "Favorite Halloween Candy\nCoordinates: Polar\n\n\n\nbase_plot + \n  labels + polar_extras + \n  geom_col(aes(x = 2), \n           position = \"stack\") +\n  geom_label(aes(x = 2.75, y = pos), \n             text.color = \"black\", \n             fill = \"white\",\n             size = 3) + \n  coord_polar(theta = \"y\", start = pi) +\n  scale_x_continuous(limits = c(0, 3))"
   },
   {
     "objectID": "slides/perception.html#what-do-you-see",
@@ -308,339 +588,80 @@
     "text": "Additional Resources\n\nMaps in ggplot2\n\nggplot2 book chapter\nMapping with ggplot2 (Workshop)\nr-spatial ggplot2 maps tutorial\n\nGeneral references\n\nR graphics Cookbook\nData Visualization Catalogue"
   },
   {
-    "objectID": "slides/how-graphics.html#first-things-first",
-    "href": "slides/how-graphics.html#first-things-first",
-    "title": "How to Make Graphics",
-    "section": "First Things First!",
-    "text": "First Things First!\nBefore we start creating graphics…\nKnow the type and format of the data you’re working with.\n\nWhy?\n\nthe data contains all of the information you want to convey\nthe appropriate chart depends on the data type\nWorking with R and ggplot is much easier if the data you use is in the right shape"
+    "objectID": "materials/weather-data.html#weather-stations-in-utah-30-years-plus",
+    "href": "materials/weather-data.html#weather-stations-in-utah-30-years-plus",
+    "title": "Weather Data",
+    "section": "Weather Stations in Utah (30 years plus)",
+    "text": "Weather Stations in Utah (30 years plus)\nClicking on point downloads data"
   },
   {
-    "objectID": "slides/how-graphics.html#data-levels-of-measurement",
-    "href": "slides/how-graphics.html#data-levels-of-measurement",
-    "title": "How to Make Graphics",
-    "section": "Data: levels of measurement",
-    "text": "Data: levels of measurement\nQuantitative\n\nContinuous (e.g. height, weight)\nDiscrete (e.g. age in years)\n\nQualitative\n\nNominal: categories have no meaningful order (e.g. colors)\nOrdinal: categories have order but no meaningful distance between categories (e.g. five star ratings)"
+    "objectID": "materials/weather-data.html#weather-in-blanding",
+    "href": "materials/weather-data.html#weather-in-blanding",
+    "title": "Weather Data",
+    "section": "Weather in Blanding",
+    "text": "Weather in Blanding\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStation in BLANDING, UT US reported daily from 1904-11-26 to 2026-07-05 (pre-dates founding of the city)\nObserved Measurements\n\nTMAX = Maximum temperature (tenths of degrees C)\nTMIN = Minimum temperature (tenths of degrees C)\nPRCP = Precipitation (tenths of mm)\nSNOW = Snowfall (mm)\nSNWD = Snow depth (mm)\n\nSource for checking on unusual observations: Daily Almanac"
   },
   {
-    "objectID": "slides/how-graphics.html#data-dimensions-and-type",
-    "href": "slides/how-graphics.html#data-dimensions-and-type",
-    "title": "How to Make Graphics",
-    "section": "Data: Dimensions and Type",
-    "text": "Data: Dimensions and Type\n\n\n\nDimensions\nTypes\n\n\n\n\nUnivariate (1 variable)\nCount (word freq, scores)\n\n\nBivariate (2 variables)\nTime Series, Relationships\n\n\nMultivariate (3 variables)\nSpatial\n\n\n\nTime to Event (Survival, Reliability)\n\n\n\nCategorical"
+    "objectID": "materials/weather-data.html#daily-precipitation",
+    "href": "materials/weather-data.html#daily-precipitation",
+    "title": "Weather Data",
+    "section": "Daily Precipitation",
+    "text": "Daily Precipitation\nAverage daily precipitation is 0.0350394 inch, but it rained only on 7220 out of 43094 recorded days."
   },
   {
-    "objectID": "slides/how-graphics.html#exploring-relationships",
-    "href": "slides/how-graphics.html#exploring-relationships",
-    "title": "How to Make Graphics",
-    "section": "Exploring Relationships",
-    "text": "Exploring Relationships\n\n\n\n\n\n\nResources\n\n\nData to Viz - figure out what type(s) of chart to use for your data (use with an ad blocker)\n\n\n\n\n\n\nContinuous vs. Continuous\n\n\n\n\n\nscatter plot\n\n\n\n\n\n\n\nline plot\n\n\n\n\n\n\n\n2D density plot\n\n\n\n\n\n\n\narea plot\n\n\n\n\n\n\nContinuous vs. Categorical\n\n\n\n\n\nboxplot\n\n\n\n\n\n\n\ndotcharts\n\n\n\n\n\n\n\nmultiple density plots\n\n\n\n\n\n\n\nviolin plots\n\n\n\n\n\n\nCategorical vs. Categorical\n\n\n\n\n\nmosaic plot\n\n\n\n\n\n\n\nheat map\n\n\n\n\n\n\n\ngrouped barplot\n\n\n\n\n\n\n\nstacked barplots\n\n\n\n\n\n\n\n\nMultidimensional\n\n\nIt depends…"
+    "objectID": "materials/weather-data.html#yearly-total-precipitation",
+    "href": "materials/weather-data.html#yearly-total-precipitation",
+    "title": "Weather Data",
+    "section": "Yearly Total Precipitation",
+    "text": "Yearly Total Precipitation\n\nNote: totals are rescaled to 365 days in a year (b/c leap years, missing data)"
   },
   {
-    "objectID": "slides/how-graphics.html#tidy-data",
-    "href": "slides/how-graphics.html#tidy-data",
-    "title": "How to Make Graphics",
-    "section": "Tidy Data",
-    "text": "Tidy Data\n\n\n\nTidy Data: each variable is a column, each observation is a row, each cell is a single measurement\n\n\nggplot2 assumes your data is tidy"
+    "objectID": "materials/weather-data.html#yearly-total-precipitation-2",
+    "href": "materials/weather-data.html#yearly-total-precipitation-2",
+    "title": "Weather Data",
+    "section": "Yearly Total Precipitation (2)",
+    "text": "Yearly Total Precipitation (2)"
   },
   {
-    "objectID": "slides/how-graphics.html#untidy-data",
-    "href": "slides/how-graphics.html#untidy-data",
-    "title": "How to Make Graphics",
-    "section": "Untidy data",
-    "text": "Untidy data\n\nHappy families are all alike; every unhappy family is unhappy in its own way. - Leo Tolstoy\n\n\nFive main ways tables of data tend not to be tidy\n\n\nColumn headers are values, not variable names.\nMultiple variables are stored in one column.\nVariables are stored in both rows and columns.\nMultiple types of observational units are stored in the same table.\nA single observational unit is stored in multiple tables.\n\n\n\n\n\n\n\n\nTip\n\n\nAI can be very useful to help you find the right R commands to move from untidy to tidy data.\nOther resources: Reshaping Data, a chapter in Statistical Computing in R and Python (free website)"
+    "objectID": "materials/weather-data.html#yearly-total-precipitation-3",
+    "href": "materials/weather-data.html#yearly-total-precipitation-3",
+    "title": "Weather Data",
+    "section": "Yearly Total Precipitation (3)",
+    "text": "Yearly Total Precipitation (3)\n\n\n\nCall:\nlm(formula = value/254 ~ I(year - 1905), data = prcp)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-13.5617  -2.3962  -0.1296   2.5266   9.1649 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    13.66773    0.72805  18.773   &lt;2e-16 ***\nI(year - 1905) -0.01768    0.01044  -1.693   0.0931 .  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 4.112 on 121 degrees of freedom\nMultiple R-squared:  0.02313,   Adjusted R-squared:  0.01506 \nF-statistic: 2.866 on 1 and 121 DF,  p-value: 0.09306"
   },
   {
-    "objectID": "slides/how-graphics.html#ggplot2-basics",
-    "href": "slides/how-graphics.html#ggplot2-basics",
-    "title": "How to Make Graphics",
-    "section": "ggplot2 basics",
-    "text": "ggplot2 basics\nggplot2 is based on the grammar of graphics - every chart is based on the same components:\n\na data set,\ncoordinate system,\ngeoms – visual marks that represent data points\n\nValues from the data set are mapped to properties of the geom using aesthetics like size, color, and/or x and y location"
+    "objectID": "materials/weather-data.html#monthly-temperatures",
+    "href": "materials/weather-data.html#monthly-temperatures",
+    "title": "Weather Data",
+    "section": "Monthly Temperatures",
+    "text": "Monthly Temperatures"
   },
   {
-    "objectID": "slides/how-graphics.html#ggplot2-basics-1",
-    "href": "slides/how-graphics.html#ggplot2-basics-1",
-    "title": "How to Make Graphics",
-    "section": "ggplot2 basics",
-    "text": "ggplot2 basics\nggplot2 is based on the grammar of graphics - every chart is based on the same components:\n\na data set,\ncoordinate system,\ngeoms – visual marks that represent data points\n\nValues from the data set are mapped to properties of the geom using aesthetics like size, color, and/or x and y location"
+    "objectID": "materials/weather-data.html#some-of-the-high-highs",
+    "href": "materials/weather-data.html#some-of-the-high-highs",
+    "title": "Weather Data",
+    "section": "Some of the high Highs",
+    "text": "Some of the high Highs\n\n# A tibble: 1,428 × 7\n# Groups:   id, name, year, month [1,428]\n   id          name             year month element     n value\n   &lt;chr&gt;       &lt;chr&gt;           &lt;dbl&gt; &lt;ord&gt; &lt;chr&gt;   &lt;int&gt; &lt;dbl&gt;\n 1 USC00420738 BLANDING, UT US  2003 Jul   TMAX       31  123.\n 2 USC00420738 BLANDING, UT US  1905 Aug   TMAX       31  122.\n 3 USC00420738 BLANDING, UT US  2005 Jul   TMAX       31  120.\n 4 USC00420738 BLANDING, UT US  2002 Jul   TMAX       31  120.\n 5 USC00420738 BLANDING, UT US  1996 Jul   TMAX       31  120.\n 6 USC00420738 BLANDING, UT US  1994 Jul   TMAX       31  120.\n 7 USC00420738 BLANDING, UT US  1905 Jul   TMAX       31  119.\n 8 USC00420738 BLANDING, UT US  2007 Jul   TMAX       31  119.\n 9 USC00420738 BLANDING, UT US  2000 Jul   TMAX       31  119.\n10 USC00420738 BLANDING, UT US  2009 Jul   TMAX       31  119.\n# ℹ 1,418 more rows"
   },
   {
-    "objectID": "slides/how-graphics.html#how-to-build-a-graph",
-    "href": "slides/how-graphics.html#how-to-build-a-graph",
-    "title": "How to Make Graphics",
-    "section": "How to build a graph",
-    "text": "How to build a graph\nggplot(data = mpg, aes(x = class, y = hwy))\n\nThis will begin a plot that you can finish by adding layers to.\nYou can add one geom per layer"
+    "objectID": "materials/weather-data.html#model-maximum-temperatures",
+    "href": "materials/weather-data.html#model-maximum-temperatures",
+    "title": "Weather Data",
+    "section": "Model Maximum temperatures",
+    "text": "Model Maximum temperatures\n\n\nCall:\nlm(formula = value ~ I(year - 1905), data = filter(temps, element == \n    \"TMAX\"))\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-36.074 -16.113  -0.022  16.447  34.240 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    87.75975    0.94689  92.682   &lt;2e-16 ***\nI(year - 1905)  0.03130    0.01347   2.323   0.0203 *  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 17.66 on 1422 degrees of freedom\n  (4 observations deleted due to missingness)\nMultiple R-squared:  0.003781,  Adjusted R-squared:  0.00308 \nF-statistic: 5.397 on 1 and 1422 DF,  p-value: 0.02031"
   },
   {
-    "objectID": "slides/how-graphics.html#what-is-a-geom",
-    "href": "slides/how-graphics.html#what-is-a-geom",
-    "title": "How to Make Graphics",
-    "section": "What is a geom?",
-    "text": "What is a geom?\n\nA geom function represents data points\nAesthetic properties represent variables"
+    "objectID": "materials/weather-data.html#model-minimum-temperatures",
+    "href": "materials/weather-data.html#model-minimum-temperatures",
+    "title": "Weather Data",
+    "section": "Model Minimum temperatures",
+    "text": "Model Minimum temperatures\n\n\nCall:\nlm(formula = value ~ I(year - 1905), data = filter(temps, element == \n    \"TMIN\"))\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-37.751 -12.414  -0.677  12.857  30.301 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    59.70858    0.76504  78.046  &lt; 2e-16 ***\nI(year - 1905)  0.05597    0.01089   5.138 3.16e-07 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 14.29 on 1424 degrees of freedom\n  (2 observations deleted due to missingness)\nMultiple R-squared:  0.0182,    Adjusted R-squared:  0.01751 \nF-statistic:  26.4 on 1 and 1424 DF,  p-value: 3.161e-07"
   },
   {
-    "objectID": "slides/how-graphics.html#geom-options-geom_xxx",
-    "href": "slides/how-graphics.html#geom-options-geom_xxx",
-    "title": "How to Make Graphics",
-    "section": "Geom Options: geom_xxx",
-    "text": "Geom Options: geom_xxx\n\n\n\n\n\nPrimitives\n\n\n\n\n\n\n\n\npath\n\n\n\n\n\n\n\npolygon\n\n\n\n\n\n\n\nrect\n\n\n\n\n\n\n\nribbon\n\n\n\n\n\n\n\ncurve\n\n\n\n\n\n\n\n\n\n\n\nTwo Continuous Variables\n\n\n\n\n\nFunctions\n\n\n\n\n\narea\n\n\n\n\n\n\n\nline\n\n\n\n\n\n\n\nstep\n\n\n\n\n\n\nRelationships\n\n\n\n\n\npoint\n\n\n\n\n\n\n\nsmooth\n\n\n\n\n\n\n\ntext\n\n\n\n\n\n\nDistributions\n\n\n\n\n\nbin2d\n\n\n\n\n\n\n\ndensity2d\n\n\n\n\n\n\n\nhex\n\n\n\n\n\n\n\n\n\n\n\n\nOne Variable\n\n\n\n\n\nDiscrete\n\n\n \n\n\nContinuous\n\n\n\n\n\n\n\nbar\n\n\n\n\n \n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nhistogram\n\n\n\n\n\n\n\ndensity\n\n\n\n\n\n\n\n\n\n\n\nDiscrete + Continuous\n\n\n\n\n\n\n\n\ncol\n\n\n\n\n\n\n\nboxplot\n\n\n\n\n\n\n\ndotplot\n\n\n\n\n\n\n\nviolin\n\n\n\n\n\n\n\n\n\n\n\nTwo Discrete\n\n\n\n\n\n\n\n\ncount\n\n\n\n\n\n\n\njitter"
-  },
-  {
-    "objectID": "slides/how-graphics.html#what-is-a-layer",
-    "href": "slides/how-graphics.html#what-is-a-layer",
-    "title": "How to Make Graphics",
-    "section": "What is a layer?",
-    "text": "What is a layer?\n\nDetermines the physical representation of the data\nData + mappings + statistical transformation + geom = a layer\nA plot may have multiple layers"
-  },
-  {
-    "objectID": "slides/how-graphics.html#your-turn",
-    "href": "slides/how-graphics.html#your-turn",
-    "title": "How to Make Graphics",
-    "section": "Your Turn",
-    "text": "Your Turn\nChange the code below to have the points on top of the boxplots.\n\nggplot(data = mpg, aes(x = class, y = hwy)) +\n  geom_jitter() +\n  geom_boxplot()"
-  },
-  {
-    "objectID": "slides/how-graphics.html#favorite-halloween-candy",
-    "href": "slides/how-graphics.html#favorite-halloween-candy",
-    "title": "How to Make Graphics",
-    "section": "Favorite Halloween Candy",
-    "text": "Favorite Halloween Candy\nHalloween candy preference data \n\nDoesn’t add up to 100%, so I’ve adjusted “Other” category\n\nWe’ll assume 27% Democrats, 27% Republicans, 46% Independents and not consider political party"
-  },
-  {
-    "objectID": "slides/how-graphics.html#favorite-halloween-candy-1",
-    "href": "slides/how-graphics.html#favorite-halloween-candy-1",
-    "title": "How to Make Graphics",
-    "section": "Favorite Halloween Candy",
-    "text": "Favorite Halloween Candy\n\n\n\nggplot(data = candy_sum, \n       aes(x = candy, y = overall, \n           fill = candy)) +\n  geom_col() +\n  geom_text(aes(label = label), \n            hjust = -0.1) + \n  coord_flip() + \n  ylab(\"Percent\") + \n  xlab(\"\") + \n  ggtitle(\"Favorite US Halloween Candy\") +\n  scale_y_continuous(limits = c(0, 35)) +\n  guides(fill = \"none\")"
-  },
-  {
-    "objectID": "slides/how-graphics.html#favorite-halloween-candy-2",
-    "href": "slides/how-graphics.html#favorite-halloween-candy-2",
-    "title": "How to Make Graphics",
-    "section": "Favorite Halloween Candy",
-    "text": "Favorite Halloween Candy\nDefine base plot and extra theme bits:\n\nbase_plot &lt;- candy_short |&gt;\n  ggplot(aes(x = candy, \n             y = overall, \n             label = label,\n             fill = candy, \n             color = candy)) \n\n\nlabels &lt;- list(ylab(\"Percent\"),\n               xlab(\"\"),\n               ggtitle(\"Favorite US Halloween Candy\"),\n               guides(fill = \"none\", color = \"none\"))\n\nstack_extras &lt;- list(theme(panel.grid = element_blank(),\n                           axis.text.x = element_blank(),\n                           axis.title.x = element_blank(),\n                           axis.ticks.x = element_blank())) \n\npolar_extras &lt;- list(theme(axis.text = element_blank(), \n                           axis.title = element_blank(), \n                           axis.ticks = element_blank(), \n                           panel.grid = element_blank()))"
-  },
-  {
-    "objectID": "slides/how-graphics.html#favorite-halloween-candy-3",
-    "href": "slides/how-graphics.html#favorite-halloween-candy-3",
-    "title": "How to Make Graphics",
-    "section": "Favorite Halloween Candy",
-    "text": "Favorite Halloween Candy\n\nbase_plot + \n  geom_col() + \n  labels"
-  },
-  {
-    "objectID": "slides/how-graphics.html#favorite-halloween-candy-4",
-    "href": "slides/how-graphics.html#favorite-halloween-candy-4",
-    "title": "How to Make Graphics",
-    "section": "Favorite Halloween Candy",
-    "text": "Favorite Halloween Candy\nBasic Bar Chart\n\n\n\nbase_plot +\n  labels + \n  geom_col(aes(x = candy),\n           position = \"identity\" ) + \n  geom_label(aes(x = candy), \n             text.color = \"black\",\n             fill = \"white\", \n             size = 3)"
-  },
-  {
-    "objectID": "slides/how-graphics.html#favorite-halloween-candy-5",
-    "href": "slides/how-graphics.html#favorite-halloween-candy-5",
-    "title": "How to Make Graphics",
-    "section": "Favorite Halloween Candy",
-    "text": "Favorite Halloween Candy\nPosition: Stack\n\n\n\nbase_plot  +\n  labels + stack_extras +\n  geom_col(aes(x = 0), \n           position = \"stack\") +\n  geom_label(aes(x = 0, y = pos), \n             text.color = \"black\",\n             fill = \"white\", \n             size = 3)"
-  },
-  {
-    "objectID": "slides/how-graphics.html#favorite-halloween-candy-6",
-    "href": "slides/how-graphics.html#favorite-halloween-candy-6",
-    "title": "How to Make Graphics",
-    "section": "Favorite Halloween Candy",
-    "text": "Favorite Halloween Candy\nCoordinates: Polar\n\n\n\nbase_plot +\n  labels + polar_extras + \n  geom_col(aes(x = 0), \n           position = \"stack\") +\n  geom_label(aes(x = 0.65,  y = pos), \n             text.color = \"black\", \n             fill = \"white\",\n             size = 3) +\n  coord_polar(theta = \"y\", start = pi)"
-  },
-  {
-    "objectID": "slides/how-graphics.html#favorite-halloween-candy-7",
-    "href": "slides/how-graphics.html#favorite-halloween-candy-7",
-    "title": "How to Make Graphics",
-    "section": "Favorite Halloween Candy",
-    "text": "Favorite Halloween Candy\nCoordinates: Polar\n\n\n\nbase_plot + \n  labels + polar_extras + \n  geom_col(aes(x = 2), \n           position = \"stack\") +\n  geom_label(aes(x = 2.75, y = pos), \n             text.color = \"black\", \n             fill = \"white\",\n             size = 3) + \n  coord_polar(theta = \"y\", start = pi) +\n  scale_x_continuous(limits = c(0, 3))"
-  },
-  {
-    "objectID": "Roosevelt.html",
-    "href": "Roosevelt.html",
-    "title": "Visualization & Public Data",
-    "section": "",
-    "text": "Roosevelt\n\nOctober 1, 2026\nSession #1 of Data Science Workshop, 2:00 - 5:00 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:00 - 2:30\nIntroductions\n\n\n\n2:30 - 3:20\nWhy Graphics?\n\n\n\n3:20 - 3:30\nBreak\n\n\n\n3:30 - 4:20\nHow to Make Graphics\n\n\n\n4:20 - 4:30\nBreak\n\n\n\n4:30 - 5:00\nPerception & Graphics\n\n\n\n\n\n\nOctober 2, 2026\nSession #2 of Data Science Workshop, 8:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n8:00 - 8:50\nPublic Data Showcase\n\n\n\n8:50 - 9:00\nBreak\n\n\n\n9:00 - 9:50\nTheming & Customizing Charts\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:50\nPersonal Data Activities\n\n\n\n10:50 - 11:00\nBreak\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data Science Workshops 2026: Visualization and Public Data",
-    "section": "",
-    "text": "Welcome to the 2026 Data Science Workshops!"
-  },
-  {
-    "objectID": "index.html#resources-links",
-    "href": "index.html#resources-links",
-    "title": "Data Science Workshops 2026: Visualization and Public Data",
-    "section": "Resources & Links",
-    "text": "Resources & Links\n\nCheat Sheets for R packages\n\nConvenient set of cheat sheets used for Stat 1080 (introductory statistics) at USU\n\nTidy Tuesday is an R organization that posts a new public data set every week, and has since 2018. You can find the data, but there are also people who livestream analyzing the data, and those videos are on YouTube and are an excellent way to learn how to use the tidyverse set of packages (which include ggplot2)"
-  },
-  {
-    "objectID": "Blanding.html",
-    "href": "Blanding.html",
-    "title": "Visualization & Public Data",
-    "section": "",
-    "text": "Blanding\n\nSeptember 25, 2026\nSession #1 of Data Science Workshop, 2:30 - 5:30 pm\n\nSchedule for Workshop Session #1. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n2:30 - 3:00\nIntroductions\n\n\n\n3:00 - 3:50\nWhy Graphics?\n\n\n\n3:50 - 4:00\nBreak\n\n\n\n4:00 - 5:30\nHow to Make Graphics\n\n\n\n\n\n\nSeptember 26, 2026\nSession #2 of Data Science Workshop, 9:00 am - 12:00 pm\n\nSchedule for Workshop Session #2. Slides are linked for each topic.\n\n\nTime\nTopic\nMaterials\n\n\n\n\n9:00 - 9:50\nPerception\n\n\n\n9:50 - 10:00\nBreak\n\n\n\n10:00 - 10:30\nShowcase of Public Data Resources\n\n\n\n10:30 - 11:00\nPersonal Data Projects\n\n\n\n11:00 - 12:00\nDiscussion: Resources and Opportunities"
-  },
-  {
-    "objectID": "slides/introductions.html#visual-explorations",
-    "href": "slides/introductions.html#visual-explorations",
-    "title": "Visualization and Public Data",
-    "section": "Visual explorations",
-    "text": "Visual explorations\n We like to go on data explorations: Weather in Blanding"
-  },
-  {
-    "objectID": "slides/introductions.html#your-turn",
-    "href": "slides/introductions.html#your-turn",
-    "title": "Visualization and Public Data",
-    "section": "Your Turn",
-    "text": "Your Turn\nIntroduce yourself!\n\nYour Name\nWhat grade(s) and/or subject(s) you teach\nWhat you hope to learn from this workshop\nWhat type of data you geek out over"
-  },
-  {
-    "objectID": "slides/introductions.html#resources",
-    "href": "slides/introductions.html#resources",
-    "title": "Visualization and Public Data",
-    "section": "Resources",
-    "text": "Resources\n\nGlobal Historical Climatology Network (NOAA)\nUtah Weather\nUtah Weather Almanac\nReference Sheets\nRStudio\nCreating plots with ggplot2\nImporting Data\nWrangling Data: dplyr, tidyr, stringr, lubridate\nQ/A site: http://stackoverflow.com\nFree reference books:\n\nStatistical Computing with R and Python, by Susan Vanderplas (you can easily ignore the Python components and use this as an R reference book)\nBig Book of R - A Book of (free) R books\n\n\n\n This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
-  },
-  {
-    "objectID": "slides/personal-data.html#take-measure-of-your-surroundings",
-    "href": "slides/personal-data.html#take-measure-of-your-surroundings",
-    "title": "Personal Data Visualization",
-    "section": "Take measure of your surroundings",
-    "text": "Take measure of your surroundings\n\nPersonal and personally collected data is more fun/engaging to analyse"
-  },
-  {
-    "objectID": "slides/personal-data.html#namegrapher",
-    "href": "slides/personal-data.html#namegrapher",
-    "title": "Personal Data Visualization",
-    "section": "NameGrapher",
-    "text": "NameGrapher\nLaura and Martin Wattenberg’s approach to name their firstborn\nhttps://namerology.com/baby-name-grapher/\n ## Your Turn\n\nDid you first check your own name?\nHow many names start with a vowel?\nLautner or Swift? Which Taylor has more influence on baby names?\nWhat about Orange and Pink as kids’ names?"
-  },
-  {
-    "objectID": "slides/personal-data.html#praerie-dog-town",
-    "href": "slides/personal-data.html#praerie-dog-town",
-    "title": "Personal Data Visualization",
-    "section": "Praerie Dog Town",
-    "text": "Praerie Dog Town\nFrom a college-level course on Spatial Ecology: use GPS coordinates from a morning of measuring out a praerie dog town"
-  },
-  {
-    "objectID": "slides/personal-data.html#your-turn",
-    "href": "slides/personal-data.html#your-turn",
-    "title": "Personal Data Visualization",
-    "section": "Your Turn",
-    "text": "Your Turn\nWhat data could you collect and visualize with your class?\nReading logs? Habits?\nThe letter project: how long does it take to get the letter?\ne.g. Henry Kristin’s project"
-  },
-  {
-    "objectID": "slides/personal-data.html#relationship-between-distance-travelled-and-time",
-    "href": "slides/personal-data.html#relationship-between-distance-travelled-and-time",
-    "title": "Personal Data Visualization",
-    "section": "Relationship between Distance travelled and Time",
-    "text": "Relationship between Distance travelled and Time\nFrom Kristin Henry’s blog:\n\n\n\n\n\n\n\n\n\n\nWhich of these two charts do you like better for showing the relationship between distance travelled and days to reach destination?\nWhat chart would you suggest to use?"
-  },
-  {
-    "objectID": "slides/personal-data.html#an-approximate-re-creation-of-the-data",
-    "href": "slides/personal-data.html#an-approximate-re-creation-of-the-data",
-    "title": "Personal Data Visualization",
-    "section": "An approximate re-creation of the data",
-    "text": "An approximate re-creation of the data\nUsing Claude AI: “recreate the data from the chart”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAIs can’t ‘see’ for us, even when they just try to regenerate data (Clause was trying to resist because of the large number of overplotted lines)\nWhat patterns did Claude miss?"
-  },
-  {
-    "objectID": "slides/personal-data.html#re-creation-attempt-2",
-    "href": "slides/personal-data.html#re-creation-attempt-2",
-    "title": "Personal Data Visualization",
-    "section": "Re-creation attempt 2",
-    "text": "Re-creation attempt 2\nUsing Claude AI: “recreate the data from the chart; days are integer; there are only three observations with more than 14 days of time to destination”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat about now?\n\nMarginal distributions are not faithful: gaps along either of the axis is not preserved.\n2d clusters seem washed out"
-  },
-  {
-    "objectID": "slides/personal-data.html#a-different-attempt",
-    "href": "slides/personal-data.html#a-different-attempt",
-    "title": "Personal Data Visualization",
-    "section": "A different attempt",
-    "text": "A different attempt\nBased on a (larger) dataset published by Kristin Henry"
-  },
-  {
-    "objectID": "slides/personal-data.html#with-colour",
-    "href": "slides/personal-data.html#with-colour",
-    "title": "Personal Data Visualization",
-    "section": "With Colour",
-    "text": "With Colour"
-  },
-  {
-    "objectID": "slides/personal-data.html#and-now-a-scatterplot",
-    "href": "slides/personal-data.html#and-now-a-scatterplot",
-    "title": "Personal Data Visualization",
-    "section": "And now a Scatterplot",
-    "text": "And now a Scatterplot\n\n\n\n\n\n\n\n\n\nWhat do you see?\n\nThree clusters\n\n\nOnly for very large distances there is a positive relationship with the number of days to destination\n\n\nThere might be a hint of a positive association between the two variables in the first cluster (distances to 1250 miles)"
-  },
-  {
-    "objectID": "slides/resources-opportunities.html#the-big-book-of-r",
-    "href": "slides/resources-opportunities.html#the-big-book-of-r",
-    "title": "Resources & Opportunities",
-    "section": "The Big Book of R",
-    "text": "The Big Book of R\n)"
-  },
-  {
-    "objectID": "slides/resources-opportunities.html#r-for-data-science",
-    "href": "slides/resources-opportunities.html#r-for-data-science",
-    "title": "Resources & Opportunities",
-    "section": "R for Data Science",
-    "text": "R for Data Science\n)"
-  },
-  {
-    "objectID": "slides/resources-opportunities.html#teaching-r-with-decoder",
-    "href": "slides/resources-opportunities.html#teaching-r-with-decoder",
-    "title": "Resources & Opportunities",
-    "section": "Teaching R with decoder",
-    "text": "Teaching R with decoder\nKelly Bodwin created a series of puzzles to reinforce different introductory R concepts.\n\nIndexing, matrix/vector creation, introductory debugging\nWriting functions and ciphers\nData Cleaning with dplyr\nSolving Crimes with lubridate\nRegression Diagnostics and Looney Tunes\nJoins with tidyr and Military Spending"
-  },
-  {
-    "objectID": "slides/resources-opportunities.html#materials-ive-made",
-    "href": "slides/resources-opportunities.html#materials-ive-made",
-    "title": "Resources & Opportunities",
-    "section": "Materials I’ve made",
-    "text": "Materials I’ve made\n\nStatistical Computing in R and Python - textbook for UNL (and soon USU?) statistical computing courses\nStat-assignments collection of assignments for data science and statistics classes\nWorksheets for Intro Statistics\n(some of these will need updated links)\n\nConfidence Intervals & The Great Emu War\nDifference of Proportions & Pandemics\nDifference of Means: Vampires & Wizards"
-  },
-  {
-    "objectID": "slides/why-graphics.html#section",
-    "href": "slides/why-graphics.html#section",
-    "title": "Why Graphics?",
-    "section": "",
-    "text": "The Hertzsprung Russell diagram. Discovered independently by Ejnar Hertzsprung (1873–1967) and Henry Norris Russell (1877–1957). The diagram plots the color index of the star against the brightness (absolute magnitude) of the star. As a result, it is possible to discern that these two variables are related and change together over a star’s life cycle: a hypothesis that only came to be because of this chart.\n\n\n\n\nData source: the HYG Database. Only stars within 500 AU are shown.\n\nWhen drawn well, statistical graphics help us understand our data and see things that we didn’t know were there. The relationship between star magnitude, star color, and spectral class wasn’t well understood until someone created a chart like this that showed the color index (or spectral class) against the absolute brightness. Then, it was much easier to see that the chart described a life-cycle - stars start out in the main sequence, and then become giants, dwarfs, or slowly change spectral class over time as they cool down in temperature.\nWell designed graphs can help us understand the natural phenomenon behind the raw numerical data we’ve collected."
-  },
-  {
-    "objectID": "slides/why-graphics.html#basic",
-    "href": "slides/why-graphics.html#basic",
-    "title": "Why Graphics?",
-    "section": "Basic",
-    "text": "Basic\n\n\nOne Variable\n\nDiscrete\n\nBar Chart\nPie Chart\n\nContinuous\n\nStem and Leaf Plots\nHistograms\n\n\n\nTwo variables\n\nContinuous X, Continuous Y\n\nScatterplots\n(w/ and w/o trend lines)\n\nMaps"
-  },
-  {
-    "objectID": "slides/why-graphics.html#more-fancy",
-    "href": "slides/why-graphics.html#more-fancy",
-    "title": "Why Graphics?",
-    "section": "More “Fancy”",
-    "text": "More “Fancy”\n\n\n\nParallel Coordinate Plots\nMosaic Plots\nRadar Charts\nHeat Maps\nDensity Plots\nViolin Plots\nSocial Network Plots"
-  },
-  {
-    "objectID": "slides/why-graphics.html#quantitative-literacy",
-    "href": "slides/why-graphics.html#quantitative-literacy",
-    "title": "Why Graphics?",
-    "section": "Quantitative Literacy",
-    "text": "Quantitative Literacy\n\n\nElementary\n\nVisual Mappings 📊\nScales 📐\nPie charts 🥧 (fractions)\nLine charts 📈 (time)\nRange, Mean, Median, Mode 📏\n\n\nMiddle\n\nCartesian Coordinates \nSlope, Intercept form \nFunctions, Polynomials \nProbability\n  \n\n\nHigh School\n\nPolar Coordinates\nFunctions - Trigonometry , Logarithms🪵, Exponential growth \nConnecting equations & inequalities to graphs\nStatistical reasoning - inference 🧠"
-  },
-  {
-    "objectID": "slides/why-graphics.html#connections-to-art-science-civics-media-literacy",
-    "href": "slides/why-graphics.html#connections-to-art-science-civics-media-literacy",
-    "title": "Why Graphics?",
-    "section": "Connections to Art, Science, Civics, Media Literacy",
-    "text": "Connections to Art, Science, Civics, Media Literacy\n\nScience: data collection📋, inference, estimation of constants 🌳🍎\nCivics: election maps🗺️, census, polling, charts about current events\nArt: personal data collection/visualization, generative art\nMedia Literacy: best/worst practices, claims & support\n\n\n\n\n\n\n\nTip\n\n\nThe US Census commissioned Statistical Atlases for the 1870, 1880, and 1890 censuses. They have amazing data visualizations of the US population during westward expansion."
-  },
-  {
-    "objectID": "slides/why-graphics.html#your-turn",
-    "href": "slides/why-graphics.html#your-turn",
-    "title": "Why Graphics?",
-    "section": "Your Turn",
-    "text": "Your Turn\n\nHow could data visualization connect to learning objectives for your grade(s) and subject(s)?\nWhat types of charts are most important for your students?\nWhat data would you like to show students?"
+    "objectID": "materials/weather-data.html#so-many-more-questions",
+    "href": "materials/weather-data.html#so-many-more-questions",
+    "title": "Weather Data",
+    "section": "So many more questions",
+    "text": "So many more questions\n\nWhat is the first day of snowfall?\nHow long does the snow stay on the ground?\nDid the average snow depth change?\n\n\n\nWhat questions do you have? \n\n\n\n\nend of excursion"
   }
 ]

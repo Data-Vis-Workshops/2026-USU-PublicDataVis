@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>roosevelt – Visualization &amp; Public Data</title>
+<title>course-links – Visualization &amp; Public Data</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="Visualization &amp; Public Data">
 <meta property="og:site_name" content="Visualization &amp; Public Data">
@@ -302,7 +331,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#roosevelt" id="toc-roosevelt" class="nav-link active" data-scroll-target="#roosevelt">Roosevelt</a></li>
+  <li><a href="#useful-links" id="toc-useful-links" class="nav-link active" data-scroll-target="#useful-links">Useful Links</a>
+  <ul class="collapse">
+  <li><a href="#books-and-inspiration" id="toc-books-and-inspiration" class="nav-link" data-scroll-target="#books-and-inspiration">Books and Inspiration</a></li>
+  <li><a href="#public-data-sources" id="toc-public-data-sources" class="nav-link" data-scroll-target="#public-data-sources">Public Data Sources</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/data-Vis-Workshops/2026-USU-PublicDataVis/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -313,104 +346,41 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="roosevelt" class="level3">
-<h3 class="anchored" data-anchor-id="roosevelt">Roosevelt</h3>
-<section id="october-1-2026" class="level4">
-<h4 class="anchored" data-anchor-id="october-1-2026">October 1, 2026</h4>
-<p>Session #1 of Data Science Workshop, 2:00 - 5:00 pm</p>
-<table class="caption-top table">
-<caption>Schedule for Workshop Session #1. Slides are linked for each topic.</caption>
-<thead>
-<tr class="header">
-<th>Time</th>
-<th>Topic</th>
-<th>Materials</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2:00 - 2:30</td>
-<td><a href="./slides/introductions.html">Introductions</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>2:30 - 3:20</td>
-<td><a href="./slides/why-graphics.html">Why Graphics?</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>3:20 - 3:30</td>
-<td>Break</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>3:30 - 4:20</td>
-<td><a href="./slides/how-graphics.html">How to Make Graphics</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>4:20 - 4:30</td>
-<td>Break</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>4:30 - 5:00</td>
-<td><a href="./slides/perception.html">Perception &amp; Graphics</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<section id="useful-links" class="level1">
+<h1>Useful Links</h1>
+<section id="books-and-inspiration" class="level2">
+<h2 class="anchored" data-anchor-id="books-and-inspiration">Books and Inspiration</h2>
+<ul>
+<li><p>Observe, Collect, Draw! A Visual Journal, by Giorgia Lupi &amp; Stefanie Posavec <a href="https://www.amazon.com/Observe-Collect-Draw-Visual-Journal/dp/1616897147">Amazon</a>, <a href="https://giorgialupi.com/observe-collect-draw/">Author’s site</a></p>
+<ul>
+<li>Dear Data, by Giorgia Lupi &amp; Stefanie Posavec <a href="https://www.amazon.com/Dear-Data-Giorgia-Lupi/dp/1616895322/">Amazon</a>, <a href="https://giorgialupi.com/dear-data">Author’s site</a></li>
+</ul></li>
+<li><p>Drawing Data with Kids, Cultivating Data-Literacy: A screen-free journey through the art of visualization for kids, by Gulrez Khan <a href="https://www.amazon.com/dp/1088205798/">Amazon</a>, <a href="https://drawingdatawithkids.com">Author’s site</a> – includes free activities for classes</p></li>
+<li><p>Math with Bad Drawings, by Ben Orlin <a href="https://www.amazon.com/Math-Bad-Drawings-Illuminating-Reality/dp/0316509043">Amazon</a>, <a href="https://mathwithbaddrawings.com">Author’s site</a></p>
+<ul>
+<li>Math Games with Bad Drawings, by Ben Orlin <a href="https://www.amazon.com/Math-Games-Bad-Drawings-Challenging/dp/0762499869/">Amazon</a></li>
+</ul></li>
+</ul>
 </section>
-<section id="october-2-2026" class="level4">
-<h4 class="anchored" data-anchor-id="october-2-2026">October 2, 2026</h4>
-<p>Session #2 of Data Science Workshop, 8:00 am - 12:00 pm</p>
-<table class="caption-top table">
-<caption>Schedule for Workshop Session #2. Slides are linked for each topic.</caption>
-<thead>
-<tr class="header">
-<th>Time</th>
-<th>Topic</th>
-<th>Materials</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>8:00 - 8:50</td>
-<td><a href="./slides/public-data.html">Public Data Showcase</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>8:50 - 9:00</td>
-<td>Break</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>9:00 - 9:50</td>
-<td><a href="./slides/theming.html">Theming &amp; Customizing Charts</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>9:50 - 10:00</td>
-<td>Break</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>10:00 - 10:50</td>
-<td><a href="./slides/personal-data.html">Personal Data Activities</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>10:50 - 11:00</td>
-<td>Break</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>11:00 - 12:00</td>
-<td><a href="./slides/resources-opportunities.html">Discussion: Resources and Opportunities</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<section id="public-data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="public-data-sources">Public Data Sources</h2>
+<ul>
+<li><p><a href="https://opendata.gis.utah.gov">Utah GIS Data</a> - maps, landmarks, demographics, climate, economy, energy, farming, geoscience, health, history, political science, recreation, society, transportation, utilities, and water.</p></li>
+<li><p><a href="https://data.gov">Data.gov</a> - more than 500k datasets from the US government</p>
+<ul>
+<li><p>Lake Powell [Releases](https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-release-total-cfs-time-ser?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D and <a href="https://catalog.data.gov/dataset/lake-powell-glen-canyon-dam-and-powerplant-daily-lake-reservoir-elevation-ft-time-series-d?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D">Reservoir Elevation</a></p></li>
+<li><p>Great Salt Lake <a href="https://catalog.data.gov/dataset/great-salt-lake-elevation-area-volume-tables?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsInNwYXRpYWxfZ2VvbWV0cnkiOiJ7XCJ0eXBlXCI6XCJNdWx0aVBvbHlnb25cIixcImNvb3JkaW5hdGVzXCI6W1tbWy0xMTQuMDQ3MywzNi45OTE3XSxbLTExNC4wNDczLDQyLjAwMjNdLFstMTA5LjA0MzIsNDIuMDAyM10sWy0xMDkuMDQzMiwzNi45OTE3XSxbLTExNC4wNDczLDM2Ljk5MTddXV1dfSIsInNwYXRpYWxfd2l0aGluIjoidHJ1ZSIsImdlb2dyYXBoeV9sYWJlbCI6IlV0YWgifQ%3D%3D">Bathymetry: Elevation, Area, and Volume tables</a></p></li>
+<li><p>EnviroAtlas Salt Lake City</p>
+<ul>
+<li><a href="https://catalog.data.gov/dataset/enviroatlas-salt-lake-city-ut-impervious-proximity-gradient?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsIm9yZ19zbHVnIjoiZXBhIiwic3BhdGlhbF9nZW9tZXRyeSI6IntcInR5cGVcIjpcIk11bHRpUG9seWdvblwiLFwiY29vcmRpbmF0ZXNcIjpbW1tbLTExNC4wNDczLDM2Ljk5MTddLFstMTE0LjA0NzMsNDIuMDAyM10sWy0xMDkuMDQzMiw0Mi4wMDIzXSxbLTEwOS4wNDMyLDM2Ljk5MTddLFstMTE0LjA0NzMsMzYuOTkxN11dXV19Iiwic3BhdGlhbF93aXRoaW4iOiJ0cnVlIiwiZ2VvZ3JhcGh5X2xhYmVsIjoiVXRhaCJ9">1 <span class="math inline">\(\text{km}^2\)</span> resolution data on the proportion of impervious surfaces</a></li>
+<li>Tree cover along <a href="https://catalog.data.gov/dataset/enviroatlas-salt-lake-city-ut-estimated-percent-tree-cover-along-walkable-roads?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsIm9yZ19zbHVnIjoiZXBhIiwic3BhdGlhbF9nZW9tZXRyeSI6IntcInR5cGVcIjpcIk11bHRpUG9seWdvblwiLFwiY29vcmRpbmF0ZXNcIjpbW1tbLTExNC4wNDczLDM2Ljk5MTddLFstMTE0LjA0NzMsNDIuMDAyM10sWy0xMDkuMDQzMiw0Mi4wMDIzXSxbLTEwOS4wNDMyLDM2Ljk5MTddLFstMTE0LjA0NzMsMzYuOTkxN11dXV19Iiwic3BhdGlhbF93aXRoaW4iOiJ0cnVlIiwiZ2VvZ3JhcGh5X2xhYmVsIjoiVXRhaCJ9">walkable roads</a> and <a href="https://catalog.data.gov/dataset/enviroatlas-salt-lake-city-ut-estimated-tree-cover-along-busy-roads?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6IiIsIm9yZ19zbHVnIjoiZXBhIiwic3BhdGlhbF9nZW9tZXRyeSI6IntcInR5cGVcIjpcIk11bHRpUG9seWdvblwiLFwiY29vcmRpbmF0ZXNcIjpbW1tbLTExNC4wNDczLDM2Ljk5MTddLFstMTE0LjA0NzMsNDIuMDAyM10sWy0xMDkuMDQzMiw0Mi4wMDIzXSxbLTEwOS4wNDMyLDM2Ljk5MTddLFstMTE0LjA0NzMsMzYuOTkxN11dXV19Iiwic3BhdGlhbF93aXRoaW4iOiJ0cnVlIiwiZ2VvZ3JhcGh5X2xhYmVsIjoiVXRhaCJ9">busy roads</a></li>
+</ul></li>
+<li><p><a href="https://catalog.data.gov/dataset/supply-chain-greenhouse-gas-emission-factors-v1-3-by-naics-6?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6Im5vbi1nZW9zcGF0aWFsIn0%3D">Supply Chain Greenhouse Gas Emission Factors</a></p></li>
+<li><p><a href="https://catalog.data.gov/dataset/meteorite-landings?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6Im5vbi1nZW9zcGF0aWFsIn0%3D">Meteorite Landings</a></p></li>
+<li><p><a href="https://catalog.data.gov/dataset/cdc-wonder-cancer-statistics?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiIiLCJzcGF0aWFsX2ZpbHRlciI6Im5vbi1nZW9zcGF0aWFsIn0%3D">CDC WONDER: Cancer Statistics</a></p></li>
+<li><p><a href="https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-data?from_hint=eyJzb3J0IjoicG9wdWxhcml0eSIsInEiOiJiYWJ5IG5hbWVzIiwic3BhdGlhbF9maWx0ZXIiOiIifQ%3D%3D">Baby Names from the Social Security Administration</a></p></li>
+</ul></li>
+</ul>
 
 
 </section>
