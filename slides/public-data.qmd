@@ -88,3 +88,38 @@ happy |> dplyr::filter(!is.na(happy)) |>
 - [UDOT Open Data Portal](https://data-uplan.opendata.arcgis.com/)
 
 - [Utah Data](https://www.utah.gov/government/data.html)
+
+## Census API
+
+- [tidycensus](https://walker-data.com/census-r/index.html) R package
+
+```{r include=FALSE}
+library(tidyverse)
+source(here::here("code/census-api.R"))
+```
+
+
+```{r}
+ut_migrate_plus |>
+  ggplot(aes(fill = (move_in - move_out))) + geom_sf() + 
+  ggthemes::theme_map() + 
+  scale_fill_gradient2("Change in Population") + 
+  facet_grid(~year) + 
+  theme(legend.position = "bottom") +
+  ggtitle("Change in Population")
+```
+
+## Census API
+
+- [tidycensus](https://walker-data.com/census-r/index.html) R package
+
+```{r}
+ut_migrate_plus |>
+  ggplot(aes(fill = (move_in - move_out)/value*100)) + geom_sf() + 
+  ggthemes::theme_map() + 
+  scale_fill_gradient2("Percent Change") +
+  facet_grid(~year) + 
+  theme(legend.position = "bottom") +
+  ggtitle("Percent Change in Population")
+
+```
