@@ -10,9 +10,9 @@ Welcome to the 2026 Data Science Workshops!
 
 ::: panel-tabset
 
-{{< include Blanding.qmd >}}
-
 {{< include Roosevelt.qmd >}}
+
+{{< include Blanding.qmd >}}
 
 :::
 
@@ -35,5 +35,7 @@ If you don't have a computer you can bring, please contact [Eric Rowley (Blandin
 :::
 
 ## [Resources & Links](course-links.qmd)
+
+We've moved the resources to a [separate page](course-links.qmd) to reduce clutter. 
 
     

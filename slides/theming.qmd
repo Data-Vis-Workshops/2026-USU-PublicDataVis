@@ -1,5 +1,0 @@
----
-title: Theming Graphics
-format: revealjs
-css: ../css/slide-theme.scss
----
