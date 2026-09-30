@@ -50,7 +50,8 @@ theme_set(theme_bw())
 ## Visual explorations
 
 ![](images/explorer.jpeg)
-We like to go on data explorations: [Weather in Blanding](../materials/weather-data.html)
+<br>
+We like to go on data explorations: [Weather in Blanding](../materials/weather-data.html), [Weather in Roosevelt](../materials/weather-data-roosevelt.html)
 
 ## Your Turn {.inverse .large}
 
