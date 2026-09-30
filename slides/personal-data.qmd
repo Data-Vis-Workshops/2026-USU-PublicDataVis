@@ -8,7 +8,14 @@ css: ../css/slide-theme.scss
 
 - Personal and personally collected data is more fun/engaging to analyse
 
-- 
+![A week of laughter](images/week-of-laughter-front.png){fig-alt="A visualization of a week of every time the author laughed."}
+
+## Take measure of your surroundings
+
+- Personal and personally collected data is more fun/engaging to analyse
+
+![](images/week-of-laughter-back.png){fig-alt="An explanation of the week of laughter - the outer circle represents what I was laughing about, the inner circle represents who I was laughing with, and lines radially indicating laughing at people (generally in fun). Provides a key for interpreting the front of the postcard."}
+
 
 ## NameGrapher
 
