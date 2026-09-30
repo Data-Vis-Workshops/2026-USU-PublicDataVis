@@ -55,6 +55,10 @@ Kelly Bodwin created a [series of puzzles](https://github.com/kbodwin/decoder) t
 
 - [Statistical Computing in R and Python](https://srvanderplas.github.io/stat-computing-r-python/) - textbook for UNL (and soon USU?) statistical computing courses
 
+
+- [Drawing Data Visualizations By Hand](https://datajournalism.com/read/longreads/data-visualisation-by-hand) - Amelia McNamara, St. Thomas University, Minnesota. 
+
+- [Drawing a Visit to a Museum With Data](https://giorgialupi.com/workshop-draw-your-visit-with-data) - Giorgia Lupi
     
 ## Public Data Sources
 
