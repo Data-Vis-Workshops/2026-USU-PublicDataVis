@@ -39,7 +39,7 @@
     "href": "materials/weather-data-roosevelt.html#weather-station-at-the-quarry",
     "title": "Weather Data",
     "section": "Weather Station at the Quarry",
-    "text": "Weather Station at the Quarry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStation in ROOSEVELT RADIO, UT US reported daily from 1948-07-14 to 2025-02-06\nObserved Measurements\n\nTMAX = Maximum temperature (tenths of degrees C)\nTMIN = Minimum temperature (tenths of degrees C)\nPRCP = Precipitation (tenths of mm)\nSNOW = Snowfall (mm)\nSNWD = Snow depth (mm)\n\nSource for checking on unusual observations: Daily Almanac"
+    "text": "Weather Station at the Quarry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStation in DINOSAUR NM QUARRY AREA, UT US reported daily from 1915-12-01 to 2026-09-27\nObserved Measurements\n\nTMAX = Maximum temperature (tenths of degrees C)\nTMIN = Minimum temperature (tenths of degrees C)\nPRCP = Precipitation (tenths of mm)\nSNOW = Snowfall (mm)\nSNWD = Snow depth (mm)\n\nSource for checking on unusual observations: Daily Almanac"
   },
   {
     "objectID": "materials/weather-data-roosevelt.html#reported-observations",
@@ -53,7 +53,7 @@
     "href": "materials/weather-data-roosevelt.html#daily-precipitation",
     "title": "Weather Data",
     "section": "Daily Precipitation",
-    "text": "Daily Precipitation\nAverage daily precipitation is 0.0192913 inch, but it rained only on 4183 out of 27481 recorded days."
+    "text": "Daily Precipitation\nAverage daily precipitation is 0.0228346 inch, but it rained only on 4106 out of 26504 recorded days."
   },
   {
     "objectID": "materials/weather-data-roosevelt.html#yearly-total-precipitation",
@@ -74,7 +74,7 @@
     "href": "materials/weather-data-roosevelt.html#yearly-total-precipitation-3",
     "title": "Weather Data",
     "section": "Yearly Total Precipitation (3)",
-    "text": "Yearly Total Precipitation (3)\n\n\n\nCall:\nlm(formula = value/254 ~ I(year - 1905), data = prcp)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-6.2645 -1.4915 -0.0814  1.6393  5.7551 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)     8.46948    0.91785   9.228  4.9e-14 ***\nI(year - 1905) -0.01837    0.01086  -1.693   0.0946 .  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 2.159 on 76 degrees of freedom\nMultiple R-squared:  0.03633,   Adjusted R-squared:  0.02365 \nF-statistic: 2.865 on 1 and 76 DF,  p-value: 0.09461"
+    "text": "Yearly Total Precipitation (3)\n\n\n\nCall:\nlm(formula = value/254 ~ I(year - 1905), data = prcp)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-4.4624 -1.5869  0.2502  1.8144  5.6551 \n\nCoefficients:\n                Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)     8.412605   0.730374  11.518   &lt;2e-16 ***\nI(year - 1905) -0.002454   0.008739  -0.281     0.78    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 2.367 on 77 degrees of freedom\nMultiple R-squared:  0.001023,  Adjusted R-squared:  -0.01195 \nF-statistic: 0.07885 on 1 and 77 DF,  p-value: 0.7796"
   },
   {
     "objectID": "materials/weather-data-roosevelt.html#monthly-temperatures",
@@ -95,7 +95,7 @@
     "href": "materials/weather-data-roosevelt.html#model-snow-on-the-ground",
     "title": "Weather Data",
     "section": "Model Snow on the Ground",
-    "text": "Model Snow on the Ground\nOnly consider November through March\n\n\nCall:\nlm(formula = snow_on_ground ~ as.character(month) - 1 + I(year - \n    1910), data = winter)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-0.40423 -0.20317 -0.06009  0.04881  0.98756 \n\nCoefficients:\n                         Estimate Std. Error t value Pr(&gt;|t|)   \nas.character(month)Dec  0.0608169  0.0613656   0.991  0.32230   \nas.character(month)Feb  0.1369263  0.0619315   2.211  0.02765 * \nas.character(month)Jan  0.2005170  0.0619315   3.238  0.00131 **\nas.character(month)Mar -0.0619571  0.0618046  -1.002  0.31677   \nas.character(month)Nov -0.1096527  0.0613656  -1.787  0.07477 . \nI(year - 1910)          0.0017714  0.0006752   2.623  0.00906 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.2932 on 372 degrees of freedom\nMultiple R-squared:  0.3633,    Adjusted R-squared:  0.353 \nF-statistic: 35.37 on 6 and 372 DF,  p-value: &lt; 2.2e-16"
+    "text": "Model Snow on the Ground\nOnly consider November through March\n\n\nCall:\nlm(formula = snow_on_ground ~ as.character(month) - 1 + I(year - \n    1910), data = winter)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-0.53477 -0.28644 -0.06853  0.23298  0.68264 \n\nCoefficients:\n                         Estimate Std. Error t value Pr(&gt;|t|)    \nas.character(month)Dec  0.3911593  0.0638668   6.125 2.39e-09 ***\nas.character(month)Feb  0.4676994  0.0634835   7.367 1.21e-12 ***\nas.character(month)Jan  0.5408526  0.0634835   8.520 4.48e-16 ***\nas.character(month)Mar  0.1832609  0.0641053   2.859   0.0045 ** \nas.character(month)Nov  0.1118960  0.0654316   1.710   0.0881 .  \nI(year - 1910)         -0.0007608  0.0006551  -1.161   0.2463    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.3431 on 359 degrees of freedom\nMultiple R-squared:  0.4824,    Adjusted R-squared:  0.4737 \nF-statistic: 55.76 on 6 and 359 DF,  p-value: &lt; 2.2e-16"
   },
   {
     "objectID": "materials/weather-data-roosevelt.html#so-many-more-questions",
