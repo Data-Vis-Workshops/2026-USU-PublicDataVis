@@ -9,7 +9,7 @@ Session #1 of Data Science Workshop, 2:00 - 5:00 pm
 | 2:00 - 2:30 | [Introductions](slides/introductions.qmd)       |
 | 2:30 - 3:20 | [Why Graphics?](slides/why-graphics.qmd)        |
 | 3:20 - 3:30 | Break                                           |
-| 3:30 - 4:20 | [How to Make Graphics](slides/how-graphics.qmd) |
+| 3:30 - 4:20 | [How to Make Graphics](slides/how-graphics.qmd), live   [Code](code/2026-10-02-live.R)|
 | 4:20 - 4:30 | Break                                           |
 | 4:30 - 5:00 | [Perception & Graphics](slides/perception.qmd)  |
 : Schedule for Workshop Session #1. Slides are linked for each topic.
