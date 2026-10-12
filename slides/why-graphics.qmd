@@ -6,7 +6,8 @@ css: ../css/slide-theme.scss
 ```{r}
 #| eval: false
 pak::pak("heike/ggpcp")
-pak::pak("heike/ggmosaic")
+# pak::pak("heike/ggmosaic")
+pak::pak("haleyjeppson/ggmosaic")
 pak::pak("ricardo-bion/ggradar")
 ```
 

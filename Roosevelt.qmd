@@ -9,7 +9,7 @@ Session #1 of Data Science Workshop, 2:00 - 5:00 pm
 | 2:00 - 2:30 | [Introductions](slides/introductions.qmd)       |
 | 2:30 - 3:20 | [Why Graphics?](slides/why-graphics.qmd)        |
 | 3:20 - 3:30 | Break                                           |
-| 3:30 - 4:20 | [How to Make Graphics](slides/how-graphics.qmd), live   [Code](code/2026-10-02-live.R)|
+| 3:30 - 4:20 | [How to Make Graphics](slides/how-graphics.qmd), live   [Code](code/2026-10-02-live.R) |
 | 4:20 - 4:30 | Break                                           |
 | 4:30 - 5:00 | [Perception & Graphics](slides/perception.qmd)  |
 : Schedule for Workshop Session #1. Slides are linked for each topic.
@@ -24,7 +24,7 @@ Session #2 of Data Science Workshop, 8:00 am - 12:00 pm
 | 8:50 - 9:00 | Break |
 | 9:00 - 9:50 | [Public Data Showcase](slides/public-data.qmd) |
 | 9:50 - 10:00 | Break |
-| 10:00 - 10:50 | [Personal Data Activities](slides/personal-data.qmd) |
+| 10:00 - 10:50 | [Personal Data Activities](slides/personal-data.qmd), live   [Code](code/2026-10-03-live.R)|
 | 10:50 - 11:00 | Break |
 | 11:00 - 11:30 | [Discussion: Resources and Opportunities](slides/resources-opportunities.qmd) |
 | 11:30 - 12:00 | Wrap Up |
